@@ -1,0 +1,56 @@
+.animated {
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.css3-notification
+{
+	position: relative;
+	-webkit-animation: bounce 1000ms ease-in-out infinite;
+	-moz-animation: bounce 1000ms ease-in-out infinite;
+	-o-animation: bounce 1000ms ease-in-out infinite;
+	animation: bounce 1000ms ease-in-out infinite;
+  	-webkit-transform-origin: center bottom;
+  	transform-origin: center bottom;
+}
+
+
+
+/* Webkit, Chrome and Safari */
+
+@-webkit-keyframes bounce {
+  0% {
+	-webkit-transform:translateY(0%);
+  }
+  50% {
+  	-webkit-transform:translateY(-50%);
+  }
+  100% {
+  	-webkit-transform:translateY(0%);
+  }
+}
+
+/* Mozilla Firefox 15 below */
+@-moz-keyframes bounce {
+  0% {
+	-webkit-transform:translateY(0);
+  }
+  50% {
+  	-moz-transform:translateY(-50%);
+  }
+}
+
+/* Opera 12.0 */
+@-o-keyframes bounce {
+  0% {
+	-webkit-transform:translateY(-50%);
+  }
+  50% {
+  	-o-transform:translateY(-30%);
+  }
+  100% {
+  	-o-transform:translateY(0);
+  }
+}

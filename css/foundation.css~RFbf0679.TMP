@@ -55,12 +55,11 @@ body {
   font-size: 100%; }
 
 body {
-	background: #000;
+  background: #000000;
   color: #4E4E4E;
-  padding: 0 0 1% 0;
-  position: relative;
+  padding: 0;
   margin: 0;
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1.5;
@@ -141,6 +140,8 @@ select {
     margin-right: 0; }
   .row .row {
     width: auto;
+    margin-left: -0.9375em;
+    margin-right: -0.9375em;
     margin-top: 0;
     margin-bottom: 0;
     /*max-width: none;*/
@@ -1714,7 +1715,7 @@ meta.foundation-mq-topbar {
   overflow: hidden;
   height: 2.8125rem;
   line-height: 2.8125rem;
-  width: 570px;
+  width: 700px;
   float: right;
   margin-right: 3%; }
   .top-bar ul {
@@ -1777,7 +1778,7 @@ meta.foundation-mq-topbar {
         height: 34px;
         line-height: 33px;
         padding: 0 2.5rem 0 0.9375rem;
-        color: #3396cb;
+        color: #FFFFFF;
         position: relative;}
         .top-bar .toggle-topbar.menu-icon a span::after {
           content: "";
@@ -1787,22 +1788,21 @@ meta.foundation-mq-topbar {
           top: 50%;
           margin-top: -8px;
           right: 0.9375rem;
-          box-shadow: 0 0 0 1px #3396cb, 0 7px 0 1px #3396cb, 0 14px 0 1px #3396cb;
+          box-shadow: 0 0 0 1px #FFFFFF, 0 7px 0 1px #FFFFFF, 0 14px 0 1px #FFFFFF;
 		  color: #FFFFFF;
           width: 16px; }
         .top-bar .toggle-topbar.menu-icon a span:hover:after {
-          box-shadow: 0 0 0 1px #3396cb, 0 7px 0 1px #3396cb, 0 14px 0 1px #3396cb; }
+          box-shadow: 0 0 0 1px #FFFFFF, 0 7px 0 1px #FFFFFF, 0 14px 0 1px #FFFFFF; }
   .top-bar.expanded {
     height: auto;
-	background: #666666;
-	width: 20%; }
+    background: transparent; }
     .top-bar.expanded .title-area {
       background: #3396cb; }
     .top-bar.expanded .toggle-topbar a {
       color: #FFFFFF;
 	  background: #3396cb; }
       .top-bar.expanded .toggle-topbar a span::after {
-        box-shadow: 0 0 0 1px #3396cb, 0 7px 0 1px #3396cb, 0 14px 0 1px #3396cb; }
+        box-shadow: 0 0 0 1px #FFFFFF, 0 7px 0 1px #FFFFFF, 0 14px 0 1px #FFFFFF; }
 
 .top-bar-section {
   position: relative;
@@ -1823,17 +1823,17 @@ meta.foundation-mq-topbar {
     height: 1px;
     width: 100%; }
   .top-bar-section ul li {
-    margin-right: 2%;}
+    margin-right: 5%;}
     .top-bar-section ul li > a {
       display: block;
       width: 100%;
-      color: #FFF;
+      color: #3396cb;
       padding: 12px 0 12px 0;
       padding-left: 0.9375rem;
-      font-size: 1em;
-      font-weight: bold;
-      cursor: pointer;
-	  text-transform:uppercase;}
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 1.1rem;
+      font-weight: normal;
+      text-transform: none; }
       .top-bar-section ul li > a.button {
         font-size: 0.8125rem;
         padding-right: 0.9375rem;
@@ -1921,8 +1921,9 @@ meta.foundation-mq-topbar {
         .top-bar-section ul li > button.warning:hover, .top-bar-section ul li > button.warning:focus {
           color: #FFFFFF; }
     .top-bar-section ul li:hover:not(.has-form) > a {
-		 color: #73d878; /*color: #0fb5b3;*/
-      transition: color .3s ease 0s; }
+      background-color: #ecaa1e;
+      background: #ecaa1e;
+      color: #333333; }
     .top-bar-section ul li.active > a {
       background: #3396CB;
       color: #FFFFFF; }
@@ -2025,8 +2026,7 @@ meta.foundation-mq-topbar {
       height: 1.75rem;
       top: 0.53125rem; }
     .top-bar.expanded {
-      background: #333333;
-	  width: 20%; }
+      background: #333333; }
 
   .contain-to-grid .top-bar {
     max-width: 62.5em;
@@ -2051,6 +2051,8 @@ meta.foundation-mq-topbar {
     .top-bar-section li:not(.has-form) a:not(.button) {
       padding: 0 0.9375rem;
       line-height: 2.8125rem; }
+      .top-bar-section li:not(.has-form) a:not(.button):hover {
+        color: #73d878;}
     .top-bar-section li.active:not(.has-form) a:not(.button) {
       padding: 0 0.9375rem;
       line-height: 2.8125rem;
@@ -2425,8 +2427,8 @@ a {
 
 /* Default paragraph styles */
 p {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
+  font-family: inherit;
+  font-weight: normal;
   font-size: 1.7em;
   line-height: 1.6;
   margin-bottom: 1.25rem;
@@ -2441,7 +2443,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Antic Slab', serif;
+  font-family: 'Lato', sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #3396cb;
@@ -2456,8 +2458,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 0; }
 
 h1 {
-  font-family: 'Lora', serif;
-  font-weight: 300;}
+  font-size: 2.125rem; }
 
 h2 {
   font-size: 1.6875rem; }

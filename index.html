@@ -7,49 +7,112 @@
     <title>Foundation for Sites</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/arrow.css">
+    <!-- <link rel="stylesheet" href="css/arrow.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
-    <div class="grid-container">
-      <header class="row">
-        <div id="schLogo">
-          <img src="img/logo.png" title="Cordova Elementary School" alt="Cordova Elementary School">
-        </div>
-        <div class="row">
-          <div class="columns">
-            <ul class="menu align-right">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Resources</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><img src="img/scs-log-small.png" title="Shelby County Schools" alt="Shelby County Schools"></li>
+    <header id="header1">
+      	<div class="logos large-3 medium-3 small-3 columns"><a href="index.html"><img src="img/logo.png" title="Cordova Elementary School" alt="Cordova Elementary School" border="0"></a></div>
+
+          <nav class="top-bar large-9 small-9 columns" data-topbar>
+            <ul class="title-area">
+              <li class="name"></li>
+              <li class="toggle-topbar menu-icon"><a href="#">Menu<span><div class="fi-list"></div></span></a></li>
             </ul>
-          </div>
-        </div>
+
+            <section class="top-bar-section">
+            	<ul id="headMenu">
+              	<li class="currentLink slideUnder"><a href="#home">Home</a></li>
+              	<li class="slideUnder"><a href="#about">About</a></li>
+              	<li class="slideUnder"><a href="" target="_blank">Resources</a></li>
+             		<li class="slideUnder"><a href="#contact">Contact</a></li>
+                <li><img src="img/scs-log-small.png" title="Shelby County Schools" alt="Shelby County Schools"></li>
+              </ul>
+            </section>
+          </nav>
       </header>
 
-      <div class="row">
-        <div class="large-12">
-            <h1>Cordova<span>Elementary</span></h1>
-            <h2>Home of the cougar cubs</h2>
-        </div>
-        <div id="bckRotate"><img src="img/ce_HeroImg2.jpg" alt=""></div>
-      </div>
-    </div>
+      <header id="header2" class="headChange">
+        <div class="logos large-3 medium-3 small-3 columns"><a href="index.html"><img src="img/logo.png" title="Cordova Elementary School" alt="Cordova Elementary School" border="0"></a></div>
 
-      <!-- <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
-            <h1>Cordova Elementary</a></h1>
+          <nav class="top-bar large-9 small-9 columns" data-topbar>
+          	<ul class="title-area">
+              <li class="name"></li>
+              <li class="toggle-topbar menu-icon"><a href="#">Menu<span><div class="fi-list"></div></span></a></li>
+            </ul>
+
+            <section class="top-bar-section">
+            	<ul id="headMenu">
+            	  <li class="currentLink slideUnder"><a href="#home">Home</a></li>
+                <li class="slideUnder"><a href="#about">About</a></li>
+                <li class="slideUnder"><a href="" target="_blank">Resources</a></li>
+                <li class="slideUnder"><a href="#contact">Contact</a></li>
+                <li><img src="img/scs-log-small.png" title="Shelby County Schools" alt="Shelby County Schools Greater Schools, Greater Communities"></li>
+              </ul>
+            </section>
+          </nav>
+      </header>
+
+
+
+      <!--HOME-->
+      <section id="home">
+      	<div id="homeWrap" class="row">
+          <div id="welcome" class="row">
+            <div class="large-12 small-12 columns">
+              <div class="panel">
+                <div class="row">
+                  <div class="intro">
+                    <h1>Cordova Elementary</h1>
+                    <h2>Home of the cougar cubs</h2>
+
+                    <div id="buttonsWrap" class="large-12 large-centered small-12 columns">
+                      <div class="buttons large-3 small-12 columns end" title="Cordova Elementary Staff" alt="Cordova Elementary Staff">
+                        <img src="img/clickIcon.png">
+                        <div>
+                          <h1>Staff</h1>
+                          <h2>click here</h2>
+                        </div>
+                      </div>
+                      <div class="buttons large-3 small-12 columns end" title="Cordova Elementary Adopters" alt="Cordova Elementary Adopters">
+                        <img src="img/clickIcon.png">
+                        <div>
+                          <h1>Adopters</h1>
+                          <h2>click here</h2>
+                        </div>
+                      </div>
+                      <div class="buttons large-3 small-12 columns end" title="Cordova Elementary Activities" alt="Cordova Elementary Activities">
+                        <img src="img/clickIcon.png">
+                        <div>
+                          <h1>Activities</h1>
+                          <h2>click here</h2>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div id="bckRotate"><img src="img/ce_HeroImg2.jpg" alt=""></div>
-      </div>
-    </div> -->
+
+
+      <div id="bckRotate"><img src="img/ce_HeroImg2.jpg"></div>
+    </section>
+
+    <div id="downArr" class="animated css3-notification"><a href=""><img src="img/downArr.png" border="0" title="Cordova Elementary News"></a></div>
 
     <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
+    <script src="js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
   </body>
 </html>

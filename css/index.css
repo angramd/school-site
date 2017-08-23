@@ -20,7 +20,7 @@
   transition: color .3s ease 0s;
 }
 #header1 ul li.currentLink a {
-  color: #FF033E !important;
+  color: #ecaa1e !important;
   display: inline-block;
   position: relative;
   height: 1px;
@@ -70,7 +70,7 @@
 
 .logos {
   float: left;
-  width: 150px;
+  width: 100px;
   margin: 0 0 0 3%;
 }
 
@@ -118,17 +118,9 @@ ul li.slideUnder a {
   background: #73d878;
 }
 
-#headMenu li:last-child{
-  cursor: pointer;
-}
-
-#headMenu li:last-child img{
-  cursor: pointer;
-}
-
 /**/
 span {
-  color: #FF033E;
+  color: #3396cb;
   font-size: 1em;
 }
 
@@ -151,8 +143,6 @@ h2::before, h2::after {
   position: relative;
   vertical-align: middle;
   width: 40%;
-  font-weight: 300;
-  text-transform: uppercase;
 }
 
 hr {
@@ -163,7 +153,8 @@ hr {
 }
 
 #home {
-  height: 900px;
+  height: 890px;
+  overflow: hidden;
 }
 #home #homeWrap {
   height: 100%;
@@ -172,12 +163,16 @@ hr {
   float: left;
   padding-top: 6%;
 }
-/*#home #homeWrap #welcome .columns {
+#home #homeWrap #welcome {
+  height: 100%;
+  background: url(../img/R-K.png) no-repeat 0 0/contain;
+}
+#home #homeWrap #welcome .columns {
   padding: 0 !important;
-}*/
-/*#home #homeWrap #welcome div:nth-child(1) {
+}
+#home #homeWrap #welcome div:nth-child(1) {
   float: right;
-}*/
+}
 #home #homeWrap #welcome div:nth-child(1) .panel {
   position: relative;
   width: 100%;
@@ -185,65 +180,68 @@ hr {
 }
 #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
   width: 100%;
-  font-family: 'Lora', serif;
-  font-weight: 300;
+  margin-bottom: 3%;
+  font-family: "Lato", sans-serif;
+  font-size: 10em;
+  font-weight: normal;
+  text-transform: capitalize;
+  text-align: left;
   padding: 0 !important;
-  font-size: 7em;
-  color: #FFF;
-  margin-top: 12%;
-  margin-bottom: 1%;
 }
-/*#home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 span:nth-child(1) {
-  color: #FF033E;
-}*/
+#home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 span:nth-child(1) {
+  color: #ecaa1e;
+  font-size: 1em;
+}
 #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
   font-size: 2.5em;
   font-family: "Lato", sans-serif;
-  margin-bottom: 10%;
-  color: #FFF;
+  height: 30px;
+  margin-bottom: 5%;
+  color: #666666;
   text-transform: uppercase;
   letter-spacing: 9px;
+  text-align: left;
 }
 #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2::before, #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2::after {
   border: 0;
   width: 0 !important;
   margin: 0 !important;
 }
-#buttonsWrap{
-  width: 50%;
-  padding-left: 5%;
-}
-#buttonsWrap div.buttons{
-  background: #176FC7;
-  margin-right: 5%;
-  height: 30%;
-  cursor: pointer;
-}
-#buttonsWrap div.buttons{
-  padding: 1% 3% 3%;
-}
-#buttonsWrap div.buttons:nth-child(1){
-  padding-bottom: 4%;
-}
-#buttonsWrap div.buttons:last-child{
-  margin-right: 0;
-}
-#buttonsWrap div.buttons img{
-  float: left;
-  width: 30%;
-}
-#buttonsWrap div.buttons div{
-  float: left;
-}
-#buttonsWrap div.buttons div h1{
-  font-size: 2em !important;
-  margin-bottom: 10% !important;
+#home #homeWrap #welcome div:nth-child(1) .panel .row .intro h3 {
+  font-size: 2.5em;
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  color: #666666;
+  letter-spacing: 7px;
   text-align: left;
 }
-#buttonsWrap div.buttons div h2{
-  font-size: 1em !important;
+#home #homeWrap #welcome div:nth-child(1) .panel .row .intro #paraPic {
+  width: 100%;
+}
+#home #homeWrap #welcome div:nth-child(1) .panel .row .intro #paraPic h3 {
+  font-size: 2.5em;
+  width: 100%;
+  color: #666666;
+  font-family: "Lato", sans-serif;
   text-align: left;
-  letter-spacing: 0 !important;
+  letter-spacing: 0;
+}
+#home #homeWrap #welcome div:nth-child(1) .panel .row .intro #paraPic #number {
+  color: #3396cb;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 5%;
+  text-align: left;
+}
+#home #homeWrap #welcome div:nth-child(1) .panel .row .intro #paraPic p {
+  margin: 0 auto;
+  width: 100%;
+  color: #666666;
+  font-size: 1.5em;
+}
+#home #homeWrap #welcome div:nth-child(1) .panel .row .intro #paraPic p span {
+  font-weight: bold;
+  color: #333333;
 }
 #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .downArr {
   margin: -5% auto 0;
@@ -253,6 +251,7 @@ hr {
   width: 100%;
 }
 #home #homeWrap #welcome div:nth-child(1) .panel .row .introChrome h1 {
+  font-family: "Lato", sans-serif;
   margin-bottom: 3%;
   margin-left: -10px !important;
   text-transform: capitalize;
@@ -267,6 +266,7 @@ hr {
 #home #homeWrap #welcome div:nth-child(1) .panel .row .introChrome h2 {
   font-size: 2.5em;
   height: 30px;
+  font-family: "Lato", sans-serif;
   margin-bottom: 5%;
   color: #666666;
   text-transform: uppercase;
@@ -286,26 +286,46 @@ hr {
   text-align: left;
   letter-spacing: 7px;
 }
-#downArr {
+#home #homeWrap #welcome div:nth-child(1) .panel .row .introChrome #paraPic {
+  width: 100%;
+}
+#home #homeWrap #welcome div:nth-child(1) .panel .row .introChrome #paraPic h3 {
+  font-size: 2.5em;
+  width: 100%;
+  color: #666666;
+  font-family: "Lato", sans-serif;
+  text-align: left;
+  letter-spacing: 0;
+}
+#home #homeWrap #welcome div:nth-child(1) .panel .row .introChrome #paraPic #number {
+  color: #3396cb;
+  text-align: left;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+#home #homeWrap #welcome div:nth-child(1) .panel .row .introChrome #paraPic p {
   margin: 0 auto;
-  opacity: 0;
+  width: 100%;
+  color: #666666;
+  font-size: 1.5em;
+}
+#home #homeWrap #welcome div:nth-child(1) .panel .row .introChrome #paraPic p span {
+  font-weight: bold;
+  color: #333333;
+}
+#home #homeWrap #welcome div:nth-child(1) .panel .row .introChrome .downArr {
+  margin: 10% auto 0;
   width: 40px;
-  cursor: pointer;
 }
-#downArr a img {
+#home #homeWrap #welcome div:nth-child(1) .panel .row .introChrome .downArr a img {
   width: 100%;
 }
 
-#bckRotate{
+.lineArt {
   width: 100%;
-  position: fixed;
-  z-index: -1;
-  top: 0;
-}
-
-#bckRotate img{
-  width: 100%;
-  opacity: .2;
+  text-align: center;
+  margin-bottom: 1%;
 }
 
 #benefits {
