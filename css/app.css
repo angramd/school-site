@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #000;
+}
+
+.grid-container{
+  margin: 0 auto;
+  padding: 0 !important;
+  max-width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+}
+
+header{
+  width: 100%;
+  padding: 1% 3%;
+  position: fixed;
+  z-index: 999;
+}
+
+#schLogo{
+  width: 10%;
+  clear: both;
+  float: left;
+}
+
+#schLogo img{
+  width: 60%;
+}
+
+header div{
+  height: 5%;
+}
+
+header div:nth-child(2) div ul{
+  height: 5%;
+  padding: 0;
+}
+
+header div:nth-child(2) div ul li{
+  cursor: pointer;
+  padding: 0;
+  height: 5%;
+}
+
+header div:nth-child(2) div ul li a{
+  color: #FFF;
+  cursor: pointer;
+}
+
+header div:nth-child(2) div ul li:last-child{
+  max-width: 10%;
+  max-height: 10%;
+}
+
+header div:nth-child(2) div ul li:last-child img{
+  max-height: 20%;
+}
+
+.grid-container > div:nth-child(2){
+  width: 100%;
+  text-align: center;
+  margin-top: 12%;
+  float: left;
+}
+
+h1{
+  font-family: 'Lora', serif;
+  font-weight: 300;
+}
+
+h2{
+  color: #FFF;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.grid-container div div h1{
+  font-size: 6em;
+  color: #176FC7;
+  margin-bottom: .1%;
+}
+
+.grid-container div div h1 span{
+  color: #FF033E;
+}
+
+.grid-container div div h2{
+  color: #FFF;
+  font-size: 3em;
+}
+
+#bckRotate{
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+}
+
+#bckRotate img{
+  width: 100%;
+  opacity: .2;
+}
