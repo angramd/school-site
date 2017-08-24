@@ -190,7 +190,7 @@ hr {
   padding: 0 !important;
   font-size: 7em;
   color: #FFF;
-  margin-top: 12%;
+  margin-top: 8%;
   margin-bottom: 1%;
 }
 /*#home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 span:nth-child(1) {
@@ -199,10 +199,10 @@ hr {
 #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
   font-size: 2.5em;
   font-family: "Lato", sans-serif;
-  margin-bottom: 10%;
   color: #FFF;
   text-transform: uppercase;
   letter-spacing: 9px;
+  margin-bottom: 5%;
 }
 #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2::before, #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2::after {
   border: 0;
@@ -218,29 +218,26 @@ hr {
   margin-right: 5%;
   height: 30%;
   cursor: pointer;
-}
-#buttonsWrap div.buttons{
-  padding: 1% 3% 3%;
-}
-#buttonsWrap div.buttons:nth-child(1){
-  padding-bottom: 4%;
+  padding-bottom: .3%;
+  padding-top: .3%;
 }
 #buttonsWrap div.buttons:last-child{
   margin-right: 0;
 }
 #buttonsWrap div.buttons img{
   float: left;
-  width: 30%;
+  width: 25%;
 }
 #buttonsWrap div.buttons div{
   float: left;
 }
-#buttonsWrap div.buttons div h1{
-  font-size: 2em !important;
-  margin-bottom: 10% !important;
+#buttonsWrap div.buttons div h2:nth-child(1){
+  font-size: 1.5em !important;
+  margin-bottom: 1% !important;
   text-align: left;
+  letter-spacing: 0 !important;
 }
-#buttonsWrap div.buttons div h2{
+#buttonsWrap div.buttons div h2:nth-child(2){
   font-size: 1em !important;
   text-align: left;
   letter-spacing: 0 !important;
@@ -267,7 +264,6 @@ hr {
 #home #homeWrap #welcome div:nth-child(1) .panel .row .introChrome h2 {
   font-size: 2.5em;
   height: 30px;
-  margin-bottom: 5%;
   color: #666666;
   text-transform: uppercase;
   text-align: left;
@@ -286,15 +282,6 @@ hr {
   text-align: left;
   letter-spacing: 7px;
 }
-#downArr {
-  margin: 0 auto;
-  opacity: 0;
-  width: 40px;
-  cursor: pointer;
-}
-#downArr a img {
-  width: 100%;
-}
 
 #bckRotate{
   width: 100%;
@@ -306,6 +293,52 @@ hr {
 #bckRotate img{
   width: 100%;
   opacity: .2;
+}
+
+#downArr {
+  width: 40px;
+  cursor: pointer;
+  z-index: 10;
+}
+#downArr a img {
+  width: 100%;
+}
+
+#mission{
+  text-align: center;
+  position: relative;
+  margin-top: 10%;
+}
+
+#mission h1{
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 34%;
+  width: 100%;
+  font-family: 'Lora', serif;
+  font-weight: 300;
+  font-size: 5em;
+  color: #FFF;
+  margin-bottom: 3%;
+}
+
+#mission .graphic{
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 15%;
+  margin: 1% auto 0;
+}
+
+#mission p{
+  width: 100%;
+  background: #FFF;
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding: 2% 25% .5%;
+  border-bottom: solid 5px #FF033E;
 }
 
 #benefits {

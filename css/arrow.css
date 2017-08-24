@@ -25,10 +25,10 @@
 	-webkit-transform:translateY(0%);
   }
   50% {
-  	-webkit-transform:translateY(-50%);
+  	-webkit-transform:translateY(-100%);
   }
   100% {
-  	-webkit-transform:translateY(0%);
+  	-o-transform:translateY(0);
   }
 }
 
