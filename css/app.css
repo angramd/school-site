@@ -339,6 +339,145 @@ hr {
   font-family: 'Open Sans Condensed', sans-serif;
   padding: 2% 25% .5%;
   border-bottom: solid 5px #FF033E;
+  margin-bottom: 0;
+}
+
+.icons{
+  width: 10%;
+}
+
+#news-events #article1, #news-events #article2{
+  height: 900px;
+}
+
+#news-events div.row{
+  max-width: 100% !important;
+}
+
+#news-events div.row div.columns{
+  padding: 0;
+}
+
+#news-events #article1{
+  background: #CCC;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+#headContainer{
+ margin: 0 auto;
+ padding: 2% 2%;
+}
+
+#headContainer .icons{
+ margin: 5% auto 0 12%;
+}
+
+#headContainer h1{
+ font-size: 4em;
+ float: left;
+ color: #176FC7;
+}
+
+.graphicEle{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#article1 > div:nth-child(2), #article1 > div:nth-child(3), #article1 > div:nth-child(4){
+  padding-left: 2% !important;
+  padding-top: 3% !important;
+}
+
+.newsImg{
+  width: 40%;
+}
+
+#article1 div:nth-child(2) div h3, #article1 div:nth-child(3) div h3, #article1 div:nth-child(4) div h3{
+ font-family: 'Lora', serif;
+ color: #333;
+ font-weight: bold;
+ text-align: left;
+}
+
+#article1 div:nth-child(2) div p, #article1 div:nth-child(3) div p, #article1 div:nth-child(4) div p{
+ color: #333;
+ font-size: 1.2em;
+ font-family: 'Open Sans Condensed', sans-serif;
+ width: 95%;
+ padding-right: 1.5%;
+ text-align: left;
+ margin-bottom: 1%;
+}
+
+.readmore a{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #333;
+}
+
+.eventDate{
+  background: #FFF;
+  width: 20%;
+}
+
+.eventDate h3{
+  color: #176FC7 !important;
+  text-align: center !important;
+}
+
+#news-events #article2{
+  background: #176FC7;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+#headContainer2{
+ margin: 0 auto;
+ padding: 2% 2%;
+}
+
+#headContainer2 .icons{
+ margin: 5% auto 0 12%;
+}
+
+#headContainer2 h1{
+ font-size: 4em;
+ float: left;
+ color: #FFF;
+}
+
+.graphicEle{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#article2 > div:nth-child(2), #article2 > div:nth-child(3), #article2 > div:nth-child(4){
+  padding-left: 2% !important;
+  padding-top: 3% !important;
+}
+
+.eventImg{
+  width: 40%;
+}
+
+#article2 div:nth-child(2) div h3, #article2 div:nth-child(3) div h3, #article2 div:nth-child(4) div h3{
+ font-family: 'Lora', serif;
+ color: #FFF;
+ font-weight: bold;
+ text-align: left;
+}
+
+#article2 div:nth-child(2) div p, #article2 div:nth-child(3) div p, #article2 div:nth-child(4) div p{
+ color: #FFF;
+ font-size: 1.2em;
+ font-family: 'Open Sans Condensed', sans-serif;
+ width: 95%;
+ padding-right: 1.5%;
+ text-align: left;
+ margin-bottom: 1%;
 }
 
 #benefits {
