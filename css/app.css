@@ -529,24 +529,23 @@ hr {
   padding: 0;
 }
 
-.wrapper{
+a .wrapper{
   background: #CCC;
   border: solid 2px #888;
   padding: 5% 2% 5% 8% !important;
-  cursor: pointer;
 }
 
-.wrapper .icons{
+a .wrapper .icons{
   float: left;
   padding-top: 1% !important;
   padding-bottom: 5% !important;
 }
 
-.wrapper .icons img{
+a .wrapper .icons img{
   width: 50%;
 }
 
-.wrapper div:nth-child(2) h2{
+a .wrapper div:nth-child(2) h2{
   font-family: "Lato", sans-serif;
   color: #FFF;
   text-transform: uppercase;
@@ -554,11 +553,11 @@ hr {
   margin-left: 7%;
 }
 
-.wrapper div:nth-child(2) h2:nth-child(1){
+a .wrapper div:nth-child(2) h2:nth-child(1){
   font-size: 1.2em;
 }
 
-.wrapper div:nth-child(2) h2:nth-child(2){
+a .wrapper div:nth-child(2) h2:nth-child(2){
   font-size: .8em;
 }
 
@@ -609,11 +608,11 @@ hr {
   padding-top: 3% !important;
 }
 
-#link-twit #article1 div:nth-child(2) h2{
+#link-twit #article1 div:nth-child(2) a h2{
  font-family: 'Open Sans', sans-serif;
  color: #333;
- font-size: 1.2em;
- line-height: 70px;
+ font-size: 1em;
+ margin-bottom: 3%;
 }
 
 #link-twit #article1 div:nth-child(2) div p, #link-twit #article1 div:nth-child(3) div p, #link-twit #article1 div:nth-child(4) div p{
@@ -645,28 +644,6 @@ hr {
  font-size: 4em;
  float: left;
  color: #FFF;
-}
-
-#link-twit #article2 > div:nth-child(2), #link-twit #article2 > div:nth-child(3), #link-twit #article2 > div:nth-child(4){
-  padding-left: 2% !important;
-  padding-top: 3% !important;
-}
-
-#link-twit #article2 div:nth-child(2) div h3, #link-twit #article2 div:nth-child(3) div h3, #link-twit #article2 div:nth-child(4) div h3{
- font-family: 'Lora', serif;
- color: #FFF;
- font-weight: bold;
- text-align: left;
-}
-
-#link-twit #article2 div:nth-child(2) div p, #link-twit #article2 div:nth-child(3) div p, #link-twit #article2 div:nth-child(4) div p{
- color: #FFF;
- font-size: 1.2em;
- font-family: 'Open Sans Condensed', sans-serif;
- width: 95%;
- padding-right: 1.5%;
- text-align: left;
- margin-bottom: 1%;
 }
 
 
