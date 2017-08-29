@@ -8,25 +8,43 @@
   top: 0;
   float: left;
   width: 100%;
-  padding: 1% 0;
 }
 
 #header1 {
   z-index: 998;
+  background: #176FC7;
+  border-bottom: #FF033E solid 6px;
+
   /*CSS SLIDING UNDERLINE*/
 }
+#header1 #socialNumber{
+  background: #666;
+  width: 100%;
+  padding: .5% 0 2%;
+  color: #FFF;
+  text-align: center;
+}
+#header1 #socialNumber .phone{
+  margin: 0 auto;
+  float: left;
+}
+#header1 #socialNumber #social img{
+  float: left;
+  margin: 0 auto;
+  width: 15%;
+}
 #header1 .top-bar-section ul li:hover:not(.has-form) > a {
-  color: #666666;
+  color: #176FC7;
   transition: color .3s ease 0s;
 }
 #header1 ul li.currentLink a {
-  color: #FF033E !important;
+  color: #176FC7 !important; /*176FC7*/
   display: inline-block;
   position: relative;
   height: 1px;
 }
 #header1 ul li.currentLink a:hover {
-  color: #666666 !important;
+  color: #176FC7 !important;
 }
 #header1 ul li.currentLink a:after {
   content: '';
@@ -34,8 +52,16 @@
   margin: auto;
   height: 1px;
   width: 0px;
-  background: #FFFFFF;
+  background: #176FC7;
   transition: width .5s ease, background-color .5s ease;
+}
+#header1 ul li.currentLink:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 1px;
+  width: 80%;
+  background: #176FC7;
 }
 #header1 ul li.slideUnder a {
   display: inline-block;
@@ -53,15 +79,10 @@
 }
 #header1 .slideUnder:hover:after {
   width: 80%;
-  background: #666666;
-}
-
-#header2 {
-  z-index: 997;
+  background: #176FC7;
 }
 
 .headChange {
-  opacity: 0;
   background: #666666;
   -webkit-box-shadow: 0 15px 19px 2px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0 15px 19px 2px rgba(0, 0, 0, 0.7);
@@ -71,20 +92,22 @@
 .logos {
   float: left;
   width: 150px;
-  margin: 0 0 0 3%;
+  margin: 1% 0 0 3%;
 }
 
 .top-bar {
-  width: 570px;
+  width: 1000px;
   padding-top: 1%;
+  margin-top: 1%;
 }
 
 /*CSS SLIDING UNDERLINE*/
-ul li.currentLink a {
-  color: #ecaa1e !important;
+#header2 ul li.currentLink a {
+  color: #FFF !important;
   display: inline-block;
   position: relative;
   height: 1px;
+
 }
 
 ul li.currentLink a:after {
@@ -115,7 +138,25 @@ ul li.slideUnder a {
 
 .slideUnder:hover:after {
   width: 80%;
-  background: #73d878;
+  background: #FF033E;
+}
+
+.underLine:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 1px;
+  width: 80%;
+  background: #176FC7;
+}
+
+.underLine2:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 1px;
+  width: 80%;
+  background: #FFF;
 }
 
 #headMenu li:last-child{
@@ -124,6 +165,24 @@ ul li.slideUnder a {
 
 #headMenu li:last-child img{
   cursor: pointer;
+}
+
+#header2 {
+  z-index: 997;
+}
+
+#header2 .top-bar-section ul li:hover:not(.has-form) > a {
+  color: #333;
+  transition: color .3s ease 0s;
+}
+
+#header2 ul li.currentLink a:hover {
+  color: #333 !important;
+}
+
+#header2 .slideUnder:hover:after {
+  width: 80%;
+  background: #333;
 }
 
 /**/
@@ -189,9 +248,17 @@ hr {
   font-weight: 300;
   padding: 0 !important;
   font-size: 7em;
-  color: #FFF;
+  color: #176FC7;
   margin-top: 8%;
   margin-bottom: 1%;
+}
+.graphicEle{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+#home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+  margin: 0 auto 2%;
 }
 /*#home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 span:nth-child(1) {
   color: #FF033E;
@@ -202,7 +269,7 @@ hr {
   color: #FFF;
   text-transform: uppercase;
   letter-spacing: 9px;
-  margin-bottom: 5%;
+  margin-bottom: 11%;
 }
 /*#home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2::before, #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2::after {
   border: 0;
@@ -296,18 +363,32 @@ hr {
 }
 
 #downArr {
-  width: 40px;
+	position: absolute;
+	left: 0;
+	right: 0;
+  opacity: 0;
+  width: 100px;
   cursor: pointer;
-  z-index: 10;
+  text-align: center;
 }
+
+#downArr p{
+  color: #FFF;
+  font-size: 1.5em;
+  font-family: 'Open Sans Condensed', sans-serif;
+
+  margin: 0 auto;
+}
+
 #downArr a img {
-  width: 100%;
+  width: 40%;
 }
 
 #mission{
   text-align: center;
   position: relative;
   margin-top: 10%;
+  padding-top: 11.5%;
 }
 
 #mission h1{
@@ -321,7 +402,7 @@ hr {
   font-weight: 300;
   font-size: 5em;
   color: #FFF;
-  margin-bottom: 3%;
+  margin-bottom: -.9%;
 }
 
 #mission .graphic{
@@ -347,7 +428,7 @@ hr {
 }
 
 #news-events #article1, #news-events #article2{
-  height: 900px;
+  height: 950px;
 }
 
 #news-events div.row{
@@ -377,12 +458,6 @@ hr {
  font-size: 4em;
  float: left;
  color: #176FC7;
-}
-
-.graphicEle{
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
 }
 
 #article1 > div:nth-child(2), #article1 > div:nth-child(3), #article1 > div:nth-child(4){
@@ -481,36 +556,35 @@ hr {
 }
 
 #global{
-  height: 700px;
+	height: 600px;
+	background: url(../img/Hero2.jpg) no-repeat fixed 0 0 / cover;
+	padding-top: 0;
 }
 
 #global .columns{
   padding: 0;
 }
 
-#global div{
-  position: relative;
-}
-
 #global div h1{
+  opacity: 0;
   margin: 0 auto;
-  position: absolute;
+  /*position: absolute;
   z-index: 1;
   left: 0;
   right: 0;
-  bottom: 45%;
+  bottom: 45%;*/
   color: #FFF;
   font-size: 4em;
 }
 
 #global .graphicEle{
+  opacity: 0;
   margin: 0 auto;
-  position: absolute;
+  /*position: absolute;
   z-index: 1;
   left: 0;
   right: 0;
-  bottom: 40%;
-  color: #FFF;
+  bottom: 40%;*/
 }
 
 #global .graphicEle img{
@@ -523,6 +597,10 @@ hr {
 
 #global div div img{
   width: 100%;
+}
+
+#supply{
+  height: 500px;
 }
 
 #supply .columns{
@@ -561,36 +639,40 @@ a .wrapper div:nth-child(2) h2:nth-child(2){
   font-size: .8em;
 }
 
-#link-twit #article1, #link-twit #article2{
-  height: 700px;
+#quick-twit{
+  height: 600px;
 }
 
-#link-twit div.row{
+#quick-twit #article1, #quick-twit #article2{
+  height: 600px;
+  padding-top: 6%;
+}
+
+#quick-twit div.row{
   max-width: 100% !important;
 }
 
-#link-twit div.row div.columns{
+#quick-twit div.row div.columns{
   padding: 0;
 }
 
-#link-twit #article1{
+#quick-twit #article1{
   background: #FFF;
-  padding-top: 2%;
   padding-bottom: 2%;
 }
 
-#link-twit #headContainer{
+#quick-twit #headContainer{
  margin: 0 auto;
  padding: 2% 2%;
  width: 100%;
 }
 
-#link-twit #headContainer .icons{
+#quick-twit #headContainer .icons{
  margin: 5% 0 0 17%;
  width: 8%;
 }
 
-#link-twit #headContainer h1{
+#quick-twit #headContainer h1{
  font-size: 4em;
  float: left;
  color: #176FC7;
@@ -603,19 +685,19 @@ a .wrapper div:nth-child(2) h2:nth-child(2){
   text-align: center;
 }
 
-#link-twit #article1 > div:nth-child(2), #link-twit #article1 > div:nth-child(3), #link-twit #article1 > div:nth-child(4){
+#quick-twit #article1 > div:nth-child(2), #quick-twit #article1 > div:nth-child(3), #quick-twit #article1 > div:nth-child(4){
   padding-left: 2% !important;
   padding-top: 3% !important;
 }
 
-#link-twit #article1 div:nth-child(2) a h2{
+#quick-twit #article1 div:nth-child(2) a h2{
  font-family: 'Open Sans', sans-serif;
  color: #333;
  font-size: 1em;
- margin-bottom: 3%;
+ margin-bottom: 2%;
 }
 
-#link-twit #article1 div:nth-child(2) div p, #link-twit #article1 div:nth-child(3) div p, #link-twit #article1 div:nth-child(4) div p{
+#quick-twit #article1 div:nth-child(2) div p, #quick-twit #article1 div:nth-child(3) div p, #quick-twit #article1 div:nth-child(4) div p{
  color: #333;
  font-size: 1.2em;
  font-family: 'Open Sans Condensed', sans-serif;
@@ -625,28 +707,59 @@ a .wrapper div:nth-child(2) h2:nth-child(2){
  margin-bottom: 1%;
 }
 
-#link-twit #article2{
+#quick-twit #article2{
   background: #176FC7;
-  padding-top: 2%;
   padding-bottom: 2%;
 }
 
-#link-twit #headContainer2{
+#quick-twit #headContainer2{
  margin: 0 auto;
  padding: 2% 2%;
 }
 
-#link-twit #headContainer2 .icons{
+#quick-twit #headContainer2 .icons{
  margin: 5% auto 0 4%;
 }
 
-#link-twit #headContainer2 h1{
+#quick-twit #headContainer2 h1{
  font-size: 4em;
  float: left;
  color: #FFF;
 }
+#footer{
+  height: 560px;
+	background: url(../img/map.jpg) no-repeat fixed 65% 100% / contain;
+  padding-top: 1%;
+}
+#footer #footContact{
+ margin: 0 auto;
+ padding: 2% 2%;
+ text-align: center;
+ position: absolute;
+ display: inline-block;
+ left: 0;
+ right: 0;
+ width: 20%;
+}
 
+#footer #footContact .icons{
+ margin: 5% 5% 0 auto;
+ float: left;
+ width: 17% !important;
+}
 
+#footer #footContact h1{
+ font-size: 4em;
+ margin: 0 auto;
+ color: #FFF;
+ float: left;
+}
+#footer #footContact .graphicEle{
+  width: 100%;
+  margin: 0 auto 0 5%;
+  text-align: center;
+  float: left;
+}
 
 #benefits {
   background-color: #3396cb;

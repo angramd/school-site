@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>Cordova Elementary | Cordova, TN</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/arrow.css">
@@ -15,8 +15,20 @@
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
+    <div id="socialNumber">
+
+    </div>
     <!-- HEADER 1 -->
     <header id="header1">
+        <!-- SOCIAL MEDIA AND PHONE NUMBER -->
+        <div id="socialNumber">
+          <div class="phone">(901) 416-1700</div>
+          <div id="social" class="icons">
+            <img src="img/facebook_logo_detail.gif" alt="">
+            <img src="img/ios_homescreen_icon.jpg" alt="">
+          </div>
+        </div>
+
         <!-- LOGO 1 -->
       	<div class="logos large-3 medium-3 small-3 columns"><a href="index.html"><img src="img/logo.png" title="Cordova Elementary School" alt="Cordova Elementary School" border="0"></a></div>
 
@@ -29,10 +41,13 @@
 
             <section class="top-bar-section">
             	<ul id="headMenu">
-              	<li class="currentLink slideUnder"><a href="#home">Home</a></li>
-              	<li class="slideUnder"><a href="#about">About</a></li>
-              	<li class="slideUnder"><a href="" target="_blank">Resources</a></li>
-             		<li class="slideUnder"><a href="#contact">Contact</a></li>
+              	<li class="currentLink slideUnder" title="Cordova Elementary Home" alt="Home"><a href="#home">Home</a></li>
+              	<li class="slideUnder" title="News/Events Cordova Elementary" alt="News/Events"><a href="#mission" target="_blank">News/Events</a></li>
+              	<li class="slideUnder" title="Supply List Cordova Elementary" alt="Supply List"><a href="#global" target="_blank">Supply List</a></li>
+              	<li class="slideUnder" title="Quick Links" alt="Quick Links"><a href="#quick-twit" target="_blank">Quick Links</a></li>
+              	<li class="slideUnder" title="Cordova Elementary Resources" alt="Resources"><a href="" target="_blank">Resources</a></li>
+                <li class="slideUnder" title="About Cordova Elementary" alt="About"><a href="" target="_blank">About</a></li>
+             		<li class="slideUnder" title="Contact Cordova Elementary" alt="Contact"><a href="#contact">Contact</a></li>
                 <li><img src="img/scs-log-small.png" title="Shelby County Schools" alt="Shelby County Schools"></li>
               </ul>
             </section>
@@ -53,10 +68,13 @@
 
             <section class="top-bar-section">
             	<ul id="headMenu">
-            	  <li class="currentLink slideUnder"><a href="#home">Home</a></li>
-                <li class="slideUnder"><a href="#about">About</a></li>
-                <li class="slideUnder"><a href="" target="_blank">Resources</a></li>
-                <li class="slideUnder"><a href="#contact">Contact</a></li>
+            	  <li id="linkHome" class="currentLink slideUnder" title="Cordova Elementary Home" alt="Home"><a href="#home">Home</a></li>
+                <li id="linkNews" class="slideUnder" title="News/Events Cordova Elementary" alt="News/Events"><a href="#mission" target="_blank">News/Events</a></li>
+              	<li id="linkSupply" class="slideUnder" title="Supply List Cordova Elementary" alt="Supply List"><a href="#global" target="_blank">Supply List</a></li>
+                <li id="linkQuick" class="slideUnder" title="Quick Links" alt="Quick Links"><a href="#quick-twit" target="_blank">Quick Links</a></li>
+                <li class="slideUnder" title="Cordova Elementary Resources" alt="Resources"><a href="" target="_blank">Resources</a></li>
+                <li class="slideUnder" title="About Cordova Elementary" alt="About"><a href="">About</a></li>
+                <li id="linkContact" class="slideUnder" title="Contact Cordova Elementary" alt="Contact"><a href="#contact">Contact</a></li>
                 <li><img src="img/scs-log-small.png" title="Shelby County Schools" alt="Shelby County Schools Greater Schools, Greater Communities"></li>
               </ul>
             </section>
@@ -74,6 +92,9 @@
                 <div class="row">
                   <div class="intro">
                     <h1>Cordova Elementary</h1>
+                    <div class="graphicEle large-12 columns">
+                      <img src="img/whiteGraphic.png" border="0">
+                    </div>
                     <h2>Home of the cougar cubs</h2>
 
                     <div id="buttonsWrap" class="large-12 large-centered small-12 columns">
@@ -112,8 +133,15 @@
     <!-- END HOME -->
 
 
+
     <!-- DOWN ARROW -->
-    <div id="downArr" class="animated css3-notification"><a href=""><img src="img/downArr.png" border="0" title="Cordova Elementary News"></a></div>
+    <div id="downArr" title="Cordova Elementary Mission/News/Events">
+      <a href="#mission">
+        <p>News/Events</p>
+        <img src="img/downArr.png" border="0">
+      </a>
+    </div>
+
 
 
   <!-- MISSION STATEMENT -->
@@ -124,6 +152,7 @@
       </div>
       <p>The mission of Cordova Elementary School is to provide a safe and challenging environment that is committed to helping all of our students successfully achieve their maximum potential.</p>
     </section>
+
 
 
     <!-- NEWS/EVENTS-->
@@ -300,7 +329,6 @@
         <div class="graphicEle">
           <img src="img/whiteGraphic.png" border="0">
         </div>
-        <div><img src="img/Hero2.jpg" alt="DEVELOPING GLOBAL LEADERS AND LEARNERS"></div>
       </div>
     </section>
 
@@ -336,36 +364,36 @@
                 <h2>Click Here</h2>
               </div>
             </div>
-          </div>
-        </a>
-        <a href="#" title="3rd Grade Supply List" alt="3rd Grade Supply List">
-          <div class="large-12 columns">
-            <div class="wrapper large-4 small-12 columns">
-              <div class="icons"><img src="img/clipboardIcon.png"></div>
-              <div>
-                <h2>3rd Grade Supply List</h2>
-                <h2>Click Here</h2>
-              </div>
-            </div>
           </a>
-          <a href="#" title="4th Grade Supply List" alt="4th Grade Supply List">
-            <div class="wrapper large-4 small-12 columns">
-              <div class="icons"><img src="img/clipboardIcon.png"></div>
-              <div>
-                <h2>4th Grade Supply List</h2>
-                <h2>Click Here</h2>
+        </div>
+        <div class="large-12 columns">
+          <a href="#" title="3rd Grade Supply List" alt="3rd Grade Supply List">
+              <div class="wrapper large-4 small-12 columns">
+                <div class="icons"><img src="img/clipboardIcon.png"></div>
+                <div>
+                  <h2>3rd Grade Supply List</h2>
+                  <h2>Click Here</h2>
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="#" title="5th Grade Supply List" alt="5th Grade Supply List">
-            <div class="wrapper large-4 small-12 columns">
-              <div class="icons"><img src="img/clipboardIcon.png"></div>
-              <div>
-                <h2>5th Grade Supply List</h2>
-                <h2>Click Here</h2>
+            </a>
+            <a href="#" title="4th Grade Supply List" alt="4th Grade Supply List">
+              <div class="wrapper large-4 small-12 columns">
+                <div class="icons"><img src="img/clipboardIcon.png"></div>
+                <div>
+                  <h2>4th Grade Supply List</h2>
+                  <h2>Click Here</h2>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+            <a href="#" title="5th Grade Supply List" alt="5th Grade Supply List">
+              <div class="wrapper large-4 small-12 columns">
+                <div class="icons"><img src="img/clipboardIcon.png"></div>
+                <div>
+                  <h2>5th Grade Supply List</h2>
+                  <h2>Click Here</h2>
+                </div>
+              </div>
+            </a>
         </div>
       </div>
     </section>
@@ -374,7 +402,7 @@
 
 
     <!-- QUICK LINKS/TWITTER -->
-    <section id="link-twit">
+    <section id="quick-twit">
       <div class="row">
         <div class="large-12 small-12 columns">
 
@@ -407,9 +435,32 @@
           </div>
           <div class="large-12 small-12 columns">
 
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <!-- END QUICK LINKS/TWITTER -->
+
+
+
+    <footer id="footer">
+      <div id="footContact" class="large-12 columns">
+        <div class="icons"><img src="img/contactIcon.png" alt="Events Icon"></div>
+        <h1 class="">Contact</h1>
+        <div class="graphicEle">
+          <img src="img/whiteGraphic.png" border="0">
+        </div>
+      </div>
+      <div id="footAddress" class="large-12 columns">
+        <div class="large-6 columns">
+
+        </div>
+        <div class="large-6 columns">
+
+        </div>
+      </div>
+    </footer>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>

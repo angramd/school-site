@@ -1830,7 +1830,7 @@ meta.foundation-mq-topbar {
       color: #FFF;
       padding: 12px 0 12px 0;
       padding-left: 0.9375rem;
-      font-size: 1em;
+      font-size: .9em;
       font-weight: bold;
       cursor: pointer;
 	  text-transform:uppercase;}
