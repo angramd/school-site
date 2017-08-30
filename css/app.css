@@ -14,37 +14,46 @@
   z-index: 998;
   background: #176FC7;
   border-bottom: #FF033E solid 6px;
-
-  /*CSS SLIDING UNDERLINE*/
+  -webkit-box-shadow: 0 15px 19px 2px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 15px 19px 2px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 5px 7px 2px rgba(0, 0, 0, 0.3);
 }
 #header1 #socialNumber{
-  background: #666;
-  width: 100%;
-  padding: .5% 0 2%;
+  background: #222;
+  padding: .3% 0 1.5%;
   color: #FFF;
-  text-align: center;
 }
-#header1 #socialNumber .phone{
-  margin: 0 auto;
-  float: left;
+#header1 #socialNumber #socialWrap{
+  float: right;
+  margin-right: 0;
+  width: 16%;
 }
-#header1 #socialNumber #social img{
+#header1 #socialNumber #socialWrap .phone{
   float: left;
-  margin: 0 auto;
-  width: 15%;
+  margin-right: 5%;
+}
+#header1 #socialNumber #socialWrap #social.icons{
+  float: left;
+  width: 50%;
+}
+#header1 #socialNumber #socialWrap #social.icons img{
+  width: 10%;
+}
+#header1 #socialNumber #socialWrap #social.icons img:nth-child(1){
+  margin-right: 5%;
 }
 #header1 .top-bar-section ul li:hover:not(.has-form) > a {
-  color: #176FC7;
+  color: #FFF;
   transition: color .3s ease 0s;
 }
 #header1 ul li.currentLink a {
-  color: #176FC7 !important; /*176FC7*/
+  color: #FFF !important; /*176FC7*/
   display: inline-block;
   position: relative;
   height: 1px;
 }
 #header1 ul li.currentLink a:hover {
-  color: #176FC7 !important;
+  color: #FFF !important;
 }
 #header1 ul li.currentLink a:after {
   content: '';
@@ -52,7 +61,7 @@
   margin: auto;
   height: 1px;
   width: 0px;
-  background: #176FC7;
+  background: #FF033E;
   transition: width .5s ease, background-color .5s ease;
 }
 #header1 ul li.currentLink:after {
@@ -61,7 +70,7 @@
   margin: auto;
   height: 1px;
   width: 80%;
-  background: #176FC7;
+  background: #FF033E;
 }
 #header1 ul li.slideUnder a {
   display: inline-block;
@@ -79,7 +88,7 @@
 }
 #header1 .slideUnder:hover:after {
   width: 80%;
-  background: #176FC7;
+  background: #FF033E;
 }
 
 .headChange {
@@ -91,12 +100,13 @@
 
 .logos {
   float: left;
-  width: 150px;
-  margin: 1% 0 0 3%;
+  width: 120px;
+  margin-left: 3%;
+  padding: .5% 0;
 }
 
 .top-bar {
-  width: 1000px;
+  width: 910px;
   padding-top: 1%;
   margin-top: 1%;
 }
@@ -161,10 +171,13 @@ ul li.slideUnder a {
 
 #headMenu li:last-child{
   cursor: pointer;
+  width: 10%;
+  margin-top: -2%;
 }
 
 #headMenu li:last-child img{
   cursor: pointer;
+  width: 70%;
 }
 
 #header2 {
@@ -276,7 +289,7 @@ hr {
   width: 0 !important;
   margin: 0 !important;
 }*/
-#buttonsWrap{
+/*#buttonsWrap{
   width: 50%;
   padding-left: 5%;
 }
@@ -308,7 +321,7 @@ hr {
   font-size: 1em !important;
   text-align: left;
   letter-spacing: 0 !important;
-}
+}*/
 #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .downArr {
   margin: -5% auto 0;
   width: 40px;
@@ -367,7 +380,7 @@ hr {
 	left: 0;
 	right: 0;
   opacity: 0;
-  width: 100px;
+  width: 300px;
   cursor: pointer;
   text-align: center;
 }
@@ -376,33 +389,33 @@ hr {
   color: #FFF;
   font-size: 1.5em;
   font-family: 'Open Sans Condensed', sans-serif;
-
   margin: 0 auto;
 }
 
 #downArr a img {
-  width: 40%;
+  width: 15%;
 }
 
 #mission{
   text-align: center;
   position: relative;
   margin-top: 10%;
-  padding-top: 11.5%;
+  padding-top: 9%;
+  background: #FFF;
+  height: 510px;
+  border-bottom: solid 5px #FF033E;
+}
+
+#mission .icons{
+  margin-left: 14%;
+  padding-top: 2%;
 }
 
 #mission h1{
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  right: 0;
-  bottom: 34%;
-  width: 100%;
   font-family: 'Lora', serif;
   font-weight: 300;
-  font-size: 5em;
-  color: #FFF;
-  margin-bottom: -.9%;
+  font-size: 4em;
+  color: #176FC7;
 }
 
 #mission .graphic{
@@ -411,20 +424,28 @@ hr {
   right: 0;
   z-index: 1;
   width: 15%;
-  margin: 1% auto 0;
+  margin: 0 auto;
 }
 
-#mission p{
-  width: 100%;
-  background: #FFF;
-  font-family: 'Open Sans Condensed', sans-serif;
-  padding: 2% 25% .5%;
-  border-bottom: solid 5px #FF033E;
+#mission div:nth-child(2){
   margin-bottom: 0;
+  margin: 0 auto;
+}
+
+#mission div:nth-child(2) div a h2{
+  font-family: 'Open Sans Condensed', sans-serif !important;
+  font-size: 1.5em !important;
+  color: #333;
 }
 
 .icons{
   width: 10%;
+}
+
+.graphicEle{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 #news-events #article1, #news-events #article2{
@@ -446,18 +467,23 @@ hr {
 }
 
 #headContainer{
- margin: 0 auto;
- padding: 2% 2%;
+ margin-left: 18%;
+ padding: 2% 2% 2% 0;
 }
 
 #headContainer .icons{
- margin: 5% auto 0 12%;
+ margin: 5% auto 0 0;
 }
 
 #headContainer h1{
  font-size: 4em;
  float: left;
  color: #176FC7;
+}
+
+#headContainer .graphicEle, #headContainer2 .graphicEle{
+  width: 100%;
+  text-align: center;
 }
 
 #article1 > div:nth-child(2), #article1 > div:nth-child(3), #article1 > div:nth-child(4){
@@ -521,12 +547,6 @@ hr {
  font-size: 4em;
  float: left;
  color: #FFF;
-}
-
-.graphicEle{
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
 }
 
 #article2 > div:nth-child(2), #article2 > div:nth-child(3), #article2 > div:nth-child(4){
@@ -639,40 +659,39 @@ a .wrapper div:nth-child(2) h2:nth-child(2){
   font-size: .8em;
 }
 
-#quick-twit{
+#resource-twit{
   height: 600px;
 }
 
-#quick-twit #article1, #quick-twit #article2{
+#resource-twit #article1, #resource-twit #article2{
   height: 600px;
-  padding-top: 6%;
 }
 
-#quick-twit div.row{
+#resource-twit div.row{
   max-width: 100% !important;
 }
 
-#quick-twit div.row div.columns{
+#resource-twit div.row div.columns{
   padding: 0;
 }
 
-#quick-twit #article1{
+#resource-twit #article1{
   background: #FFF;
   padding-bottom: 2%;
 }
 
-#quick-twit #headContainer{
+#resource-twit #headContainer{
  margin: 0 auto;
  padding: 2% 2%;
  width: 100%;
 }
 
-#quick-twit #headContainer .icons{
+#resource-twit #headContainer .icons{
  margin: 5% 0 0 17%;
  width: 8%;
 }
 
-#quick-twit #headContainer h1{
+#resource-twit #headContainer h1{
  font-size: 4em;
  float: left;
  color: #176FC7;
@@ -685,19 +704,19 @@ a .wrapper div:nth-child(2) h2:nth-child(2){
   text-align: center;
 }
 
-#quick-twit #article1 > div:nth-child(2), #quick-twit #article1 > div:nth-child(3), #quick-twit #article1 > div:nth-child(4){
+#resource-twit #article1 > div:nth-child(2), #resource-twit #article1 > div:nth-child(3), #resource-twit #article1 > div:nth-child(4){
   padding-left: 2% !important;
   padding-top: 3% !important;
 }
 
-#quick-twit #article1 div:nth-child(2) a h2{
+#resource-twit #article1 div:nth-child(2) a h2{
  font-family: 'Open Sans', sans-serif;
  color: #333;
  font-size: 1em;
  margin-bottom: 2%;
 }
 
-#quick-twit #article1 div:nth-child(2) div p, #quick-twit #article1 div:nth-child(3) div p, #quick-twit #article1 div:nth-child(4) div p{
+#resource-twit #article1 div:nth-child(2) div p, #resource-twit #article1 div:nth-child(3) div p, #resource-twit #article1 div:nth-child(4) div p{
  color: #333;
  font-size: 1.2em;
  font-family: 'Open Sans Condensed', sans-serif;
@@ -707,21 +726,21 @@ a .wrapper div:nth-child(2) h2:nth-child(2){
  margin-bottom: 1%;
 }
 
-#quick-twit #article2{
+#resource-twit #article2{
   background: #176FC7;
   padding-bottom: 2%;
 }
 
-#quick-twit #headContainer2{
+#resource-twit #headContainer2{
  margin: 0 auto;
  padding: 2% 2%;
 }
 
-#quick-twit #headContainer2 .icons{
+#resource-twit #headContainer2 .icons{
  margin: 5% auto 0 4%;
 }
 
-#quick-twit #headContainer2 h1{
+#resource-twit #headContainer2 h1{
  font-size: 4em;
  float: left;
  color: #FFF;

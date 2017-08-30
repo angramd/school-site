@@ -3,12 +3,12 @@ $(document).ready(function(){
   var mission = $("#mission");
   var newsEvents = $("#news-events");
   var supply = $("#supply");
-  var quick_twit = $("#quick-twit");
+  var resource_twit = $("#resource-twit");
   var contact = $("#contact");
   var linkHome = $("#linkHome");
   var linkNews = $("#linkNews");
   var linkSupply = $("#linkSupply");
-  var linkQuick = $("#linkQuick");
+  var linkResources = $("#linkResources");
   var linkContact = $("#linkContact");
   var downArr = $("#downArr");
   var globalSec = $("#global");
@@ -48,43 +48,43 @@ $(document).ready(function(){
 		if(homePage.offset().top < $(window).scrollTop() + $(window).outerHeight())
 		{
 			linkHome.addClass('currentLink underLine');
-      linkNews.removeClass('currentLink underLine2');
+      linkNews.removeClass('currentLink underLine');
       linkSupply.removeClass('currentLink');
-      linkQuick.removeClass("currentLink underLine2");
-			linkContact.removeClass('currentLink');
+      linkResources.removeClass("currentLink underLine");
+			linkContact.removeClass('currentLink underLine');
 		}
 
     if(mission.offset().top < $(window).scrollTop() + $(window).outerHeight())
 		{
-      linkNews.addClass('currentLink underLine2');
+      linkNews.addClass('currentLink underLine');
 			linkHome.removeClass('currentLink underLine');
-      linkSupply.removeClass('currentLink underLine2');
-      linkQuick.removeClass("currentLink underLine2");
-			linkContact.removeClass('currentLink');
+      linkSupply.removeClass('currentLink underLine');
+      linkResources.removeClass("currentLink underLine");
+			linkContact.removeClass('currentLink underLine');
 		}
 
-    if(supply.offset().top < $(window).scrollTop() + $(window).outerHeight())
+    // if(supply.offset().top < $(window).scrollTop() + $(window).outerHeight())
+		// {
+    //   linkSupply.addClass("currentLink underLine");
+		// 	linkHome.removeClass("currentLink underLine");
+    //   linkNews.removeClass('currentLink underLine');
+    //   globalSec.stop().animate({"padding-top": "13%"}, 1500);
+    //   globalHead.stop().animate({"opacity": "1"}, 3000);
+    //   globalGraphic.stop().animate({"opacity": "1"}, 3000);
+    //   linkResources.removeClass("currentLink underLine");
+		// 	linkContact.removeClass('currentLink underLine');
+		// }
+
+    if(globalSec.offset().top < $(window).scrollTop() + $(window).outerHeight())
 		{
-      linkSupply.addClass("currentLink underLine2");
+      linkResources.addClass("currentLink underLine");
 			linkHome.removeClass("currentLink underLine");
-      linkNews.removeClass('currentLink underLine2');
+      linkNews.removeClass('currentLink underLine');
       globalSec.stop().animate({"padding-top": "13%"}, 1500);
       globalHead.stop().animate({"opacity": "1"}, 3000);
       globalGraphic.stop().animate({"opacity": "1"}, 3000);
-      linkQuick.removeClass("currentLink underLine2");
-			linkContact.removeClass('currentLink');
-		}
-
-    if(quick_twit.offset().top < $(window).scrollTop() + $(window).outerHeight())
-		{
-      linkQuick.addClass("currentLink underLine2");
-			linkHome.removeClass("currentLink underLine");
-      linkNews.removeClass('currentLink underLine2');
-      globalSec.stop().animate({"padding-top": "13%"}, 1500);
-      globalHead.stop().animate({"opacity": "1"}, 3000);
-      globalGraphic.stop().animate({"opacity": "1"}, 3000);
-      linkSupply.removeClass("currentLink underLine2");
-			linkContact.removeClass('currentLink');
+      linkSupply.removeClass("currentLink underLine");
+			linkContact.removeClass('currentLink underLine');
 		}
 
 
@@ -104,48 +104,48 @@ $(document).ready(function(){
 	{
 		linkHome.addClass("currentLink underLine");
 		linkHome.removeClass("slideUnder");
-    linkNews.removeClass("currentLink underLine2");
-    linkSupply.removeClass('currentLink underLine2');
-    linkQuick.removeClass("currentLink underLine2");
-		linkContact.removeClass("currentLink");
+    linkNews.removeClass("currentLink underLine");
+    linkSupply.removeClass('currentLink underLine');
+    linkResources.removeClass("currentLink underLine");
+		linkContact.removeClass("currentLink underLine");
 		downArr.stop().fadeIn({"opacity": "1"}, 1000);
 	});
 
   downArr.click(function()
 	{
-    $("#header2").stop().animate({"opacity": "1", "z-index": "1000"}, 100);
-    $("#header1").stop().fadeOut(400);
+    // $("#header2").stop().animate({"opacity": "1", "z-index": "1000"}, 100);
+    // $("#header1").stop().fadeOut(400);
     linkNews.addClass('currentLink underLine');
 		linkNews.removeClass("slideUnder");
 		linkHome.removeClass("currentLink underLine");
-    linkSupply.removeClass('currentLink underLine2');
-    linkQuick.removeClass("currentLink underLine2");
-    linkContact.remooveClass("currentLink");
+    linkSupply.removeClass('currentLink underLine');
+    linkResources.removeClass("currentLink underLine");
+    linkContact.remooveClass("currentLink underLine");
 	});
 
 	linkSupply.click(function()
 	{
-    $("#header2").stop().animate({"opacity": "1", "z-index": "1000"}, 100);
-    $("#header1").stop().fadeOut(400);
-		linkSupply.addClass("currentLink underLine2");
+    // $("#header2").stop().animate({"opacity": "1", "z-index": "1000"}, 100);
+    // $("#header1").stop().fadeOut(400);
+		linkSupply.addClass("currentLink underLine");
 		linkSupply.removeClass("slideUnder");
 		linkHome.removeClass("currentLink underLine");
-    linkNews.removeClass('currentLink underLine2');
-    linkQuick.removeClass("currentLink underLine2");
-    linkContact.removeClass('currentLink');
+    linkNews.removeClass('currentLink underLine');
+    linkResources.removeClass("currentLink underLine");
+    linkContact.removeClass('currentLink underLine');
 		downArr.stop().fadeOut({"opacity": "0"}, 1000);
 	});
 
-	linkQuick.click(function()
+	linkResources.click(function()
 	{
-    $("#header2").stop().animate({"opacity": "1", "z-index": "1000"}, 100);
-    $("#header1").stop().fadeOut(400);
-		linkQuick.addClass("currentLink underLine2");
-		linkQuick.removeClass("slideUnder");
+    // $("#header2").stop().animate({"opacity": "1", "z-index": "1000"}, 100);
+    // $("#header1").stop().fadeOut(400);
+		linkResources.addClass("currentLink underLine");
+		linkResources.removeClass("slideUnder");
 		linkHome.removeClass("currentLink underLine");
-    linkNews.removeClass('currentLink underLine2');
-    linkSupply.removeClass("currentLink underLine2");
-    linkContact.removeClass('currentLink');
+    linkNews.removeClass('currentLink underLine');
+    linkSupply.removeClass("currentLink underLine");
+    linkContact.removeClass('currentLink underLine');
 		downArr.stop().fadeOut({"opacity": "0"}, 1000);
 	});
 
@@ -164,28 +164,24 @@ $(document).ready(function(){
 
 
 	/*STICKY NAV*/
-	var navOffset = $("nav").offset().top;
-
-	$(window).scroll(function()
-	{
-		var scrollPos = $(window).scrollTop();
-
-		if(scrollPos >= navOffset)
-		{
-      // $("#home").stop().animate({"opacity": "0"}, 400);
-      // downArr.stop().fadeOut({"opacity": "0"}, 400);
-			$("#header2").stop().animate({"opacity": "1", "z-index": "1000"}, 100);
-			$("#header1").stop().fadeOut(400);
-		}
-
-		else
-		{
-      // $("#home").stop().animate({"opacity": "1"}, 100);
-      // downArr.stop().fadeIn({"opacity": "1"}, 100);
-			$("#header2").stop().animate({"opacity": "0", "z-index": "997"}, 300);
-			$("#header1").stop().fadeIn(100);
-		}
-	});
+	// var navOffset = $("nav").offset().top;
+  //
+	// $(window).scroll(function()
+	// {
+	// 	var scrollPos = $(window).scrollTop();
+  //
+	// 	if(scrollPos >= navOffset)
+	// 	{
+	// 		$("#header2").stop().animate({"opacity": "1", "z-index": "1000"}, 100);
+	// 		$("#header1").stop().fadeOut(400);
+	// 	}
+  //
+	// 	else
+	// 	{
+  //     $("#header2").stop().animate({"opacity": "0", "z-index": "997"}, 300);
+	// 		$("#header1").stop().fadeIn(100);
+	// 	}
+	// });
 	/**/
 
 
