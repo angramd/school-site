@@ -1,13 +1,11 @@
 $(document).ready(function(){
   var homePage = $("#home");
-  var mission = $("#mission");
+  var quickLink = $("#quickLink");
   var newsEvents = $("#news-events");
-  var supply = $("#supply");
   var resource_twit = $("#resource-twit");
-  var contact = $("#contact");
+  var footer = $("#footer");
   var linkHome = $("#linkHome");
   var linkNews = $("#linkNews");
-  var linkSupply = $("#linkSupply");
   var linkResources = $("#linkResources");
   var linkContact = $("#linkContact");
   var downArr = $("#downArr");
@@ -49,16 +47,14 @@ $(document).ready(function(){
 		{
 			linkHome.addClass('currentLink underLine');
       linkNews.removeClass('currentLink underLine');
-      linkSupply.removeClass('currentLink');
       linkResources.removeClass("currentLink underLine");
 			linkContact.removeClass('currentLink underLine');
 		}
 
-    if(mission.offset().top < $(window).scrollTop() + $(window).outerHeight())
+    if(quickLink.offset().top < $(window).scrollTop() + $(window).outerHeight())
 		{
       linkNews.addClass('currentLink underLine');
 			linkHome.removeClass('currentLink underLine');
-      linkSupply.removeClass('currentLink underLine');
       linkResources.removeClass("currentLink underLine");
 			linkContact.removeClass('currentLink underLine');
 		}
@@ -83,17 +79,16 @@ $(document).ready(function(){
       globalSec.stop().animate({"padding-top": "13%"}, 1500);
       globalHead.stop().animate({"opacity": "1"}, 3000);
       globalGraphic.stop().animate({"opacity": "1"}, 3000);
-      linkSupply.removeClass("currentLink underLine");
 			linkContact.removeClass('currentLink underLine');
 		}
 
-
-
-		// if(contact.offset().top < $(window).scrollTop() + $(window).outerHeight())
-		// {
-		// 	linkContact.addClass('currentLink');
-    //   linkHome.removeClass('currentLink');
-		// }
+		if(footer.offset().top < $(window).scrollTop() + $(window).outerHeight())
+		{
+			linkContact.addClass('currentLink');
+      linkHome.removeClass('currentLink');
+      linkNews.removeClass('currentLink underLine');
+      linkResources.removeClass("currentLink underLine");
+		}
 	});
 	/**/
 
@@ -105,7 +100,6 @@ $(document).ready(function(){
 		linkHome.addClass("currentLink underLine");
 		linkHome.removeClass("slideUnder");
     linkNews.removeClass("currentLink underLine");
-    linkSupply.removeClass('currentLink underLine');
     linkResources.removeClass("currentLink underLine");
 		linkContact.removeClass("currentLink underLine");
 		downArr.stop().fadeIn({"opacity": "1"}, 1000);
@@ -118,22 +112,8 @@ $(document).ready(function(){
     linkNews.addClass('currentLink underLine');
 		linkNews.removeClass("slideUnder");
 		linkHome.removeClass("currentLink underLine");
-    linkSupply.removeClass('currentLink underLine');
     linkResources.removeClass("currentLink underLine");
     linkContact.remooveClass("currentLink underLine");
-	});
-
-	linkSupply.click(function()
-	{
-    // $("#header2").stop().animate({"opacity": "1", "z-index": "1000"}, 100);
-    // $("#header1").stop().fadeOut(400);
-		linkSupply.addClass("currentLink underLine");
-		linkSupply.removeClass("slideUnder");
-		linkHome.removeClass("currentLink underLine");
-    linkNews.removeClass('currentLink underLine');
-    linkResources.removeClass("currentLink underLine");
-    linkContact.removeClass('currentLink underLine');
-		downArr.stop().fadeOut({"opacity": "0"}, 1000);
 	});
 
 	linkResources.click(function()
@@ -144,22 +124,19 @@ $(document).ready(function(){
 		linkResources.removeClass("slideUnder");
 		linkHome.removeClass("currentLink underLine");
     linkNews.removeClass('currentLink underLine');
-    linkSupply.removeClass("currentLink underLine");
     linkContact.removeClass('currentLink underLine');
 		downArr.stop().fadeOut({"opacity": "0"}, 1000);
 	});
 
-	// linkContact.click(function()
-	// {
-  //   $("#header2").stop().animate({"opacity": "1", "z-index": "1000"}, 100);
-  //   $("#header1").stop().fadeOut(400);
-	// 	linkContact.addClass("currentLink");
-	// 	linkContact.removeClass("slideUnder");
-	// 	linkHome.removeClass("currentLink");
-  //   linkNews.removeClass('currentLink');
-  //   linkSupply.removeClass('currentLink');
-	// 	downArr.stop().fadeOut({"opacity": "0"}, 1000);
-	// });
+	linkContact.click(function()
+	{
+    linkContact.addClass("currentLink");
+		linkContact.removeClass("slideUnder");
+		linkHome.removeClass("currentLink");
+    linkNews.removeClass('currentLink');
+    linkResources.removeClass('currentLink');
+		downArr.stop().fadeOut({"opacity": "0"}, 1000);
+	});
 
 
 
