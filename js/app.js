@@ -1,10 +1,12 @@
 $(document).ready(function(){
   var homePage = $("#home");
+  var mission = $("#mission");
   var quickLink = $("#quickLink");
   var newsEvents = $("#news-events");
   var resource_twit = $("#resource-twit");
   var footer = $("#footer");
   var linkHome = $("#linkHome");
+  var linkQuick = $("#linkQuick");
   var linkNews = $("#linkNews");
   var linkResources = $("#linkResources");
   var linkContact = $("#linkContact");
@@ -46,36 +48,36 @@ $(document).ready(function(){
 		if(homePage.offset().top < $(window).scrollTop() + $(window).outerHeight())
 		{
 			linkHome.addClass('currentLink underLine');
+      linkQuick.removeClass('currentLink underLine');
       linkNews.removeClass('currentLink underLine');
       linkResources.removeClass("currentLink underLine");
 			linkContact.removeClass('currentLink underLine');
 		}
 
-    if(quickLink.offset().top < $(window).scrollTop() + $(window).outerHeight())
+    if(mission.offset().top < $(window).scrollTop() + $(window).outerHeight())
 		{
-      linkNews.addClass('currentLink underLine');
+      linkQuick.addClass('currentLink underLine');
 			linkHome.removeClass('currentLink underLine');
+      linkNews.removeClass('currentLink underLine');
       linkResources.removeClass("currentLink underLine");
 			linkContact.removeClass('currentLink underLine');
 		}
 
-    // if(supply.offset().top < $(window).scrollTop() + $(window).outerHeight())
-		// {
-    //   linkSupply.addClass("currentLink underLine");
-		// 	linkHome.removeClass("currentLink underLine");
-    //   linkNews.removeClass('currentLink underLine');
-    //   globalSec.stop().animate({"padding-top": "13%"}, 1500);
-    //   globalHead.stop().animate({"opacity": "1"}, 3000);
-    //   globalGraphic.stop().animate({"opacity": "1"}, 3000);
-    //   linkResources.removeClass("currentLink underLine");
-		// 	linkContact.removeClass('currentLink underLine');
-		// }
+    if(newsEvents.offset().top < $(window).scrollTop() + $(window).outerHeight())
+		{
+      linkNews.addClass('currentLink underLine');
+			linkHome.removeClass('currentLink underLine');
+      linkQuick.removeClass('currentLink underLine');
+      linkResources.removeClass("currentLink underLine");
+			linkContact.removeClass('currentLink underLine');
+		}
 
     if(globalSec.offset().top < $(window).scrollTop() + $(window).outerHeight())
 		{
       linkResources.addClass("currentLink underLine");
 			linkHome.removeClass("currentLink underLine");
       linkNews.removeClass('currentLink underLine');
+      linkQuick.removeClass('currentLink underLine');
       globalSec.stop().animate({"padding-top": "13%"}, 1500);
       globalHead.stop().animate({"opacity": "1"}, 3000);
       globalGraphic.stop().animate({"opacity": "1"}, 3000);
@@ -86,6 +88,7 @@ $(document).ready(function(){
 		{
 			linkContact.addClass('currentLink');
       linkHome.removeClass('currentLink');
+      linkQuick.removeClass('currentLink underLine');
       linkNews.removeClass('currentLink underLine');
       linkResources.removeClass("currentLink underLine");
 		}
@@ -99,6 +102,7 @@ $(document).ready(function(){
 	{
 		linkHome.addClass("currentLink underLine");
 		linkHome.removeClass("slideUnder");
+    linkQuick.removeClass('currentLink underLine');
     linkNews.removeClass("currentLink underLine");
     linkResources.removeClass("currentLink underLine");
 		linkContact.removeClass("currentLink underLine");
@@ -109,9 +113,10 @@ $(document).ready(function(){
 	{
     // $("#header2").stop().animate({"opacity": "1", "z-index": "1000"}, 100);
     // $("#header1").stop().fadeOut(400);
-    linkNews.addClass('currentLink underLine');
-		linkNews.removeClass("slideUnder");
+    linkQuick.addClass('currentLink underLine');
+		linkQuick.removeClass("slideUnder");
 		linkHome.removeClass("currentLink underLine");
+    linkNews.removeClass('currentLink underLine');
     linkResources.removeClass("currentLink underLine");
     linkContact.remooveClass("currentLink underLine");
 	});
@@ -123,6 +128,7 @@ $(document).ready(function(){
 		linkResources.addClass("currentLink underLine");
 		linkResources.removeClass("slideUnder");
 		linkHome.removeClass("currentLink underLine");
+    linkQuick.removeClass('currentLink underLine');
     linkNews.removeClass('currentLink underLine');
     linkContact.removeClass('currentLink underLine');
 		downArr.stop().fadeOut({"opacity": "0"}, 1000);
@@ -133,6 +139,7 @@ $(document).ready(function(){
     linkContact.addClass("currentLink");
 		linkContact.removeClass("slideUnder");
 		linkHome.removeClass("currentLink");
+    linkQuick.removeClass('currentLink underLine');
     linkNews.removeClass('currentLink');
     linkResources.removeClass('currentLink');
 		downArr.stop().fadeOut({"opacity": "0"}, 1000);
