@@ -1,0 +1,28 @@
+{
+  "name": "school-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/app.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angramd/school-site.git"
+  },
+  "author": "Douglas T. Angram",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angramd/school-site/issues"
+  },
+  "homepage": "https://github.com/angramd/school-site#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cli": "^1.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-plumber": "^1.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11"
+  }
+}
