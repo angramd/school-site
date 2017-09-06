@@ -57,7 +57,7 @@
 
 
 /*HEADER*/
-#header1, #header2 {
+#header1 {
   position: fixed;
   top: 0;
   float: left;
@@ -75,7 +75,7 @@
 
 #header1 #socialNumber{
   background: #222;
-  padding: .3% 0 1.5%;
+  padding: .5% 0 1.7%;
   color: #FFF;
   border-bottom: #FF033E solid 1px;
 }
@@ -539,10 +539,22 @@ ul li.slideUnder a {
 	height: 600px;
 	background: url(../img/Hero2.jpg) no-repeat fixed 0 0 / cover;
 	padding-top: 0;
+  position: relative;
 }
 
 #global .columns{
   padding: 0;
+}
+
+#global .icons{
+  position: absolute;
+  margin-left: 31%;
+  margin-top: .5%;
+  width: 11%;
+}
+
+#global .icons img{
+  width: 30%;
 }
 
 #global div h1{
@@ -737,11 +749,541 @@ ul li.slideUnder a {
 
 
 
-@media only screen and (min-width: 1200px) and (max-width: 1560px) {
+@media only screen and (min-width: 1367px) and (max-width: 1560px) {
+  #header1 #socialNumber{
+    padding: .5% 0 2%;
+  }
+
   #header1 #socialNumber #socialWrap{
     width: 20% !important;
   }
 }
+
+@media only screen and (min-width: 1207px) and (max-width: 1366px) {
+  .top-bar {
+    width: 1000px !important;
+    padding-top: 2.2%;
+    margin-top: 1%;
+  }
+
+  .top-bar ul li a {
+    font-size: .8em !important;
+  }
+
+  #header1 #socialNumber{
+    padding: 1% 0 2.5%;
+  }
+
+  #header1 #socialNumber #socialWrap{
+    width: 25% !important;
+  }
+}
+
+@media only screen and (min-width: 1154px) and (max-width: 1206px) {
+  .top-bar {
+    width: 950px !important;
+    padding-top: 2.2%;
+    margin-top: 1%;
+  }
+
+  .top-bar ul li a {
+    font-size: .7em !important;
+  }
+
+  #header1 #socialNumber{
+    padding: 1% 0 2.5%;
+  }
+
+  #header1 #socialNumber #socialWrap{
+    width: 25% !important;
+  }
+}
+
+@media only screen and (min-width: 1101px) and (max-width: 1154px) {
+  .top-bar {
+    width: 900px !important;
+    padding-top: 2.2%;
+    margin-top: 1%;
+  }
+
+  .top-bar-section ul li{
+    margin-right: 1%;
+  }
+
+  .top-bar ul li a {
+    font-size: .7em !important;
+  }
+
+  #header1 #socialNumber{
+    padding: 1% 0 3%;
+  }
+
+  #header1 #socialNumber #socialWrap{
+    width: 25% !important;
+  }
+}
+
+@media only screen and (min-width: 995px) and (max-width: 1101px) {
+  .top-bar {
+    width: 800px !important;
+    padding-top: 2.2%;
+    margin-top: 1%;
+  }
+
+  .top-bar-section ul li{
+    margin-right: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .7em !important;
+  }
+
+  #header1 #socialNumber{
+    padding: 1% 0 3%;
+  }
+
+  #header1 #socialNumber #socialWrap{
+    width: 25% !important;
+  }
+}
+
+@media only screen and (min-width: 932px) and (max-width: 995px) {
+  .top-bar {
+    width: 760px !important;
+    padding-top: 2.2%;
+    margin-top: 1%;
+  }
+
+  .logos{
+    width: 10%;
+  }
+
+  .top-bar-section ul li{
+    margin-right: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .7em !important;
+  }
+
+  #header1 #socialNumber{
+    padding: 1% 0 3%;
+  }
+
+  #header1 #socialNumber #socialWrap{
+    width: 27% !important;
+  }
+}
+
+@media only screen and (min-width: 889px) and (max-width: 932px) {
+  .top-bar {
+    width: 760px !important;
+    padding-top: 1%;
+    margin-top: 1%;
+  }
+
+  .logos{
+    margin-left: 2%;
+    width: 8%;
+  }
+
+  .top-bar-section ul li{
+    margin-right: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .7em !important;
+  }
+
+  #header1 #socialNumber{
+    padding: 1% 0 3.5%;
+  }
+
+  #header1 #socialNumber #socialWrap{
+    width: 30% !important;
+  }
+
+  #headMenu li:last-child{
+    margin-top: -.6%;
+  }
+
+  #headMenu li:last-child img{
+    cursor: pointer;
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 879px) and (max-width: 889px) {
+  .top-bar {
+    width: 760px !important;
+    padding-top: 1%;
+    margin-top: 1%;
+  }
+
+  .logos{
+    margin-left: 2%;
+    width: 7%;
+  }
+
+  .top-bar-section ul li{
+    margin-right: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .7em !important;
+  }
+
+  #header1 #socialNumber{
+    padding: 1% 0 3.5% 5%;
+  }
+
+  #header1 #socialNumber #socialWrap{
+    width: 27% !important;
+  }
+
+  #header1 #socialNumber #socialWrap #social.icons{
+    width: 30%;
+  }
+
+  #header1 #socialNumber #socialWrap #social.icons img{
+    width: 30%;
+  }
+
+  #headMenu li:last-child{
+    margin-top: -.6%;
+  }
+
+  #headMenu li:last-child img{
+    cursor: pointer;
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 879px) {
+  .top-bar {
+    width: 690px !important;
+    padding-top: .1%;
+    margin-top: 1%;
+    margin-right: 0;
+  }
+
+  .logos{
+    margin-left: 1%;
+    width: 6%;
+  }
+
+  .top-bar-section ul li{
+    margin-right: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .6em !important;
+  }
+
+  #header1 #socialNumber{
+    padding: 1% 0 3.5% 3%;
+  }
+
+  #header1 #socialNumber #socialWrap{
+    width: 27% !important;
+  }
+
+  #header1 #socialNumber #socialWrap #social.icons{
+    width: 30%;
+  }
+
+  #header1 #socialNumber #socialWrap #social.icons img{
+    width: 30%;
+  }
+
+  #headMenu li:last-child{
+    margin-top: .5%;
+  }
+
+  #headMenu li:last-child img{
+    cursor: pointer;
+    width: 50%;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 741px) and (max-width: 800px) {
+  .top-bar {
+    width: 675px !important;
+    padding-top: .1%;
+    margin-top: 1%;
+    margin-right: 0;
+  }
+
+  .logos{
+    margin-left: 1%;
+    width: 6%;
+  }
+
+  .top-bar-section ul li{
+    margin-right: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .5em !important;
+  }
+
+  #header1 #socialNumber{
+    padding: 1% 0 3.5% 3%;
+  }
+
+  #header1 #socialNumber #socialWrap{
+    width: 27% !important;
+  }
+
+  #header1 #socialNumber #socialWrap #social.icons{
+    width: 30%;
+  }
+
+  #header1 #socialNumber #socialWrap #social.icons img{
+    width: 30%;
+  }
+
+  #headMenu li:last-child{
+    margin-top: .5%;
+  }
+
+  #headMenu li:last-child img{
+    cursor: pointer;
+    width: 50%;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 714px) and (max-width: 740px) {
+  .top-bar {
+    width: 650px !important;
+    padding-top: .1%;
+    margin-top: 1%;
+    margin-right: 0;
+  }
+
+  .top-bar.columns{
+    padding: 0;
+  }
+
+  .logos{
+    margin-left: 1%;
+    width: 6%;
+  }
+
+  .top-bar-section ul li{
+    margin-right: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .55em !important;
+  }
+
+  #header1 #socialNumber{
+    padding: 1% 0 3.5% 3%;
+  }
+
+  #header1 #socialNumber #socialWrap{
+    width: 27% !important;
+  }
+
+  #header1 #socialNumber #socialWrap #social.icons{
+    width: 30%;
+  }
+
+  #header1 #socialNumber #socialWrap #social.icons img{
+    width: 30%;
+  }
+
+  #headMenu li{
+    margin-right: 0;
+  }
+
+  #headMenu li:last-child{
+    margin-top: .6%;
+  }
+
+  #headMenu li:last-child img{
+    cursor: pointer;
+    width: 50%;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 687px) and (max-width: 714px) {
+  .top-bar {
+    width: 625px !important;
+    padding-top: .1%;
+    margin-top: 1%;
+    margin-right: 0;
+  }
+
+  .top-bar.columns{
+    padding: 0;
+  }
+
+  .logos{
+    margin-left: 1%;
+    width: 6%;
+  }
+
+  .top-bar-section ul li{
+    margin-right: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .5em !important;
+  }
+
+  #header1 #socialNumber{
+    padding: 1% 0 4% 3%;
+  }
+
+  #header1 #socialNumber #socialWrap{
+    width: 27% !important;
+  }
+
+  #header1 #socialNumber #socialWrap #social.icons{
+    width: 30%;
+  }
+
+  #header1 #socialNumber #socialWrap #social.icons img{
+    width: 30%;
+  }
+
+  #headMenu li{
+    margin-right: 0;
+  }
+
+  #headMenu li:last-child{
+    margin-top: .6%;
+  }
+
+  #headMenu li:last-child img{
+    cursor: pointer;
+    width: 50%;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 684px) and (max-width: 687px) {
+  .top-bar {
+    width: 620px !important;
+    padding-top: .1%;
+    margin-top: 1%;
+    margin-right: 0;
+  }
+
+  .top-bar.columns{
+    padding: 0;
+  }
+
+  .logos{
+    margin-left: 1%;
+    width: 6%;
+  }
+
+  .top-bar-section ul li{
+    margin-right: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .5em !important;
+  }
+
+  #header1 #socialNumber{
+    padding: 1% 0 4% 3%;
+  }
+
+  #header1 #socialNumber #socialWrap{
+    width: 27% !important;
+  }
+
+  #header1 #socialNumber #socialWrap #social.icons{
+    width: 30%;
+  }
+
+  #header1 #socialNumber #socialWrap #social.icons img{
+    width: 30%;
+  }
+
+  #headMenu li{
+    margin-right: 0;
+  }
+
+  #headMenu li:last-child{
+    margin-top: .6%;
+  }
+
+  #headMenu li:last-child img{
+    cursor: pointer;
+    width: 50%;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 684px) {
+  .top-bar {
+    width: 600px !important;
+    padding-top: 0;
+    margin-top: 1%;
+    margin-right: 0;
+  }
+
+  .top-bar.columns{
+    padding: 0;
+  }
+
+  .logos{
+    margin-left: 1%;
+    width: 6%;
+  }
+
+  .top-bar-section{
+    width: 100% !important;
+  }
+
+  .top-bar-section ul li{
+    margin-right: 0;
+    width: auto !important;
+  }
+
+  .top-bar ul li a {
+    font-size: .5em !important;
+  }
+
+  #header1 #socialNumber{
+    padding: 1% 0 4% 3%;
+  }
+
+  #header1 #socialNumber #socialWrap{
+    width: 33% !important;
+  }
+
+  #header1 #socialNumber #socialWrap #social.icons{
+    width: 30%;
+  }
+
+  #header1 #socialNumber #socialWrap #social.icons img{
+    width: 30%;
+  }
+
+  #headMenu li{
+    margin-right: 0;
+  }
+
+  #headMenu li:last-child{
+    margin-top: .6%;
+  }
+
+  #headMenu li:last-child img{
+    cursor: pointer;
+    width: 50%;
+    padding: 0;
+  }
+}
+
 
 
 @media only screen and (min-width: 1060px) and (max-width: 1200px) {
