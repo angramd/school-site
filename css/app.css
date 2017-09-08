@@ -547,6 +547,7 @@ ul li.slideUnder a {
 }
 
 #global .icons{
+  opacity: 0;
   position: absolute;
   margin-left: 31%;
   margin-top: .5%;
@@ -779,6 +780,23 @@ ul li.slideUnder a {
   #header1 #socialNumber #socialWrap{
     width: 25% !important;
   }
+
+  /*CSS TARGETING MOZILLA FIREFOX BROWSER*/
+  @-moz-document url-prefix() {
+    .top-bar{
+      width: 1000px !important;
+      margin-right: 0;
+    }
+
+    .top-bar ul li a {
+      font-size: .8em !important;
+    }
+
+    .top-bar-section ul li{
+      margin-right: 0;
+    }
+  }
+  /**/
 }
 
 
@@ -887,6 +905,19 @@ ul li.slideUnder a {
   #header1 #socialNumber #socialWrap{
     width: 27% !important;
   }
+
+  /*CSS TARGETING MOZILLA FIREFOX BROWSER*/
+  @-moz-document url-prefix() {
+    .top-bar{
+      width: 790px !important;
+      margin-right: 0;
+    }
+
+    .top-bar-section ul li{
+      margin-right: 0;
+    }
+  }
+  /**/
 }
 
 
@@ -928,6 +959,19 @@ ul li.slideUnder a {
     cursor: pointer;
     width: 75%;
   }
+
+  /*CSS TARGETING MOZILLA FIREFOX BROWSER*/
+  @-moz-document url-prefix() {
+    .top-bar{
+      width: 780px !important;
+      margin-right: 0;
+    }
+
+    .top-bar-section ul li{
+      margin-right: 0;
+    }
+  }
+  /**/
 }
 
 
@@ -977,6 +1021,19 @@ ul li.slideUnder a {
     cursor: pointer;
     width: 60%;
   }
+
+  /*CSS TARGETING MOZILLA FIREFOX BROWSER*/
+  @-moz-document url-prefix() {
+    .top-bar{
+      width: 780px !important;
+      margin-right: 0;
+    }
+
+    .top-bar-section ul li{
+      margin-right: 0;
+    }
+  }
+  /**/
 }
 
 
@@ -1028,6 +1085,19 @@ ul li.slideUnder a {
     width: 50%;
     padding: 0;
   }
+
+  /*CSS TARGETING MOZILLA FIREFOX BROWSER*/
+  @-moz-document url-prefix() {
+    .top-bar{
+      width: 710px !important;
+      margin-right: 0;
+    }
+
+    .top-bar-section ul li{
+      margin-right: 0;
+    }
+  }
+  /**/
 }
 
 
@@ -1320,6 +1390,40 @@ ul li.slideUnder a {
     width: 50%;
     padding: 0;
   }
+
+  /*CSS TARGETING MOZILLA FIREFOX BROWSER*/
+  @-moz-document url-prefix() {
+    .logos{
+      margin-left: 1%;
+      margin-top: .7%;
+      width: 5%;
+    }
+
+    .logos img{
+      width: 100%;
+    }
+
+    .top-bar{
+      width: 607px !important;
+      margin-right: 0;
+    }
+
+    .top-bar-section ul li{
+      margin-right: 0;
+    }
+
+    #headMenu li:last-child{
+      margin-top: .6%;
+      width: 5% !important;
+    }
+
+    #headMenu li:last-child img{
+      cursor: pointer;
+      width: 100%;
+      padding: 0;
+    }
+  }
+  /**/
 }
 
 
@@ -1382,7 +1486,6 @@ ul li.slideUnder a {
   #headMenu li:last-child{
     margin-top: .6%;
     width: 6% !important;
-
   }
 
   #headMenu li:last-child img{
@@ -1390,6 +1493,40 @@ ul li.slideUnder a {
     width: 100%;
     padding: 0;
   }
+
+  /*CSS TARGETING MOZILLA FIREFOX BROWSER*/
+  @-moz-document url-prefix() {
+    .logos{
+      margin-left: 1%;
+      margin-top: .7%;
+      width: 5%;
+    }
+
+    .logos img{
+      width: 100%;
+    }
+
+    .top-bar{
+      width: 588px !important;
+      margin-right: 0;
+    }
+
+    .top-bar-section ul li{
+      margin-right: 0;
+    }
+
+    #headMenu li:last-child{
+      margin-top: .6%;
+      width: 5% !important;
+    }
+
+    #headMenu li:last-child img{
+      cursor: pointer;
+      width: 100%;
+      padding: 0;
+    }
+  }
+  /**/
 }
 
 
@@ -1764,7 +1901,6 @@ ul li.slideUnder a {
 
 
 
-
 @media only screen and (min-width: 320px) and (max-width: 403px) {
   .top-bar {
     width: 50% !important;
@@ -1834,4 +1970,15 @@ ul li.slideUnder a {
   #header1 .slideUnder:hover:after, #header1 ul li.currentLink:after{
     width: 30%;
   }
+
+  /*CSS TARGETING MOZILLA FIREFOX BROWSER*/
+  @-moz-document url-prefix() {
+    #header1 #socialNumber #socialWrap{
+      width: 60% !important;
+      float: none;
+      margin: 0 auto !important;
+      text-align: center;
+    }
+  }
+  /**/
 }

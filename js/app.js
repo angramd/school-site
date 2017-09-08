@@ -14,6 +14,7 @@ $(document).ready(function(){
   var linkContact = $("#linkContact");
   var downArr = $("#downArr");
   var globalSec = $("#global");
+  var globalIcon = $("#global div .icons");
   var globalHead = $("#global div h1");
   var globalGraphic = $("#global .graphicEle");
 
@@ -81,6 +82,7 @@ $(document).ready(function(){
       linkNews.removeClass('currentLink underLine');
       linkQuick.removeClass('currentLink underLine');
       globalSec.stop().animate({"padding-top": "13%"}, 1500);
+      globalIcon.stop().animate({"opacity": "1"}, 3000);
       globalHead.stop().animate({"opacity": "1"}, 3000);
       globalGraphic.stop().animate({"opacity": "1"}, 3000);
 			linkContact.removeClass('currentLink underLine');
