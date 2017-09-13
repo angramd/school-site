@@ -81,10 +81,10 @@ $(document).ready(function(){
 			linkHome.removeClass("currentLink underLine");
       linkNews.removeClass('currentLink underLine');
       linkQuick.removeClass('currentLink underLine');
-      globalSec.stop().animate({"padding-top": "13%"}, 1500);
-      globalIcon.stop().animate({"opacity": "1"}, 3000);
-      globalHead.stop().animate({"opacity": "1"}, 3000);
-      globalGraphic.stop().animate({"opacity": "1"}, 3000);
+      globalSec.stop().animate({"padding-top": "13%"}, 500);
+      globalIcon.stop().animate({"opacity": "1"}, 500);
+      globalHead.stop().animate({"opacity": "1"}, 500);
+      globalGraphic.stop().animate({"opacity": "1"}, 500);
 			linkContact.removeClass('currentLink underLine');
 		}
 

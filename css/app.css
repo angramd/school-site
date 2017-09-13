@@ -35,9 +35,10 @@
 }
 
 .readmore a{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-weight: bold;
-  color: #333;
+  font-size: 1.3em;
+  color: #FFF;
 }
 
 .eventDate{
@@ -94,6 +95,7 @@
 #header1 #socialNumber #socialWrap #social.icons{
   float: left;
   width: 50%;
+  cursor: pointer;
 }
 
 #header1 #socialNumber #socialWrap #social.icons img{
@@ -202,13 +204,17 @@ ul li.slideUnder a {
 
 #headMenu li:last-child{
   cursor: pointer;
-  width: 10%;
+  width: 11%;
   margin-top: -2%;
 }
 
-#headMenu li:last-child img{
+#headMenu li:last-child a{
+  width: 100%;
+}
+
+#headMenu li:last-child a img{
   cursor: pointer;
-  width: 90%;
+  width: 100%;
 }
 /*END HEADER*/
 
@@ -255,7 +261,17 @@ ul li.slideUnder a {
   color: #FFF;
   text-transform: uppercase;
   letter-spacing: 9px;
-  margin-bottom: 11%;
+  margin-bottom: 2%;
+}
+
+#home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+  margin: 0 auto;
+  width: 20%;
+  text-align: center;
+}
+
+#home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools a img{
+  width: 45%;
 }
 
 #bckRotate{
@@ -358,6 +374,11 @@ ul li.slideUnder a {
   text-align: center;
   padding: 1% 25% 3%;
   margin-bottom: 0;
+}
+
+#mission > div > div > div:nth-child(2) .readmore a{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1em;
 }
 /*END MISSION*/
 
@@ -489,6 +510,11 @@ ul li.slideUnder a {
  margin-bottom: 1%;
 }
 
+#news-events #article1 div:nth-child(2) div .readmore a, #news-events #article1 div:nth-child(3) div .readmore a, #news-events #article1 div:nth-child(4) div .readmore a{
+ color: #333;
+ font-family: 'Open Sans Condensed', sans-serif;
+}
+
 #news-events #article2{
   padding-top: 2%;
   padding-bottom: 2%;
@@ -538,7 +564,7 @@ ul li.slideUnder a {
 #global{
 	height: 600px;
 	background: url(../img/Hero2.jpg) no-repeat fixed 0 0 / cover;
-	padding-top: 0;
+	padding-top: 10%;
   position: relative;
 }
 
