@@ -274,7 +274,33 @@ ul li.slideUnder a {
   width: 45%;
 }
 
-#bckRotate{
+#bck {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  width: 100% !important;
+  height: 900px !important;
+  opacity: .2;
+}
+
+#bck #bckRotate {
+  width: 100% !important;
+  height: 100%!important;
+  margin: 0;
+}
+
+#bck #bckRotate li {
+  position: absolute;
+  z-index: 1;
+  width: 100% !important;
+  height: 100%!important;
+}
+
+#bck #bckRotate li img{
+  width: 100%;
+}
+
+/*#bckRotate{
   width: 100%;
   position: fixed;
   z-index: -1;
@@ -284,7 +310,7 @@ ul li.slideUnder a {
 #bckRotate img{
   width: 100%;
   opacity: .2;
-}
+}*/
 /*END HOME*/
 
 

@@ -16,21 +16,22 @@ gulp.task("minify_css", function() {
 });
 
 
-//Uglify Scripts Task
-// gulp.task("minify_js", function() {
-// 	return gulp.src("js/index.js")
-// 	.pipe(plumber())
-// 	.pipe(concat("mini-counseling.js"))
-// 	.pipe(uglify())
-// 	.pipe(gulp.dest("js"));
-// });
+//UGLIFY JAVASCRIPT
+gulp.task("minify_js", function() {
+	return gulp.src("js/app.js")
+	.pipe(plumber())
+	.pipe(concat("mini-app.js"))
+	.pipe(uglify())
+	.pipe(gulp.dest("js"));
+});
 
 
 //WATCH FOR CHANGES
 gulp.task("watch", function(){
   gulp.watch(["css/foundation.css", "css/app.css", "css/arrow.css"], ["minify_css"]);
+  gulp.watch(["js/app.js"], ["minify_js"]);
 });
 
 
 //DEFAULT TASKS
-gulp.task("default", ["watch", "minify_css"]);
+gulp.task("default", ["watch", "minify_css", "minify_js"]);
