@@ -247,6 +247,7 @@ ul li.slideUnder a {
   width: 100%;
   padding: 0 !important;
 }
+
 #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
   width: 100%;
   font-family: 'Lora', serif;
@@ -262,9 +263,11 @@ ul li.slideUnder a {
   margin: 0 auto;
   text-align: center;
 }
+
 #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
   margin: 0 auto 2%;
 }
+
 #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
   font-size: 2.5em;
   font-family: "Lato", sans-serif;
@@ -801,6 +804,14 @@ ul li.slideUnder a {
 
 
 
+@media only screen and (max-width: 1860px) {
+  #mission > div{
+    padding-bottom: 8%;
+  }
+}
+
+
+
 @media only screen and (min-width: 1530px) and (max-width: 1711px) {
   #header1 #socialNumber{
     padding: .5% 0 2%;
@@ -829,6 +840,18 @@ ul li.slideUnder a {
   .scsLogo{
     margin-top: 2.5%;
   }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 16%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 30%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
 }
 
 
@@ -848,6 +871,18 @@ ul li.slideUnder a {
 
   .scsLogo{
     margin-top: 2.5%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 16%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 30%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
   }
 }
 
@@ -869,6 +904,18 @@ ul li.slideUnder a {
   .scsLogo{
     margin-top: 2.5%;
   }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 16%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 40%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
 }
 
 
@@ -889,6 +936,18 @@ ul li.slideUnder a {
 
   .scsLogo{
     margin-top: 2.5%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 16%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 40%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
   }
 }
 
@@ -913,6 +972,18 @@ ul li.slideUnder a {
     margin-top: 2.5%;
     width: 6%;
   }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 16%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 40%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
 }
 
 
@@ -935,6 +1006,18 @@ ul li.slideUnder a {
   .scsLogo{
     margin-top: 2.5%;
     width: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 16%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 40%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
   }
 }
 
@@ -963,6 +1046,18 @@ ul li.slideUnder a {
     margin-top: 2.5%;
     width: 6%;
   }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 16%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 40%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
 }
 
 
@@ -989,6 +1084,18 @@ ul li.slideUnder a {
   .scsLogo{
     margin-top: 2.5%;
     width: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 16%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 40%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
   }
 }
 
@@ -1017,6 +1124,18 @@ ul li.slideUnder a {
     margin-top: 2.5%;
     width: 6%;
   }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 16%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 40%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
 }
 
 
@@ -1044,11 +1163,23 @@ ul li.slideUnder a {
     margin-top: 2.5%;
     width: 6%;
   }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 18%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 40%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
 }
 
 
 
-@media only screen and (min-width: 950px) and (max-width: 1012px) {
+@media only screen and (min-width: 974px) and (max-width: 1012px) {
   #header1 #socialNumber{
     padding: .5% 0 2.5%;
   }
@@ -1074,6 +1205,1079 @@ ul li.slideUnder a {
   .scsLogo{
     margin-top: 2.5%;
     width: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 18%;
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 40%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+}
+
+
+
+@media only screen and (min-width: 904px) and (max-width: 973px) {
+  #header1 #socialNumber{
+    padding: .5% 0 3%;
+  }
+
+  #header1 #socialNumber #socialWrap{
+    width: 21%;
+  }
+
+  .logos {
+    width: 105px;
+  }
+
+  .top-bar {
+    width: 650px !important;
+    margin: 1% 0 0 3%;
+    padding-top: 2.5%;
+  }
+
+  .top-bar ul li a {
+    font-size: .6em !important;
+  }
+
+  .scsLogo{
+    margin-top: 2.5%;
+    width: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 18%;
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 40%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+}
+
+
+
+@media only screen and (min-width: 883px) and (max-width: 903px) {
+  #header1 #socialNumber{
+    padding: .5% 0 3%;
+  }
+
+  #header1 #socialNumber #socialWrap{
+    width: 21%;
+  }
+
+  .logos {
+    width: 105px;
+  }
+
+  .top-bar {
+    width: 650px !important;
+    margin: 1% 0 0 1%;
+    padding-top: 2.5%;
+  }
+
+  .top-bar ul li a {
+    font-size: .6em !important;
+  }
+
+  .scsLogo{
+    margin-top: 2.5%;
+    width: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 18%;
+    margin-bottom: 4%;
+    font-size: 7em;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 2em;
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 50%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+}
+
+
+
+@media only screen and (min-width: 809px) and (max-width: 882px) {
+  #header1 #socialNumber{
+    padding: .5% 0 3%;
+  }
+
+  #header1 #socialNumber #socialWrap{
+    width: 24%;
+  }
+
+  .logos {
+    width: 80px;
+  }
+
+  .top-bar {
+    width: 610px !important;
+    margin: 1% 0 0 1%;
+    padding-top: 1.7%;
+  }
+
+  .top-bar ul li a {
+    font-size: .6em !important;
+  }
+
+  .top-bar ul li {
+    margin-right: 0 !important;
+  }
+
+  .scsLogo{
+    margin-top: 2.5%;
+    width: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 18%;
+    margin-bottom: 4%;
+    font-size: 7em;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 2em;
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 50%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+}
+
+
+
+@media only screen and (min-width: 777px) and (max-width: 808px) {
+  #header1 #socialNumber{
+    padding: .5% 0 3%;
+  }
+
+  #header1 #socialNumber #socialWrap{
+    width: 24%;
+  }
+
+  .logos {
+    width: 70px;
+  }
+
+  .top-bar {
+    width: 600px !important;
+    margin: 1% 0 0 0;
+    padding-top: 1.7%;
+  }
+
+  .top-bar ul li a {
+    font-size: .55em !important;
+  }
+
+  .top-bar ul li {
+    margin-right: 0 !important;
+  }
+
+  .scsLogo{
+    margin-top: 2.5%;
+    width: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 18%;
+    margin-bottom: 4%;
+    font-size: 7em;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 2em;
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 50%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+}
+
+
+
+@media only screen and (min-width: 741px) and (max-width: 776px) {
+  #header1 #socialNumber{
+    padding: .5% 0 4%;
+  }
+
+  #header1 #socialNumber #socialWrap{
+    width: 24%;
+  }
+
+  .logos {
+    width: 70px;
+  }
+
+  .top-bar {
+    width: 530px !important;
+    margin: 1% 0 0 0;
+    padding-top: 1.7%;
+  }
+
+  .top-bar.columns {
+    padding-left: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .5em !important;
+  }
+
+  .top-bar ul li {
+    margin-right: 0 !important;
+  }
+
+  .scsLogo{
+    margin-top: 2.5%;
+    width: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 22%;
+    margin-bottom: 4%;
+    font-size: 6em;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 2em;
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 50%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+}
+
+
+
+@media only screen and (min-width: 686px) and (max-width: 740px) {
+  #header1 #socialNumber{
+    padding: .5% 0 4%;
+  }
+
+  #header1 #socialNumber #socialWrap{
+    width: 27%;
+  }
+
+  .logos {
+    width: 60px;
+  }
+
+  .top-bar {
+    width: 530px !important;
+    margin: 1% 0 0 0;
+    padding-top: .7%;
+  }
+
+  .top-bar.columns {
+    padding-left: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .5em !important;
+  }
+
+  .top-bar ul li {
+    margin-right: 0 !important;
+  }
+
+  .scsLogo{
+    margin-top: 2%;
+    width: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 22%;
+    margin-bottom: 4%;
+    font-size: 6em;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 2em;
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 50%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+}
+
+
+
+@media only screen and (min-width: 657px) and (max-width: 685px) {
+  #header1 #socialNumber{
+    padding: .5% 0 4%;
+  }
+
+  #header1 #socialNumber #socialWrap{
+    width: 27%;
+  }
+
+  .logos {
+    width: 60px;
+    margin-left: 1%;
+  }
+
+  .top-bar {
+    width: 530px !important;
+    margin: 1% 0 0 0;
+    padding-top: .7%;
+  }
+
+  .top-bar.columns {
+    padding-left: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .5em !important;
+  }
+
+  .top-bar ul li {
+    margin-right: 0 !important;
+  }
+
+  .scsLogo{
+    margin-top: 2%;
+    margin-right: 1%;
+    width: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 4%;
+    font-size: 5em;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 1.7em;
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 50%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+}
+
+
+
+@media only screen and (min-width: 642px) and (max-width: 656px) {
+  #header1 #socialNumber{
+    padding: .5% 0 4%;
+  }
+
+  #header1 #socialNumber #socialWrap{
+    width: 33%;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .logos {
+    width: 60px;
+    margin-left: 1%;
+  }
+
+  .top-bar {
+    width: 510px !important;
+    margin: 1% 0 0 0;
+    padding-top: .7%;
+  }
+
+  .top-bar.columns {
+    padding-left: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .45em !important;
+  }
+
+  .top-bar ul li {
+    margin-right: 0 !important;
+  }
+
+  .scsLogo{
+    margin-top: 2%;
+    margin-right: 1%;
+    width: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 4%;
+    font-size: 5em;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 1.7em;
+    margin-bottom: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 70%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+}
+
+
+
+@media only screen and (min-width: 635px) and (max-width: 641px) {
+  #header1 #socialNumber{
+    padding: .5% 0 5%;
+  }
+
+  #header1 #socialNumber #socialWrap{
+    width: 33%;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .logos {
+    width: 60px;
+    margin-left: 1%;
+  }
+
+  .top-bar {
+    width: 510px !important;
+    margin: 1% 0 0 0;
+    padding-top: .7%;
+    padding-left: 50%;
+    background: transparent !important;
+  }
+
+  .title-area{
+    background: transparent;
+  }
+
+  .top-bar.columns {
+    padding-left: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .7em !important;
+  }
+
+  .top-bar ul li {
+    margin-right: 0 !important;
+  }
+
+  .top-bar, .title-area, .title-area li a{
+    background: transparent !important;
+  }
+
+  .title-area li a{
+    color: #FFF !important;
+  }
+
+  .top-bar .toggle-topbar.menu-icon a span::after, .top-bar .toggle-topbar.menu-icon a span:hover:after, .top-bar.expanded .toggle-topbar a span::after{
+    box-shadow: 0 0 0 1px #FFF, 0 7px 0 1px #FFF, 0 14px 0 1px #FFF;
+  }
+
+  .top-bar-section{
+    float: right;
+    background: #666;
+    padding: 1% 6% 1% 3%;
+  }
+
+  .top-bar-section ul li a{
+    font-size: .8em !important;
+    padding: 12px;
+  }
+
+  #header1 .slideUnder:hover:after, #header1 ul li.currentLink:after{
+    width: 30%;
+  }
+
+  .scsLogo{
+    margin-top: 2%;
+    margin-right: 1%;
+    width: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 6%;
+    font-size: 5em;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 1.7em;
+    margin-bottom: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 70%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+}
+
+
+
+@media only screen and (min-width: 588px) and (max-width: 634px) {
+  #header1 #socialNumber{
+    padding: .5% 0 5%;
+  }
+
+  #header1 #socialNumber #socialWrap{
+    width: 33%;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .logos {
+    width: 60px;
+    margin-left: 1%;
+  }
+
+  .top-bar {
+    width: 450px !important;
+    margin: 1% 0 0 0;
+    padding-top: .7%;
+    padding-left: 50%;
+    background: transparent !important;
+  }
+
+  .top-bar.columns {
+    padding-left: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .45em !important;
+  }
+
+  .top-bar ul li {
+    margin-right: 0 !important;
+  }
+
+  .top-bar, .title-area, .title-area li a{
+    background: transparent !important;
+  }
+
+  .title-area li a{
+    color: #FFF !important;
+  }
+
+  .top-bar .toggle-topbar.menu-icon a span::after, .top-bar .toggle-topbar.menu-icon a span:hover:after, .top-bar.expanded .toggle-topbar a span::after{
+    box-shadow: 0 0 0 1px #FFF, 0 7px 0 1px #FFF, 0 14px 0 1px #FFF;
+  }
+
+  .top-bar-section{
+    float: right;
+    background: #666;
+    padding: 1% 6% 1% 3%;
+  }
+
+  .top-bar-section ul li a{
+    font-size: .8em !important;
+    padding: 12px;
+  }
+
+  #header1 .slideUnder:hover:after, #header1 ul li.currentLink:after{
+    width: 30%;
+  }
+
+  .scsLogo{
+    margin-top: 1%;
+    margin-right: 1%;
+    width: 9%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 6%;
+    font-size: 5em;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 1.7em;
+    margin-bottom: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 70%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+}
+
+
+
+@media only screen and (min-width: 555px) and (max-width: 587px) {
+  #header1 #socialNumber{
+    padding: .5% 0 5%;
+  }
+
+  #header1 #socialNumber #socialWrap{
+    width: 33%;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .logos {
+    width: 60px;
+    margin-left: 1%;
+  }
+
+  .top-bar {
+    width: 410px !important;
+    margin: 1% 0 0 0;
+    padding-top: .7%;
+    padding-left: 50%;
+    background: transparent !important;
+  }
+
+  .top-bar.columns {
+    padding-left: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .45em !important;
+  }
+
+  .top-bar ul li {
+    margin-right: 0 !important;
+  }
+
+  .top-bar, .title-area, .title-area li a{
+    background: transparent !important;
+  }
+
+  .title-area li a{
+    color: #FFF !important;
+  }
+
+  .top-bar .toggle-topbar.menu-icon a span::after, .top-bar .toggle-topbar.menu-icon a span:hover:after, .top-bar.expanded .toggle-topbar a span::after{
+    box-shadow: 0 0 0 1px #FFF, 0 7px 0 1px #FFF, 0 14px 0 1px #FFF;
+  }
+
+  .top-bar-section{
+    float: right;
+    background: #666;
+    padding: 1% 6% 1% 3%;
+  }
+
+  .top-bar-section ul li a{
+    font-size: .8em !important;
+    padding: 12px;
+  }
+
+  #header1 .slideUnder:hover:after, #header1 ul li.currentLink:after{
+    width: 30%;
+  }
+
+  .scsLogo{
+    margin-top: 1%;
+    margin-right: 1%;
+    width: 9%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 6%;
+    font-size: 5em;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 1.5em;
+    margin-bottom: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 70%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+}
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 554px) {
+  #header1 #socialNumber{
+    padding: .5% 0 5%;
+  }
+
+  #header1 #socialNumber #socialWrap{
+    width: 37%;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .logos {
+    width: 60px;
+    margin-left: 1%;
+  }
+
+  .top-bar {
+    width: 350px !important;
+    margin: 1% 0 0 0;
+    padding-top: .7%;
+    padding-left: 50%;
+    background: transparent !important;
+  }
+
+  .top-bar.columns {
+    padding-left: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .45em !important;
+  }
+
+  .top-bar ul li {
+    margin-right: 0 !important;
+  }
+
+  .top-bar, .title-area, .title-area li a{
+    background: transparent !important;
+  }
+
+  .title-area li a{
+    color: #FFF !important;
+  }
+
+  .top-bar .toggle-topbar.menu-icon a span::after, .top-bar .toggle-topbar.menu-icon a span:hover:after, .top-bar.expanded .toggle-topbar a span::after{
+    box-shadow: 0 0 0 1px #FFF, 0 7px 0 1px #FFF, 0 14px 0 1px #FFF;
+  }
+
+  .top-bar-section{
+    float: right;
+    background: #666;
+    padding: 1% 6% 1% 3%;
+  }
+
+  .top-bar-section ul li a{
+    font-size: .8em !important;
+    padding: 12px;
+  }
+
+  #header1 .slideUnder:hover:after, #header1 ul li.currentLink:after{
+    width: 30%;
+  }
+
+  .scsLogo{
+    margin-top: 1%;
+    margin-right: 1%;
+    width: 9%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 6%;
+    font-size: 5em;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 1.5em;
+    line-height: 30px;
+    margin-bottom: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 75%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+}
+
+
+
+@media only screen and (min-width: 442px) and (max-width: 479px) {
+  #header1 #socialNumber{
+    padding: .5% 0 7%;
+  }
+
+  #header1 #socialNumber #socialWrap{
+    width: 41%;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .logos {
+    width: 60px;
+    margin-left: 1%;
+  }
+
+  .top-bar {
+    width: 320px !important;
+    margin: 1% 0 0 0;
+    padding-top: .7%;
+    padding-left: 50%;
+    background: transparent !important;
+  }
+
+  .top-bar.columns {
+    padding-left: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .45em !important;
+  }
+
+  .top-bar ul li {
+    margin-right: 0 !important;
+  }
+
+  .top-bar, .title-area, .title-area li a{
+    background: transparent !important;
+  }
+
+  .title-area li a{
+    color: #FFF !important;
+  }
+
+  .top-bar .toggle-topbar.menu-icon a span::after, .top-bar .toggle-topbar.menu-icon a span:hover:after, .top-bar.expanded .toggle-topbar a span::after{
+    box-shadow: 0 0 0 1px #FFF, 0 7px 0 1px #FFF, 0 14px 0 1px #FFF;
+  }
+
+  .top-bar-section{
+    float: right;
+    background: #666;
+    padding: 1% 6% 1% 3%;
+  }
+
+  .top-bar-section ul li a{
+    font-size: .8em !important;
+    padding: 12px;
+  }
+
+  #header1 .slideUnder:hover:after, #header1 ul li.currentLink:after{
+    width: 30%;
+  }
+
+  .scsLogo{
+    margin-top: 2.5%;
+    margin-right: 1%;
+    width: 9%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 6%;
+    font-size: 4.5em;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 1em;
+    line-height: 30px;
+    margin-bottom: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 75%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+}
+
+
+
+@media only screen and (min-width: 390px) and (max-width: 441px) {
+  #header1 #socialNumber{
+    padding: .5% 0 7%;
+  }
+
+  #header1 #socialNumber #socialWrap{
+    width: 46%;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .logos {
+    width: 60px;
+    margin-left: 1%;
+  }
+
+  .top-bar {
+    width: 280px !important;
+    margin: 1% 0 0 0;
+    padding-top: .7%;
+    padding-left: 50%;
+  }
+
+  .top-bar, .title-area, .title-area li a{
+    background: transparent !important;
+  }
+
+  .title-area li a{
+    color: #FFF !important;
+  }
+
+  .top-bar .toggle-topbar.menu-icon a span::after, .top-bar .toggle-topbar.menu-icon a span:hover:after, .top-bar.expanded .toggle-topbar a span::after{
+    box-shadow: 0 0 0 1px #FFF, 0 7px 0 1px #FFF, 0 14px 0 1px #FFF;
+  }
+
+  .top-bar.columns {
+    padding-left: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .45em !important;
+  }
+
+  .top-bar ul li {
+    margin-right: 0 !important;
+  }
+
+  .top-bar-section{
+    float: right;
+    background: #666;
+    padding: 1% 6% 1% 3%;
+  }
+
+  .top-bar-section ul li a{
+    font-size: .8em !important;
+    padding: 12px;
+  }
+
+  #header1 .slideUnder:hover:after, #header1 ul li.currentLink:after{
+    width: 30%;
+  }
+
+  .scsLogo{
+    margin-top: 2.5%;
+    margin-right: 1%;
+    width: 9%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 6%;
+    font-size: 4.5em;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 1.5em;
+    margin-bottom: 15%;
+    line-height: 30px;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 100%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
   }
 }
 
@@ -1161,7 +2365,7 @@ ul li.slideUnder a {
 
 
 
-@media only screen and (min-width: 932px) and (max-width: 995px) {
+/*@media only screen and (min-width: 932px) and (max-width: 995px) {
   .top-bar {
     width: 760px !important;
     padding-top: 2.2%;
@@ -1188,7 +2392,7 @@ ul li.slideUnder a {
     width: 27% !important;
   }
 
-  /*CSS TARGETING MOZILLA FIREFOX BROWSER*/
+
   @-moz-document url-prefix() {
     .top-bar{
       width: 790px !important;
@@ -1199,13 +2403,13 @@ ul li.slideUnder a {
       margin-right: 0;
     }
   }
-  /**/
-}
+
+}*/
 
 
 
 
-@media only screen and (min-width: 889px) and (max-width: 932px) {
+/*@media only screen and (min-width: 889px) and (max-width: 932px) {
   .top-bar {
     width: 760px !important;
     padding-top: 1%;
@@ -1242,7 +2446,7 @@ ul li.slideUnder a {
     width: 75%;
   }
 
-  /*CSS TARGETING MOZILLA FIREFOX BROWSER*/
+
   @-moz-document url-prefix() {
     .top-bar{
       width: 780px !important;
@@ -1253,13 +2457,13 @@ ul li.slideUnder a {
       margin-right: 0;
     }
   }
-  /**/
-}
+
+}*/
 
 
 
 
-@media only screen and (min-width: 879px) and (max-width: 889px) {
+/*@media only screen and (min-width: 879px) and (max-width: 889px) {
   .top-bar {
     width: 760px !important;
     padding-top: 1%;
@@ -1304,7 +2508,7 @@ ul li.slideUnder a {
     width: 60%;
   }
 
-  /*CSS TARGETING MOZILLA FIREFOX BROWSER*/
+
   @-moz-document url-prefix() {
     .top-bar{
       width: 780px !important;
@@ -1315,13 +2519,13 @@ ul li.slideUnder a {
       margin-right: 0;
     }
   }
-  /**/
-}
+
+}*/
 
 
 
 
-@media only screen and (min-width: 800px) and (max-width: 879px) {
+/*@media only screen and (min-width: 800px) and (max-width: 879px) {
   .top-bar {
     width: 690px !important;
     padding-top: .1%;
@@ -1368,7 +2572,7 @@ ul li.slideUnder a {
     padding: 0;
   }
 
-  /*CSS TARGETING MOZILLA FIREFOX BROWSER*/
+
   @-moz-document url-prefix() {
     .top-bar{
       width: 710px !important;
@@ -1379,13 +2583,13 @@ ul li.slideUnder a {
       margin-right: 0;
     }
   }
-  /**/
-}
+
+}*/
 
 
 
 
-@media only screen and (min-width: 741px) and (max-width: 800px) {
+/*@media only screen and (min-width: 741px) and (max-width: 800px) {
   .top-bar {
     width: 675px !important;
     padding-top: .1%;
@@ -1431,12 +2635,12 @@ ul li.slideUnder a {
     width: 50%;
     padding: 0;
   }
-}
+}*/
 
 
 
 
-@media only screen and (min-width: 714px) and (max-width: 740px) {
+/*@media only screen and (min-width: 714px) and (max-width: 740px) {
   .top-bar {
     width: 650px !important;
     padding-top: .1%;
@@ -1673,7 +2877,7 @@ ul li.slideUnder a {
     padding: 0;
   }
 
-  /*CSS TARGETING MOZILLA FIREFOX BROWSER*/
+
   @-moz-document url-prefix() {
     .logos{
       margin-left: 1%;
@@ -1705,7 +2909,7 @@ ul li.slideUnder a {
       padding: 0;
     }
   }
-  /**/
+
 }
 
 
@@ -1776,7 +2980,7 @@ ul li.slideUnder a {
     padding: 0;
   }
 
-  /*CSS TARGETING MOZILLA FIREFOX BROWSER*/
+
   @-moz-document url-prefix() {
     .logos{
       margin-left: 1%;
@@ -1808,7 +3012,7 @@ ul li.slideUnder a {
       padding: 0;
     }
   }
-  /**/
+
 }
 
 
@@ -2253,7 +3457,7 @@ ul li.slideUnder a {
     width: 30%;
   }
 
-  /*CSS TARGETING MOZILLA FIREFOX BROWSER*/
+
   @-moz-document url-prefix() {
     #header1 #socialNumber #socialWrap{
       width: 60% !important;
@@ -2262,5 +3466,5 @@ ul li.slideUnder a {
       text-align: center;
     }
   }
-  /**/
-}
+
+}*/
