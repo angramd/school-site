@@ -1,1 +1,212 @@
-$(document).ready(function(){$("#bckRotate li:gt(0)").hide(),setInterval(function(){$("#bckRotate li:first").stop().fadeOut(1e3).next().stop().fadeIn(1e3).end().appendTo("#bckRotate")},1e4);var e=$(".top-bar"),n=$("#home"),r=$("#mission"),i=($("#quickLink"),$("#quickLink > div > div")),s=$("#news-events"),o=($("#resource-twit"),$("#footer")),t=$("#linkHome"),a=$("#linkQuick"),u=$("#linkNews"),c=$("#linkResources"),d=$("#linkContact"),l=$("#downArr"),L=$("#global"),m=$("#global div .icons"),k=$("#global div h1"),C=$("#global .graphicEle");$("#header2").css("opacity","0"),$(window).scrollTop(0),jQuery(function(){jQuery("a[href*=#]:not([href=#])").click(function(){if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var e=jQuery(this.hash);if((e=e.length?e:$("[name="+this.hash.slice(1)+"]")).length)return jQuery("html,body").animate({scrollTop:e.offset().top},2e3),!1}})}),$(window).scroll(function(e){n.offset().top<$(window).scrollTop()+$(window).outerHeight()&&(t.addClass("currentLink underLine"),a.removeClass("currentLink underLine"),u.removeClass("currentLink underLine"),c.removeClass("currentLink underLine"),d.removeClass("currentLink underLine")),r.offset().top<$(window).scrollTop()+$(window).outerHeight()&&(a.addClass("currentLink underLine"),t.removeClass("currentLink underLine"),u.removeClass("currentLink underLine"),c.removeClass("currentLink underLine"),d.removeClass("currentLink underLine")),s.offset().top<$(window).scrollTop()+$(window).outerHeight()&&(u.addClass("currentLink underLine"),t.removeClass("currentLink underLine"),a.removeClass("currentLink underLine"),c.removeClass("currentLink underLine"),d.removeClass("currentLink underLine")),L.offset().top<$(window).scrollTop()+$(window).outerHeight()&&(c.addClass("currentLink underLine"),t.removeClass("currentLink underLine"),u.removeClass("currentLink underLine"),a.removeClass("currentLink underLine"),L.stop().animate({"padding-top":"13%"},500),m.stop().animate({opacity:"1"},500),k.stop().animate({opacity:"1"},500),C.stop().animate({opacity:"1"},500),d.removeClass("currentLink underLine")),o.offset().top<$(window).scrollTop()+$(window).outerHeight()&&(d.addClass("currentLink"),t.removeClass("currentLink"),a.removeClass("currentLink underLine"),u.removeClass("currentLink underLine"),c.removeClass("currentLink underLine"))}),t.click(function(){t.addClass("currentLink underLine"),t.removeClass("slideUnder"),a.removeClass("currentLink underLine"),u.removeClass("currentLink underLine"),c.removeClass("currentLink underLine"),d.removeClass("currentLink underLine"),l.stop().fadeIn({opacity:"1"},1e3)}),l.click(function(){a.addClass("currentLink underLine"),a.removeClass("slideUnder"),t.removeClass("currentLink underLine"),u.removeClass("currentLink underLine"),c.removeClass("currentLink underLine"),d.remooveClass("currentLink underLine")}),c.click(function(){c.addClass("currentLink underLine"),c.removeClass("slideUnder"),t.removeClass("currentLink underLine"),a.removeClass("currentLink underLine"),u.removeClass("currentLink underLine"),d.removeClass("currentLink underLine"),l.stop().fadeOut({opacity:"0"},1e3)}),d.click(function(){d.addClass("currentLink"),d.removeClass("slideUnder"),t.removeClass("currentLink"),a.removeClass("currentLink underLine"),u.removeClass("currentLink"),c.removeClass("currentLink"),l.stop().fadeOut({opacity:"0"},1e3)}),-1!=navigator.userAgent.indexOf("Safari")&&(e.css("width","1150px"),r.css("margin-top","10%"),i.css("padding-bottom","2%")),l.css("margin","-5% auto 0"),l.animate({opacity:"1","margin-top":"-2%"},1500,function(){l.addClass("animated css3-notification")}),l.mouseover(function(){l.removeClass("animated css3-notification")}),l.mouseout(function(){l.addClass("animated css3-notification")})});
+$(document).ready(function(){
+
+  $("#bckRotate li:gt(0)").hide();
+	setInterval(function(){
+		$("#bckRotate li:first").stop().fadeOut(1000).next().stop().fadeIn(1000).end().appendTo("#bckRotate");
+	}, 5000);
+
+  var topBar = $(".top-bar");
+  var homePage = $("#home");
+  var mission = $("#mission");
+  var quickLink = $("#quickLink");
+  var quickLinkDiv = $("#quickLink > div > div");
+  var newsEvents = $("#news-events");
+  var resource_twit = $("#resource-twit");
+  var footer = $("#footer");
+  var linkHome = $("#linkHome");
+  var linkQuick = $("#linkQuick");
+  var linkNews = $("#linkNews");
+  var linkCalendar = $("#linkCalendar");
+  var linkResources = $("#linkResources");
+  var linkContact = $("#linkContact");
+  var downArr = $("#downArr");
+  var globalSec = $("#global");
+  var globalIcon = $("#global div .icons");
+  var globalHead = $("#global div h1");
+  var globalGraphic = $("#global .graphicEle");
+
+  $("#header2").css("opacity", "0");
+
+  /*MOVE SCROLL BAR TO TOP OF PAGE WHEN PAGE RELOADS*/
+	$(window).scrollTop(0);
+
+
+
+  /*ANCHOR LINK SCROLLING*/
+	jQuery(function()
+	{
+		jQuery('a[href*=#]:not([href=#])').click(function()
+		{
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname)
+			{
+				var target = jQuery(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				if (target.length)
+				{
+					jQuery('html,body').animate({scrollTop: target.offset ().top}, 2000);
+					return false;
+				}
+			}
+		});
+	});
+
+
+
+  /*LINKS IN MENU BAR ARE ACTIVE WHEN SCROLLED TO THEIR ANCHOR*/
+	$(window).scroll(function(event)
+	{
+		if(homePage.offset().top < $(window).scrollTop() + $(window).outerHeight())
+		{
+			linkHome.addClass('currentLink underLine');
+      linkQuick.removeClass('currentLink underLine');
+      linkNews.removeClass('currentLink underLine');
+      linkCalendar.removeClass("currentLink underLine");
+      linkResources.removeClass("currentLink underLine");
+			linkContact.removeClass('currentLink underLine');
+		}
+
+    if(mission.offset().top < $(window).scrollTop() + $(window).outerHeight())
+		{
+      linkQuick.addClass('currentLink underLine');
+			linkHome.removeClass('currentLink underLine');
+      linkNews.removeClass('currentLink underLine');
+      linkCalendar.removeClass("currentLink underLine");
+      linkResources.removeClass("currentLink underLine");
+			linkContact.removeClass('currentLink underLine');
+		}
+
+    if(newsEvents.offset().top < $(window).scrollTop() + $(window).outerHeight())
+		{
+      linkNews.addClass('currentLink underLine');
+      linkCalendar.addClass("currentLink underLine");
+			linkHome.removeClass('currentLink underLine');
+      linkQuick.removeClass('currentLink underLine');
+      linkResources.removeClass("currentLink underLine");
+			linkContact.removeClass('currentLink underLine');
+		}
+
+    if(globalSec.offset().top < $(window).scrollTop() + $(window).outerHeight())
+		{
+      linkResources.addClass("currentLink underLine");
+			linkHome.removeClass("currentLink underLine");
+      linkNews.removeClass('currentLink underLine');
+      linkCalendar.removeClass("currentLink underLine");
+      linkQuick.removeClass('currentLink underLine');
+      globalSec.stop().animate({"padding-top": "13%"}, 500);
+      globalIcon.stop().animate({"opacity": "1"}, 500);
+      globalHead.stop().animate({"opacity": "1"}, 500);
+      globalGraphic.stop().animate({"opacity": "1"}, 500);
+			linkContact.removeClass('currentLink underLine');
+		}
+
+		if(footer.offset().top < $(window).scrollTop() + $(window).outerHeight())
+		{
+			linkContact.addClass('currentLink');
+      linkHome.removeClass('currentLink');
+      linkQuick.removeClass('currentLink underLine');
+      linkNews.removeClass('currentLink underLine');
+      linkCalendar.removeClass("currentLink underLine");
+      linkResources.removeClass("currentLink underLine");
+		}
+	});
+	/**/
+
+
+
+	/*MAKE LINK ACTIVE WHEN CLICKED*/
+	linkHome.click(function()
+	{
+		linkHome.addClass("currentLink underLine");
+		linkHome.removeClass("slideUnder");
+    linkQuick.removeClass('currentLink underLine');
+    linkNews.removeClass("currentLink underLine");
+    linkResources.removeClass("currentLink underLine");
+		linkContact.removeClass("currentLink underLine");
+		downArr.stop().fadeIn({"opacity": "1"}, 1000);
+	});
+
+  linkNews.click(function()
+	{
+		linkNews.addClass("currentLink underLine");
+		linkNews.removeClass("slideUnder");
+    linkQuick.removeClass('currentLink underLine');
+    linkHome.removeClass("currentLink underLine");
+    linkResources.removeClass("currentLink underLine");
+		linkContact.removeClass("currentLink underLine");
+		downArr.stop().fadeOut({"opacity": "0"}, 1000);
+	});
+
+  linkCalendar.click(function()
+	{
+		linkCalendar.addClass("currentLink underLine");
+		linkCalendar.removeClass("slideUnder");
+    linkQuick.removeClass('currentLink underLine');
+    linkHome.removeClass("currentLink underLine");
+    linkNews.removeClass('currentLink underLine');
+    linkResources.removeClass("currentLink underLine");
+		linkContact.removeClass("currentLink underLine");
+		downArr.stop().fadeOut({"opacity": "0"}, 1000);
+	});
+
+  downArr.click(function()
+	{
+    linkQuick.addClass('currentLink underLine');
+		linkQuick.removeClass("slideUnder");
+		linkHome.removeClass("currentLink underLine");
+    linkNews.removeClass('currentLink underLine');
+    linkResources.removeClass("currentLink underLine");
+    linkContact.remooveClass("currentLink underLine");
+	});
+
+	linkResources.click(function()
+	{
+		linkResources.addClass("currentLink underLine");
+		linkResources.removeClass("slideUnder");
+		linkHome.removeClass("currentLink underLine");
+    linkQuick.removeClass('currentLink underLine');
+    linkNews.removeClass('currentLink underLine');
+    linkContact.removeClass('currentLink underLine');
+		downArr.stop().fadeOut({"opacity": "0"}, 1000);
+	});
+
+	linkContact.click(function()
+	{
+    linkContact.addClass("currentLink");
+		linkContact.removeClass("slideUnder");
+		linkHome.removeClass("currentLink");
+    linkQuick.removeClass('currentLink underLine');
+    linkNews.removeClass('currentLink');
+    linkResources.removeClass('currentLink');
+		downArr.stop().fadeOut({"opacity": "0"}, 1000);
+	});
+
+
+
+  if (navigator.userAgent.indexOf('Safari') != -1)
+	{
+    topBar.css("width", "1150px");
+    mission.css("margin-top", "10%");
+    quickLinkDiv.css("padding-bottom", "2%");
+	}
+
+
+
+  /*DOWN ARROW*/
+	downArr.css("margin", "-5% auto 0");
+  downArr.animate({"opacity": "1", "margin-top": "-2%"}, 1500,
+	function()
+	{
+		downArr.addClass("animated css3-notification");
+	});
+
+  downArr.mouseover(function()
+	{
+		downArr.removeClass("animated css3-notification");
+	});
+
+	downArr.mouseout(function()
+	{
+		downArr.addClass("animated css3-notification");
+	});
+  /**/
+});

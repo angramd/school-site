@@ -28,6 +28,24 @@
   color: #FFF;
 }
 
+a.moreann{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+}
+
+a.viewcalendar{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  color: #FFF;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .eventDate{
   background: #FFF;
   width: 20%;
@@ -94,9 +112,9 @@
 
 .logos {
   float: left;
-  width: 120px;
+  width: 135px;
   margin-left: 3%;
-  padding: .5% 0;
+  padding: .2% 0;
 }
 
 .top-bar {
@@ -216,8 +234,8 @@ ul li.slideUnder a {
 
 .scsLogo{
   cursor: pointer;
-  width: 4%;
-  margin-top: 1.5%;
+  width: 5.5%;
+  margin-top: .7%;
   margin-right: 3%;
   float: right;
 }
@@ -251,7 +269,7 @@ ul li.slideUnder a {
 #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
   width: 100%;
   font-family: 'Lora', serif;
-  font-weight: 300;
+  font-weight: 700;
   padding: 0 !important;
   font-size: 7em;
   color: #FFF;
@@ -272,6 +290,7 @@ ul li.slideUnder a {
   font-size: 2.5em;
   font-family: "Lato", sans-serif;
   color: #FFF;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 9px;
   margin-bottom: 2%;
@@ -279,7 +298,7 @@ ul li.slideUnder a {
 
 #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
   margin: 0 auto;
-  width: 20%;
+  width: 25%;
   text-align: center;
 }
 
@@ -295,7 +314,7 @@ ul li.slideUnder a {
   min-height: 1150px !important;
   width: 100% !important;
   height: 100% !important;
-  opacity: .2;
+  opacity: .5;
 }
 
 #bck #bckRotate{
@@ -488,7 +507,7 @@ ul li.slideUnder a {
 #news-events #article1{
   background: #CCC;
   padding-top: 2%;
-  padding-bottom: 2%;
+  padding-bottom: 4%;
 }
 
 #news-events #article1 #headContainer{
@@ -541,6 +560,10 @@ ul li.slideUnder a {
 #news-events #article1 div:nth-child(2) div .readmore a, #news-events #article1 div:nth-child(3) div .readmore a, #news-events #article1 div:nth-child(4) div .readmore a{
  color: #333;
  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#news-events #article1 > div:nth-child(3) > div:nth-child(2), #news-events #article2 > div:nth-child(3) > div:nth-child(2){
+  margin-bottom: 3%;
 }
 
 #news-events #article2{
@@ -810,8 +833,6 @@ ul li.slideUnder a {
   }
 }
 
-
-
 @media only screen and (min-width: 1530px) and (max-width: 1711px) {
   #header1 #socialNumber{
     padding: .5% 0 2%;
@@ -830,7 +851,18 @@ ul li.slideUnder a {
   }
 }
 
+@media only screen and (min-width: 1530px) and (max-width: 1584px) {
+  .top-bar{
+    width: 900px !important;
+    margin-left: 10%;
+    padding-top: 2%;
+  }
 
+  .scsLogo{
+    margin-top: 1.3%;
+    width: 6.5%;
+  }
+}
 
 @media only screen and (min-width: 1429px) and (max-width: 1529px) {
   #header1 #socialNumber{
@@ -842,11 +874,12 @@ ul li.slideUnder a {
   }
 
   .top-bar {
-    margin: 1% 0 0 13%;
+    margin: 1% 0 0 10%;
   }
 
   .scsLogo{
-    margin-top: 2.5%;
+    margin-top: 1.3%;
+    width: 6.5%;
   }
 
   #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
@@ -868,6 +901,21 @@ ul li.slideUnder a {
   #mission > div{
     padding-bottom: 12%;
   }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 12%;
+    margin-left: 30%;
+  }
+
+  #mission > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 14%;
+    margin-left: 28%;
+    padding-top: 2%;
+  }
 }
 
 
@@ -882,11 +930,12 @@ ul li.slideUnder a {
   }
 
   .top-bar {
-    margin: 1% 0 0 11%;
+    margin: 1.7% 0 0 6%;
   }
 
   .scsLogo{
-    margin-top: 2.5%;
+    margin-top: 1.9%;
+    width: 6.5%;
   }
 
   #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
@@ -908,6 +957,21 @@ ul li.slideUnder a {
   #mission > div{
     padding-bottom: 12%;
   }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 12%;
+    margin-left: 30%;
+  }
+
+  #mission > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 14%;
+    margin-left: 28%;
+    padding-top: 2%;
+  }
 }
 
 
@@ -922,11 +986,13 @@ ul li.slideUnder a {
   }
 
   .top-bar {
-    margin: 1% 0 0 6%;
+    margin: 1.7% 0 0 4%;
+    width: 900px !important;
   }
 
   .scsLogo{
-    margin-top: 2.5%;
+    margin-top: 2%;
+    width: 6.5%;
   }
 
   #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
@@ -947,6 +1013,22 @@ ul li.slideUnder a {
 
   #mission > div{
     padding-bottom: 12%;
+  }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 12%;
+    margin-left: 30%;
+    padding-top: 1.3%;
+  }
+
+  #mission > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 14%;
+    margin-left: 28%;
+    padding-top: 2%;
   }
 }
 
@@ -961,13 +1043,18 @@ ul li.slideUnder a {
     width: 14%;
   }
 
+  .logos{
+    width: 120px;
+  }
+
   .top-bar {
     width: 900px !important;
-    margin: 1% 0 0 4%;
+    margin: 1.5% 0 0 2%;
   }
 
   .scsLogo{
-    margin-top: 2.5%;
+    margin-top: 1.5%;
+    width: 7.5%;
   }
 
   #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
@@ -989,6 +1076,22 @@ ul li.slideUnder a {
   #mission > div{
     padding-bottom: 12%;
   }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 12%;
+    margin-left: 30%;
+    padding-top: 1.3%;
+  }
+
+  #mission > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 14%;
+    margin-left: 28%;
+    padding-top: 2%;
+  }
 }
 
 
@@ -1002,15 +1105,19 @@ ul li.slideUnder a {
     width: 15%;
   }
 
+  .logos{
+    width: 120px;
+    margin-left: 2%;
+  }
+
   .top-bar {
-    width: 890px !important;
-    margin: 1% 0 0 4%;
-    padding-top: 2.5%;
+    width: 900px !important;
+    margin: 1.5% 0 0 2%;
   }
 
   .scsLogo{
-    margin-top: 2.5%;
-    width: 6%;
+    margin-top: 1.5%;
+    width: 7.5%;
   }
 
   #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
@@ -1031,6 +1138,22 @@ ul li.slideUnder a {
 
   #mission > div{
     padding-bottom: 12%;
+  }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 13%;
+    margin-left: 30%;
+    padding-top: 1.3%;
+  }
+
+  #mission > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 15%;
+    margin-left: 28%;
+    padding-top: 2%;
   }
 }
 
@@ -1045,15 +1168,19 @@ ul li.slideUnder a {
     width: 15%;
   }
 
+  .logos{
+    width: 120px;
+    margin-left: 1%;
+  }
+
   .top-bar {
-    width: 850px !important;
-    margin: 1% 0 0 4%;
-    padding-top: 2.5%;
+    width: 890px !important;
+    margin: 2% 0 0 1%;
   }
 
   .scsLogo{
-    margin-top: 2.5%;
-    width: 6%;
+    margin-top: 1.8%;
+    width: 7.5%;
   }
 
   #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
@@ -1074,6 +1201,22 @@ ul li.slideUnder a {
 
   #mission > div{
     padding-bottom: 12%;
+  }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 13%;
+    margin-left: 30%;
+    padding-top: 1.3%;
+  }
+
+  #mission > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 15%;
+    margin-left: 28%;
+    padding-top: 2%;
   }
 }
 
@@ -1088,19 +1231,20 @@ ul li.slideUnder a {
     width: 15%;
   }
 
-  .top-bar {
-    width: 820px !important;
-    margin: 1% 0 0 4%;
-    padding-top: 2.5%;
+  .logos{
+    width: 120px;
+    margin-left: 1%;
   }
 
-  .top-bar ul li a {
-    font-size: .8em !important;
+  .top-bar {
+    width: 890px !important;
+    margin: 2% 0 0 1%;
   }
 
   .scsLogo{
-    margin-top: 2.5%;
-    width: 6%;
+    margin-top: 1.8%;
+    margin-right: 1%;
+    width: 7.5%;
   }
 
   #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
@@ -1121,6 +1265,30 @@ ul li.slideUnder a {
 
   #mission > div{
     padding-bottom: 12%;
+  }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 16%;
+    margin-left: 23.5%;
+  }
+
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle, #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 20%;
+    margin-left: 15%;
+    padding-top: 2%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div a h2{
+    font-size: 1.3em !important;
+    text-align: center;
   }
 }
 
@@ -1135,10 +1303,14 @@ ul li.slideUnder a {
     width: 17%;
   }
 
+  .logos{
+    width: 120px;
+    margin-left: 1%;
+  }
+
   .top-bar {
-    width: 820px !important;
-    margin: 1% 0 0 4%;
-    padding-top: 2.5%;
+    width: 870px !important;
+    margin: 2% 0 0 2%;
   }
 
   .top-bar ul li a {
@@ -1146,8 +1318,9 @@ ul li.slideUnder a {
   }
 
   .scsLogo{
-    margin-top: 2.5%;
-    width: 6%;
+    margin-top: 1.8%;
+    margin-right: 1%;
+    width: 7.5%;
   }
 
   #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
@@ -1169,6 +1342,30 @@ ul li.slideUnder a {
   #mission > div{
     padding-bottom: 12%;
   }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 16%;
+    margin-left: 23.5%;
+  }
+
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle, #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 20%;
+    margin-left: 21%;
+    padding-top: 2%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div a h2{
+    font-size: 1.3em !important;
+    text-align: center;
+  }
 }
 
 
@@ -1182,10 +1379,14 @@ ul li.slideUnder a {
     width: 17%;
   }
 
+  .logos{
+    width: 120px;
+    margin-left: 1%;
+  }
+
   .top-bar {
-    width: 800px !important;
-    margin: 1% 0 0 3%;
-    padding-top: 2.5%;
+    width: 820px !important;
+    margin: 2% 0 0 1%;
   }
 
   .top-bar ul li a {
@@ -1193,8 +1394,9 @@ ul li.slideUnder a {
   }
 
   .scsLogo{
-    margin-top: 2.5%;
-    width: 6%;
+    margin-top: 1.8%;
+    margin-right: 1%;
+    width: 7.5%;
   }
 
   #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
@@ -1216,6 +1418,30 @@ ul li.slideUnder a {
   #mission > div{
     padding-bottom: 12%;
   }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 16%;
+    margin-left: 23.5%;
+  }
+
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle, #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 20%;
+    margin-left: 21%;
+    padding-top: 2%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div a h2{
+    font-size: 1.3em !important;
+    text-align: center;
+  }
 }
 
 
@@ -1229,19 +1455,28 @@ ul li.slideUnder a {
     width: 17%;
   }
 
+  .logos{
+    width: 100px;
+    margin-left: 1%;
+  }
+
   .top-bar {
-    width: 710px !important;
-    margin: 1% 0 0 3%;
-    padding-top: 2.5%;
+    width: 790px !important;
+    margin: 2% 0 0 1%;
+  }
+
+  .top-bar-section ul li{
+    margin-right: 0;
   }
 
   .top-bar ul li a {
-    font-size: .7em !important;
+    font-size: .8em !important;
   }
 
   .scsLogo{
-    margin-top: 2.5%;
-    width: 6%;
+    margin-top: 1.8%;
+    margin-right: 1%;
+    width: 7.5%;
   }
 
   #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
@@ -1264,8 +1499,28 @@ ul li.slideUnder a {
     padding-bottom: 12%;
   }
 
-  #mission>div>div>div:nth-child(1) h1{
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 16%;
+    margin-left: 23.5%;
+  }
+
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
     font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle, #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 20%;
+    margin-left: 21%;
+    padding-top: 2%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div a h2{
+    font-size: 1.3em !important;
+    text-align: center;
   }
 }
 
@@ -1280,23 +1535,28 @@ ul li.slideUnder a {
     width: 19%;
   }
 
-  .logos {
-    width: 105px;
+  .logos{
+    width: 100px;
+    margin-left: 1%;
   }
 
   .top-bar {
-    width: 710px !important;
-    margin: 1% 0 0 3%;
-    padding-top: 2.5%;
+    width: 750px !important;
+    margin: 1.5% 0 0 1%;
+  }
+
+  .top-bar-section ul li{
+    margin-right: 0;
   }
 
   .top-bar ul li a {
-    font-size: .7em !important;
+    font-size: .75em !important;
   }
 
   .scsLogo{
-    margin-top: 2.5%;
-    width: 6%;
+    margin-top: 1.8%;
+    margin-right: 1%;
+    width: 7.5%;
   }
 
   #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
@@ -1327,6 +1587,30 @@ ul li.slideUnder a {
   #mission > div{
     padding-bottom: 12%;
   }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 16%;
+    margin-left: 23.5%;
+  }
+
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle, #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 20%;
+    margin-left: 21%;
+    padding-top: 2%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div a h2{
+    font-size: 1.3em !important;
+    text-align: center;
+  }
 }
 
 
@@ -1340,23 +1624,28 @@ ul li.slideUnder a {
     width: 21%;
   }
 
-  .logos {
-    width: 105px;
+  .logos{
+    width: 90px;
+    margin-left: 1%;
   }
 
   .top-bar {
-    width: 650px !important;
-    margin: 1% 0 0 3%;
-    padding-top: 2.5%;
+    width: 700px !important;
+    margin: 1.5% 0 0 .5%;
+  }
+
+  .top-bar-section ul li{
+    margin-right: 0;
   }
 
   .top-bar ul li a {
-    font-size: .6em !important;
+    font-size: .7em !important;
   }
 
   .scsLogo{
-    margin-top: 2.5%;
-    width: 6%;
+    margin-top: 1.8%;
+    margin-right: 1%;
+    width: 7.5%;
   }
 
   #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
@@ -1389,9 +1678,29 @@ ul li.slideUnder a {
   }
 
   #mission > div > div > div:nth-child(1) .icons{
-    width: 20%;
-    margin-left: 15%;
+    width: 16%;
+    margin-left: 22%;
     padding-top: 2%;
+  }
+
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle, #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 20%;
+    margin-left: 21%;
+    padding-top: 2.8%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div a h2{
+    font-size: 1.3em !important;
+    text-align: center;
+    margin-bottom: 2%;
   }
 }
 
@@ -1406,14 +1715,18 @@ ul li.slideUnder a {
     width: 21%;
   }
 
-  .logos {
-    width: 105px;
+  .logos{
+    width: 90px;
+    margin-left: 1%;
   }
 
   .top-bar {
     width: 650px !important;
-    margin: 1% 0 0 1%;
-    padding-top: 2.5%;
+    margin: 1.5% 0 0 .5%;
+  }
+
+  .top-bar-section ul li{
+    margin-right: 0;
   }
 
   .top-bar ul li a {
@@ -1421,8 +1734,9 @@ ul li.slideUnder a {
   }
 
   .scsLogo{
-    margin-top: 2.5%;
-    width: 6%;
+    margin-top: 1.8%;
+    margin-right: 1%;
+    width: 7.5%;
   }
 
   #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
@@ -1457,9 +1771,29 @@ ul li.slideUnder a {
   }
 
   #mission > div > div > div:nth-child(1) .icons{
-    width: 20%;
-    margin-left: 15%;
+    width: 17%;
+    margin-left: 19%;
     padding-top: 2%;
+  }
+
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle, #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 21%;
+    margin-left: 19%;
+    padding-top: 2.8%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div a h2{
+    font-size: 1.3em !important;
+    text-align: center;
+    margin-bottom: 2%;
   }
 }
 
@@ -1474,27 +1808,28 @@ ul li.slideUnder a {
     width: 24%;
   }
 
-  .logos {
-    width: 80px;
+  .logos{
+    width: 70px;
+    margin-left: 1%;
   }
 
   .top-bar {
-    width: 610px !important;
-    margin: 1% 0 0 1%;
-    padding-top: 1.7%;
+    width: 640px !important;
+    margin: .5% 0 0 .1%;
+  }
+
+  .top-bar-section ul li{
+    margin-right: 0;
   }
 
   .top-bar ul li a {
     font-size: .6em !important;
   }
 
-  .top-bar ul li {
-    margin-right: 0 !important;
-  }
-
   .scsLogo{
-    margin-top: 2.5%;
-    width: 6%;
+    margin-top: .7%;
+    margin-right: 1%;
+    width: 8%;
   }
 
   #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
@@ -1529,9 +1864,29 @@ ul li.slideUnder a {
   }
 
   #mission > div > div > div:nth-child(1) .icons{
-    width: 20%;
-    margin-left: 15%;
+    width: 17%;
+    margin-left: 19%;
     padding-top: 2%;
+  }
+
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle, #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 21%;
+    margin-left: 19%;
+    padding-top: 2.8%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div a h2{
+    font-size: 1.3em !important;
+    text-align: center;
+    margin-bottom: 2%;
   }
 }
 
@@ -1601,9 +1956,29 @@ ul li.slideUnder a {
   }
 
   #mission > div > div > div:nth-child(1) .icons{
-    width: 20%;
-    margin-left: 15%;
-    padding-top: 2%;
+    width: 18%;
+    margin-left: 19%;
+    padding-top: 2.8%;
+  }
+
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle, #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 22%;
+    margin-left: 19%;
+    padding-top: 3.3%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div a h2{
+    font-size: 1.3em !important;
+    text-align: center;
+    margin-bottom: 2%;
   }
 }
 
@@ -1618,31 +1993,28 @@ ul li.slideUnder a {
     width: 24%;
   }
 
-  .logos {
+  .logos{
     width: 70px;
+    margin-left: 1%;
   }
 
   .top-bar {
-    width: 530px !important;
-    margin: 1% 0 0 0;
-    padding-top: 1.7%;
+    width: 575px !important;
+    margin: .3% 0 0 .1%;
   }
 
-  .top-bar.columns {
-    padding-left: 0;
+  .top-bar-section ul li{
+    margin-right: 0;
   }
 
   .top-bar ul li a {
     font-size: .5em !important;
   }
 
-  .top-bar ul li {
-    margin-right: 0 !important;
-  }
-
   .scsLogo{
-    margin-top: 2.5%;
-    width: 6%;
+    margin-top: .7%;
+    margin-right: 1%;
+    width: 8%;
   }
 
   #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
@@ -1677,9 +2049,29 @@ ul li.slideUnder a {
   }
 
   #mission > div > div > div:nth-child(1) .icons{
-    width: 20%;
-    margin-left: 15%;
-    padding-top: 2%;
+    width: 18%;
+    margin-left: 19%;
+    padding-top: 2.8%;
+  }
+
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle, #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 22%;
+    margin-left: 19%;
+    padding-top: 3.3%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div a h2{
+    font-size: 1.3em !important;
+    text-align: center;
+    margin-bottom: 2%;
   }
 }
 
@@ -1694,30 +2086,27 @@ ul li.slideUnder a {
     width: 27%;
   }
 
-  .logos {
+  .logos{
     width: 60px;
+    margin-left: 0;
   }
 
   .top-bar {
-    width: 530px !important;
-    margin: 1% 0 0 0;
-    padding-top: .7%;
+    width: 570px !important;
+    margin: -.5% 0 0 0;
   }
 
-  .top-bar.columns {
-    padding-left: 0;
+  .top-bar-section ul li{
+    margin-right: 0;
   }
 
   .top-bar ul li a {
     font-size: .5em !important;
   }
 
-  .top-bar ul li {
-    margin-right: 0 !important;
-  }
-
   .scsLogo{
-    margin-top: 2%;
+    margin-top: 1.5%;
+    margin-right: 0;
     width: 6%;
   }
 
@@ -1753,18 +2142,38 @@ ul li.slideUnder a {
   }
 
   #mission > div > div > div:nth-child(1) .icons{
-    width: 25%;
-    margin-left: 8%;
-    padding-top: 2%;
+    width: 20%;
+    margin-left: 19%;
+    padding-top: 2.8%;
   }
 
-  .graphicEle{
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle{
     margin-bottom: 5%;
   }
 
   #mission > div > div > div:nth-child(2) p{
     font-size: 1.4em;
     line-height: 45px;
+  }
+
+  #quickLink > div > div .icons{
+    width: 24%;
+    margin-left: 19%;
+    padding-top: 3.3%;
+  }
+
+  #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div a h2{
+    font-size: 1.3em !important;
+    text-align: center;
+    margin-bottom: 2%;
   }
 }
 
@@ -1779,32 +2188,27 @@ ul li.slideUnder a {
     width: 27%;
   }
 
-  .logos {
+  .logos{
     width: 60px;
-    margin-left: 1%;
+    margin-left: .2%;
   }
 
   .top-bar {
-    width: 530px !important;
-    margin: 1% 0 0 0;
-    padding-top: .7%;
+    width: 540px !important;
+    margin: -.5% 0 0 0;
   }
 
-  .top-bar.columns {
-    padding-left: 0;
+  .top-bar-section ul li{
+    margin-right: 0;
   }
 
   .top-bar ul li a {
-    font-size: .5em !important;
-  }
-
-  .top-bar ul li {
-    margin-right: 0 !important;
+    font-size: .45em !important;
   }
 
   .scsLogo{
-    margin-top: 2%;
-    margin-right: 1%;
+    margin-top: 1.5%;
+    margin-right: .2%;
     width: 6%;
   }
 
@@ -1840,18 +2244,38 @@ ul li.slideUnder a {
   }
 
   #mission > div > div > div:nth-child(1) .icons{
-    width: 25%;
-    margin-left: 8%;
-    padding-top: 3%;
+    width: 21%;
+    margin-left: 10%;
+    padding-top: 2.8%;
   }
 
-  .graphicEle{
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle{
     margin-bottom: 5%;
   }
 
   #mission > div > div > div:nth-child(2) p{
     font-size: 1.4em;
     line-height: 45px;
+  }
+
+  #quickLink > div > div .icons{
+    width: 25%;
+    margin-left: 10%;
+    padding-top: 3.3%;
+  }
+
+  #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div a h2{
+    font-size: 1.3em !important;
+    text-align: center;
+    margin-bottom: 2%;
   }
 }
 
@@ -1868,32 +2292,27 @@ ul li.slideUnder a {
     margin: 0 auto;
   }
 
-  .logos {
-    width: 60px;
-    margin-left: 1%;
+  .logos{
+    width: 55px;
+    margin-left: 0;
   }
 
   .top-bar {
-    width: 510px !important;
-    margin: 1% 0 0 0;
-    padding-top: .7%;
+    width: 530px !important;
+    margin: -.5% 0 0 0;
   }
 
-  .top-bar.columns {
-    padding-left: 0;
+  .top-bar-section ul li{
+    margin-right: 0;
   }
 
   .top-bar ul li a {
-    font-size: .45em !important;
-  }
-
-  .top-bar ul li {
-    margin-right: 0 !important;
+    font-size: .4em !important;
   }
 
   .scsLogo{
-    margin-top: 2%;
-    margin-right: 1%;
+    margin-top: 1.5%;
+    margin-right: 0;
     width: 6%;
   }
 
@@ -1929,18 +2348,38 @@ ul li.slideUnder a {
   }
 
   #mission > div > div > div:nth-child(1) .icons{
-    width: 25%;
-    margin-left: 8%;
+    width: 22%;
+    margin-left: 10%;
     padding-top: 3%;
   }
 
-  .graphicEle{
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle{
     margin-bottom: 5%;
   }
 
   #mission > div > div > div:nth-child(2) p{
     font-size: 1.4em;
     line-height: 45px;
+  }
+
+  #quickLink > div > div .icons{
+    width: 26%;
+    margin-left: 10%;
+    padding-top: 4%;
+  }
+
+  #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div a h2{
+    font-size: 1.3em !important;
+    text-align: center;
+    margin-bottom: 2%;
   }
 }
 
@@ -2051,18 +2490,38 @@ ul li.slideUnder a {
   }
 
   #mission > div > div > div:nth-child(1) .icons{
-    width: 25%;
-    margin-left: 8%;
+    width: 22%;
+    margin-left: 10%;
     padding-top: 3%;
   }
 
-  .graphicEle{
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle{
     margin-bottom: 5%;
   }
 
   #mission > div > div > div:nth-child(2) p{
     font-size: 1.4em;
     line-height: 45px;
+  }
+
+  #quickLink > div > div .icons{
+    width: 26%;
+    margin-left: 10%;
+    padding-top: 4%;
+  }
+
+  #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div a h2{
+    font-size: 1.3em !important;
+    text-align: center;
+    margin-bottom: 2%;
   }
 }
 
@@ -2165,22 +2624,43 @@ ul li.slideUnder a {
   }
 
   #mission > div{
-    padding-bottom: 20%;
+    padding-bottom: 33%;
   }
 
   #mission > div > div > div:nth-child(1) .icons{
-    width: 25%;
-    margin-left: 8%;
-    padding-top: 3%;
+    width: 22%;
+    margin-left: 5%;
+    padding-top: 4%;
   }
 
-  .graphicEle{
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle{
     margin-bottom: 5%;
   }
 
   #mission > div > div > div:nth-child(2) p{
-    font-size: 1.3em;
+    font-size: 1.4em;
     line-height: 45px;
+    padding: 1% 2% 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 26%;
+    margin-left: 5%;
+    padding-top: 5%;
+  }
+
+  #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div a h2{
+    font-size: 1.3em !important;
+    text-align: center;
+    margin-bottom: 2%;
   }
 }
 
@@ -2283,22 +2763,43 @@ ul li.slideUnder a {
   }
 
   #mission > div{
-    padding-bottom: 20%;
+    padding-bottom: 40%;
   }
 
   #mission > div > div > div:nth-child(1) .icons{
-    width: 25%;
-    margin-left: 2%;
-    padding-top: 3%;
+    width: 24%;
+    margin-left: 5%;
+    padding-top: 4%;
   }
 
-  .graphicEle{
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle{
     margin-bottom: 5%;
   }
 
   #mission > div > div > div:nth-child(2) p{
-    font-size: 1.3em;
+    font-size: 1.4em;
     line-height: 45px;
+    padding: 1% 2% 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 28%;
+    margin-left: 5%;
+    padding-top: 5%;
+  }
+
+  #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div a h2{
+    font-size: 1.3em !important;
+    text-align: center;
+    margin-bottom: 2%;
   }
 }
 
@@ -2402,26 +2903,43 @@ ul li.slideUnder a {
   }
 
   #mission > div{
-    padding-bottom: 20%;
+    padding-bottom: 45%;
   }
 
   #mission > div > div > div:nth-child(1) .icons{
-    width: 28%;
-    margin-left: 2%;
+    width: 24%;
+    margin-left: 5%;
     padding-top: 4%;
   }
 
-  #mission > div > div > div:nth-child(1) h1{
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
     font-size: 3.5em;
   }
 
-  .graphicEle{
+  #mission > div > div > div .graphicEle{
     margin-bottom: 5%;
   }
 
   #mission > div > div > div:nth-child(2) p{
-    font-size: 1.3em;
+    font-size: 1.4em;
     line-height: 45px;
+    padding: 1% 2% 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 28%;
+    margin-left: 5%;
+    padding-top: 5%;
+  }
+
+  #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div a h2{
+    font-size: 1.3em !important;
+    text-align: center;
+    margin-bottom: 2%;
   }
 }
 
@@ -2525,26 +3043,43 @@ ul li.slideUnder a {
   }
 
   #mission > div{
-    padding-bottom: 20%;
+    padding-bottom: 45%;
   }
 
   #mission > div > div > div:nth-child(1) .icons{
-    width: 28%;
-    margin-left: 2%;
+    width: 24%;
+    margin-left: 1%;
     padding-top: 4%;
   }
 
-  #mission > div > div > div:nth-child(1) h1{
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
     font-size: 3em;
   }
 
-  .graphicEle{
+  #mission > div > div > div .graphicEle{
     margin-bottom: 5%;
   }
 
   #mission > div > div > div:nth-child(2) p{
-    font-size: 1.3em;
+    font-size: 1.4em;
     line-height: 45px;
+    padding: 1% 2% 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 28%;
+    margin-left: 1%;
+    padding-top: 5%;
+  }
+
+  #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div a h2{
+    font-size: 1.3em !important;
+    text-align: center;
+    margin-bottom: 2%;
   }
 }
 
@@ -2647,26 +3182,43 @@ ul li.slideUnder a {
   }
 
   #mission > div{
-    padding-bottom: 20%;
+    padding-bottom: 45%;
   }
 
   #mission > div > div > div:nth-child(1) .icons{
-    width: 28%;
-    margin-left: 2%;
+    width: 24%;
+    margin-left: 0;
     padding-top: 4%;
   }
 
-  #mission > div > div > div:nth-child(1) h1{
-    font-size: 2.8em;
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3em;
   }
 
-  .graphicEle{
+  #mission > div > div > div .graphicEle{
     margin-bottom: 5%;
   }
 
   #mission > div > div > div:nth-child(2) p{
-    font-size: 1.3em;
+    font-size: 1.4em;
     line-height: 45px;
+    padding: 1% 2% 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 28%;
+    margin-left: 0;
+    padding-top: 5%;
+  }
+
+  #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div a h2{
+    font-size: 1.3em !important;
+    text-align: center;
+    margin-bottom: 2%;
   }
 }
 
