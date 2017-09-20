@@ -31,7 +31,7 @@
 a.moreann{
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.5em;
   color: #333;
   margin: 0 auto;
   text-align: center;
@@ -40,7 +40,7 @@ a.moreann{
 a.viewcalendar{
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.5em;
   color: #FFF;
   margin: 0 auto;
   text-align: center;
@@ -276,11 +276,6 @@ ul li.slideUnder a {
   margin-top: 8%;
   margin-bottom: 1%;
 }
-.graphicEle{
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-}
 
 #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
   margin: 0 auto 2%;
@@ -314,7 +309,7 @@ ul li.slideUnder a {
   min-height: 1150px !important;
   width: 100% !important;
   height: 100% !important;
-  opacity: .5;
+  opacity: .4;
 }
 
 #bck #bckRotate{
@@ -516,13 +511,17 @@ ul li.slideUnder a {
 }
 
 #news-events #article1 #headContainer .icons{
- margin: 5% auto 0 0;
+ margin: 4.5% auto 0 0;
+ float: left;
+ width: 11.5%;
+}
+
+#news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+ font-size: 4em;
  float: left;
 }
 
 #news-events #article1 #headContainer h1{
- font-size: 4em;
- float: left;
  color: #0a0699;
 }
 
@@ -540,11 +539,15 @@ ul li.slideUnder a {
   padding-top: 3% !important;
 }
 
-#news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article1 div:nth-child(4) div h3{
+#news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
  font-family: 'Lora', serif;
  color: #333;
  font-weight: bold;
  text-align: left;
+}
+
+#news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3{
+ color: #333;
 }
 
 #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article1 div:nth-child(4) div p{
@@ -581,8 +584,6 @@ ul li.slideUnder a {
 }
 
 #news-events #article2 #headContainer2 h1{
- font-size: 4em;
- float: left;
  color: #FFF;
 }
 
@@ -591,11 +592,8 @@ ul li.slideUnder a {
   padding-top: 3% !important;
 }
 
-#news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3, #news-events #article2 div:nth-child(4) div h3{
- font-family: 'Lora', serif;
+#news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
  color: #FFF;
- font-weight: bold;
- text-align: left;
 }
 
 #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p, #news-events #article2 div:nth-child(4) div p{
@@ -831,6 +829,11 @@ ul li.slideUnder a {
   #mission > div{
     padding-bottom: 8%;
   }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 5%;
+   width: 12.5%;
+  }
 }
 
 @media only screen and (min-width: 1530px) and (max-width: 1711px) {
@@ -848,6 +851,31 @@ ul li.slideUnder a {
 
   #mission > div{
     padding-bottom: 12%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 13%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img, #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 55%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 17%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 5%;
+   width: 14%;
+  }
+
+  #news-events #article2>div:nth-child(2), #news-events #article2>div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.5em;
   }
 }
 
@@ -916,6 +944,31 @@ ul li.slideUnder a {
     margin-left: 28%;
     padding-top: 2%;
   }
+
+  #news-events #article1 #headContainer{
+   margin-left: 10%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img, #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 55%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 17%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 6%;
+   width: 14%;
+  }
+
+  #news-events #article2>div:nth-child(2), #news-events #article2>div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.5em;
+  }
 }
 
 
@@ -971,6 +1024,43 @@ ul li.slideUnder a {
     width: 14%;
     margin-left: 28%;
     padding-top: 2%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 8%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 85%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 72%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 17%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 7%;
+   width: 15%;
+  }
+
+  #news-events #article2>div:nth-child(2), #news-events #article2>div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.2em;
+  }
+
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: 1em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
   }
 }
 
@@ -1029,6 +1119,51 @@ ul li.slideUnder a {
     width: 14%;
     margin-left: 28%;
     padding-top: 2%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 8%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 80%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 67%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 3.5em;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 17%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 7%;
+   width: 15%;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.2em;
+  }
+
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: 1em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  a.moreann, a.viewcalendar{
+    font-size: 1.3em;
   }
 }
 
@@ -1091,6 +1226,51 @@ ul li.slideUnder a {
     width: 14%;
     margin-left: 28%;
     padding-top: 2%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 8%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 80%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 67%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 3.5em;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 17%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 7%;
+   width: 15%;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.2em;
+  }
+
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: 1em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  a.moreann, a.viewcalendar{
+    font-size: 1.1em;
   }
 }
 
@@ -1155,6 +1335,51 @@ ul li.slideUnder a {
     margin-left: 28%;
     padding-top: 2%;
   }
+
+  #news-events #article1 #headContainer{
+   margin-left: 8%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 80%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 67%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 3.5em;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 17%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 7%;
+   width: 15%;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.2em;
+  }
+
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: 1em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  a.moreann, a.viewcalendar{
+    font-size: 1.1em;
+  }
 }
 
 
@@ -1217,6 +1442,51 @@ ul li.slideUnder a {
     width: 15%;
     margin-left: 28%;
     padding-top: 2%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 8%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 80%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 67%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 3.5em;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 17%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 7%;
+   width: 15%;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.2em;
+  }
+
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: 1em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  a.moreann, a.viewcalendar{
+    font-size: 1.1em;
   }
 }
 
@@ -1289,6 +1559,51 @@ ul li.slideUnder a {
   #quickLink > div > div div:nth-child(2) div a h2{
     font-size: 1.3em !important;
     text-align: center;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 5%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 80%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 67%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 3.5em;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 15%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 7%;
+   width: 15%;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.2em;
+  }
+
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: 1em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  a.moreann, a.viewcalendar{
+    font-size: 1.1em;
   }
 }
 
@@ -1366,6 +1681,51 @@ ul li.slideUnder a {
     font-size: 1.3em !important;
     text-align: center;
   }
+
+  #news-events #article1 #headContainer{
+   margin-left: 5%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 80%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 67%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 3.5em;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 15%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 7%;
+   width: 15%;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.2em;
+  }
+
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: 1em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  a.moreann, a.viewcalendar{
+    font-size: 1.1em;
+  }
 }
 
 
@@ -1441,6 +1801,51 @@ ul li.slideUnder a {
   #quickLink > div > div div:nth-child(2) div a h2{
     font-size: 1.3em !important;
     text-align: center;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 7%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 80%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 67%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 3em;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 15%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 7%;
+   width: 15%;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.2em;
+  }
+
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: 1em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  a.moreann, a.viewcalendar{
+    font-size: 1.1em;
   }
 }
 
@@ -1521,6 +1926,61 @@ ul li.slideUnder a {
   #quickLink > div > div div:nth-child(2) div a h2{
     font-size: 1.3em !important;
     text-align: center;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 7%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 80%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 67%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 3em;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 150px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 15%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 12.5%;
+   width: 16%;
+   float: left;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.1em;
+  }
+
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: .9em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  a.moreann, a.viewcalendar{
+    font-size: 1.3em;
+  }
+
+  .readmore a{
+    font-size: 1em;
   }
 }
 
@@ -1610,6 +2070,61 @@ ul li.slideUnder a {
   #quickLink > div > div div:nth-child(2) div a h2{
     font-size: 1.3em !important;
     text-align: center;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 7%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 80%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 60%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 3em;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 150px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 15%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 12.5%;
+   width: 16%;
+   float: left;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1em;
+  }
+
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: .9em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  a.moreann, a.viewcalendar{
+    font-size: 1.3em;
+  }
+
+  .readmore a{
+    font-size: 1em;
   }
 }
 
@@ -1701,6 +2216,61 @@ ul li.slideUnder a {
     font-size: 1.3em !important;
     text-align: center;
     margin-bottom: 2%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 7%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 80%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 60%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 2.7em;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 140px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 15%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 12.5%;
+   width: 16%;
+   float: left;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1em;
+  }
+
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: .9em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  a.moreann, a.viewcalendar{
+    font-size: 1.3em;
+  }
+
+  .readmore a{
+    font-size: 1em;
   }
 }
 
@@ -1795,6 +2365,61 @@ ul li.slideUnder a {
     text-align: center;
     margin-bottom: 2%;
   }
+
+  #news-events #article1 #headContainer{
+   margin-left: 7%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 80%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 60%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 2.7em;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 140px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 15%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 12.5%;
+   width: 16%;
+   float: left;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1em;
+  }
+
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: .9em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  a.moreann, a.viewcalendar{
+    font-size: 1.3em;
+  }
+
+  .readmore a{
+    font-size: 1em;
+  }
 }
 
 
@@ -1888,6 +2513,61 @@ ul li.slideUnder a {
     text-align: center;
     margin-bottom: 2%;
   }
+
+  #news-events #article1 #headContainer{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 75%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 55%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 2.7em;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 130px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 15%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 12.5%;
+   width: 16%;
+   float: left;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1em;
+  }
+
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: .9em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  a.moreann, a.viewcalendar{
+    font-size: 1.3em;
+  }
+
+  .readmore a{
+    font-size: 1em;
+  }
 }
 
 
@@ -1979,6 +2659,61 @@ ul li.slideUnder a {
     font-size: 1.3em !important;
     text-align: center;
     margin-bottom: 2%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 75%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 55%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 2.4em;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 120px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 15%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 12.5%;
+   width: 16%;
+   float: left;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1em;
+  }
+
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: .9em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  a.moreann, a.viewcalendar{
+    font-size: 1.3em;
+  }
+
+  .readmore a{
+    font-size: 1em;
   }
 }
 
@@ -2072,6 +2807,65 @@ ul li.slideUnder a {
     font-size: 1.3em !important;
     text-align: center;
     margin-bottom: 2%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img, #news-events #article2 #headContainer2 .graphicEle img{
+    width: 50%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 75%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 55%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 2.4em;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 120px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 15%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 12.5%;
+   width: 16%;
+   float: left;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1em;
+  }
+
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: .9em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  a.moreann, a.viewcalendar{
+    font-size: 1.3em;
+  }
+
+  .readmore a{
+    font-size: 1em;
   }
 }
 
@@ -2175,6 +2969,65 @@ ul li.slideUnder a {
     text-align: center;
     margin-bottom: 2%;
   }
+
+  #news-events #article1 #headContainer{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img, #news-events #article2 #headContainer2 .graphicEle img{
+    width: 50%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 75%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 55%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 2em;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 110px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 15%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 12.5%;
+   width: 16%;
+   float: left;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1em;
+  }
+
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: .9em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  a.moreann, a.viewcalendar{
+    font-size: 1.3em;
+  }
+
+  .readmore a{
+    font-size: 1em;
+  }
 }
 
 
@@ -2276,6 +3129,65 @@ ul li.slideUnder a {
     font-size: 1.3em !important;
     text-align: center;
     margin-bottom: 2%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img, #news-events #article2 #headContainer2 .graphicEle img{
+    width: 45%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 75%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 55%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 2em;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 100px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 15%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 12.5%;
+   width: 16%;
+   float: left;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: .9em;
+  }
+
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: .9em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  a.moreann, a.viewcalendar{
+    font-size: 1.3em;
+  }
+
+  .readmore a{
+    font-size: 1em;
   }
 }
 
@@ -2380,6 +3292,65 @@ ul li.slideUnder a {
     font-size: 1.3em !important;
     text-align: center;
     margin-bottom: 2%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img, #news-events #article2 #headContainer2 .graphicEle img{
+    width: 45%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 75%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 55%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 2em;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 100px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 15%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 12.5%;
+   width: 16%;
+   float: left;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: .9em;
+  }
+
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: .9em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  a.moreann, a.viewcalendar{
+    font-size: 1.3em;
+  }
+
+  .readmore a{
+    font-size: 1em;
   }
 }
 
@@ -2523,6 +3494,95 @@ ul li.slideUnder a {
     text-align: center;
     margin-bottom: 2%;
   }
+
+  #news-events #article1 #headContainer{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img, #news-events #article2 #headContainer2 .graphicEle img{
+    width: 15%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 0;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: -10%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 3em;
+   margin-top: 4.5%;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 100px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 10%;
+   width: 9%;
+   float: left;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 0 !important;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3,
+  #news-events #article2 div:nth-child(3) div h3, #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   text-align: center;
+   padding: 0;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.4em;
+  }
+
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: 1.2em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 100%;
+  }
+
+  .newsImg{
+    margin: 0 auto;
+    float: none;
+  }
+
+  .newsArticle, .eventArticle{
+    text-align: center;
+  }
+
+  .eventDate{
+    margin: 0 auto;
+  }
+
+  .readmore{
+    margin-bottom: 5%;
+  }
+
+  .readmore a{
+    font-size: 1.2em;
+  }
+
+  #news-events #article1 > div:nth-child(4), #news-events #article2 > div:nth-child(3){
+    float: none;
+    text-align: center;
+  }
+
+  a.moreann, a.viewcalendar{
+    font-size: 2em;
+  }
 }
 
 
@@ -2662,6 +3722,95 @@ ul li.slideUnder a {
     text-align: center;
     margin-bottom: 2%;
   }
+
+  #news-events #article1 #headContainer{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img, #news-events #article2 #headContainer2 .graphicEle img{
+    width: 15%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 0;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: -10%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 3em;
+   margin-top: 4.5%;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 100px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 10%;
+   width: 9%;
+   float: left;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 0 !important;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3,
+  #news-events #article2 div:nth-child(3) div h3, #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   text-align: center;
+   padding: 0;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.4em;
+  }
+
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: 1.2em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 100%;
+  }
+
+  .newsImg{
+    margin: 0 auto;
+    float: none;
+  }
+
+  .newsArticle, .eventArticle{
+    text-align: center;
+  }
+
+  .eventDate{
+    margin: 0 auto;
+  }
+
+  .readmore{
+    margin-bottom: 5%;
+  }
+
+  .readmore a{
+    font-size: 1.2em;
+  }
+
+  #news-events #article1 > div:nth-child(4), #news-events #article2 > div:nth-child(3){
+    float: none;
+    text-align: center;
+  }
+
+  a.moreann, a.viewcalendar{
+    font-size: 2em;
+  }
 }
 
 
@@ -2800,6 +3949,95 @@ ul li.slideUnder a {
     font-size: 1.3em !important;
     text-align: center;
     margin-bottom: 2%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img, #news-events #article2 #headContainer2 .graphicEle img{
+    width: 15%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 0;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: -10%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 3em;
+   margin-top: 4.5%;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 100px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 11%;
+   width: 9%;
+   float: left;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 0 !important;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3,
+  #news-events #article2 div:nth-child(3) div h3, #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   text-align: center;
+   padding: 0;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.4em;
+  }
+
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: 1.2em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 100%;
+  }
+
+  .newsImg{
+    margin: 0 auto;
+    float: none;
+  }
+
+  .newsArticle, .eventArticle{
+    text-align: center;
+  }
+
+  .eventDate{
+    margin: 0 auto;
+  }
+
+  .readmore{
+    margin-bottom: 5%;
+  }
+
+  .readmore a{
+    font-size: 1.2em;
+  }
+
+  #news-events #article1 > div:nth-child(4), #news-events #article2 > div:nth-child(3){
+    float: none;
+    text-align: center;
+  }
+
+  a.moreann, a.viewcalendar{
+    font-size: 2em;
   }
 }
 
@@ -2941,6 +4179,95 @@ ul li.slideUnder a {
     text-align: center;
     margin-bottom: 2%;
   }
+
+  #news-events #article1 #headContainer{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img, #news-events #article2 #headContainer2 .graphicEle img{
+    width: 15%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 0;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: -10%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 2.7em;
+   margin-top: 4.5%;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 100px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 11%;
+   width: 9%;
+   float: left;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 0 !important;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3,
+  #news-events #article2 div:nth-child(3) div h3, #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   text-align: center;
+   padding: 0;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.4em;
+  }
+
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: 1.2em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 100%;
+  }
+
+  .newsImg{
+    margin: 0 auto;
+    float: none;
+  }
+
+  .newsArticle, .eventArticle{
+    text-align: center;
+  }
+
+  .eventDate{
+    margin: 0 auto;
+  }
+
+  .readmore{
+    margin-bottom: 5%;
+  }
+
+  .readmore a{
+    font-size: 1.2em;
+  }
+
+  #news-events #article1 > div:nth-child(4), #news-events #article2 > div:nth-child(3){
+    float: none;
+    text-align: center;
+  }
+
+  a.moreann, a.viewcalendar{
+    font-size: 2em;
+  }
 }
 
 
@@ -3081,6 +4408,95 @@ ul li.slideUnder a {
     text-align: center;
     margin-bottom: 2%;
   }
+
+  #news-events #article1 #headContainer{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img, #news-events #article2 #headContainer2 .graphicEle img{
+    width: 15%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 0;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: -10%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 2.5em;
+   margin-top: 4.5%;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 100px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 12%;
+   width: 9%;
+   float: left;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 0 !important;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3,
+  #news-events #article2 div:nth-child(3) div h3, #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   text-align: center;
+   padding: 0;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.4em;
+  }
+
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: 1.2em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 100%;
+  }
+
+  .newsImg{
+    margin: 0 auto;
+    float: none;
+  }
+
+  .newsArticle, .eventArticle{
+    text-align: center;
+  }
+
+  .eventDate{
+    margin: 0 auto;
+  }
+
+  .readmore{
+    margin-bottom: 5%;
+  }
+
+  .readmore a{
+    font-size: 1.2em;
+  }
+
+  #news-events #article1 > div:nth-child(4), #news-events #article2 > div:nth-child(3){
+    float: none;
+    text-align: center;
+  }
+
+  a.moreann, a.viewcalendar{
+    font-size: 2em;
+  }
 }
 
 
@@ -3219,6 +4635,95 @@ ul li.slideUnder a {
     font-size: 1.3em !important;
     text-align: center;
     margin-bottom: 2%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img, #news-events #article2 #headContainer2 .graphicEle img{
+    width: 15%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 0;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: -10%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 2.2em;
+   margin-top: 4.5%;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 100px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 11%;
+   width: 9%;
+   float: left;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 0 !important;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3,
+  #news-events #article2 div:nth-child(3) div h3, #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   text-align: center;
+   padding: 0;
+  }
+
+  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.4em;
+  }
+
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: 1.2em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 100%;
+  }
+
+  .newsImg{
+    margin: 0 auto;
+    float: none;
+  }
+
+  .newsArticle, .eventArticle{
+    text-align: center;
+  }
+
+  .eventDate{
+    margin: 0 auto;
+  }
+
+  .readmore{
+    margin-bottom: 5%;
+  }
+
+  .readmore a{
+    font-size: 1.2em;
+  }
+
+  #news-events #article1 > div:nth-child(4), #news-events #article2 > div:nth-child(3){
+    float: none;
+    text-align: center;
+  }
+
+  a.moreann, a.viewcalendar{
+    font-size: 2em;
   }
 }
 
