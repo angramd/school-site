@@ -825,6 +825,18 @@ ul li.slideUnder a {
 
 
 
+@media only screen and (min-width: 1861px) and (max-width: 1990px){
+  #global .icons{
+    margin-left: 30%;
+  }
+
+  #global .icons img{
+    width: 31%;
+  }
+}
+
+
+
 @media only screen and (max-width: 1860px) {
   #mission > div{
     padding-bottom: 8%;
@@ -836,7 +848,21 @@ ul li.slideUnder a {
   }
 }
 
-@media only screen and (min-width: 1530px) and (max-width: 1711px) {
+
+
+@media only screen and (min-width: 1712px) and (max-width: 1861px){
+  #global .icons{
+    margin-left: 29%;
+  }
+
+  #global .icons img{
+    width: 32%;
+  }
+}
+
+
+
+@media only screen and (min-width: 1531px) and (max-width: 1711px) {
   #header1 #socialNumber{
     padding: .5% 0 2%;
   }
@@ -877,6 +903,15 @@ ul li.slideUnder a {
   #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
    font-size: 1.5em;
   }
+
+  #global .icons{
+    margin-left: 26%;
+    margin-top: .8%;
+  }
+
+  #global .icons img{
+    width: 33%;
+  }
 }
 
 @media only screen and (min-width: 1530px) and (max-width: 1584px) {
@@ -890,9 +925,18 @@ ul li.slideUnder a {
     margin-top: 1.3%;
     width: 6.5%;
   }
+
+  #global .icons{
+    margin-left: 26%;
+    margin-top: 1%;
+  }
+
+  #global .icons img{
+    width: 33%;
+  }
 }
 
-@media only screen and (min-width: 1429px) and (max-width: 1529px) {
+@media only screen and (min-width: 1429px) and (max-width: 1529px){
   #header1 #socialNumber{
     padding: .5% 0 2%;
   }
@@ -968,6 +1012,15 @@ ul li.slideUnder a {
 
   #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
    font-size: 1.5em;
+  }
+
+  #global .icons{
+    margin-left: 26%;
+    margin-top: 1%;
+  }
+
+  #global .icons img{
+    width: 33%;
   }
 }
 
@@ -1061,6 +1114,15 @@ ul li.slideUnder a {
 
   #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    width: 85%;
+  }
+
+  #global .icons{
+    margin-left: 24%;
+    margin-top: 1.2%;
+  }
+
+  #global .icons img{
+    width: 34%;
   }
 }
 
@@ -1164,6 +1226,15 @@ ul li.slideUnder a {
 
   a.moreann, a.viewcalendar{
     font-size: 1.3em;
+  }
+
+  #global .icons{
+    margin-left: 22%;
+    margin-top: 1.2%;
+  }
+
+  #global .icons img{
+    width: 34%;
   }
 }
 
@@ -1271,6 +1342,15 @@ ul li.slideUnder a {
 
   a.moreann, a.viewcalendar{
     font-size: 1.1em;
+  }
+
+  #global .icons{
+    margin-left: 19%;
+    margin-top: 1.5%;
+  }
+
+  #global .icons img{
+    width: 36%;
   }
 }
 
@@ -1380,6 +1460,19 @@ ul li.slideUnder a {
   a.moreann, a.viewcalendar{
     font-size: 1.1em;
   }
+
+  #global .icons{
+    margin-left: 19%;
+    margin-top: 1.5%;
+  }
+
+  #global .icons img{
+    width: 36%;
+  }
+
+  #global .graphicEle img{
+    width: 8%;
+  }
 }
 
 
@@ -1487,6 +1580,19 @@ ul li.slideUnder a {
 
   a.moreann, a.viewcalendar{
     font-size: 1.1em;
+  }
+
+  #global .icons{
+    margin-left: 17%;
+    margin-top: 1.6%;
+  }
+
+  #global .icons img{
+    width: 38%;
+  }
+
+  #global .graphicEle img{
+    width: 8%;
   }
 }
 
@@ -1604,6 +1710,19 @@ ul li.slideUnder a {
 
   a.moreann, a.viewcalendar{
     font-size: 1.1em;
+  }
+
+  #global .icons{
+    margin-left: 17%;
+    margin-top: 1.6%;
+  }
+
+  #global .icons img{
+    width: 38%;
+  }
+
+  #global .graphicEle img{
+    width: 8%;
   }
 }
 
@@ -1726,6 +1845,19 @@ ul li.slideUnder a {
   a.moreann, a.viewcalendar{
     font-size: 1.1em;
   }
+
+  #global .icons{
+    margin-left: 17%;
+    margin-top: 1.6%;
+  }
+
+  #global .icons img{
+    width: 38%;
+  }
+
+  #global .graphicEle img{
+    width: 8%;
+  }
 }
 
 
@@ -1828,6 +1960,14 @@ ul li.slideUnder a {
    width: 15%;
   }
 
+  #news-events #article1 div:nth-child(2) div, #news-events #article1 div:nth-child(3) div{
+   padding-right: 1%;
+  }
+
+  .newsImg img{
+    width: 50%;
+  }
+
   #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
    padding-left: 8% !important;
   }
@@ -1844,8 +1984,38 @@ ul li.slideUnder a {
    width: 85%;
   }
 
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p{
+   width: 100%;
+   padding-right: 0;
+  }
+
+  #news-events #article1 > div:nth-child(2) > div > div.columns, #news-events #article1 > div:nth-child(3) > div > div.columns{
+    float: none;
+  }
+
+  #news-events #article1 > div:nth-child(2) > div > div.medium-6, #news-events #article1 > div:nth-child(3) > div > div.medium-6{
+    width: 100%;
+  }
+
   a.moreann, a.viewcalendar{
     font-size: 1.1em;
+  }
+
+  .readmore a{
+    font-size: 1.1em;
+  }
+
+  #global .icons{
+    margin-left: 17%;
+    margin-top: 1.6%;
+  }
+
+  #global .icons img{
+    width: 38%;
+  }
+
+  #global .graphicEle img{
+    width: 8%;
   }
 }
 
@@ -1959,6 +2129,14 @@ ul li.slideUnder a {
    float: left;
   }
 
+  #news-events #article1 div:nth-child(2) div, #news-events #article1 div:nth-child(3) div{
+   padding-right: 1%;
+  }
+
+  .newsImg img{
+    width: 50%;
+  }
+
   #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
    padding-left: 8% !important;
   }
@@ -1975,12 +2153,38 @@ ul li.slideUnder a {
    width: 85%;
   }
 
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p{
+   width: 100%;
+   padding-right: 0;
+  }
+
+  #news-events #article1 > div:nth-child(2) > div > div.columns, #news-events #article1 > div:nth-child(3) > div > div.columns{
+    float: none;
+  }
+
+  #news-events #article1 > div:nth-child(2) > div > div.medium-6, #news-events #article1 > div:nth-child(3) > div > div.medium-6{
+    width: 100%;
+  }
+
   a.moreann, a.viewcalendar{
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
 
   .readmore a{
     font-size: 1em;
+  }
+
+  #global .icons{
+    margin-left: 15%;
+    margin-top: 1.9%;
+  }
+
+  #global .icons img{
+    width: 39%;
+  }
+
+  #global .graphicEle img{
+    width: 8%;
   }
 }
 
@@ -2103,6 +2307,14 @@ ul li.slideUnder a {
    float: left;
   }
 
+  #news-events #article1 div:nth-child(2) div, #news-events #article1 div:nth-child(3) div{
+   padding-right: 1%;
+  }
+
+  .newsImg img{
+    width: 50%;
+  }
+
   #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
    padding-left: 8% !important;
   }
@@ -2119,12 +2331,38 @@ ul li.slideUnder a {
    width: 85%;
   }
 
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p{
+   width: 100%;
+   padding-right: 0;
+  }
+
+  #news-events #article1 > div:nth-child(2) > div > div.columns, #news-events #article1 > div:nth-child(3) > div > div.columns{
+    float: none;
+  }
+
+  #news-events #article1 > div:nth-child(2) > div > div.medium-6, #news-events #article1 > div:nth-child(3) > div > div.medium-6{
+    width: 100%;
+  }
+
   a.moreann, a.viewcalendar{
     font-size: 1.3em;
   }
 
   .readmore a{
     font-size: 1em;
+  }
+
+  #global .icons{
+    margin-left: 13%;
+    margin-top: 2%;
+  }
+
+  #global .icons img{
+    width: 42%;
+  }
+
+  #global .graphicEle img{
+    width: 8%;
   }
 }
 
@@ -2249,6 +2487,14 @@ ul li.slideUnder a {
    float: left;
   }
 
+  #news-events #article1 div:nth-child(2) div, #news-events #article1 div:nth-child(3) div{
+   padding-right: 1%;
+  }
+
+  .newsImg img{
+    width: 50%;
+  }
+
   #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
    padding-left: 8% !important;
   }
@@ -2265,12 +2511,42 @@ ul li.slideUnder a {
    width: 85%;
   }
 
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p{
+   width: 100%;
+   padding-right: 0;
+  }
+
+  #news-events #article1 > div:nth-child(2) > div > div.columns, #news-events #article1 > div:nth-child(3) > div > div.columns{
+    float: none;
+  }
+
+  #news-events #article1 > div:nth-child(2) > div > div.medium-6, #news-events #article1 > div:nth-child(3) > div > div.medium-6{
+    width: 100%;
+  }
+
   a.moreann, a.viewcalendar{
     font-size: 1.3em;
   }
 
   .readmore a{
     font-size: 1em;
+  }
+
+  #global .icons{
+    margin-left: 13%;
+    margin-top: 2%;
+  }
+
+  #global div h1{
+    font-size: 3.5em;
+  }
+
+  #global .icons img{
+    width: 45%;
+  }
+
+  #global .graphicEle img{
+    width: 8%;
   }
 }
 
@@ -2397,6 +2673,14 @@ ul li.slideUnder a {
    float: left;
   }
 
+  #news-events #article1 div:nth-child(2) div, #news-events #article1 div:nth-child(3) div{
+   padding-right: 1%;
+  }
+
+  .newsImg img{
+    width: 50%;
+  }
+
   #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
    padding-left: 8% !important;
   }
@@ -2413,12 +2697,42 @@ ul li.slideUnder a {
    width: 85%;
   }
 
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p{
+   width: 100%;
+   padding-right: 0;
+  }
+
+  #news-events #article1 > div:nth-child(2) > div > div.columns, #news-events #article1 > div:nth-child(3) > div > div.columns{
+    float: none;
+  }
+
+  #news-events #article1 > div:nth-child(2) > div > div.medium-6, #news-events #article1 > div:nth-child(3) > div > div.medium-6{
+    width: 100%;
+  }
+
   a.moreann, a.viewcalendar{
     font-size: 1.3em;
   }
 
   .readmore a{
     font-size: 1em;
+  }
+
+  #global .icons{
+    margin-left: 13%;
+    margin-top: 2%;
+  }
+
+  #global .icons img{
+    width: 45%;
+  }
+
+  #global div h1{
+    font-size: 3.5em;
+  }
+
+  #global .graphicEle img{
+    width: 8%;
   }
 }
 
@@ -2545,6 +2859,14 @@ ul li.slideUnder a {
    float: left;
   }
 
+  #news-events #article1 div:nth-child(2) div, #news-events #article1 div:nth-child(3) div{
+   padding-right: 1%;
+  }
+
+  .newsImg img{
+    width: 60%;
+  }
+
   #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
    padding-left: 8% !important;
   }
@@ -2557,8 +2879,21 @@ ul li.slideUnder a {
    font-size: .9em;
   }
 
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p{
+   width: 100%;
+   padding-right: 0;
+  }
+
   #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    width: 85%;
+  }
+
+  #news-events #article1 > div:nth-child(2) > div > div.columns, #news-events #article1 > div:nth-child(3) > div > div.columns{
+    float: none;
+  }
+
+  #news-events #article1 > div:nth-child(2) > div > div.medium-6, #news-events #article1 > div:nth-child(3) > div > div.medium-6{
+    width: 100%;
   }
 
   a.moreann, a.viewcalendar{
@@ -2567,6 +2902,23 @@ ul li.slideUnder a {
 
   .readmore a{
     font-size: 1em;
+  }
+
+  #global .icons{
+    margin-left: 11%;
+    margin-top: 2%;
+  }
+
+  #global .icons img{
+    width: 48%;
+  }
+
+  #global div h1{
+    font-size: 3.5em;
+  }
+
+  #global .graphicEle img{
+    width: 8%;
   }
 }
 
@@ -2692,6 +3044,14 @@ ul li.slideUnder a {
    float: left;
   }
 
+  #news-events #article1 div:nth-child(2) div, #news-events #article1 div:nth-child(3) div{
+   padding-right: 1%;
+  }
+
+  .newsImg img{
+    width: 60%;
+  }
+
   #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
    padding-left: 8% !important;
   }
@@ -2704,8 +3064,21 @@ ul li.slideUnder a {
    font-size: .9em;
   }
 
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p{
+   width: 100%;
+   padding-right: 0;
+  }
+
   #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    width: 85%;
+  }
+
+  #news-events #article1 > div:nth-child(2) > div > div.columns, #news-events #article1 > div:nth-child(3) > div > div.columns{
+    float: none;
+  }
+
+  #news-events #article1 > div:nth-child(2) > div > div.medium-6, #news-events #article1 > div:nth-child(3) > div > div.medium-6{
+    width: 100%;
   }
 
   a.moreann, a.viewcalendar{
@@ -2714,6 +3087,23 @@ ul li.slideUnder a {
 
   .readmore a{
     font-size: 1em;
+  }
+
+  #global .icons{
+    margin-left: 11%;
+    margin-top: 2%;
+  }
+
+  #global .icons img{
+    width: 48%;
+  }
+
+  #global div h1{
+    font-size: 3.3em;
+  }
+
+  #global .graphicEle img{
+    width: 8%;
   }
 }
 
@@ -2844,6 +3234,14 @@ ul li.slideUnder a {
    float: left;
   }
 
+  #news-events #article1 div:nth-child(2) div, #news-events #article1 div:nth-child(3) div{
+   padding-right: 1%;
+  }
+
+  .newsImg img{
+    width: 60%;
+  }
+
   #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
    padding-left: 8% !important;
   }
@@ -2856,8 +3254,21 @@ ul li.slideUnder a {
    font-size: .9em;
   }
 
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p{
+   width: 100%;
+   padding-right: 0;
+  }
+
   #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    width: 85%;
+  }
+
+  #news-events #article1 > div:nth-child(2) > div > div.columns, #news-events #article1 > div:nth-child(3) > div > div.columns{
+    float: none;
+  }
+
+  #news-events #article1 > div:nth-child(2) > div > div.medium-6, #news-events #article1 > div:nth-child(3) > div > div.medium-6{
+    width: 100%;
   }
 
   a.moreann, a.viewcalendar{
@@ -2866,6 +3277,23 @@ ul li.slideUnder a {
 
   .readmore a{
     font-size: 1em;
+  }
+
+  #global .icons{
+    margin-left: 11%;
+    margin-top: 2%;
+  }
+
+  #global .icons img{
+    width: 48%;
+  }
+
+  #global div h1{
+    font-size: 3.3em;
+  }
+
+  #global .graphicEle img{
+    width: 8%;
   }
 }
 
@@ -3005,6 +3433,14 @@ ul li.slideUnder a {
    float: left;
   }
 
+  #news-events #article1 div:nth-child(2) div, #news-events #article1 div:nth-child(3) div{
+   padding-right: 1%;
+  }
+
+  .newsImg img{
+    width: 60%;
+  }
+
   #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
    padding-left: 8% !important;
   }
@@ -3017,8 +3453,21 @@ ul li.slideUnder a {
    font-size: .9em;
   }
 
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p{
+   width: 100%;
+   padding-right: 0;
+  }
+
   #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    width: 85%;
+  }
+
+  #news-events #article1 > div:nth-child(2) > div > div.columns, #news-events #article1 > div:nth-child(3) > div > div.columns{
+    float: none;
+  }
+
+  #news-events #article1 > div:nth-child(2) > div > div.medium-6, #news-events #article1 > div:nth-child(3) > div > div.medium-6{
+    width: 100%;
   }
 
   a.moreann, a.viewcalendar{
@@ -3027,6 +3476,23 @@ ul li.slideUnder a {
 
   .readmore a{
     font-size: 1em;
+  }
+
+  #global .icons{
+    margin-left: 11%;
+    margin-top: 2%;
+  }
+
+  #global .icons img{
+    width: 48%;
+  }
+
+  #global div h1{
+    font-size: 3em;
+  }
+
+  #global .graphicEle img{
+    width: 10%;
   }
 }
 
@@ -3166,6 +3632,14 @@ ul li.slideUnder a {
    float: left;
   }
 
+  #news-events #article1 div:nth-child(2) div, #news-events #article1 div:nth-child(3) div{
+   padding-right: 1%;
+  }
+
+  .newsImg img{
+    width: 60%;
+  }
+
   #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
    padding-left: 8% !important;
   }
@@ -3178,8 +3652,21 @@ ul li.slideUnder a {
    font-size: .9em;
   }
 
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p{
+   width: 100%;
+   padding-right: 0;
+  }
+
   #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    width: 85%;
+  }
+
+  #news-events #article1 > div:nth-child(2) > div > div.columns, #news-events #article1 > div:nth-child(3) > div > div.columns{
+    float: none;
+  }
+
+  #news-events #article1 > div:nth-child(2) > div > div.medium-6, #news-events #article1 > div:nth-child(3) > div > div.medium-6{
+    width: 100%;
   }
 
   a.moreann, a.viewcalendar{
@@ -3188,6 +3675,23 @@ ul li.slideUnder a {
 
   .readmore a{
     font-size: 1em;
+  }
+
+  #global .icons{
+    margin-left: 9%;
+    margin-top: 2%;
+  }
+
+  #global .icons img{
+    width: 48%;
+  }
+
+  #global div h1{
+    font-size: 3em;
+  }
+
+  #global .graphicEle img{
+    width: 10%;
   }
 }
 
@@ -3329,6 +3833,14 @@ ul li.slideUnder a {
    float: left;
   }
 
+  #news-events #article1 div:nth-child(2) div, #news-events #article1 div:nth-child(3) div{
+   padding-right: 1%;
+  }
+
+  .newsImg img{
+    width: 60%;
+  }
+
   #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
    padding-left: 8% !important;
   }
@@ -3341,8 +3853,21 @@ ul li.slideUnder a {
    font-size: .9em;
   }
 
+  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p{
+   width: 100%;
+   padding-right: 0;
+  }
+
   #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    width: 85%;
+  }
+
+  #news-events #article1 > div:nth-child(2) > div > div.columns, #news-events #article1 > div:nth-child(3) > div > div.columns{
+    float: none;
+  }
+
+  #news-events #article1 > div:nth-child(2) > div > div.medium-6, #news-events #article1 > div:nth-child(3) > div > div.medium-6{
+    width: 100%;
   }
 
   a.moreann, a.viewcalendar{
@@ -3351,6 +3876,23 @@ ul li.slideUnder a {
 
   .readmore a{
     font-size: 1em;
+  }
+
+  #global .icons{
+    margin-left: 9%;
+    margin-top: 2%;
+  }
+
+  #global .icons img{
+    width: 48%;
+  }
+
+  #global div h1{
+    font-size: 2.7em;
+  }
+
+  #global .graphicEle img{
+    width: 10%;
   }
 }
 
@@ -3495,6 +4037,10 @@ ul li.slideUnder a {
     margin-bottom: 2%;
   }
 
+  #news-events #article1 #headContainer, #news-events #article2 #headContainer2{
+   max-width: 94%;
+  }
+
   #news-events #article1 #headContainer{
    margin-left: 6%;
   }
@@ -3531,6 +4077,10 @@ ul li.slideUnder a {
    float: left;
   }
 
+  .newsImg{
+    width: 90% !important;
+  }
+
   #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
    padding-left: 0 !important;
   }
@@ -3539,7 +4089,8 @@ ul li.slideUnder a {
   #news-events #article2 div:nth-child(3) div h3, #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p,
   #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    text-align: center;
-   padding: 0;
+   padding: 0 10% 0 2%;
+   width: 100%;
   }
 
   #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
@@ -3582,6 +4133,23 @@ ul li.slideUnder a {
 
   a.moreann, a.viewcalendar{
     font-size: 2em;
+  }
+
+  #global .icons{
+    margin-left: 9%;
+    margin-top: 2%;
+  }
+
+  #global .icons img{
+    width: 48%;
+  }
+
+  #global div h1{
+    font-size: 2.7em;
+  }
+
+  #global .graphicEle img{
+    width: 10%;
   }
 }
 
@@ -3723,6 +4291,10 @@ ul li.slideUnder a {
     margin-bottom: 2%;
   }
 
+  #news-events #article1 #headContainer, #news-events #article2 #headContainer2{
+   max-width: 94%;
+  }
+
   #news-events #article1 #headContainer{
    margin-left: 6%;
   }
@@ -3759,6 +4331,10 @@ ul li.slideUnder a {
    float: left;
   }
 
+  .newsImg{
+    width: 90% !important;
+  }
+
   #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
    padding-left: 0 !important;
   }
@@ -3767,7 +4343,8 @@ ul li.slideUnder a {
   #news-events #article2 div:nth-child(3) div h3, #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p,
   #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    text-align: center;
-   padding: 0;
+   padding: 0 8% 0 3%;
+   width: 100%;
   }
 
   #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
@@ -3810,6 +4387,23 @@ ul li.slideUnder a {
 
   a.moreann, a.viewcalendar{
     font-size: 2em;
+  }
+
+  #global .icons{
+    margin-left: 9%;
+    margin-top: 2%;
+  }
+
+  #global .icons img{
+    width: 48%;
+  }
+
+  #global div h1{
+    font-size: 2.7em;
+  }
+
+  #global .graphicEle img{
+    width: 10%;
   }
 }
 
@@ -3951,6 +4545,10 @@ ul li.slideUnder a {
     margin-bottom: 2%;
   }
 
+  #news-events #article1 #headContainer, #news-events #article2 #headContainer2{
+   max-width: 94%;
+  }
+
   #news-events #article1 #headContainer{
    margin-left: 6%;
   }
@@ -3987,6 +4585,10 @@ ul li.slideUnder a {
    float: left;
   }
 
+  .newsImg{
+    width: 90% !important;
+  }
+
   #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
    padding-left: 0 !important;
   }
@@ -3995,7 +4597,8 @@ ul li.slideUnder a {
   #news-events #article2 div:nth-child(3) div h3, #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p,
   #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    text-align: center;
-   padding: 0;
+   padding: 0 5%;
+   width: 100%;
   }
 
   #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
@@ -4038,6 +4641,23 @@ ul li.slideUnder a {
 
   a.moreann, a.viewcalendar{
     font-size: 2em;
+  }
+
+  #global .icons{
+    margin-left: 7%;
+    margin-top: 2%;
+  }
+
+  #global .icons img{
+    width: 48%;
+  }
+
+  #global div h1{
+    font-size: 2.7em;
+  }
+
+  #global .graphicEle img{
+    width: 10%;
   }
 }
 
@@ -4151,7 +4771,7 @@ ul li.slideUnder a {
   }
 
   #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
-    font-size: 3.5em;
+    font-size: 3em;
   }
 
   #mission > div > div > div .graphicEle{
@@ -4178,6 +4798,10 @@ ul li.slideUnder a {
     font-size: 1.3em !important;
     text-align: center;
     margin-bottom: 2%;
+  }
+
+  #news-events #article1 #headContainer, #news-events #article2 #headContainer2{
+   max-width: 94%;
   }
 
   #news-events #article1 #headContainer{
@@ -4216,6 +4840,10 @@ ul li.slideUnder a {
    float: left;
   }
 
+  .newsImg{
+    width: 90% !important;
+  }
+
   #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
    padding-left: 0 !important;
   }
@@ -4224,7 +4852,8 @@ ul li.slideUnder a {
   #news-events #article2 div:nth-child(3) div h3, #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p,
   #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    text-align: center;
-   padding: 0;
+   padding: 0 5%;
+   width: 100%;
   }
 
   #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
@@ -4267,6 +4896,23 @@ ul li.slideUnder a {
 
   a.moreann, a.viewcalendar{
     font-size: 2em;
+  }
+
+  #global .icons{
+    margin-left: 7%;
+    margin-top: 2%;
+  }
+
+  #global .icons img{
+    width: 48%;
+  }
+
+  #global div h1{
+    font-size: 2.4em;
+  }
+
+  #global .graphicEle img{
+    width: 10%;
   }
 }
 
@@ -4409,6 +5055,10 @@ ul li.slideUnder a {
     margin-bottom: 2%;
   }
 
+  #news-events #article1 #headContainer, #news-events #article2 #headContainer2{
+   max-width: 94%;
+  }
+
   #news-events #article1 #headContainer{
    margin-left: 6%;
   }
@@ -4445,6 +5095,10 @@ ul li.slideUnder a {
    float: left;
   }
 
+  .newsImg{
+    width: 90% !important;
+  }
+
   #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
    padding-left: 0 !important;
   }
@@ -4453,7 +5107,8 @@ ul li.slideUnder a {
   #news-events #article2 div:nth-child(3) div h3, #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p,
   #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    text-align: center;
-   padding: 0;
+   padding: 0 5%;
+   width: 100%;
   }
 
   #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
@@ -4496,6 +5151,23 @@ ul li.slideUnder a {
 
   a.moreann, a.viewcalendar{
     font-size: 2em;
+  }
+
+  #global .icons{
+    margin-left: 7%;
+    margin-top: 2%;
+  }
+
+  #global .icons img{
+    width: 50%;
+  }
+
+  #global div h1{
+    font-size: 2em;
+  }
+
+  #global .graphicEle img{
+    width: 10%;
   }
 }
 
@@ -4637,6 +5309,10 @@ ul li.slideUnder a {
     margin-bottom: 2%;
   }
 
+  #news-events #article1 #headContainer, #news-events #article2 #headContainer2{
+   max-width: 94%;
+  }
+
   #news-events #article1 #headContainer{
    margin-left: 6%;
   }
@@ -4673,6 +5349,10 @@ ul li.slideUnder a {
    float: left;
   }
 
+  .newsImg{
+    width: 90% !important;
+  }
+
   #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
    padding-left: 0 !important;
   }
@@ -4681,7 +5361,8 @@ ul li.slideUnder a {
   #news-events #article2 div:nth-child(3) div h3, #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p,
   #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    text-align: center;
-   padding: 0;
+   padding: 0 5%;
+   width: 100%;
   }
 
   #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
@@ -4724,6 +5405,23 @@ ul li.slideUnder a {
 
   a.moreann, a.viewcalendar{
     font-size: 2em;
+  }
+
+  #global .icons{
+    margin-left: 7%;
+    margin-top: 2%;
+  }
+
+  #global .icons img{
+    width: 50%;
+  }
+
+  #global div h1{
+    font-size: 2em;
+  }
+
+  #global .graphicEle img{
+    width: 10%;
   }
 }
 
