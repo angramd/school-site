@@ -92,11 +92,203 @@ $(document).ready(function(){
       linkNews.removeClass('currentLink underLine');
       linkCalendar.removeClass("currentLink underLine");
       linkQuick.removeClass('currentLink underLine');
-      globalSec.stop().animate({"padding-top": "13%"}, 500);
-      globalIcon.stop().animate({"opacity": "1"}, 500);
-      globalHead.stop().animate({"opacity": "1"}, 500);
-      globalGraphic.stop().animate({"opacity": "1"}, 500);
 			linkContact.removeClass('currentLink underLine');
+
+      if ($(window).width() >= 1861) {
+        globalSec.stop().animate({"padding-top": "13%"}, 500);
+        globalIcon.stop().animate({"opacity": "1"}, 500);
+        globalHead.stop().animate({"opacity": "1"}, 500);
+        globalGraphic.stop().animate({"opacity": "1"}, 500);
+      }
+
+      if ($(window).width() <= 1860 && $(window).width() >= 1712) {
+        globalSec.stop().animate({"padding-top": "16%"}, 500);
+        globalIcon.stop().animate({"opacity": "1"}, 500);
+        globalHead.stop().animate({"opacity": "1"}, 500);
+        globalGraphic.stop().animate({"opacity": "1"}, 500);
+      }
+
+      if ($(window).width() <= 1711 && $(window).width() >= 1531) {
+        globalSec.stop().animate({"padding-top": "17%"}, 500);
+        globalIcon.stop().animate({"opacity": "1"}, 500);
+        globalHead.stop().animate({"opacity": "1"}, 500);
+        globalGraphic.stop().animate({"opacity": "1"}, 500);
+      }
+
+      if ($(window).width() <= 1530 && $(window).width() >= 1429) {
+        globalSec.stop().animate({"padding-top": "18%"}, 500);
+        globalIcon.stop().animate({"opacity": "1"}, 500);
+        globalHead.stop().animate({"opacity": "1"}, 500);
+        globalGraphic.stop().animate({"opacity": "1"}, 500);
+      }
+
+      if ($(window).width() <= 1428 && $(window).width() >= 1357) {
+        globalSec.stop().animate({"padding-top": "20%"}, 500);
+        globalIcon.stop().animate({"opacity": "1"}, 500);
+        globalHead.stop().animate({"opacity": "1"}, 500);
+        globalGraphic.stop().animate({"opacity": "1"}, 500);
+      }
+
+      if ($(window).width() <= 1356 && $(window).width() >= 1277) {
+        globalSec.stop().animate({"padding-top": "21%"}, 500);
+        globalIcon.stop().animate({"opacity": "1"}, 500);
+        globalHead.stop().animate({"opacity": "1"}, 500);
+        globalGraphic.stop().animate({"opacity": "1"}, 500);
+      }
+
+      if ($(window).width() <= 1276 && $(window).width() >= 1227) {
+        globalSec.stop().animate({"padding-top": "22%"}, 500);
+        globalIcon.stop().animate({"opacity": "1"}, 500);
+        globalHead.stop().animate({"opacity": "1"}, 500);
+        globalGraphic.stop().animate({"opacity": "1"}, 500);
+      }
+
+      if ($(window).width() <= 1226 && $(window).width() >= 1218) {
+        globalSec.stop().animate({"padding-top": "22%"}, 500);
+        globalIcon.stop().animate({"opacity": "1"}, 500);
+        globalHead.stop().animate({"opacity": "1"}, 500);
+        globalGraphic.stop().animate({"opacity": "1"}, 500);
+      }
+
+      if ($(window).width() <= 1217 && $(window).width() >= 1170) {
+        globalSec.stop().animate({"padding-top": "24%"}, 500);
+        globalIcon.stop().animate({"opacity": "1"}, 500);
+        globalHead.stop().animate({"opacity": "1"}, 500);
+        globalGraphic.stop().animate({"opacity": "1"}, 500);
+      }
+
+      if ($(window).width() <= 1169 && $(window).width() >= 1147) {
+        globalSec.stop().animate({"padding-top": "24%"}, 500);
+        globalIcon.stop().animate({"opacity": "1"}, 500);
+        globalHead.stop().animate({"opacity": "1"}, 500);
+        globalGraphic.stop().animate({"opacity": "1"}, 500);
+      }
+
+      if ($(window).width() <= 1146 && $(window).width() >= 1134) {
+        globalSec.stop().animate({"padding-top": "25%"}, 500);
+        globalIcon.stop().animate({"opacity": "1"}, 500);
+        globalHead.stop().animate({"opacity": "1"}, 500);
+        globalGraphic.stop().animate({"opacity": "1"}, 500);
+      }
+
+      if ($(window).width() <= 1133 && $(window).width() >= 1098) {
+        globalSec.stop().animate({"padding-top": "25%"}, 500);
+        globalIcon.stop().animate({"opacity": "1"}, 500);
+        globalHead.stop().animate({"opacity": "1"}, 500);
+        globalGraphic.stop().animate({"opacity": "1"}, 500);
+      }
+
+      if ($(window).width() <= 1097 && $(window).width() >= 1013) {
+        globalSec.stop().animate({"padding-top": "25%"}, 500);
+        globalIcon.stop().animate({"opacity": "1"}, 500);
+        globalHead.stop().animate({"opacity": "1"}, 500);
+        globalGraphic.stop().animate({"opacity": "1"}, 500);
+      }
+
+      if ($(window).width() <= 1012 && $(window).width() >= 974) {
+        globalSec.stop().animate({"padding-top": "26%"}, 500);
+        globalIcon.stop().animate({"opacity": "1"}, 500);
+        globalHead.stop().animate({"opacity": "1"}, 500);
+        globalGraphic.stop().animate({"opacity": "1"}, 500);
+      }
+
+      if ($(window).width() <= 973 && $(window).width() >= 904) {
+        globalSec.stop().animate({"padding-top": "27%"}, 500);
+        globalIcon.stop().animate({"opacity": "1"}, 500);
+        globalHead.stop().animate({"opacity": "1"}, 500);
+        globalGraphic.stop().animate({"opacity": "1"}, 500);
+      }
+
+      if ($(window).width() <= 903 && $(window).width() >= 883) {
+        globalSec.stop().animate({"padding-top": "29%"}, 500);
+        globalIcon.stop().animate({"opacity": "1"}, 500);
+        globalHead.stop().animate({"opacity": "1"}, 500);
+        globalGraphic.stop().animate({"opacity": "1"}, 500);
+      }
+
+      if ($(window).width() <= 882 && $(window).width() >= 809) {
+        globalSec.stop().animate({"padding-top": "30%"}, 500);
+        globalIcon.stop().animate({"opacity": "1"}, 500);
+        globalHead.stop().animate({"opacity": "1"}, 500);
+        globalGraphic.stop().animate({"opacity": "1"}, 500);
+      }
+
+      if ($(window).width() <= 808 && $(window).width() >= 777) {
+        globalSec.stop().animate({"padding-top": "31%"}, 500);
+        globalIcon.stop().animate({"opacity": "1"}, 500);
+        globalHead.stop().animate({"opacity": "1"}, 500);
+        globalGraphic.stop().animate({"opacity": "1"}, 500);
+      }
+
+      if ($(window).width() <= 776 && $(window).width() >= 741) {
+        globalSec.stop().animate({"padding-top": "31%"}, 500);
+        globalIcon.stop().animate({"opacity": "1"}, 500);
+        globalHead.stop().animate({"opacity": "1"}, 500);
+        globalGraphic.stop().animate({"opacity": "1"}, 500);
+      }
+
+      if ($(window).width() <= 740 && $(window).width() >= 686) {
+        globalSec.stop().animate({"padding-top": "36%"}, 500);
+        globalIcon.stop().animate({"opacity": "1"}, 500);
+        globalHead.stop().animate({"opacity": "1"}, 500);
+        globalGraphic.stop().animate({"opacity": "1"}, 500);
+      }
+
+      if ($(window).width() <= 685 && $(window).width() >= 657) {
+        globalSec.stop().animate({"padding-top": "38%"}, 500);
+        globalIcon.stop().animate({"opacity": "1"}, 500);
+        globalHead.stop().animate({"opacity": "1"}, 500);
+        globalGraphic.stop().animate({"opacity": "1"}, 500);
+      }
+
+      if ($(window).width() <= 656 && $(window).width() >= 642) {
+        globalSec.stop().animate({"padding-top": "40%"}, 500);
+        globalIcon.stop().animate({"opacity": "1"}, 500);
+        globalHead.stop().animate({"opacity": "1"}, 500);
+        globalGraphic.stop().animate({"opacity": "1"}, 500);
+      }
+
+      if ($(window).width() <= 641 && $(window).width() >= 635) {
+        globalSec.stop().animate({"padding-top": "43%"}, 500);
+        globalIcon.stop().animate({"opacity": "1"}, 500);
+        globalHead.stop().animate({"opacity": "1"}, 500);
+        globalGraphic.stop().animate({"opacity": "1"}, 500);
+      }
+
+      if ($(window).width() <= 634 && $(window).width() >= 588) {
+        globalSec.stop().animate({"padding-top": "43%"}, 500);
+        globalIcon.stop().animate({"opacity": "1"}, 500);
+        globalHead.stop().animate({"opacity": "1"}, 500);
+        globalGraphic.stop().animate({"opacity": "1"}, 500);
+      }
+
+      if ($(window).width() <= 587 && $(window).width() >= 555) {
+        globalSec.stop().animate({"padding-top": "45%"}, 500);
+        globalIcon.stop().animate({"opacity": "1"}, 500);
+        globalHead.stop().animate({"opacity": "1"}, 500);
+        globalGraphic.stop().animate({"opacity": "1"}, 500);
+      }
+
+      if ($(window).width() <= 554 && $(window).width() >= 480) {
+        globalSec.stop().animate({"padding-top": "48%"}, 500);
+        globalIcon.stop().animate({"opacity": "1"}, 500);
+        globalHead.stop().animate({"opacity": "1"}, 500);
+        globalGraphic.stop().animate({"opacity": "1"}, 500);
+      }
+
+      if ($(window).width() <= 479 && $(window).width() >= 442) {
+        globalSec.stop().animate({"padding-top": "61%"}, 500);
+        globalIcon.stop().animate({"opacity": "1"}, 500);
+        globalHead.stop().animate({"opacity": "1"}, 500);
+        globalGraphic.stop().animate({"opacity": "1"}, 500);
+      }
+
+      if ($(window).width() <= 441 && $(window).width() >= 390) {
+        globalSec.stop().animate({"padding-top": "65%"}, 500);
+        globalIcon.stop().animate({"opacity": "1"}, 500);
+        globalHead.stop().animate({"opacity": "1"}, 500);
+        globalGraphic.stop().animate({"opacity": "1"}, 500);
+      }
 		}
 
 		if(footer.offset().top < $(window).scrollTop() + $(window).outerHeight())
@@ -209,4 +401,8 @@ $(document).ready(function(){
 		downArr.addClass("animated css3-notification");
 	});
   /**/
+
+
+
+
 });

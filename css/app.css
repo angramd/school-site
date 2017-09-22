@@ -842,15 +842,25 @@ ul li.slideUnder a {
     padding-bottom: 8%;
   }
 
-  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons, #resource-twit #article1 #headContainer .icons, #resource-twit #article2 #headContainer2 .icons{
    margin-top: 5%;
+   width: 12.5%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin-top: 2%;
+   width: 6.8%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin-top: 5.2%;
    width: 12.5%;
   }
 }
 
 
 
-@media only screen and (min-width: 1712px) and (max-width: 1861px){
+@media only screen and (min-width: 1712px) and (max-width: 1860px){
   #global .icons{
     margin-left: 29%;
   }
@@ -912,6 +922,16 @@ ul li.slideUnder a {
   #global .icons img{
     width: 33%;
   }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin-top: 2.6%;
+   width: 7.5%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin-top: 5.8%;
+   width: 13.5%;
+  }
 }
 
 @media only screen and (min-width: 1530px) and (max-width: 1584px) {
@@ -933,6 +953,10 @@ ul li.slideUnder a {
 
   #global .icons img{
     width: 33%;
+  }
+
+  #global .graphicEle img{
+    width: 6%;
   }
 }
 
@@ -1021,6 +1045,20 @@ ul li.slideUnder a {
 
   #global .icons img{
     width: 33%;
+  }
+
+  #global .graphicEle img{
+    width: 6%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin-top: 2.6%;
+   width: 7.5%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin-top: 5.8%;
+   width: 14.5%;
   }
 }
 
@@ -1123,6 +1161,20 @@ ul li.slideUnder a {
 
   #global .icons img{
     width: 34%;
+  }
+
+  #global .graphicEle img{
+    width: 7%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin-top: 2.8%;
+   width: 8%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin-top: 6.5%;
+   width: 15.2%;
   }
 }
 
@@ -1235,6 +1287,20 @@ ul li.slideUnder a {
 
   #global .icons img{
     width: 34%;
+  }
+
+  #global .graphicEle img{
+    width: 7%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin-top: 2.8%;
+   width: 8%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin-top: 6.5%;
+   width: 15.2%;
   }
 }
 
@@ -1351,6 +1417,24 @@ ul li.slideUnder a {
 
   #global .icons img{
     width: 36%;
+  }
+
+  #global .graphicEle img{
+    width: 7%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin-top: 2.7%;
+   width: 8%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin-top: 6.7%;
+   width: 15.2%;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1{
+   font-size: 3.5em;
   }
 }
 
@@ -1473,6 +1557,20 @@ ul li.slideUnder a {
   #global .graphicEle img{
     width: 8%;
   }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin-top: 3.5%;
+   width: 8%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin-top: 7.5%;
+   width: 15.2%;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1{
+   font-size: 3.5em;
+  }
 }
 
 
@@ -1593,6 +1691,20 @@ ul li.slideUnder a {
 
   #global .graphicEle img{
     width: 8%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin-top: 3.5%;
+   width: 8%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin-top: 7.5%;
+   width: 15.2%;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1{
+   font-size: 3.5em;
   }
 }
 
@@ -1723,6 +1835,20 @@ ul li.slideUnder a {
 
   #global .graphicEle img{
     width: 8%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin-top: 3.5%;
+   width: 9%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin-top: 7.5%;
+   width: 16%;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1{
+   font-size: 3.5em;
   }
 }
 
@@ -1857,6 +1983,20 @@ ul li.slideUnder a {
 
   #global .graphicEle img{
     width: 8%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin-top: 3.5%;
+   width: 9%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin-top: 7.5%;
+   width: 16%;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1{
+   font-size: 3.5em;
   }
 }
 
@@ -2016,6 +2156,20 @@ ul li.slideUnder a {
 
   #global .graphicEle img{
     width: 8%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin-top: 2.7%;
+   width: 9%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin-top: 6.7%;
+   width: 16%;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1{
+   font-size: 3em;
   }
 }
 
@@ -2185,6 +2339,34 @@ ul li.slideUnder a {
 
   #global .graphicEle img{
     width: 8%;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   padding: 2% 0 0 0 !important;
+   float: none;
+  }
+
+  #resource-twit #article1 #headContainer{
+   width: 60%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin: 4.5% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin: 6.7% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article1 #headContainer h1{
+   font-size: 3em;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 150px;
+   font-size: 3em;
   }
 }
 
@@ -2363,6 +2545,34 @@ ul li.slideUnder a {
 
   #global .graphicEle img{
     width: 8%;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   padding: 2% 0 0 0 !important;
+   float: none;
+  }
+
+  #resource-twit #article1 #headContainer{
+   width: 60%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin: 4.5% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin: 6.7% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article1 #headContainer h1{
+   font-size: 3em;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 150px;
+   font-size: 3em;
   }
 }
 
@@ -2547,6 +2757,38 @@ ul li.slideUnder a {
 
   #global .graphicEle img{
     width: 8%;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   padding: 2% 0 0 0 !important;
+   float: none;
+  }
+
+  #resource-twit #article1 #headContainer{
+   width: 60%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin: 4.5% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin: 6.7% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article1 #headContainer h1{
+   font-size: 3em;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 150px;
+   font-size: 3em;
+  }
+
+  #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
+    width: 35%;
   }
 }
 
@@ -2734,6 +2976,38 @@ ul li.slideUnder a {
   #global .graphicEle img{
     width: 8%;
   }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   padding: 2% 0 0 0 !important;
+   float: none;
+  }
+
+  #resource-twit #article1 #headContainer{
+   width: 60%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin: 4.5% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin: 6.7% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article1 #headContainer h1{
+   font-size: 3em;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 150px;
+   font-size: 3em;
+  }
+
+  #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
+    width: 35%;
+  }
 }
 
 
@@ -2920,6 +3194,42 @@ ul li.slideUnder a {
   #global .graphicEle img{
     width: 8%;
   }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   padding: 2% 0 0 0 !important;
+   float: none;
+  }
+
+  #resource-twit #article1 #headContainer{
+   width: 60%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin: 4.5% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin: 6.7% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article1 #headContainer h1{
+   font-size: 2.5em;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 150px;
+    font-size: 2.5em;
+  }
+
+  #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
+    width: 35%;
+  }
+
+  #resource-twit #article1 div:nth-child(2) a h2{
+   margin-bottom: 5%;
+  }
 }
 
 
@@ -3104,6 +3414,42 @@ ul li.slideUnder a {
 
   #global .graphicEle img{
     width: 8%;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   padding: 2% 0 0 0 !important;
+   float: none;
+  }
+
+  #resource-twit #article1 #headContainer{
+   width: 60%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin: 4.5% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin: 6.7% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article1 #headContainer h1{
+   font-size: 2.2em;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 150px;
+    font-size: 2.2em;
+  }
+
+  #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
+    width: 35%;
+  }
+
+  #resource-twit #article1 div:nth-child(2) a h2{
+   margin-bottom: 5%;
   }
 }
 
@@ -3294,6 +3640,42 @@ ul li.slideUnder a {
 
   #global .graphicEle img{
     width: 8%;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   padding: 2% 0 0 0 !important;
+   float: none;
+  }
+
+  #resource-twit #article1 #headContainer{
+   width: 60%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin: 4.5% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin: 6.7% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article1 #headContainer h1{
+   font-size: 2.2em;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 150px;
+    font-size: 2.2em;
+  }
+
+  #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
+    width: 40%;
+  }
+
+  #resource-twit #article1 div:nth-child(2) a h2{
+   margin-bottom: 5%;
   }
 }
 
@@ -3494,6 +3876,42 @@ ul li.slideUnder a {
   #global .graphicEle img{
     width: 10%;
   }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   padding: 2% 0 0 0 !important;
+   float: none;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   width: 60%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin: 4.5% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin: 6.7% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article1 #headContainer h1{
+   font-size: 2.2em;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 150px;
+    font-size: 2.2em;
+  }
+
+  #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
+    width: 40%;
+  }
+
+  #resource-twit #article1 div:nth-child(2) a h2{
+   margin-bottom: 5%;
+  }
 }
 
 
@@ -3692,6 +4110,42 @@ ul li.slideUnder a {
 
   #global .graphicEle img{
     width: 10%;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   padding: 2% 0 0 0 !important;
+   float: none;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   width: 60%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin: 4.5% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin: 6.7% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article1 #headContainer h1{
+   font-size: 2.2em;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 150px;
+    font-size: 2.2em;
+  }
+
+  #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
+    width: 40%;
+  }
+
+  #resource-twit #article1 div:nth-child(2) a h2{
+   margin-bottom: 5%;
   }
 }
 
@@ -3893,6 +4347,42 @@ ul li.slideUnder a {
 
   #global .graphicEle img{
     width: 10%;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   padding: 2% 0 0 0 !important;
+   float: none;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   width: 60%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin: 4.5% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin: 6.7% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article1 #headContainer h1{
+   font-size: 2.2em;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 150px;
+    font-size: 2.2em;
+  }
+
+  #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
+    width: 36%;
+  }
+
+  #resource-twit #article1 div:nth-child(2) a h2{
+   margin-bottom: 5%;
   }
 }
 
@@ -4150,6 +4640,42 @@ ul li.slideUnder a {
 
   #global .graphicEle img{
     width: 10%;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   padding: 2% 0 0 0 !important;
+   float: none;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   width: 60%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin: 4.5% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin: 6.7% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article1 #headContainer h1{
+   font-size: 2.2em;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 150px;
+    font-size: 2.2em;
+  }
+
+  #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
+    width: 36%;
+  }
+
+  #resource-twit #article1 div:nth-child(2) a h2{
+   margin-bottom: 5%;
   }
 }
 
