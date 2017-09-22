@@ -4642,40 +4642,123 @@ ul li.slideUnder a {
     width: 10%;
   }
 
+  #resource-twit{
+    height: 1190px;
+  }
+
   #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
    padding: 2% 0 0 0 !important;
    float: none;
   }
 
   #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
-   width: 60%;
+   width: 67%;
   }
 
   #resource-twit #article1 #headContainer .icons{
    margin: 4.5% auto 0 0;
-   width: 16%;
+   width: 13%;
   }
 
   #resource-twit #article2 #headContainer2 .icons{
    margin: 6.7% auto 0 0;
-   width: 16%;
+   width: 11%;
   }
 
-  #resource-twit #article1 #headContainer h1{
-   font-size: 2.2em;
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1{
+   font-size: 4em;
   }
 
   #resource-twit #article2 #headContainer2 h1{
     width: 150px;
-    font-size: 2.2em;
   }
 
   #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
-    width: 36%;
+    width: 25%;
   }
 
   #resource-twit #article1 div:nth-child(2) a h2{
    margin-bottom: 5%;
+  }
+
+  #footer{
+    height: 600px;
+  	background: url(../img/map.jpg) no-repeat fixed 55% 100% / cover;
+    position: relative;
+  }
+
+  #footer #footContact{
+   margin: 0 auto;
+   padding: 0;
+   text-align: center;
+   position: absolute;
+   display: inline-block;
+   left: 0;
+   right: 0;
+   width: auto;
+  }
+
+  #footer #footContact .icons{
+   margin: 4.5% 2% 0 auto;
+   float: left;
+   width: 15% !important;
+  }
+
+  #footer #footContact h1{
+   font-size: 4em;
+   margin: 0 auto;
+   color: #FFF;
+   float: left;
+  }
+
+  #footer #footContact .graphicEle{
+    width: 100%;
+    margin: 0 auto 15%;
+    text-align: center;
+    float: left;
+  }
+
+  #footer #footAddress{
+    position: absolute;
+    margin: 15% 0 0 31%;
+    float: left;
+    width: 50%;
+    text-align: center;
+    z-index: 3;
+  }
+
+  #footer #footAddress div:nth-child(1) h2, #footer #footAddress div:nth-child(1) p{
+    text-align: right;
+  }
+
+  #footer #footAddress div:nth-child(1) h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #FFF;
+  }
+
+  #footer #footAddress div:nth-child(1) p{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.2em;
+    color: #FFF;
+  }
+
+  #footer #footAddress div:nth-child(2){
+    text-align: center;
+  }
+
+  #footer #footAddress div:nth-child(3) p{
+    text-align: left;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.2em;
+    color: #FFF;
+    margin-bottom: 0;
+  }
+
+  #footer #footAddress div:nth-child(3) p span{
+    font-weight: 700;
+    color: #FFF;
   }
 }
 
