@@ -303,6 +303,13 @@ $(document).ready(function(){
         globalHead.stop().animate({"opacity": "1"}, 500);
         globalGraphic.stop().animate({"opacity": "1"}, 500);
       }
+
+      if ($(window).width() <= 389 && $(window).width() >= 320) {
+        globalSec.stop().animate({"padding-top": "90%"}, 500);
+        globalIcon.stop().animate({"opacity": "1"}, 500);
+        globalHead.stop().animate({"opacity": "1"}, 500);
+        globalGraphic.stop().animate({"opacity": "1"}, 500);
+      }
 		}
 
 		if(footer.offset().top < $(window).scrollTop() + $(window).outerHeight())
@@ -411,10 +418,20 @@ $(document).ready(function(){
 
   if (navigator.userAgent.indexOf('Safari') != -1)
 	{
-    topBar.css("width", "1150px");
+    topBar.css({"width": "1150px", "margin-left": "16%"});
     mission.css("margin-top", "10%");
     quickLinkDiv.css("padding-bottom", "2%");
+
+    if ($(window).width() <= 1584 && $(window).width() >= 1530) {
+      topBar.css({"width": "1200px !important", "margin-left": "8% !important"});
+    }
+
+    // if ($(window).width() <= 1428 && $(window).width() >= 1357) {
+    //   topBar.css({"width": "1250px !important", "margin-left": "4%"});
+    // }
 	}
+
+
 
 
 
@@ -436,8 +453,4 @@ $(document).ready(function(){
 		downArr.addClass("animated css3-notification");
 	});
   /**/
-
-
-
-
 });
