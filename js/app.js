@@ -63,6 +63,8 @@ $(document).ready(function(){
       linkCalendar.removeClass("currentLink underLine");
       linkResources.removeClass("currentLink underLine");
 			linkContact.removeClass('currentLink underLine');
+      homePage.stop().animate({"opacity": "1"}, 500);
+  		downArr.stop().animate({"opacity": "1"}, 500);
 		}
 
     if(mission.offset().top < $(window).scrollTop() + $(window).outerHeight())
@@ -73,6 +75,10 @@ $(document).ready(function(){
       linkCalendar.removeClass("currentLink underLine");
       linkResources.removeClass("currentLink underLine");
 			linkContact.removeClass('currentLink underLine');
+      homePage.stop().animate({"opacity": "0"}, 200);
+      homePage.css("opacity", "0");
+  		downArr.stop().animate({"opacity": "0"}, 200);
+      downArr.css("opacity", "0");
 		}
 
     if(newsEvents.offset().top < $(window).scrollTop() + $(window).outerHeight())
@@ -83,6 +89,10 @@ $(document).ready(function(){
       linkQuick.removeClass('currentLink underLine');
       linkResources.removeClass("currentLink underLine");
 			linkContact.removeClass('currentLink underLine');
+      homePage.stop().animate({"opacity": "0"}, 200);
+      homePage.css("opacity", "0");
+  		downArr.stop().animate({"opacity": "0"}, 200);
+      downArr.css("opacity", "0");
 		}
 
     if(globalSec.offset().top < $(window).scrollTop() + $(window).outerHeight())
@@ -93,6 +103,10 @@ $(document).ready(function(){
       linkCalendar.removeClass("currentLink underLine");
       linkQuick.removeClass('currentLink underLine');
 			linkContact.removeClass('currentLink underLine');
+      homePage.stop().animate({"opacity": "0"}, 200);
+      homePage.css("opacity", "0");
+  		downArr.stop().animate({"opacity": "0"}, 200);
+      downArr.css("opacity", "0");
 
       if ($(window).width() >= 1861) {
         globalSec.stop().animate({"padding-top": "13%"}, 500);
@@ -299,6 +313,10 @@ $(document).ready(function(){
       linkNews.removeClass('currentLink underLine');
       linkCalendar.removeClass("currentLink underLine");
       linkResources.removeClass("currentLink underLine");
+      homePage.stop().animate({"opacity": "0"}, 200);
+      homePage.css("opacity", "0");
+  		downArr.stop().animate({"opacity": "0"}, 200);
+      downArr.css("opacity", "0");
 		}
 	});
 	/**/
@@ -314,7 +332,8 @@ $(document).ready(function(){
     linkNews.removeClass("currentLink underLine");
     linkResources.removeClass("currentLink underLine");
 		linkContact.removeClass("currentLink underLine");
-		downArr.stop().fadeIn({"opacity": "1"}, 1000);
+    homePage.stop().animate({"opacity": "1"}, 500);
+    downArr.stop().animate({"opacity": "1"}, 500);
 	});
 
   linkNews.click(function()
@@ -325,7 +344,10 @@ $(document).ready(function(){
     linkHome.removeClass("currentLink underLine");
     linkResources.removeClass("currentLink underLine");
 		linkContact.removeClass("currentLink underLine");
-		downArr.stop().fadeOut({"opacity": "0"}, 1000);
+    homePage.stop().animate({"opacity": "0"}, 200);
+    homePage.css("opacity", "0");
+    downArr.stop().animate({"opacity": "0"}, 200);
+    downArr.css("opacity", "0");
 	});
 
   linkCalendar.click(function()
@@ -337,7 +359,10 @@ $(document).ready(function(){
     linkNews.removeClass('currentLink underLine');
     linkResources.removeClass("currentLink underLine");
 		linkContact.removeClass("currentLink underLine");
-		downArr.stop().fadeOut({"opacity": "0"}, 1000);
+    homePage.stop().animate({"opacity": "0"}, 200);
+    homePage.css("opacity", "0");
+    downArr.stop().animate({"opacity": "0"}, 200);
+    downArr.css("opacity", "0");
 	});
 
   downArr.click(function()
@@ -348,6 +373,10 @@ $(document).ready(function(){
     linkNews.removeClass('currentLink underLine');
     linkResources.removeClass("currentLink underLine");
     linkContact.remooveClass("currentLink underLine");
+    homePage.stop().animate({"opacity": "0"}, 200);
+    homePage.css("opacity", "0");
+    downArr.stop().animate({"opacity": "0"}, 200);
+    downArr.css("opacity", "0");
 	});
 
 	linkResources.click(function()
@@ -358,7 +387,10 @@ $(document).ready(function(){
     linkQuick.removeClass('currentLink underLine');
     linkNews.removeClass('currentLink underLine');
     linkContact.removeClass('currentLink underLine');
-		downArr.stop().fadeOut({"opacity": "0"}, 1000);
+    homePage.stop().animate({"opacity": "0"}, 200);
+    homePage.css("opacity", "0");
+    downArr.stop().animate({"opacity": "0"}, 200);
+    downArr.css("opacity", "0");
 	});
 
 	linkContact.click(function()
@@ -369,7 +401,10 @@ $(document).ready(function(){
     linkQuick.removeClass('currentLink underLine');
     linkNews.removeClass('currentLink');
     linkResources.removeClass('currentLink');
-		downArr.stop().fadeOut({"opacity": "0"}, 1000);
+    homePage.stop().animate({"opacity": "0"}, 200);
+    homePage.css("opacity", "0");
+    downArr.stop().animate({"opacity": "0"}, 200);
+    downArr.css("opacity", "0");
 	});
 
 
