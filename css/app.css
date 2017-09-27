@@ -17,8 +17,20 @@
   text-align: center;
 }
 
+.imgSlide{
+  display: none;
+}
+
+.imgCurrSlide{
+  display: block;
+}
+
 .newsImg{
   width: 40%;
+}
+
+.article1Container{
+  height: 100%;
 }
 
 .readmore a{
@@ -35,6 +47,16 @@ a.moreann{
   color: #333;
   margin: 0 auto;
   text-align: center;
+}
+
+div.moreann{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #333;
+  margin: 25% auto 0;
+  text-align: center;
+  cursor: pointer;
 }
 
 a.viewcalendar{
@@ -492,6 +514,7 @@ ul li.slideUnder a {
 /*ANNOUNCEMENTS/EVENTS*/
 #news-events{
   background: #0a0699;
+  height: 110vh;
 }
 
 #news-events #article1, #news-events #article2{
@@ -510,7 +533,8 @@ ul li.slideUnder a {
 #news-events #article1{
   background: #CCC;
   padding-top: 2%;
-  padding-bottom: 4%;
+  padding-bottom: 110vh;
+  height: 100%;
 }
 
 #news-events #article1 #headContainer{
@@ -542,7 +566,8 @@ ul li.slideUnder a {
   margin-left: 25%;
 }
 
-#news-events #article1 > div:nth-child(2), #news-events #article1 > div:nth-child(3), #news-events #article1 > div:nth-child(4){
+#news-events #article1 .article1Container .imgSlide > div:nth-child(1), #news-events #article1 .article1Container .imgSlide > div:nth-child(2), #news-events #article1 .article1Container .imgSlide > div:nth-child(3),
+ #news-events #article1 .article1Container .imgSlide > div:nth-child(4), #news-events #article1 > div:nth-child(4){
   padding-left: 2% !important;
   padding-top: 3% !important;
 }
@@ -977,11 +1002,13 @@ ul li.slideUnder a {
    width: 14%;
   }
 
-  #news-events #article2>div:nth-child(2), #news-events #article2>div:nth-child(3){
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
    padding-left: 8% !important;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
    font-size: 1.5em;
   }
 
@@ -1173,11 +1200,13 @@ ul li.slideUnder a {
    width: 14%;
   }
 
-  #news-events #article2>div:nth-child(2), #news-events #article2>div:nth-child(3){
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
    padding-left: 8% !important;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
    font-size: 1.5em;
   }
 
@@ -1327,15 +1356,19 @@ ul li.slideUnder a {
    width: 15%;
   }
 
-  #news-events #article2>div:nth-child(2), #news-events #article2>div:nth-child(3){
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
    padding-left: 8% !important;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
    font-size: 1.2em;
   }
 
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    font-size: 1em;
   }
 
@@ -1499,11 +1532,15 @@ ul li.slideUnder a {
    padding-left: 8% !important;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
    font-size: 1.2em;
   }
 
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    font-size: 1em;
   }
 
@@ -1676,11 +1713,15 @@ ul li.slideUnder a {
    padding-left: 8% !important;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
    font-size: 1.2em;
   }
 
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    font-size: 1em;
   }
 
@@ -1867,11 +1908,15 @@ ul li.slideUnder a {
    padding-left: 8% !important;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
    font-size: 1.2em;
   }
 
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    font-size: 1em;
   }
 
@@ -2058,11 +2103,15 @@ ul li.slideUnder a {
    padding-left: 8% !important;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
    font-size: 1.2em;
   }
 
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    font-size: 1em;
   }
 
@@ -2258,11 +2307,15 @@ ul li.slideUnder a {
    padding-left: 8% !important;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
    font-size: 1.2em;
   }
 
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    font-size: 1em;
   }
 
@@ -2464,11 +2517,15 @@ ul li.slideUnder a {
    padding-left: 8% !important;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
    font-size: 1.2em;
   }
 
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    font-size: 1em;
   }
 
@@ -2666,7 +2723,8 @@ ul li.slideUnder a {
    width: 15%;
   }
 
-  #news-events #article1 div:nth-child(2) div, #news-events #article1 div:nth-child(3) div{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div{
    padding-right: 1%;
   }
 
@@ -2678,11 +2736,15 @@ ul li.slideUnder a {
    padding-left: 8% !important;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
    font-size: 1.2em;
   }
 
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    font-size: 1em;
   }
 
@@ -2690,16 +2752,19 @@ ul li.slideUnder a {
    width: 85%;
   }
 
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p{
    width: 100%;
    padding-right: 0;
   }
 
-  #news-events #article1 > div:nth-child(2) > div > div.columns, #news-events #article1 > div:nth-child(3) > div > div.columns{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.columns,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.columns{
     float: none;
   }
 
-  #news-events #article1 > div:nth-child(2) > div > div.medium-6, #news-events #article1 > div:nth-child(3) > div > div.medium-6{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.medium-6,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.medium-6{
     width: 100%;
   }
 
@@ -2911,7 +2976,8 @@ ul li.slideUnder a {
    float: left;
   }
 
-  #news-events #article1 div:nth-child(2) div, #news-events #article1 div:nth-child(3) div{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div{
    padding-right: 1%;
   }
 
@@ -2923,11 +2989,15 @@ ul li.slideUnder a {
    padding-left: 8% !important;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
    font-size: 1.1em;
   }
 
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    font-size: .9em;
   }
 
@@ -2935,16 +3005,19 @@ ul li.slideUnder a {
    width: 85%;
   }
 
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p{
    width: 100%;
    padding-right: 0;
   }
 
-  #news-events #article1 > div:nth-child(2) > div > div.columns, #news-events #article1 > div:nth-child(3) > div > div.columns{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.columns,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.columns{
     float: none;
   }
 
-  #news-events #article1 > div:nth-child(2) > div > div.medium-6, #news-events #article1 > div:nth-child(3) > div > div.medium-6{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.medium-6,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.medium-6{
     width: 100%;
   }
 
@@ -3185,7 +3258,8 @@ ul li.slideUnder a {
    float: left;
   }
 
-  #news-events #article1 div:nth-child(2) div, #news-events #article1 div:nth-child(3) div{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div{
    padding-right: 1%;
   }
 
@@ -3197,11 +3271,15 @@ ul li.slideUnder a {
    padding-left: 8% !important;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
    font-size: 1em;
   }
 
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    font-size: .9em;
   }
 
@@ -3209,16 +3287,19 @@ ul li.slideUnder a {
    width: 85%;
   }
 
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p{
    width: 100%;
    padding-right: 0;
   }
 
-  #news-events #article1 > div:nth-child(2) > div > div.columns, #news-events #article1 > div:nth-child(3) > div > div.columns{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.columns,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.columns{
     float: none;
   }
 
-  #news-events #article1 > div:nth-child(2) > div > div.medium-6, #news-events #article1 > div:nth-child(3) > div > div.medium-6{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.medium-6,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.medium-6{
     width: 100%;
   }
 
@@ -3439,7 +3520,8 @@ ul li.slideUnder a {
    float: left;
   }
 
-  #news-events #article1 div:nth-child(2) div, #news-events #article1 div:nth-child(3) div{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div{
    padding-right: 1%;
   }
 
@@ -3451,11 +3533,15 @@ ul li.slideUnder a {
    padding-left: 8% !important;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
    font-size: 1em;
   }
 
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    font-size: .9em;
   }
 
@@ -3463,16 +3549,19 @@ ul li.slideUnder a {
    width: 85%;
   }
 
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p{
    width: 100%;
    padding-right: 0;
   }
 
-  #news-events #article1 > div:nth-child(2) > div > div.columns, #news-events #article1 > div:nth-child(3) > div > div.columns{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.columns,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.columns{
     float: none;
   }
 
-  #news-events #article1 > div:nth-child(2) > div > div.medium-6, #news-events #article1 > div:nth-child(3) > div > div.medium-6{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.medium-6,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.medium-6{
     width: 100%;
   }
 
@@ -3720,7 +3809,8 @@ ul li.slideUnder a {
    float: left;
   }
 
-  #news-events #article1 div:nth-child(2) div, #news-events #article1 div:nth-child(3) div{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div{
    padding-right: 1%;
   }
 
@@ -3732,11 +3822,15 @@ ul li.slideUnder a {
    padding-left: 8% !important;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
    font-size: 1em;
   }
 
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    font-size: .9em;
   }
 
@@ -3744,16 +3838,19 @@ ul li.slideUnder a {
    width: 85%;
   }
 
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p{
    width: 100%;
    padding-right: 0;
   }
 
-  #news-events #article1 > div:nth-child(2) > div > div.columns, #news-events #article1 > div:nth-child(3) > div > div.columns{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.columns,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.columns{
     float: none;
   }
 
-  #news-events #article1 > div:nth-child(2) > div > div.medium-6, #news-events #article1 > div:nth-child(3) > div > div.medium-6{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.medium-6,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.medium-6{
     width: 100%;
   }
 
@@ -3984,7 +4081,8 @@ ul li.slideUnder a {
    float: left;
   }
 
-  #news-events #article1 div:nth-child(2) div, #news-events #article1 div:nth-child(3) div{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div{
    padding-right: 1%;
   }
 
@@ -3996,28 +4094,35 @@ ul li.slideUnder a {
    padding-left: 8% !important;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
    font-size: 1em;
   }
 
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    font-size: .9em;
-  }
-
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p{
-   width: 100%;
-   padding-right: 0;
   }
 
   #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    width: 85%;
   }
 
-  #news-events #article1 > div:nth-child(2) > div > div.columns, #news-events #article1 > div:nth-child(3) > div > div.columns{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p{
+   width: 100%;
+   padding-right: 0;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.columns,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.columns{
     float: none;
   }
 
-  #news-events #article1 > div:nth-child(2) > div > div.medium-6, #news-events #article1 > div:nth-child(3) > div > div.medium-6{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.medium-6,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.medium-6{
     width: 100%;
   }
 
@@ -4268,7 +4373,8 @@ ul li.slideUnder a {
    float: left;
   }
 
-  #news-events #article1 div:nth-child(2) div, #news-events #article1 div:nth-child(3) div{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div{
    padding-right: 1%;
   }
 
@@ -4280,28 +4386,35 @@ ul li.slideUnder a {
    padding-left: 8% !important;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
    font-size: 1em;
   }
 
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    font-size: .9em;
-  }
-
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p{
-   width: 100%;
-   padding-right: 0;
   }
 
   #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    width: 85%;
   }
 
-  #news-events #article1 > div:nth-child(2) > div > div.columns, #news-events #article1 > div:nth-child(3) > div > div.columns{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p{
+   width: 100%;
+   padding-right: 0;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.columns,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.columns{
     float: none;
   }
 
-  #news-events #article1 > div:nth-child(2) > div > div.medium-6, #news-events #article1 > div:nth-child(3) > div > div.medium-6{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.medium-6,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.medium-6{
     width: 100%;
   }
 
@@ -4558,7 +4671,8 @@ ul li.slideUnder a {
    float: left;
   }
 
-  #news-events #article1 div:nth-child(2) div, #news-events #article1 div:nth-child(3) div{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div{
    padding-right: 1%;
   }
 
@@ -4570,28 +4684,35 @@ ul li.slideUnder a {
    padding-left: 8% !important;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
    font-size: 1em;
   }
 
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    font-size: .9em;
-  }
-
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p{
-   width: 100%;
-   padding-right: 0;
   }
 
   #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    width: 85%;
   }
 
-  #news-events #article1 > div:nth-child(2) > div > div.columns, #news-events #article1 > div:nth-child(3) > div > div.columns{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p{
+   width: 100%;
+   padding-right: 0;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.columns,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.columns{
     float: none;
   }
 
-  #news-events #article1 > div:nth-child(2) > div > div.medium-6, #news-events #article1 > div:nth-child(3) > div > div.medium-6{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.medium-6,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.medium-6{
     width: 100%;
   }
 
@@ -4856,7 +4977,8 @@ ul li.slideUnder a {
    float: left;
   }
 
-  #news-events #article1 div:nth-child(2) div, #news-events #article1 div:nth-child(3) div{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div{
    padding-right: 1%;
   }
 
@@ -4868,28 +4990,35 @@ ul li.slideUnder a {
    padding-left: 8% !important;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
    font-size: 1em;
   }
 
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    font-size: .9em;
-  }
-
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p{
-   width: 100%;
-   padding-right: 0;
   }
 
   #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    width: 85%;
   }
 
-  #news-events #article1 > div:nth-child(2) > div > div.columns, #news-events #article1 > div:nth-child(3) > div > div.columns{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p{
+   width: 100%;
+   padding-right: 0;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.columns,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.columns{
     float: none;
   }
 
-  #news-events #article1 > div:nth-child(2) > div > div.medium-6, #news-events #article1 > div:nth-child(3) > div > div.medium-6{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.medium-6,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.medium-6{
     width: 100%;
   }
 
@@ -5155,7 +5284,8 @@ ul li.slideUnder a {
    float: left;
   }
 
-  #news-events #article1 div:nth-child(2) div, #news-events #article1 div:nth-child(3) div{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div{
    padding-right: 1%;
   }
 
@@ -5167,28 +5297,35 @@ ul li.slideUnder a {
    padding-left: 8% !important;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
    font-size: .9em;
   }
 
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    font-size: .9em;
-  }
-
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p{
-   width: 100%;
-   padding-right: 0;
   }
 
   #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    width: 85%;
   }
 
-  #news-events #article1 > div:nth-child(2) > div > div.columns, #news-events #article1 > div:nth-child(3) > div > div.columns{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p{
+   width: 100%;
+   padding-right: 0;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.columns,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.columns{
     float: none;
   }
 
-  #news-events #article1 > div:nth-child(2) > div > div.medium-6, #news-events #article1 > div:nth-child(3) > div > div.medium-6{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.medium-6,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.medium-6{
     width: 100%;
   }
 
@@ -5456,7 +5593,8 @@ ul li.slideUnder a {
    float: left;
   }
 
-  #news-events #article1 div:nth-child(2) div, #news-events #article1 div:nth-child(3) div{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div{
    padding-right: 1%;
   }
 
@@ -5468,28 +5606,35 @@ ul li.slideUnder a {
    padding-left: 8% !important;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
    font-size: .9em;
   }
 
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    font-size: .9em;
-  }
-
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p{
-   width: 100%;
-   padding-right: 0;
   }
 
   #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    width: 85%;
   }
 
-  #news-events #article1 > div:nth-child(2) > div > div.columns, #news-events #article1 > div:nth-child(3) > div > div.columns{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p{
+   width: 100%;
+   padding-right: 0;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.columns,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.columns{
     float: none;
   }
 
-  #news-events #article1 > div:nth-child(2) > div > div.medium-6, #news-events #article1 > div:nth-child(3) > div > div.medium-6{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.medium-6,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.medium-6{
     width: 100%;
   }
 
@@ -5812,19 +5957,26 @@ ul li.slideUnder a {
    padding-left: 0 !important;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3,
-  #news-events #article2 div:nth-child(3) div h3, #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
   #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    text-align: center;
    padding: 0 10% 0 2%;
    width: 100%;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
    font-size: 1.4em;
   }
 
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    font-size: 1.2em;
   }
 
@@ -5853,7 +6005,7 @@ ul li.slideUnder a {
     font-size: 1.2em;
   }
 
-  #news-events #article1 > div:nth-child(4), #news-events #article2 > div:nth-child(3){
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(4), #news-events #article2 > div:nth-child(3){
     float: none;
     text-align: center;
   }
@@ -8006,7 +8158,7 @@ ul li.slideUnder a {
   #quickLink{
     height: 500px;
   }
-  
+
   #quickLink > div > div .icons{
     width: 28%;
     margin-left: 0;

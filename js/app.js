@@ -6,13 +6,6 @@ $(document).ready(function(){
 	}, 5000);
 
   var topBar = $(".top-bar");
-  var homePage = $("#home");
-  var mission = $("#mission");
-  var quickLink = $("#quickLink");
-  var quickLinkDiv = $("#quickLink > div > div");
-  var newsEvents = $("#news-events");
-  var resource_twit = $("#resource-twit");
-  var footer = $("#footer");
   var linkHome = $("#linkHome");
   var linkQuick = $("#linkQuick");
   var linkNews = $("#linkNews");
@@ -20,12 +13,19 @@ $(document).ready(function(){
   var linkResources = $("#linkResources");
   var linkContact = $("#linkContact");
   var downArr = $("#downArr");
+  var homePage = $("#home");
+  var mission = $("#mission");
+  var quickLink = $("#quickLink");
+  var quickLinkDiv = $("#quickLink > div > div");
+  var newsEvents = $("#news-events");
+  var imgSlide = $(".imgSlide");
+  var annBTN = $("#moreArtBTN div div.moreann");
   var globalSec = $("#global");
   var globalIcon = $("#global div .icons");
   var globalHead = $("#global div h1");
   var globalGraphic = $("#global .graphicEle");
-
-  $("#header2").css("opacity", "0");
+  var resource_twit = $("#resource-twit");
+  var footer = $("#footer");
 
   /*MOVE SCROLL BAR TO TOP OF PAGE WHEN PAGE RELOADS*/
 	$(window).scrollTop(0);
@@ -416,9 +416,10 @@ $(document).ready(function(){
 
 
 
-  if (navigator.userAgent.indexOf('Safari') != -1)
+  /*TARGET CSS IN SAFARI BROWSER*/
+  if (navigator.userAgent.indexOf('Safari') != -1 && !navigator.userAgent.indexOf('Chrome') == -1)
 	{
-    topBar.css({"width": "1150px", "margin-left": "16%"});
+    topBar.css({"width": "1150px", "margin-left": "1%"});
     mission.css("margin-top", "10%");
     quickLinkDiv.css("padding-bottom", "2%");
 
@@ -430,8 +431,6 @@ $(document).ready(function(){
     //   topBar.css({"width": "1250px !important", "margin-left": "4%"});
     // }
 	}
-
-
 
 
 
@@ -453,4 +452,17 @@ $(document).ready(function(){
 		downArr.addClass("animated css3-notification");
 	});
   /**/
+
+
+
+  annBTN.click(function()
+	{
+    $(".article1Container > div:first").stop().fadeOut(200,
+    function(){
+      $(".article1Container > div:first").next().stop().fadeIn(200).end().appendTo(".article1Container");
+    });
+	});
+
+
+
 });
