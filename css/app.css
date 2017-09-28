@@ -6005,7 +6005,7 @@ ul li.slideUnder a {
     font-size: 1.2em;
   }
 
-  #news-events #article1 .article1Container .imgSlide > div:nth-child(4), #news-events #article2 > div:nth-child(3){
+  #news-events #article1 > div:nth-child(4), #news-events #article2 > div:nth-child(3){
     float: none;
     text-align: center;
   }
@@ -6335,19 +6335,26 @@ ul li.slideUnder a {
    padding-left: 0 !important;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3,
-  #news-events #article2 div:nth-child(3) div h3, #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
   #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    text-align: center;
    padding: 0 8% 0 3%;
    width: 100%;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
    font-size: 1.4em;
   }
 
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    font-size: 1.2em;
   }
 
@@ -6706,19 +6713,26 @@ ul li.slideUnder a {
    padding-left: 0 !important;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3,
-  #news-events #article2 div:nth-child(3) div h3, #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
   #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    text-align: center;
    padding: 0 5%;
    width: 100%;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
    font-size: 1.4em;
   }
 
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    font-size: 1.2em;
   }
 
@@ -7079,19 +7093,26 @@ ul li.slideUnder a {
    padding-left: 0 !important;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3,
-  #news-events #article2 div:nth-child(3) div h3, #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
   #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    text-align: center;
    padding: 0 5%;
    width: 100%;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
    font-size: 1.4em;
   }
 
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    font-size: 1.2em;
   }
 
@@ -7451,19 +7472,26 @@ ul li.slideUnder a {
    padding-left: 0 !important;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3,
-  #news-events #article2 div:nth-child(3) div h3, #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
   #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    text-align: center;
    padding: 0 5%;
    width: 100%;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
    font-size: 1.4em;
   }
 
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    font-size: 1.2em;
   }
 
@@ -7823,19 +7851,26 @@ ul li.slideUnder a {
    padding-left: 0 !important;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3,
-  #news-events #article2 div:nth-child(3) div h3, #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
   #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    text-align: center;
    padding: 0 5%;
    width: 100%;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
    font-size: 1.4em;
   }
 
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    font-size: 1.2em;
   }
 
@@ -8227,19 +8262,26 @@ ul li.slideUnder a {
    padding-left: 0 !important;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3,
-  #news-events #article2 div:nth-child(3) div h3, #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
   #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    text-align: center;
    padding: 0 5%;
    width: 100%;
   }
 
-  #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
    font-size: 1.4em;
   }
 
-  #news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
    font-size: 1.2em;
   }
 
