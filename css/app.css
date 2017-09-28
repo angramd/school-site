@@ -47,7 +47,23 @@ div.moreann{
   bottom: 10%;
 }
 
-#moreArtBTN div.slideUnder:after {
+#moreannMobile{
+  display: none;
+
+}
+
+#moreannMobile{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #333;
+  margin: 5% auto 0;
+  text-align: center;
+  cursor: pointer;
+  bottom: 10%;
+}
+
+#moreArtBTN div.slideUnder:after, #moreannMobile.slideUnder:after{
   content: '';
   display: block;
   margin: auto;
@@ -57,13 +73,13 @@ div.moreann{
   transition: width .5s ease, background-color .5s ease;
 }
 
-#moreArtBTN div.moreann.slideUnder:hover:after {
+#moreArtBTN div.moreann.slideUnder:hover:after, #moreannMobile.slideUnder:hover:after{
   width: 80%;
   color: #FF033E;
   background: #FF033E;
 }
 
-div.moreann:hover {
+div.moreann:hover, #moreannMobile:hover{
   color: #0a0699;
 }
 
@@ -3046,11 +3062,6 @@ ul li.slideUnder a {
 
   div.moreann, a.viewcalendar{
     font-size: 1.1em;
-  }
-
-  div.moreann{
-    margin: 5% auto 0;
-    text-align: center;
   }
 
   .readmore a{
@@ -6066,8 +6077,13 @@ ul li.slideUnder a {
     text-align: center;
   }
 
+  #moreannMobile{
+    display: block;
+    margin: 5% auto 0;
+  }
+
   div.moreann{
-    margin-top: 5%;
+    display: none;
   }
 
   .eventDate{

@@ -20,6 +20,7 @@ $(document).ready(function(){
   var newsEvents = $("#news-events");
   var imgSlide = $(".imgSlide");
   var annBTN = $("#moreArtBTN div div.moreann");
+  var annBTN2 = $("#moreannMobile");
   var globalSec = $("#global");
   var globalIcon = $("#global div .icons");
   var globalHead = $("#global div h1");
@@ -268,9 +269,14 @@ $(document).ready(function(){
         globalHead.stop().animate({"opacity": "1"}, 500);
         globalGraphic.stop().animate({"opacity": "1"}, 500);
 
-        annBTN.click(function()
+        annBTN2.html('<a href="#news-events" class="moreannMobile slideUnder">More Announcements</a>').appendTo(annBTN2);
+
+        annBTN2.click(function()
       	{
-          window.location.href = "#news-events";
+          $(".article1Container > div:first").stop().fadeOut(200,
+          function(){
+            $(".article1Container > div:first").next().stop().fadeIn(1500).end().appendTo(".article1Container");
+          });
       	});
       }
 
