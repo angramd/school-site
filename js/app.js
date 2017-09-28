@@ -267,6 +267,11 @@ $(document).ready(function(){
         globalIcon.stop().animate({"opacity": "1"}, 500);
         globalHead.stop().animate({"opacity": "1"}, 500);
         globalGraphic.stop().animate({"opacity": "1"}, 500);
+
+        annBTN.click(function()
+      	{
+          window.location.href = "#news-events";
+      	});
       }
 
       if ($(window).width() <= 634 && $(window).width() >= 588) {

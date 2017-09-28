@@ -29,24 +29,11 @@
   width: 40%;
 }
 
-.article1Container{
-  height: 100%;
-}
-
 .readmore a{
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: bold;
   font-size: 1.3em;
   color: #FFF;
-}
-
-a.moreann{
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: bold;
-  font-size: 1.5em;
-  color: #333;
-  margin: 0 auto;
-  text-align: center;
 }
 
 div.moreann{
@@ -57,6 +44,27 @@ div.moreann{
   margin: 25% auto 0;
   text-align: center;
   cursor: pointer;
+  bottom: 10%;
+}
+
+#moreArtBTN div.slideUnder:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 1px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+#moreArtBTN div.moreann.slideUnder:hover:after {
+  width: 80%;
+  color: #FF033E;
+  background: #FF033E;
+}
+
+div.moreann:hover {
+  color: #0a0699;
 }
 
 a.viewcalendar{
@@ -514,11 +522,10 @@ ul li.slideUnder a {
 /*ANNOUNCEMENTS/EVENTS*/
 #news-events{
   background: #0a0699;
-  height: 110vh;
 }
 
 #news-events #article1, #news-events #article2{
-  padding-top: 8% !important;
+  padding-top: 10% !important;
   padding-bottom: 5%;
 }
 
@@ -532,8 +539,7 @@ ul li.slideUnder a {
 
 #news-events #article1{
   background: #CCC;
-  padding-top: 2%;
-  padding-bottom: 110vh;
+  padding-bottom: 40vh;
   height: 100%;
 }
 
@@ -566,13 +572,15 @@ ul li.slideUnder a {
   margin-left: 25%;
 }
 
-#news-events #article1 .article1Container .imgSlide > div:nth-child(1), #news-events #article1 .article1Container .imgSlide > div:nth-child(2), #news-events #article1 .article1Container .imgSlide > div:nth-child(3),
- #news-events #article1 .article1Container .imgSlide > div:nth-child(4), #news-events #article1 > div:nth-child(4){
+#news-events #article1 .article1Container .imgSlide > div:nth-child(1), #news-events #article1 .article1Container .imgSlide > div:nth-child(2),
+#news-events #article1 .article1Container .imgSlide > div:nth-child(3), #news-events #article1 .article1Container .imgSlide > div:nth-child(4),
+#news-events #article1 > div:nth-child(4){
   padding-left: 2% !important;
   padding-top: 3% !important;
 }
 
-#news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+#news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3,
+#news-events #article2 div:nth-child(3) div h3{
  font-family: 'Lora', serif;
  color: #333;
  font-weight: bold;
@@ -603,7 +611,6 @@ ul li.slideUnder a {
 }
 
 #news-events #article2{
-  padding-top: 2%;
   padding-bottom: 2%;
 }
 
@@ -866,6 +873,10 @@ ul li.slideUnder a {
 
 
 @media only screen and (min-width: 1861px) and (max-width: 1990px){
+  #news-events #article1, #news-events #article2{
+    padding-top: 2%;
+  }
+
   #global .icons{
     margin-left: 30%;
   }
@@ -908,6 +919,10 @@ ul li.slideUnder a {
 @media only screen and (max-width: 1860px) {
   #mission > div{
     padding-bottom: 8%;
+  }
+
+  #news-events #article1, #news-events #article2{
+    padding-top: 6%;
   }
 
   #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons, #resource-twit #article1 #headContainer .icons, #resource-twit #article2 #headContainer2 .icons{
@@ -963,6 +978,14 @@ ul li.slideUnder a {
     width: 50%;
     margin-left: 36%;
     text-align: center;
+  }
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 1711px) {
+  #news-events #article1, #news-events #article2{
+    padding-top: 15% !important;
   }
 }
 
@@ -1548,7 +1571,7 @@ ul li.slideUnder a {
    width: 85%;
   }
 
-  a.moreann, a.viewcalendar{
+  div.moreann, a.viewcalendar{
     font-size: 1.3em;
   }
 
@@ -1729,7 +1752,7 @@ ul li.slideUnder a {
    width: 85%;
   }
 
-  a.moreann, a.viewcalendar{
+  div.moreann, a.viewcalendar{
     font-size: 1.1em;
   }
 
@@ -1924,7 +1947,7 @@ ul li.slideUnder a {
    width: 85%;
   }
 
-  a.moreann, a.viewcalendar{
+  div.moreann, a.viewcalendar{
     font-size: 1.1em;
   }
 
@@ -2119,7 +2142,7 @@ ul li.slideUnder a {
    width: 85%;
   }
 
-  a.moreann, a.viewcalendar{
+  div.moreann, a.viewcalendar{
     font-size: 1.1em;
   }
 
@@ -2323,7 +2346,7 @@ ul li.slideUnder a {
    width: 85%;
   }
 
-  a.moreann, a.viewcalendar{
+  div.moreann, a.viewcalendar{
     font-size: 1.1em;
   }
 
@@ -2533,7 +2556,7 @@ ul li.slideUnder a {
    width: 85%;
   }
 
-  a.moreann, a.viewcalendar{
+  div.moreann, a.viewcalendar{
     font-size: 1.1em;
   }
 
@@ -2768,7 +2791,7 @@ ul li.slideUnder a {
     width: 100%;
   }
 
-  a.moreann, a.viewcalendar{
+  div.moreann, a.viewcalendar{
     font-size: 1.1em;
   }
 
@@ -3021,8 +3044,13 @@ ul li.slideUnder a {
     width: 100%;
   }
 
-  a.moreann, a.viewcalendar{
+  div.moreann, a.viewcalendar{
     font-size: 1.1em;
+  }
+
+  div.moreann{
+    margin: 5% auto 0;
+    text-align: center;
   }
 
   .readmore a{
@@ -3303,8 +3331,13 @@ ul li.slideUnder a {
     width: 100%;
   }
 
-  a.moreann, a.viewcalendar{
+  div.moreann, a.viewcalendar{
     font-size: 1.3em;
+  }
+
+  div.moreann{
+    margin: 5% 0 0 2%;
+    text-align: left;
   }
 
   .readmore a{
@@ -3565,8 +3598,13 @@ ul li.slideUnder a {
     width: 100%;
   }
 
-  a.moreann, a.viewcalendar{
+  div.moreann, a.viewcalendar{
     font-size: 1.3em;
+  }
+
+  div.moreann{
+    margin: 5% 0 0 2%;
+    text-align: left;
   }
 
   .readmore a{
@@ -3854,8 +3892,13 @@ ul li.slideUnder a {
     width: 100%;
   }
 
-  a.moreann, a.viewcalendar{
+  div.moreann, a.viewcalendar{
     font-size: 1.3em;
+  }
+
+  div.moreann{
+    margin: 5% 0 0 2%;
+    text-align: left;
   }
 
   .readmore a{
@@ -4126,8 +4169,13 @@ ul li.slideUnder a {
     width: 100%;
   }
 
-  a.moreann, a.viewcalendar{
+  div.moreann, a.viewcalendar{
     font-size: 1.3em;
+  }
+
+  div.moreann{
+    margin: 5% 0 0 2%;
+    text-align: left;
   }
 
   .readmore a{
@@ -4418,8 +4466,13 @@ ul li.slideUnder a {
     width: 100%;
   }
 
-  a.moreann, a.viewcalendar{
+  div.moreann, a.viewcalendar{
     font-size: 1.3em;
+  }
+
+  div.moreann{
+    margin: 5% 0 0 2%;
+    text-align: left;
   }
 
   .readmore a{
@@ -4716,8 +4769,13 @@ ul li.slideUnder a {
     width: 100%;
   }
 
-  a.moreann, a.viewcalendar{
+  div.moreann, a.viewcalendar{
     font-size: 1.3em;
+  }
+
+  div.moreann{
+    margin: 5% 0 0 2%;
+    text-align: left;
   }
 
   .readmore a{
@@ -5022,8 +5080,13 @@ ul li.slideUnder a {
     width: 100%;
   }
 
-  a.moreann, a.viewcalendar{
+  div.moreann, a.viewcalendar{
     font-size: 1.3em;
+  }
+
+  div.moreann{
+    margin: 5% 0 0 2%;
+    text-align: left;
   }
 
   .readmore a{
@@ -5329,8 +5392,13 @@ ul li.slideUnder a {
     width: 100%;
   }
 
-  a.moreann, a.viewcalendar{
+  div.moreann, a.viewcalendar{
     font-size: 1.3em;
+  }
+
+  div.moreann{
+    margin: 5% 0 0 2%;
+    text-align: left;
   }
 
   .readmore a{
@@ -5638,8 +5706,13 @@ ul li.slideUnder a {
     width: 100%;
   }
 
-  a.moreann, a.viewcalendar{
+  div.moreann, a.viewcalendar{
     font-size: 1.3em;
+  }
+
+  div.moreann{
+    margin: 5% 0 0 2%;
+    text-align: left;
   }
 
   .readmore a{
@@ -5993,6 +6066,10 @@ ul li.slideUnder a {
     text-align: center;
   }
 
+  div.moreann{
+    margin-top: 5%;
+  }
+
   .eventDate{
     margin: 0 auto;
   }
@@ -6010,7 +6087,7 @@ ul li.slideUnder a {
     text-align: center;
   }
 
-  a.moreann, a.viewcalendar{
+  div.moreann, a.viewcalendar{
     font-size: 2em;
   }
 
@@ -6388,7 +6465,7 @@ ul li.slideUnder a {
     text-align: center;
   }
 
-  a.moreann, a.viewcalendar{
+  div.moreann, a.viewcalendar{
     font-size: 2em;
   }
 
@@ -6766,7 +6843,7 @@ ul li.slideUnder a {
     text-align: center;
   }
 
-  a.moreann, a.viewcalendar{
+  div.moreann, a.viewcalendar{
     font-size: 2em;
   }
 
@@ -7146,7 +7223,7 @@ ul li.slideUnder a {
     text-align: center;
   }
 
-  a.moreann, a.viewcalendar{
+  div.moreann, a.viewcalendar{
     font-size: 2em;
   }
 
@@ -7525,7 +7602,7 @@ ul li.slideUnder a {
     text-align: center;
   }
 
-  a.moreann, a.viewcalendar{
+  div.moreann, a.viewcalendar{
     font-size: 2em;
   }
 
@@ -7904,7 +7981,7 @@ ul li.slideUnder a {
     text-align: center;
   }
 
-  a.moreann, a.viewcalendar{
+  div.moreann, a.viewcalendar{
     font-size: 2em;
   }
 
@@ -8315,7 +8392,7 @@ ul li.slideUnder a {
     text-align: center;
   }
 
-  a.moreann, a.viewcalendar{
+  div.moreann, a.viewcalendar{
     font-size: 2em;
   }
 
