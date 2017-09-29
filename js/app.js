@@ -268,7 +268,7 @@ $(document).ready(function(){
         annBTN2.css("display", "block");
 
         annBTN2.html('<a href="#news-events" class="moreannMobile">More Announcements</a>').appendTo(annBTN2);
-        $("a.moreannMobile").css("cursor", "pointer");
+        //$("a.moreannMobile").css("cursor", "pointer");
 
         annBTN2.click(function()
       	{

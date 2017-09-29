@@ -49,10 +49,10 @@ div.moreann{
 
 #moreannMobile{
   display: none;
-
 }
 
-#moreannMobile{
+#moreannMobile a{
+  cursor: pointer;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: bold;
   font-size: 1.5em;
@@ -60,10 +60,6 @@ div.moreann{
   margin: 5% auto 0;
   text-align: center;
   bottom: 10%;
-}
-
-#moreannMobile a{
-  cursor: pointer;
 }
 
 div.moreann:hover, #moreannMobile a:hover{
@@ -5823,6 +5819,7 @@ ul li.slideUnder a {
   #moreannMobile{
     display: block;
     margin: 5% auto 0;
+    text-align: center;
   }
 
   div.moreann{
