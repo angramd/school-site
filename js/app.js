@@ -263,21 +263,29 @@ $(document).ready(function(){
         globalGraphic.stop().animate({"opacity": "1"}, 500);
       }
 
-      if ($(window).width() <= 641 && $(window).width() >= 635) {
-        globalSec.stop().animate({"padding-top": "43%"}, 500);
-        globalIcon.stop().animate({"opacity": "1"}, 500);
-        globalHead.stop().animate({"opacity": "1"}, 500);
-        globalGraphic.stop().animate({"opacity": "1"}, 500);
+      if ($(window).width() <= 641 && $(window).width() >= 320) {
+        annBTN.css("display", "none");
+        annBTN2.css("display", "block");
 
-        annBTN2.html('<a href="#news-events" class="moreannMobile slideUnder">More Announcements</a>').appendTo(annBTN2);
+        annBTN2.html('<a href="#news-events" class="moreannMobile">More Announcements</a>').appendTo(annBTN2);
+        $("a.moreannMobile").css("cursor", "pointer");
 
         annBTN2.click(function()
       	{
+          jQuery('html,body').stop().animate({scrollTop: newsEvents.offset().top}, 2000);
+
           $(".article1Container > div:first").stop().fadeOut(200,
           function(){
             $(".article1Container > div:first").next().stop().fadeIn(1500).end().appendTo(".article1Container");
           });
       	});
+      }
+
+      if ($(window).width() <= 641 && $(window).width() >= 635) {
+        globalSec.stop().animate({"padding-top": "43%"}, 500);
+        globalIcon.stop().animate({"opacity": "1"}, 500);
+        globalHead.stop().animate({"opacity": "1"}, 500);
+        globalGraphic.stop().animate({"opacity": "1"}, 500);
       }
 
       if ($(window).width() <= 634 && $(window).width() >= 588) {

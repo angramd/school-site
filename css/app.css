@@ -59,27 +59,14 @@ div.moreann{
   color: #333;
   margin: 5% auto 0;
   text-align: center;
-  cursor: pointer;
   bottom: 10%;
 }
 
-#moreArtBTN div.slideUnder:after, #moreannMobile.slideUnder:after{
-  content: '';
-  display: block;
-  margin: auto;
-  height: 1px;
-  width: 0px;
-  background: transparent;
-  transition: width .5s ease, background-color .5s ease;
+#moreannMobile a{
+  cursor: pointer;
 }
 
-#moreArtBTN div.moreann.slideUnder:hover:after, #moreannMobile.slideUnder:hover:after{
-  width: 80%;
-  color: #FF033E;
-  background: #FF033E;
-}
-
-div.moreann:hover, #moreannMobile:hover{
+div.moreann:hover, #moreannMobile a:hover{
   color: #0a0699;
 }
 
@@ -5832,6 +5819,19 @@ ul li.slideUnder a {
 
 
 
+@media only screen and (min-width: 320px) and (max-width: 641px) {
+  #moreannMobile{
+    display: block;
+    margin: 5% auto 0;
+  }
+
+  div.moreann{
+    display: none;
+  }
+}
+
+
+
 @media only screen and (min-width: 635px) and (max-width: 641px) {
   #header1 #socialNumber{
     padding: .5% 0 5%;
@@ -6075,15 +6075,6 @@ ul li.slideUnder a {
 
   .newsArticle, .eventArticle{
     text-align: center;
-  }
-
-  #moreannMobile{
-    display: block;
-    margin: 5% auto 0;
-  }
-
-  div.moreann{
-    display: none;
   }
 
   .eventDate{
