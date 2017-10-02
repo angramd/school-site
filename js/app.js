@@ -18,6 +18,8 @@ $(document).ready(function(){
   var quickLink = $("#quickLink");
   var quickLinkDiv = $("#quickLink > div > div");
   var newsEvents = $("#news-events");
+  var article1 = $("#news-events #article1");
+  var article2 = $("#news-events #article2");
   var imgSlide = $(".imgSlide");
   var annBTN = $("#moreArtBTN div div.moreann");
   var annBTN2 = $("#moreannMobile");
@@ -82,12 +84,12 @@ $(document).ready(function(){
       downArr.css("opacity", "0");
 		}
 
-    if(newsEvents.offset().top < $(window).scrollTop() + $(window).outerHeight())
+    if(article1.offset().top < $(window).scrollTop() + $(window).outerHeight())
 		{
       linkNews.addClass('currentLink underLine');
-      linkCalendar.addClass("currentLink underLine");
 			linkHome.removeClass('currentLink underLine');
       linkQuick.removeClass('currentLink underLine');
+      linkCalendar.removeClass("currentLink underLine");
       linkResources.removeClass("currentLink underLine");
 			linkContact.removeClass('currentLink underLine');
       homePage.stop().animate({"opacity": "0"}, 200);
@@ -95,6 +97,34 @@ $(document).ready(function(){
   		downArr.stop().animate({"opacity": "0"}, 200);
       downArr.css("opacity", "0");
 		}
+
+    if(article2.offset().top < $(window).scrollTop() + $(window).outerHeight() && $(window).width() > 641)
+    {
+      linkCalendar.addClass("currentLink underLine");
+      linkNews.addClass('currentLink underLine');
+      linkHome.removeClass('currentLink underLine');
+      linkQuick.removeClass('currentLink underLine');
+      linkResources.removeClass("currentLink underLine");
+      linkContact.removeClass('currentLink underLine');
+      homePage.stop().animate({"opacity": "0"}, 200);
+      homePage.css("opacity", "0");
+      downArr.stop().animate({"opacity": "0"}, 200);
+      downArr.css("opacity", "0");
+    }
+
+    if(article2.offset().top < $(window).scrollTop() + $(window).outerHeight() && $(window).width() <= 641)
+    {
+      linkCalendar.addClass("currentLink underLine");
+      linkHome.removeClass('currentLink underLine');
+      linkQuick.removeClass('currentLink underLine');
+      linkNews.removeClass('currentLink underLine');
+      linkResources.removeClass("currentLink underLine");
+      linkContact.removeClass('currentLink underLine');
+      homePage.stop().animate({"opacity": "0"}, 200);
+      homePage.css("opacity", "0");
+      downArr.stop().animate({"opacity": "0"}, 200);
+      downArr.css("opacity", "0");
+    }
 
     if(globalSec.offset().top < $(window).scrollTop() + $(window).outerHeight())
 		{

@@ -5877,9 +5877,17 @@ ul li.slideUnder a {
     display: none;
   }
 
+  #news-events #article1{
+    padding-bottom: 2%;
+  }
+
   #news-events #article2 div:nth-child(3) div:nth-child(3) div{
     text-align: center;
     margin-top: 8%
+  }
+
+  #moreannMobile a, a.viewcalendar{
+    font-size: 1.5em;
   }
 }
 
@@ -5947,9 +5955,9 @@ ul li.slideUnder a {
     padding: 0;
     margin-top: 2.7%;
     margin-left: 15% !important;
-    /*border-left: #FF033E solid 6px;
+    border-left: #FF033E solid 6px;
     border-right: #FF033E solid 6px;
-    border-bottom: #FF033E solid 6px;*/
+    border-bottom: #FF033E solid 6px;
   }
 
   .top-bar-section ul li{
@@ -6147,10 +6155,6 @@ ul li.slideUnder a {
     text-align: center;
   }
 
-  div.moreann, a.viewcalendar{
-    font-size: 2em;
-  }
-
   #global .icons{
     margin-left: 9%;
     margin-top: 2%;
@@ -6324,9 +6328,9 @@ ul li.slideUnder a {
     padding: 0;
     margin-top: 2.8%;
     margin-left: 15% !important;
-    /*border-left: #FF033E solid 6px;
+    border-left: #FF033E solid 6px;
     border-right: #FF033E solid 6px;
-    border-bottom: #FF033E solid 6px;*/
+    border-bottom: #FF033E solid 6px;
   }
 
   .top-bar-section ul li{
@@ -6525,10 +6529,6 @@ ul li.slideUnder a {
     text-align: center;
   }
 
-  div.moreann, a.viewcalendar{
-    font-size: 2em;
-  }
-
   #global .icons{
     margin-left: 9%;
     margin-top: 2%;
@@ -6702,9 +6702,9 @@ ul li.slideUnder a {
     padding: 0;
     margin-top: 3%;
     margin-left: 15% !important;
-    /*border-left: #FF033E solid 6px;
+    border-left: #FF033E solid 6px;
     border-right: #FF033E solid 6px;
-    border-bottom: #FF033E solid 6px;*/
+    border-bottom: #FF033E solid 6px;
   }
 
   .top-bar-section ul li{
@@ -6903,10 +6903,6 @@ ul li.slideUnder a {
     text-align: center;
   }
 
-  div.moreann, a.viewcalendar{
-    font-size: 2em;
-  }
-
   #global .icons{
     margin-left: 7%;
     margin-top: 2%;
@@ -7080,9 +7076,9 @@ ul li.slideUnder a {
     padding: 0;
     margin-top: 3.7%;
     margin-left: 15% !important;
-    /*border-left: #FF033E solid 6px;
+    border-left: #FF033E solid 6px;
     border-right: #FF033E solid 6px;
-    border-bottom: #FF033E solid 6px;*/
+    border-bottom: #FF033E solid 6px;
   }
 
   .top-bar-section ul li{
@@ -7283,10 +7279,6 @@ ul li.slideUnder a {
     text-align: center;
   }
 
-  div.moreann, a.viewcalendar{
-    font-size: 2em;
-  }
-
   #global .icons{
     margin-left: 7%;
     margin-top: 2%;
@@ -7459,9 +7451,9 @@ ul li.slideUnder a {
     padding: 0;
     margin-top: 4.7%;
     margin-left: 15% !important;
-    /*border-left: #FF033E solid 6px;
+    border-left: #FF033E solid 6px;
     border-right: #FF033E solid 6px;
-    border-bottom: #FF033E solid 6px;*/
+    border-bottom: #FF033E solid 6px;
   }
 
   .top-bar-section ul li{
@@ -7662,10 +7654,6 @@ ul li.slideUnder a {
     text-align: center;
   }
 
-  div.moreann, a.viewcalendar{
-    font-size: 2em;
-  }
-
   #global .icons{
     margin-left: 7%;
     margin-top: 2%;
@@ -7752,26 +7740,25 @@ ul li.slideUnder a {
   #footer #footAddress{
     position: absolute;
     margin-top: 35%;
-    padding-left: 0;
+    left: 0;
+    right: 0;
+    padding-left: 25%;
     width: 100%;
     text-align: center;
     z-index: 3;
   }
 
   #footer #footAddress div:nth-child(1), #footer #footAddress div:nth-child(3){
-    width: 45%
+    width: 100%;
   }
 
   #footer #footAddress div:nth-child(2){
-    width: 10%
+    display: none;
   }
 
   #footer #footAddress div:nth-child(1) h2, #footer #footAddress div:nth-child(1) p, #footer #footAddress div:nth-child(3) p{
-    font-size: .9em;
-  }
-
-  #footer #footAddress div:nth-child(2){
-    text-align: center;
+    font-size: 1.3em;
+    text-align: left;
   }
 }
 
@@ -7838,9 +7825,9 @@ ul li.slideUnder a {
     padding: 0;
     margin-top: 5.5%;
     margin-left: 15% !important;
-    /*border-left: #FF033E solid 6px;
+    border-left: #FF033E solid 6px;
     border-right: #FF033E solid 6px;
-    border-bottom: #FF033E solid 6px;*/
+    border-bottom: #FF033E solid 6px;
   }
 
   .top-bar-section ul li{
@@ -8041,10 +8028,6 @@ ul li.slideUnder a {
     text-align: center;
   }
 
-  div.moreann, a.viewcalendar{
-    font-size: 2em;
-  }
-
   #global .icons{
     margin-left: 7%;
     margin-top: 2%;
@@ -8144,26 +8127,25 @@ ul li.slideUnder a {
   #footer #footAddress{
     position: absolute;
     margin-top: 40%;
-    padding-left: 0;
+    left: 0;
+    right: 0;
+    padding-left: 25%;
     width: 100%;
     text-align: center;
     z-index: 3;
   }
 
   #footer #footAddress div:nth-child(1), #footer #footAddress div:nth-child(3){
-    width: 45%
+    width: 100%;
   }
 
   #footer #footAddress div:nth-child(2){
-    width: 10%
+    display: none;
   }
 
   #footer #footAddress div:nth-child(1) h2, #footer #footAddress div:nth-child(1) p, #footer #footAddress div:nth-child(3) p{
-    font-size: .8em;
-  }
-
-  #footer #footAddress div:nth-child(2){
-    text-align: center;
+    font-size: 1.3em;
+    text-align: left;
   }
 }
 
@@ -8232,9 +8214,9 @@ ul li.slideUnder a {
     padding: 0;
     margin-top: 5.5%;
     margin-left: 15% !important;
-    /*border-left: #FF033E solid 6px;
+    border-left: #FF033E solid 6px;
     border-right: #FF033E solid 6px;
-    border-bottom: #FF033E solid 6px;*/
+    border-bottom: #FF033E solid 6px;
   }
 
   .top-bar-section ul li{
@@ -8452,10 +8434,6 @@ ul li.slideUnder a {
     text-align: center;
   }
 
-  div.moreann, a.viewcalendar{
-    font-size: 2em;
-  }
-
   #global .icons{
     margin-left: 7%;
     margin-top: 1%;
@@ -8559,25 +8537,24 @@ ul li.slideUnder a {
   #footer #footAddress{
     position: absolute;
     margin-top: 40%;
-    padding-left: 0;
+    left: 0;
+    right: 0;
+    padding-left: 25%;
     width: 100%;
     text-align: center;
     z-index: 3;
   }
 
   #footer #footAddress div:nth-child(1), #footer #footAddress div:nth-child(3){
-    width: 45%
+    width: 100%;
   }
 
   #footer #footAddress div:nth-child(2){
-    width: 10%
+    display: none;
   }
 
   #footer #footAddress div:nth-child(1) h2, #footer #footAddress div:nth-child(1) p, #footer #footAddress div:nth-child(3) p{
-    font-size: .8em;
-  }
-
-  #footer #footAddress div:nth-child(2){
-    text-align: center;
+    font-size: 1.3em;
+    text-align: left;
   }
 }
