@@ -287,8 +287,9 @@ ul li.slideUnder a {
 
 /*HOME*/
 #home {
-  height: 900px;
+  height: 950px;
 }
+
 #home #homeWrap {
   height: 100%;
   min-width: 100%;
@@ -395,6 +396,10 @@ ul li.slideUnder a {
 
 /*CSS TARGETING MOZILLA FIREFOX BROWSER*/
 @-moz-document url-prefix() {
+  #home{
+    height: 980px;
+  }
+  
   #mission{
     margin-top: 10%;
   }
@@ -514,6 +519,14 @@ ul li.slideUnder a {
 #quickLink > div > div > div > div:nth-child(3) img{
   margin-left: 0;
 }
+
+/*MOZILLA-FIREFOX STYLES*/
+@-moz-document url-prefix() {
+  #quickLink > div > div{
+    padding-bottom: 10vh;
+  }
+}
+/**/
 /*END QUICK LINKS*/
 
 
@@ -2632,7 +2645,7 @@ ul li.slideUnder a {
     }
 
     .top-bar{
-      width: 890px !important;
+      width: 870px !important;
       margin-left: 1%;
       padding-left: 0;
     }
@@ -4919,7 +4932,7 @@ ul li.slideUnder a {
     }
 
     .scsLogo{
-      margin-top: 1.8%;
+      margin-top: .7%;
       margin-right: .5%;
     }
   }
@@ -5868,9 +5881,9 @@ ul li.slideUnder a {
 
 @media only screen and (min-width: 320px) and (max-width: 641px) {
   .top-bar-section{
-    -webkit-box-shadow: 0 15px 19px 2px rgba(0, 0, 0, 0.7);
-    -moz-box-shadow: 0 15px 19px 2px rgba(0, 0, 0, 0.7);
-    box-shadow: 0 5px 7px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: -10px 10px 19px -2px rgba(0, 0, 0, .3);
+    -moz-box-shadow: -10px 10px 19px -2px rgba(0, 0, 0, .3);
+    box-shadow: -10px 10px 19px -2px rgba(0, 0, 0, .3);
   }
 
   #moreannMobile{
