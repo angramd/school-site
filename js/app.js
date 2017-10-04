@@ -67,9 +67,7 @@ $(document).ready(function(){
       linkResources.removeClass("currentLink underLine");
 			linkContact.removeClass('currentLink underLine');
       homePage.stop().animate({"opacity": "1"}, 500);
-      homePage.css("opacity", "1");
   		downArr.stop().animate({"opacity": "1"}, 500);
-      downArr.css("opacity", "1");
 		}
 
     if(mission.offset().top < $(window).scrollTop() + $(window).outerHeight())
@@ -391,9 +389,7 @@ $(document).ready(function(){
     linkResources.removeClass("currentLink underLine");
 		linkContact.removeClass("currentLink underLine");
     homePage.stop().animate({"opacity": "1"}, 500);
-    homePage.css("opacity", "1");
     downArr.stop().animate({"opacity": "1"}, 500);
-    downArr.css("opacity", "1");
 	});
 
   linkNews.click(function()
@@ -488,8 +484,8 @@ $(document).ready(function(){
 
 
   /*DOWN ARROW*/
-	downArr.css("margin", "-5% auto 0");
-  downArr.animate({"opacity": "1", "margin-top": "-2%"}, 1500,
+	downArr.css("margin", "-8% auto 0");
+  downArr.animate({"opacity": "1", "margin-top": "-5%"}, 1500,
 	function()
 	{
 		downArr.addClass("animated css3-notification");

@@ -62,10 +62,6 @@ div.moreann{
   bottom: 10%;
 }
 
-div.moreann:hover, #moreannMobile a:hover{
-  color: #0a0699;
-}
-
 a.viewcalendar{
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: bold;
@@ -73,6 +69,10 @@ a.viewcalendar{
   color: #FFF;
   margin: 0 auto;
   text-align: center;
+}
+
+#mission span a:hover, a h2:hover, a h3:hover, .eventArticle .readmore a:hover, .newsArticle .readmore a:hover, div.moreann:hover, #moreannMobile a:hover, a.viewcalendar:hover{
+  color: #FF033E !important;
 }
 
 .eventDate{
@@ -304,6 +304,10 @@ ul li.slideUnder a {
   padding: 0 !important;
 }
 
+#home #homeWrap #welcome div.columns {
+  padding: 0 !important;
+}
+
 #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
   width: 100%;
   font-family: 'Lora', serif;
@@ -347,7 +351,7 @@ ul li.slideUnder a {
   min-height: 1150px !important;
   width: 100% !important;
   height: 100% !important;
-  opacity: .4;
+  opacity: .7;
 }
 
 #bck #bckRotate{
@@ -399,7 +403,7 @@ ul li.slideUnder a {
   #home{
     height: 980px;
   }
-  
+
   #mission{
     margin-top: 10%;
   }
