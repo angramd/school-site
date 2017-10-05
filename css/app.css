@@ -36,7 +36,7 @@
   color: #FFF;
 }
 
-div.moreann{
+div.moreann, .moreRes{
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: bold;
   font-size: 1.5em;
@@ -756,6 +756,10 @@ ul li.slideUnder a {
 #resource-twit #article1 > div:nth-child(2), #resource-twit #article1 > div:nth-child(3), #resource-twit #article1 > div:nth-child(4){
   padding-left: 2% !important;
   padding-top: 3% !important;
+}
+
+#resource-twit #article1 > div:nth-child(2){
+  margin-top: 12%;
 }
 
 #resource-twit #article1 div:nth-child(2) a h2{
