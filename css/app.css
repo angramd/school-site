@@ -71,7 +71,8 @@ a.viewcalendar{
   text-align: center;
 }
 
-#mission span a:hover, a h2:hover, a h3:hover, .eventArticle .readmore a:hover, .newsArticle .readmore a:hover, div.moreann:hover, #moreannMobile a:hover, a.viewcalendar:hover{
+#mission span a:hover, a h2:hover, a h3:hover, .eventArticle .readmore a:hover, .newsArticle .readmore a:hover, div.moreann:hover, #moreannMobile a:hover,
+a.viewcalendar:hover, .moreRes:hover{
   color: #FF033E !important;
 }
 
@@ -87,6 +88,10 @@ a.viewcalendar{
 
 .eventImg{
   width: 40%;
+}
+
+.moreRes .columns{
+  float: none !important;
 }
 
 
@@ -512,7 +517,7 @@ ul li.slideUnder a {
 
 #quickLink > div > div div:nth-child(2) div a h2{
   font-family: 'Open Sans Condensed', sans-serif !important;
-  font-size: 1.5em !important;
+  font-size: 1.8em !important;
   color: #333;
 }
 
@@ -668,9 +673,14 @@ ul li.slideUnder a {
 /*GLOBAL*/
 #global{
 	height: 600px;
-	background: url(../img/Hero2.jpg) no-repeat fixed 0 0 / cover;
+	background: url(../img/ce_img1.jpg) no-repeat fixed 0 0 / cover;
 	padding-top: 10%;
   position: relative;
+}
+
+#global > div{
+  position: absolute;
+  z-index: 1;
 }
 
 #global .columns{
@@ -708,6 +718,16 @@ ul li.slideUnder a {
 
 #global div div img{
   width: 100%;
+}
+
+.overlay{
+  position: absolute;
+  z-index: 0 !important;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .3;
+  top: 0;
 }
 /*END GLOBAL*/
 
@@ -753,30 +773,23 @@ ul li.slideUnder a {
  width: 50%;
 }
 
-#resource-twit #article1 > div:nth-child(2), #resource-twit #article1 > div:nth-child(3), #resource-twit #article1 > div:nth-child(4){
-  padding-left: 2% !important;
+#resource-twit #article1 > div:nth-child(2), #resource-twit #article1 > div:nth-child(3){
   padding-top: 3% !important;
 }
 
 #resource-twit #article1 > div:nth-child(2){
-  margin-top: 12%;
+  margin: 12% auto 0;
 }
 
 #resource-twit #article1 div:nth-child(2) a h2{
- font-family: 'Open Sans', sans-serif;
+ font-size: 1.8em;
+ margin-bottom: 6%;
  color: #333;
- font-size: 1em;
- margin-bottom: 2%;
+ font-family: 'Open Sans Condensed', sans-serif;
 }
 
-#resource-twit #article1 div:nth-child(2) div p, #resource-twit #article1 div:nth-child(3) div p, #resource-twit #article1 div:nth-child(4) div p{
- color: #333;
- font-size: 1.2em;
- font-family: 'Open Sans Condensed', sans-serif;
- width: 95%;
- padding-right: 1.5%;
- text-align: left;
- margin-bottom: 1%;
+#resource-twit #article1 > div:nth-child(3){
+  text-align: center;
 }
 
 #resource-twit #article2{
@@ -884,7 +897,7 @@ ul li.slideUnder a {
   margin-bottom: 0;
 }
 
-#footer #footAddress div:nth-child(3) p span{
+#footer #footAddress div:nth-child(1) p span, #footer #footAddress div:nth-child(3) p span{
   font-weight: 700;
   color: #FFF;
 }

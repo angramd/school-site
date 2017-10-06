@@ -1,10 +1,5 @@
 $(document).ready(function(){
 
-  $("#bckRotate li:gt(0)").hide();
-	setInterval(function(){
-		$("#bckRotate li:first").stop().fadeOut(1000).next().stop().fadeIn(1000).end().appendTo("#bckRotate");
-	}, 5000);
-
   var topBar = $(".top-bar");
   var linkHome = $("#linkHome");
   var linkQuick = $("#linkQuick");
@@ -66,8 +61,8 @@ $(document).ready(function(){
       linkCalendar.removeClass("currentLink underLine");
       linkResources.removeClass("currentLink underLine");
 			linkContact.removeClass('currentLink underLine');
-      homePage.stop().animate({"opacity": "1"}, 500);
-  		downArr.stop().animate({"opacity": "1"}, 500);
+      homePage.stop().animate({"opacity": "1"}, 200);
+  		downArr.stop().animate({"opacity": "1"}, 200);
 		}
 
     if(mission.offset().top < $(window).scrollTop() + $(window).outerHeight())
@@ -78,10 +73,11 @@ $(document).ready(function(){
       linkCalendar.removeClass("currentLink underLine");
       linkResources.removeClass("currentLink underLine");
 			linkContact.removeClass('currentLink underLine');
-      homePage.stop().animate({"opacity": "0"}, 200);
-      homePage.css("opacity", "0");
-  		downArr.stop().animate({"opacity": "0"}, 200);
-      downArr.css("opacity", "0");
+
+      if(homePage.css("opacity", "0")){
+        homePage.css("opacity", "0");
+        downArr.css("opacity", "0");
+      }
 		}
 
     if(article1.offset().top < $(window).scrollTop() + $(window).outerHeight())
@@ -92,10 +88,11 @@ $(document).ready(function(){
       linkCalendar.removeClass("currentLink underLine");
       linkResources.removeClass("currentLink underLine");
 			linkContact.removeClass('currentLink underLine');
-      homePage.stop().animate({"opacity": "0"}, 200);
-      homePage.css("opacity", "0");
-  		downArr.stop().animate({"opacity": "0"}, 200);
-      downArr.css("opacity", "0");
+
+      if(homePage.css("opacity", "0")){
+        homePage.css("opacity", "0");
+        downArr.css("opacity", "0");
+      }
 		}
 
     if(article2.offset().top < $(window).scrollTop() + $(window).outerHeight() && $(window).width() > 641)
@@ -106,10 +103,11 @@ $(document).ready(function(){
       linkQuick.removeClass('currentLink underLine');
       linkResources.removeClass("currentLink underLine");
       linkContact.removeClass('currentLink underLine');
-      homePage.stop().animate({"opacity": "0"}, 200);
-      homePage.css("opacity", "0");
-      downArr.stop().animate({"opacity": "0"}, 200);
-      downArr.css("opacity", "0");
+
+      if(homePage.css("opacity", "0")){
+        homePage.css("opacity", "0");
+        downArr.css("opacity", "0");
+      }
     }
 
     if(article2.offset().top < $(window).scrollTop() + $(window).outerHeight() && $(window).width() <= 641)
@@ -120,10 +118,11 @@ $(document).ready(function(){
       linkNews.removeClass('currentLink underLine');
       linkResources.removeClass("currentLink underLine");
       linkContact.removeClass('currentLink underLine');
-      homePage.stop().animate({"opacity": "0"}, 200);
-      homePage.css("opacity", "0");
-      downArr.stop().animate({"opacity": "0"}, 200);
-      downArr.css("opacity", "0");
+
+      if(homePage.css("opacity", "0")){
+        homePage.css("opacity", "0");
+        downArr.css("opacity", "0");
+      }
     }
 
     if ($(window).width() <= 641 && $(window).width() >= 320) {
@@ -152,10 +151,11 @@ $(document).ready(function(){
       linkCalendar.removeClass("currentLink underLine");
       linkQuick.removeClass('currentLink underLine');
 			linkContact.removeClass('currentLink underLine');
-      homePage.stop().animate({"opacity": "0"}, 200);
-      homePage.css("opacity", "0");
-  		downArr.stop().animate({"opacity": "0"}, 200);
-      downArr.css("opacity", "0");
+
+      if(homePage.css("opacity", "0")){
+        homePage.css("opacity", "0");
+        downArr.css("opacity", "0");
+      }
 
       if ($(window).width() >= 1861) {
         globalSec.stop().animate({"padding-top": "13%"}, 500);
@@ -369,10 +369,11 @@ $(document).ready(function(){
       linkNews.removeClass('currentLink underLine');
       linkCalendar.removeClass("currentLink underLine");
       linkResources.removeClass("currentLink underLine");
-      homePage.stop().animate({"opacity": "0"}, 200);
-      homePage.css("opacity", "0");
-  		downArr.stop().animate({"opacity": "0"}, 200);
-      downArr.css("opacity", "0");
+
+      if(homePage.css("opacity", "0")){
+        homePage.css("opacity", "0");
+        downArr.css("opacity", "0");
+      }
 		}
 	});
 	/**/
@@ -388,22 +389,54 @@ $(document).ready(function(){
     linkNews.removeClass("currentLink underLine");
     linkResources.removeClass("currentLink underLine");
 		linkContact.removeClass("currentLink underLine");
-    homePage.stop().animate({"opacity": "1"}, 500);
-    downArr.stop().animate({"opacity": "1"}, 500);
+    homePage.css("opacity", "1");
+    downArr.css("opacity", "1");
+	});
+
+  downArr.click(function()
+	{
+    linkQuick.addClass('currentLink underLine');
+		linkQuick.removeClass("slideUnder");
+		linkHome.removeClass("currentLink underLine");
+    linkNews.removeClass('currentLink underLine');
+    linkResources.removeClass("currentLink underLine");
+    linkContact.removeClass("currentLink underLine");
+
+    if(homePage.css("opacity", "0")){
+      homePage.css("opacity", "0");
+      downArr.css("opacity", "0");
+    }
+	});
+
+  linkQuick.click(function()
+	{
+    linkQuick.addClass('currentLink underLine');
+		linkQuick.removeClass("slideUnder");
+		linkHome.removeClass("currentLink underLine");
+    linkNews.removeClass('currentLink underLine');
+    linkResources.removeClass("currentLink underLine");
+    linkContact.removeClass("currentLink underLine");
+
+    if(homePage.css("opacity", "0")){
+      homePage.css("opacity", "0");
+      downArr.css("opacity", "0");
+    }
 	});
 
   linkNews.click(function()
 	{
-		linkNews.addClass("currentLink underLine");
+    linkNews.addClass("currentLink underLine");
 		linkNews.removeClass("slideUnder");
     linkQuick.removeClass('currentLink underLine');
     linkHome.removeClass("currentLink underLine");
+    linkCalendar.removeClass('currentLink underLine');
     linkResources.removeClass("currentLink underLine");
 		linkContact.removeClass("currentLink underLine");
-    homePage.stop().animate({"opacity": "0"}, 200);
-    homePage.css("opacity", "0");
-    downArr.stop().animate({"opacity": "0"}, 200);
-    downArr.css("opacity", "0");
+
+    if(homePage.css("opacity", "0")){
+      homePage.css("opacity", "0");
+      downArr.css("opacity", "0");
+    }
 	});
 
   linkCalendar.click(function()
@@ -415,24 +448,11 @@ $(document).ready(function(){
     linkNews.removeClass('currentLink underLine');
     linkResources.removeClass("currentLink underLine");
 		linkContact.removeClass("currentLink underLine");
-    homePage.stop().animate({"opacity": "0"}, 200);
-    homePage.css("opacity", "0");
-    downArr.stop().animate({"opacity": "0"}, 200);
-    downArr.css("opacity", "0");
-	});
 
-  downArr.click(function()
-	{
-    linkQuick.addClass('currentLink underLine');
-		linkQuick.removeClass("slideUnder");
-		linkHome.removeClass("currentLink underLine");
-    linkNews.removeClass('currentLink underLine');
-    linkResources.removeClass("currentLink underLine");
-    linkContact.remooveClass("currentLink underLine");
-    homePage.stop().animate({"opacity": "0"}, 200);
-    homePage.css("opacity", "0");
-    downArr.stop().animate({"opacity": "0"}, 200);
-    downArr.css("opacity", "0");
+    if(homePage.css("opacity", "0")){
+      homePage.css("opacity", "0");
+      downArr.css("opacity", "0");
+    }
 	});
 
 	linkResources.click(function()
@@ -443,10 +463,11 @@ $(document).ready(function(){
     linkQuick.removeClass('currentLink underLine');
     linkNews.removeClass('currentLink underLine');
     linkContact.removeClass('currentLink underLine');
-    homePage.stop().animate({"opacity": "0"}, 200);
-    homePage.css("opacity", "0");
-    downArr.stop().animate({"opacity": "0"}, 200);
-    downArr.css("opacity", "0");
+
+    if(homePage.css("opacity", "0")){
+      homePage.css("opacity", "0");
+      downArr.css("opacity", "0");
+    }
 	});
 
 	linkContact.click(function()
@@ -457,10 +478,11 @@ $(document).ready(function(){
     linkQuick.removeClass('currentLink underLine');
     linkNews.removeClass('currentLink');
     linkResources.removeClass('currentLink');
-    homePage.stop().animate({"opacity": "0"}, 200);
-    homePage.css("opacity", "0");
-    downArr.stop().animate({"opacity": "0"}, 200);
-    downArr.css("opacity", "0");
+
+    if(homePage.css("opacity", "0")){
+      homePage.css("opacity", "0");
+      downArr.css("opacity", "0");
+    }
 	});
 
 
@@ -480,6 +502,14 @@ $(document).ready(function(){
     //   topBar.css({"width": "1250px !important", "margin-left": "4%"});
     // }
 	}
+
+
+
+  /*ROTATING BACKGROUND IMAGE*/
+  $("#bckRotate li:gt(0)").hide();
+	setInterval(function(){
+		$("#bckRotate li:first").stop().fadeOut(1000).next().stop().fadeIn(1000).end().appendTo("#bckRotate");
+	}, 5000);
 
 
 
