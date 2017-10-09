@@ -5929,6 +5929,15 @@ ul li.slideUnder a {
   #moreannMobile a, a.viewcalendar{
     font-size: 1.5em;
   }
+
+  #global > div{
+    left: 0;
+    right: 0;
+  }
+
+  #resource-twit #article1 > div:nth-child(2){
+    margin: 5% auto 0;
+  }
 }
 
 
