@@ -15,6 +15,15 @@ gulp.task("minify_css", function() {
 	.pipe(gulp.dest("css"))
 });
 
+gulp.task("minifyFa_css", function() {
+  var mini_concatCssFa = ["css/foundation.css", "css/faculty.css", "css/arrow.css"];
+	return gulp.src(mini_concatCssFa)
+	.pipe(plumber())
+  .pipe(concat("mini-faculty.css"))
+	.pipe(minifyCSS())
+	.pipe(gulp.dest("css"))
+});
+
 
 //UGLIFY JAVASCRIPT
 gulp.task("minify_js", function() {
@@ -25,13 +34,23 @@ gulp.task("minify_js", function() {
 	.pipe(gulp.dest("js"));
 });
 
+gulp.task("minifyFa_js", function() {
+	return gulp.src("js/faculty.js")
+	.pipe(plumber())
+	.pipe(concat("mini-faculty.js"))
+	.pipe(uglify())
+	.pipe(gulp.dest("js"));
+});
+
 
 //WATCH FOR CHANGES
 gulp.task("watch", function(){
   gulp.watch(["css/foundation.css", "css/app.css", "css/arrow.css"], ["minify_css"]);
+  gulp.watch(["css/foundation.css", "css/faculty.css", "css/arrow.css"], ["minifyFa_css"]);
   gulp.watch(["js/app.js"], ["minify_js"]);
+  gulp.watch(["js/faculty.js"], ["minifyFa_js"]);
 });
 
 
 //DEFAULT TASKS
-gulp.task("default", ["watch", "minify_css", "minify_js"]);
+gulp.task("default", ["watch", "minify_css", "minifyFa_css", "minify_js", "minifyFa_js"]);

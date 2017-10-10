@@ -6,7 +6,10 @@ $(document).ready(function(){
   var linkNews = $("#linkNews");
   var linkCalendar = $("#linkCalendar");
   var linkResources = $("#linkResources");
+  var linkFaculty = $("#linkFaculty");
+  var linkAbout = $("#linkAbout");
   var linkContact = $("#linkContact");
+  var linkContactFa = $("#linkContactFa");
   var downArr = $("#downArr");
   var homePage = $("#home");
   var mission = $("#mission");
@@ -41,7 +44,7 @@ $(document).ready(function(){
 				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 				if (target.length)
 				{
-					jQuery('html,body').animate({scrollTop: target.offset ().top}, 2000);
+					jQuery('html,body').animate({scrollTop: target.offset().top}, 2000);
 					return false;
 				}
 			}
@@ -55,24 +58,28 @@ $(document).ready(function(){
 	{
 		if(homePage.offset().top < $(window).scrollTop() + $(window).outerHeight())
 		{
-			linkHome.addClass('currentLink underLine');
-      linkQuick.removeClass('currentLink underLine');
-      linkNews.removeClass('currentLink underLine');
+			linkHome.addClass("currentLink underLine");
+      linkQuick.removeClass("currentLink underLine");
+      linkNews.removeClass("currentLink underLine");
       linkCalendar.removeClass("currentLink underLine");
       linkResources.removeClass("currentLink underLine");
-			linkContact.removeClass('currentLink underLine');
+      linkFaculty.removeClass("currentLink underLine");
+      linkAbout.removeClass("currentLink underLine");
+			linkContact.removeClass("currentLink underLine");
       homePage.stop().animate({"opacity": "1"}, 200);
   		downArr.stop().animate({"opacity": "1"}, 200);
 		}
 
     if(mission.offset().top < $(window).scrollTop() + $(window).outerHeight())
 		{
-      linkQuick.addClass('currentLink underLine');
-			linkHome.removeClass('currentLink underLine');
-      linkNews.removeClass('currentLink underLine');
+      linkQuick.addClass("currentLink underLine");
+			linkHome.removeClass("currentLink underLine");
+      linkNews.removeClass("currentLink underLine");
       linkCalendar.removeClass("currentLink underLine");
       linkResources.removeClass("currentLink underLine");
-			linkContact.removeClass('currentLink underLine');
+      linkFaculty.removeClass("currentLink underLine");
+      linkAbout.removeClass("currentLink underLine");
+			linkContact.removeClass("currentLink underLine");
 
       if(homePage.css("opacity", "0")){
         homePage.css("opacity", "0");
@@ -82,12 +89,14 @@ $(document).ready(function(){
 
     if(article1.offset().top < $(window).scrollTop() + $(window).outerHeight())
 		{
-      linkNews.addClass('currentLink underLine');
-			linkHome.removeClass('currentLink underLine');
-      linkQuick.removeClass('currentLink underLine');
+      linkNews.addClass("currentLink underLine");
+			linkHome.removeClass("currentLink underLine");
+      linkQuick.removeClass("currentLink underLine");
       linkCalendar.removeClass("currentLink underLine");
       linkResources.removeClass("currentLink underLine");
-			linkContact.removeClass('currentLink underLine');
+      linkFaculty.removeClass("currentLink underLine");
+      linkAbout.removeClass("currentLink underLine");
+			linkContact.removeClass("currentLink underLine");
 
       if(homePage.css("opacity", "0")){
         homePage.css("opacity", "0");
@@ -98,11 +107,13 @@ $(document).ready(function(){
     if(article2.offset().top < $(window).scrollTop() + $(window).outerHeight() && $(window).width() > 641)
     {
       linkCalendar.addClass("currentLink underLine");
-      linkNews.addClass('currentLink underLine');
-      linkHome.removeClass('currentLink underLine');
-      linkQuick.removeClass('currentLink underLine');
+      linkNews.addClass("currentLink underLine");
+      linkHome.removeClass("currentLink underLine");
+      linkQuick.removeClass("currentLink underLine");
       linkResources.removeClass("currentLink underLine");
-      linkContact.removeClass('currentLink underLine');
+      linkFaculty.removeClass("currentLink underLine");
+      linkAbout.removeClass("currentLink underLine");
+      linkContact.removeClass("currentLink underLine");
 
       if(homePage.css("opacity", "0")){
         homePage.css("opacity", "0");
@@ -113,11 +124,13 @@ $(document).ready(function(){
     if(article2.offset().top < $(window).scrollTop() + $(window).outerHeight() && $(window).width() <= 641)
     {
       linkCalendar.addClass("currentLink underLine");
-      linkHome.removeClass('currentLink underLine');
-      linkQuick.removeClass('currentLink underLine');
-      linkNews.removeClass('currentLink underLine');
+      linkHome.removeClass("currentLink underLine");
+      linkQuick.removeClass("currentLink underLine");
+      linkNews.removeClass("currentLink underLine");
       linkResources.removeClass("currentLink underLine");
-      linkContact.removeClass('currentLink underLine');
+      linkFaculty.removeClass("currentLink underLine");
+      linkAbout.removeClass("currentLink underLine");
+      linkContact.removeClass("currentLink underLine");
 
       if(homePage.css("opacity", "0")){
         homePage.css("opacity", "0");
@@ -147,10 +160,12 @@ $(document).ready(function(){
 		{
       linkResources.addClass("currentLink underLine");
 			linkHome.removeClass("currentLink underLine");
-      linkNews.removeClass('currentLink underLine');
+      linkNews.removeClass("currentLink underLine");
       linkCalendar.removeClass("currentLink underLine");
-      linkQuick.removeClass('currentLink underLine');
-			linkContact.removeClass('currentLink underLine');
+      linkQuick.removeClass("currentLink underLine");
+      linkFaculty.removeClass("currentLink underLine");
+      linkAbout.removeClass("currentLink underLine");
+			linkContact.removeClass("currentLink underLine");
 
       if(homePage.css("opacity", "0")){
         homePage.css("opacity", "0");
@@ -365,10 +380,12 @@ $(document).ready(function(){
 		{
 			linkContact.addClass('currentLink');
       linkHome.removeClass('currentLink');
-      linkQuick.removeClass('currentLink underLine');
-      linkNews.removeClass('currentLink underLine');
+      linkQuick.removeClass("currentLink underLine");
+      linkNews.removeClass("currentLink underLine");
       linkCalendar.removeClass("currentLink underLine");
       linkResources.removeClass("currentLink underLine");
+      linkFaculty.removeClass("currentLink underLine");
+      linkAbout.removeClass("currentLink underLine");
 
       if(homePage.css("opacity", "0")){
         homePage.css("opacity", "0");
@@ -385,9 +402,11 @@ $(document).ready(function(){
 	{
 		linkHome.addClass("currentLink underLine");
 		linkHome.removeClass("slideUnder");
-    linkQuick.removeClass('currentLink underLine');
+    linkQuick.removeClass("currentLink underLine");
     linkNews.removeClass("currentLink underLine");
     linkResources.removeClass("currentLink underLine");
+    linkFaculty.removeClass("currentLink underLine");
+    linkAbout.removeClass("currentLink underLine");
 		linkContact.removeClass("currentLink underLine");
     homePage.css("opacity", "1");
     downArr.css("opacity", "1");
@@ -395,11 +414,13 @@ $(document).ready(function(){
 
   downArr.click(function()
 	{
-    linkQuick.addClass('currentLink underLine');
+    linkQuick.addClass("currentLink underLine");
 		linkQuick.removeClass("slideUnder");
 		linkHome.removeClass("currentLink underLine");
-    linkNews.removeClass('currentLink underLine');
+    linkNews.removeClass("currentLink underLine");
     linkResources.removeClass("currentLink underLine");
+    linkFaculty.removeClass("currentLink underLine");
+    linkAbout.removeClass("currentLink underLine");
     linkContact.removeClass("currentLink underLine");
 
     if(homePage.css("opacity", "0")){
@@ -410,11 +431,13 @@ $(document).ready(function(){
 
   linkQuick.click(function()
 	{
-    linkQuick.addClass('currentLink underLine');
+    linkQuick.addClass("currentLink underLine");
 		linkQuick.removeClass("slideUnder");
 		linkHome.removeClass("currentLink underLine");
-    linkNews.removeClass('currentLink underLine');
+    linkNews.removeClass("currentLink underLine");
     linkResources.removeClass("currentLink underLine");
+    linkFaculty.removeClass("currentLink underLine");
+    linkAbout.removeClass("currentLink underLine");
     linkContact.removeClass("currentLink underLine");
 
     if(homePage.css("opacity", "0")){
@@ -427,10 +450,12 @@ $(document).ready(function(){
 	{
     linkNews.addClass("currentLink underLine");
 		linkNews.removeClass("slideUnder");
-    linkQuick.removeClass('currentLink underLine');
+    linkQuick.removeClass("currentLink underLine");
     linkHome.removeClass("currentLink underLine");
-    linkCalendar.removeClass('currentLink underLine');
+    linkCalendar.removeClass("currentLink underLine");
     linkResources.removeClass("currentLink underLine");
+    linkFaculty.removeClass("currentLink underLine");
+    linkAbout.removeClass("currentLink underLine");
 		linkContact.removeClass("currentLink underLine");
 
     if(homePage.css("opacity", "0")){
@@ -443,10 +468,12 @@ $(document).ready(function(){
 	{
 		linkCalendar.addClass("currentLink underLine");
 		linkCalendar.removeClass("slideUnder");
-    linkQuick.removeClass('currentLink underLine');
+    linkQuick.removeClass("currentLink underLine");
     linkHome.removeClass("currentLink underLine");
-    linkNews.removeClass('currentLink underLine');
+    linkNews.removeClass("currentLink underLine");
     linkResources.removeClass("currentLink underLine");
+    linkFaculty.removeClass("currentLink underLine");
+    linkAbout.removeClass("currentLink underLine");
 		linkContact.removeClass("currentLink underLine");
 
     if(homePage.css("opacity", "0")){
@@ -460,9 +487,11 @@ $(document).ready(function(){
 		linkResources.addClass("currentLink underLine");
 		linkResources.removeClass("slideUnder");
 		linkHome.removeClass("currentLink underLine");
-    linkQuick.removeClass('currentLink underLine');
-    linkNews.removeClass('currentLink underLine');
-    linkContact.removeClass('currentLink underLine');
+    linkQuick.removeClass("currentLink underLine");
+    linkNews.removeClass("currentLink underLine");
+    linkFaculty.removeClass("currentLink underLine");
+    linkAbout.removeClass("currentLink underLine");
+    linkContact.removeClass("currentLink underLine");
 
     if(homePage.css("opacity", "0")){
       homePage.css("opacity", "0");
@@ -472,18 +501,34 @@ $(document).ready(function(){
 
 	linkContact.click(function()
 	{
-    linkContact.addClass("currentLink");
+    linkContact.addClass("currentLink underLine");
 		linkContact.removeClass("slideUnder");
-		linkHome.removeClass("currentLink");
-    linkQuick.removeClass('currentLink underLine');
-    linkNews.removeClass('currentLink');
-    linkResources.removeClass('currentLink');
+		linkHome.removeClass("currentLink underLine");
+    linkQuick.removeClass("currentLink underLine");
+    linkNews.removeClass("currentLink underLine");
+    linkResources.removeClass("currentLink underLine");
+    linkFaculty.removeClass("currentLink underLine");
+    linkAbout.removeClass("currentLink underLine");
 
     if(homePage.css("opacity", "0")){
       homePage.css("opacity", "0");
       downArr.css("opacity", "0");
     }
 	});
+
+  linkFaculty.click(function()
+  {
+    linkFaculty.addClass("currentLink underLine");
+    linkFaculty.removeClass("slideUnder");
+    linkContactFa.removeClass("currentLink underLine");
+  });
+
+  linkContactFa.click(function()
+  {
+    linkContactFa.addClass("currentLink underLine");
+    linkContactFa.removeClass("slideUnder");
+    linkFaculty.removeClass("currentLink underLine");
+  });
 
 
 
@@ -541,7 +586,4 @@ $(document).ready(function(){
       $(".article1Container > div:first").next().stop().fadeIn(200).end().appendTo(".article1Container");
     });
 	});
-
-
-
 });
