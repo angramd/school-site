@@ -8,9 +8,9 @@ $(document).ready(function(){
   var linkResources = $("#linkResources");
   var linkFaculty = $("#linkFaculty");
   var linkAbout = $("#linkAbout");
-  var linkContact = $("#linkContact");
-  var homePage = $("#home");
-  var footer = $("#footer");
+  var linkContactFa = $("#linkContactFa");
+  var faculty = $("#faculty");
+  var footerFa = $("#footerFa");
 
   /*MOVE SCROLL BAR TO TOP OF PAGE WHEN PAGE RELOADS*/
 	$(window).scrollTop(0);
@@ -40,15 +40,15 @@ $(document).ready(function(){
   /*LINKS IN MENU BAR ARE ACTIVE WHEN SCROLLED TO THEIR ANCHOR*/
 	$(window).scroll(function(event)
 	{
-		if(homePage.offset().top < $(window).scrollTop() + $(window).outerHeight())
+		if(faculty.offset().top < $(window).scrollTop() + $(window).outerHeight())
 		{
 			linkFaculty.addClass("currentLink underLine");
-			linkContact.removeClass("currentLink underLine");
+			linkContactFa.removeClass("currentLink underLine");
 		}
 
-		if(footer.offset().top < $(window).scrollTop() + $(window).outerHeight())
+		if(footerFa.offset().top < $(window).scrollTop() + $(window).outerHeight())
 		{
-			linkContact.addClass("currentLink underLine");
+			linkContactFa.addClass("currentLink underLine");
       linkFaculty.removeClass("currentLink underLine");
 		}
 	});
@@ -61,13 +61,13 @@ $(document).ready(function(){
 	{
 		linkFaculty.addClass("currentLink underLine");
 		linkFaculty.removeClass("slideUnder");
-		linkContact.removeClass("currentLink underLine");
+		linkContactFa.removeClass("currentLink underLine");
 	});
 
-	linkContact.click(function()
+	linkContactFa.click(function()
 	{
-    linkContact.addClass("currentLink underLine");
-		linkContact.removeClass("slideUnder");
+    linkContactFa.addClass("currentLink underLine");
+		linkContactFa.removeClass("slideUnder");
     linkFaculty.removeClass("currentLink underLine");
 	});
 
@@ -77,8 +77,6 @@ $(document).ready(function(){
   if (navigator.userAgent.indexOf('Safari') != -1 && !navigator.userAgent.indexOf('Chrome') == -1)
 	{
     topBar.css({"width": "1150px", "margin-left": "1%"});
-    mission.css("margin-top", "10%");
-    quickLinkDiv.css("padding-bottom", "2%");
 
     if ($(window).width() <= 1584 && $(window).width() >= 1530) {
       topBar.css({"width": "1200px !important", "margin-left": "8% !important"});

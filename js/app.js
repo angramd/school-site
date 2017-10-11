@@ -26,7 +26,7 @@ $(document).ready(function(){
   var globalHead = $("#global div h1");
   var globalGraphic = $("#global .graphicEle");
   var resource_twit = $("#resource-twit");
-  var footer = $("#footer");
+  var footer = $("#footerMain");
 
   /*MOVE SCROLL BAR TO TOP OF PAGE WHEN PAGE RELOADS*/
 	$(window).scrollTop(0);
@@ -515,20 +515,6 @@ $(document).ready(function(){
       downArr.css("opacity", "0");
     }
 	});
-
-  linkFaculty.click(function()
-  {
-    linkFaculty.addClass("currentLink underLine");
-    linkFaculty.removeClass("slideUnder");
-    linkContactFa.removeClass("currentLink underLine");
-  });
-
-  linkContactFa.click(function()
-  {
-    linkContactFa.addClass("currentLink underLine");
-    linkContactFa.removeClass("slideUnder");
-    linkFaculty.removeClass("currentLink underLine");
-  });
 
 
 
