@@ -72,7 +72,7 @@ a.viewcalendar{
 }
 
 #mission span a:hover, a h2:hover, a h3:hover, .eventArticle .readmore a:hover, .newsArticle .readmore a:hover, div.moreann:hover, #moreannMobile a:hover,
-a.viewcalendar:hover, .moreRes:hover{
+a.viewcalendar:hover, .moreRes:hover, .footer #footAddress p a:hover{
   color: #FF033E !important;
 }
 
@@ -439,13 +439,13 @@ ul li.slideUnder a {
 
 #mission > div > div > div:nth-child(1) .icons{
   margin-left: 30%;
-  padding-top: 1%;
+  padding-top: .7%;
   float: left;
   text-align: center;
 }
 
 #mission > div > div > div:nth-child(1) .icons img{
-  width: 30%;
+  width: 25%;
 }
 
 #mission > div > div > div:nth-child(1) h1{
@@ -762,15 +762,15 @@ ul li.slideUnder a {
 }
 
 #resource-twit #headContainer .icons{
- margin: 1% 0 0 21%;
- width: 7%;
+  margin: 1.8% 0 0 26%;
+  float: left;
+  width: 6%;
 }
 
 #resource-twit #headContainer h1{
  font-size: 4em;
  float: left;
  color: #0a0699;
- width: 50%;
 }
 
 #resource-twit #article1 > div:nth-child(2), #resource-twit #article1 > div:nth-child(3){
@@ -817,87 +817,79 @@ ul li.slideUnder a {
 
 /*FOOTER*/
 .footer{
-  height: 600px;
-	background: url(../img/map.jpg) no-repeat fixed 45% 100% / cover;
+  background: #01304f;
   padding-top: 1%;
+  padding-bottom: 2%;
+  border-top: solid 3px #CCC;
 }
 
 .footer #footContact{
- margin-left: 37.7%;
- text-align: center;
- position: absolute;
- display: inline-block;
- left: 0;
- right: 0;
- width: 20%;
+  margin: 0 auto;
+  padding: 0 2%;
+  width: 100%;
 }
 
 .footer #footContact .icons{
- margin: 6.5% 5% 0 0;
- float: left;
- width: 13% !important;
+  margin: 1% 3% 0 37.5%;
+  width: 3%;
+  float: left;
+}
+
+.footer #footContact .icons img{
+  width: 98%;
 }
 
 .footer #footContact h1{
  font-size: 4em;
- margin-bottom: 2%;
+ margin-bottom: 1%;
+ text-align: left;
  color: #FFF;
 }
 
 .footer #footContact .graphicEle{
-  width: 50%;
-  margin-left: 36%;
+  width: 100%;
   text-align: center;
+  margin-bottom: 2%;
+}
+
+.mapWrap{
+  margin-top: .5%;
+}
+
+.map{
+  width: 60%;
+  float: right;
+}
+
+.map img{
+  width: 100%;
 }
 
 .footer #footAddress{
-  position: absolute;
-  margin-top: 10%;
-  padding-left: 23%;
-  float: left;
-  width: 100%;
-  text-align: center;
-  z-index: 3;
+  text-align: left;
 }
 
-.footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
-  width: 30%
+.footer #footAddress h2, .footer #footAddress p{
+  font-size: 1.3em;
 }
 
-.footer #footAddress div:nth-child(2){
-  width: 10%
-}
-
-.footer #footAddress div:nth-child(1) h2, .footer #footAddress div:nth-child(1) p{
-  text-align: right;
-}
-
-.footer #footAddress div:nth-child(1) h2{
+.footer #footAddress h2{
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.2em;
   text-transform: uppercase;
   color: #FFF;
-}
-
-.footer #footAddress div:nth-child(1) p{
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 1.2em;
-  color: #FFF;
-}
-
-.footer #footAddress div:nth-child(2){
-  text-align: center;
-}
-
-.footer #footAddress div:nth-child(3) p{
   text-align: left;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 1.2em;
-  color: #FFF;
-  margin-bottom: 0;
 }
 
-.footer #footAddress div:nth-child(1) p span, .footer #footAddress div:nth-child(3) p span{
+.footer #footAddress p{
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #FFF;
+}
+
+.footer #footAddress p a{
+  color: #FFF;
+}
+
+.footer #footAddress p span{
   font-weight: 700;
   color: #FFF;
 }
@@ -916,34 +908,6 @@ ul li.slideUnder a {
 
   #global .icons img{
     width: 31%;
-  }
-
-  .footer #footContact{
-   margin-left: 37.7%;
-   text-align: center;
-   position: absolute;
-   display: inline-block;
-   left: 0;
-   right: 0;
-   width: 20%;
-  }
-
-  .footer #footContact .icons{
-   margin: 6.5% 5% 0 0;
-   float: left;
-   width: 13% !important;
-  }
-
-  .footer #footContact h1{
-   font-size: 4em;
-   margin-bottom: 2%;
-   color: #FFF;
-  }
-
-  .footer #footContact .graphicEle{
-    width: 50%;
-    margin-left: 36%;
-    text-align: center;
   }
 }
 
@@ -985,32 +949,8 @@ ul li.slideUnder a {
     width: 32%;
   }
 
-  .footer #footContact{
-   margin-left: 37.7%;
-   text-align: center;
-   position: absolute;
-   display: inline-block;
-   left: 0;
-   right: 0;
-   width: 20%;
-  }
-
   .footer #footContact .icons{
-   margin: 6.5% 5% 0 0;
-   float: left;
-   width: 16% !important;
-  }
-
-  .footer #footContact h1{
-   font-size: 4em;
-   margin-bottom: 2%;
-   color: #FFF;
-  }
-
-  .footer #footContact .graphicEle{
-    width: 50%;
-    margin-left: 36%;
-    text-align: center;
+    margin-top: 1.5%;
   }
 }
 
@@ -1087,32 +1027,14 @@ ul li.slideUnder a {
    width: 13.5%;
   }
 
-  .footer #footContact{
-   margin-left: 34.5%;
-   text-align: center;
-   position: absolute;
-   display: inline-block;
-   left: 0;
-   right: 0;
-   width: 25%;
-  }
-
   .footer #footContact .icons{
-   margin: 5% 5% 0 0;
-   float: left;
-   width: 14% !important;
+    margin-top: 1.5%;
+    margin-left: 36.5%;
   }
 
-  .footer #footContact h1{
-   font-size: 4em;
-   margin-bottom: 2%;
-   color: #FFF;
-  }
-
-  .footer #footContact .graphicEle{
-    width: 50%;
-    margin-left: 36%;
-    text-align: center;
+  .map{
+    width: 70%;
+    float: right;
   }
 }
 
@@ -1126,7 +1048,7 @@ ul li.slideUnder a {
   }
 
   .top-bar{
-    width: 900px !important;
+    width: 950px !important;
     margin-left: 10%;
     padding-top: 2%;
   }
@@ -1149,32 +1071,15 @@ ul li.slideUnder a {
     width: 6%;
   }
 
-  .footer #footContact{
-   margin-left: 34.5%;
-   text-align: center;
-   position: absolute;
-   display: inline-block;
-   left: 0;
-   right: 0;
-   width: 25%;
-  }
-
   .footer #footContact .icons{
-   margin: 6% 5% 0 0;
-   float: left;
-   width: 15% !important;
+    margin-top: 1.5%;
+    margin-left: 34.5%;
+    width: 3.5%;
   }
 
-  .footer #footContact h1{
-   font-size: 4em;
-   margin-bottom: 2%;
-   color: #FFF;
-  }
-
-  .footer #footContact .graphicEle{
-    width: 50%;
-    margin-left: 36%;
-    text-align: center;
+  .map{
+    width: 70%;
+    float: right;
   }
 
   /*MOZILLA-FIREFOX STYLES*/
@@ -1289,42 +1194,19 @@ ul li.slideUnder a {
    width: 14.5%;
   }
 
-  .footer #footContact{
-   margin-left: 34.5%;
-   text-align: center;
-   position: absolute;
-   display: inline-block;
-   left: 0;
-   right: 0;
-   width: 25%;
-  }
-
   .footer #footContact .icons{
-   margin: 6% 5% 0 0;
-   float: left;
-   width: 15% !important;
+    margin-top: 1.5%;
+    margin-left: 34.5%;
+    width: 3.5%;
   }
 
-  .footer #footContact h1{
-   font-size: 4em;
-   margin-bottom: 2%;
-   color: #FFF;
+  .map{
+    width: 70%;
+    float: right;
   }
 
-  .footer #footContact .graphicEle{
-    width: 50%;
-    margin-left: 36%;
-    text-align: center;
-  }
-
-  .footer #footAddress{
-    position: absolute;
-    margin-top: 20%;
-    padding-left: 23%;
-    float: left;
-    width: 100%;
-    text-align: center;
-    z-index: 3;
+  .footer #footAddress h2, .footer #footAddress p{
+    font-size: 1.1em;
   }
 
   /*MOZILLA-FIREFOX STYLES*/
@@ -1455,50 +1337,27 @@ ul li.slideUnder a {
    width: 15.2%;
   }
 
-  .footer #footContact{
-   margin-left: 31.5%;
-   text-align: center;
-   position: absolute;
-   display: inline-block;
-   left: 0;
-   right: 0;
-   width: 30%;
-  }
-
   .footer #footContact .icons{
-   margin: 6% 5% 0 0;
-   float: left;
-   width: 15% !important;
+    margin-top: 1.5%;
+    margin-left: 34%;
+    width: 4%;
   }
 
-  .footer #footContact h1{
-   font-size: 4em;
-   margin-bottom: 2%;
-   color: #FFF;
+  .map{
+    width: 80%;
+    float: right;
   }
 
-  .footer #footContact .graphicEle{
-    width: 50%;
-    margin-left: 36%;
-    text-align: center;
-  }
-
-  .footer #footAddress{
-    position: absolute;
-    margin-top: 20%;
-    padding-left: 23%;
-    float: left;
-    width: 100%;
-    text-align: center;
-    z-index: 3;
+  .footer #footAddress h2, .footer #footAddress p{
+    font-size: 1.1em;
   }
 
   /*MOZILLA-FIREFOX STYLES*/
-  @-moz-document url-prefix() {
+  /*@-moz-document url-prefix() {
     .top-bar{
       width: 950px !important;
     }
-  }
+  }*/
   /**/
 }
 
@@ -1514,8 +1373,8 @@ ul li.slideUnder a {
   }
 
   .top-bar {
-    margin: 1.7% 0 0 4%;
-    width: 900px !important;
+    margin: 1.7% 0 0 3%;
+    width: 930px !important;
   }
 
   .scsLogo{
@@ -1631,51 +1490,28 @@ ul li.slideUnder a {
    width: 15.2%;
   }
 
-  .footer #footContact{
-   margin-left: 31.5%;
-   text-align: center;
-   position: absolute;
-   display: inline-block;
-   left: 0;
-   right: 0;
-   width: 30%;
-  }
-
   .footer #footContact .icons{
-   margin: 6% 5% 0 0;
-   float: left;
-   width: 15% !important;
+    margin-top: 1.5%;
+    margin-left: 34%;
+    width: 4%;
   }
 
-  .footer #footContact h1{
-   font-size: 4em;
-   margin-bottom: 2%;
-   color: #FFF;
+  .map{
+    width: 80%;
+    float: right;
   }
 
-  .footer #footContact .graphicEle{
-    width: 50%;
-    margin-left: 36%;
-    text-align: center;
-  }
-
-  .footer #footAddress{
-    position: absolute;
-    margin-top: 20%;
-    padding-left: 23%;
-    float: left;
-    width: 100%;
-    text-align: center;
-    z-index: 3;
+  .footer #footAddress h2, .footer #footAddress p{
+    font-size: 1.1em;
   }
 
   /*MOZILLA-FIREFOX STYLES*/
-  @-moz-document url-prefix() {
+  /*@-moz-document url-prefix() {
     .top-bar{
       width: 930px !important;
       margin: 1.7% 0 0 3%;
     }
-  }
+  }*/
   /**/
 }
 
@@ -1692,16 +1528,18 @@ ul li.slideUnder a {
 
   .logos{
     width: 120px;
+    margin-left: 1%;
   }
 
   .top-bar {
-    width: 900px !important;
-    margin: 1.5% 0 0 2%;
+    width: 920px !important;
+    margin: 1% 0 0 2%;
   }
 
   .scsLogo{
     margin-top: 1.5%;
     width: 7.5%;
+    margin-right: 1%;
   }
 
   #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
@@ -1812,50 +1650,27 @@ ul li.slideUnder a {
    width: 15.2%;
   }
 
-  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1{
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
    font-size: 3.5em;
   }
 
-  .footer #footContact{
-   margin-left: 31.5%;
-   text-align: center;
-   position: absolute;
-   display: inline-block;
-   left: 0;
-   right: 0;
-   width: 30%;
-  }
-
   .footer #footContact .icons{
-   margin: 6% 5% 0 0;
-   float: left;
-   width: 15% !important;
+    margin-top: 1.5%;
+    margin-left: 34%;
+    width: 4%;
   }
 
-  .footer #footContact h1{
-   font-size: 4em;
-   margin-bottom: 2%;
-   color: #FFF;
+  .map{
+    width: 80%;
+    float: right;
   }
 
-  .footer #footContact .graphicEle{
-    width: 50%;
-    margin-left: 36%;
-    text-align: center;
-  }
-
-  .footer #footAddress{
-    position: absolute;
-    margin-top: 20%;
-    padding-left: 23%;
-    float: left;
-    width: 100%;
-    text-align: center;
-    z-index: 3;
+  .footer #footAddress h2, .footer #footAddress p{
+    font-size: 1.1em;
   }
 
   /*MOZILLA-FIREFOX STYLES*/
-  @-moz-document url-prefix() {
+  /*@-moz-document url-prefix() {
     .top-bar{
       width: 920px !important;
       margin-left: 1%;
@@ -1869,7 +1684,7 @@ ul li.slideUnder a {
     .scsLogo{
       margin-right: 1%;
     }
-  }
+  }*/
   /**/
 }
 
@@ -1886,16 +1701,17 @@ ul li.slideUnder a {
 
   .logos{
     width: 120px;
-    margin-left: 2%;
+    margin-left: 1%;
   }
 
   .top-bar {
-    width: 900px !important;
-    margin: 1.5% 0 0 2%;
+    width: 920px !important;
+    margin: 2% 0 0 2%;
   }
 
   .scsLogo{
     margin-top: 1.5%;
+    margin-right: 1%;
     width: 7.5%;
   }
 
@@ -2007,50 +1823,27 @@ ul li.slideUnder a {
    width: 15.2%;
   }
 
-  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1{
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
    font-size: 3.5em;
   }
 
-  .footer #footContact{
-   margin-left: 31.5%;
-   text-align: center;
-   position: absolute;
-   display: inline-block;
-   left: 0;
-   right: 0;
-   width: 30%;
-  }
-
   .footer #footContact .icons{
-   margin: 6% 5% 0 0;
-   float: left;
-   width: 15% !important;
+    margin-top: 1.5%;
+    margin-left: 34%;
+    width: 4%;
   }
 
-  .footer #footContact h1{
-   font-size: 4em;
-   margin-bottom: 2%;
-   color: #FFF;
+  .map{
+    width: 80%;
+    float: right;
   }
 
-  .footer #footContact .graphicEle{
-    width: 50%;
-    margin-left: 36%;
-    text-align: center;
-  }
-
-  .footer #footAddress{
-    position: absolute;
-    margin-top: 20%;
-    padding-left: 23%;
-    float: left;
-    width: 100%;
-    text-align: center;
-    z-index: 3;
+  .footer #footAddress h2, .footer #footAddress p{
+    font-size: 1.1em;
   }
 
   /*MOZILLA-FIREFOX STYLES*/
-  @-moz-document url-prefix() {
+  /*@-moz-document url-prefix() {
     .top-bar{
       width: 920px !important;
       margin-left: 2%;
@@ -2064,7 +1857,7 @@ ul li.slideUnder a {
     .scsLogo{
       margin-right: 1%;
     }
-  }
+  }*/
   /**/
 }
 
@@ -2085,12 +1878,13 @@ ul li.slideUnder a {
   }
 
   .top-bar {
-    width: 890px !important;
+    width: 910px !important;
     margin: 2% 0 0 1%;
   }
 
   .scsLogo{
     margin-top: 1.8%;
+    margin-right: 1%;
     width: 7.5%;
   }
 
@@ -2202,50 +1996,28 @@ ul li.slideUnder a {
    width: 15.2%;
   }
 
-  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1{
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
    font-size: 3.5em;
   }
 
-  .footer #footContact{
-   margin-left: 31.5%;
-   text-align: center;
-   position: absolute;
-   display: inline-block;
-   left: 0;
-   right: 0;
-   width: 30%;
-  }
-
   .footer #footContact .icons{
-   margin: 6% 5% 0 0;
-   float: left;
-   width: 15% !important;
+    margin-top: 2%;
+    margin-left: 32%;
+    margin-right: 4%;
+    width: 4.5%;
   }
 
-  .footer #footContact h1{
-   font-size: 4em;
-   margin-bottom: 2%;
-   color: #FFF;
+  .map{
+    width: 80%;
+    float: right;
   }
 
-  .footer #footContact .graphicEle{
-    width: 50%;
-    margin-left: 36%;
-    text-align: center;
-  }
-
-  .footer #footAddress{
-    position: absolute;
-    margin-top: 20%;
-    padding-left: 23%;
-    float: left;
-    width: 100%;
-    text-align: center;
-    z-index: 3;
+  .footer #footAddress h2, .footer #footAddress p{
+    font-size: 1.1em;
   }
 
   /*MOZILLA-FIREFOX STYLES*/
-  @-moz-document url-prefix() {
+  /*@-moz-document url-prefix() {
     .top-bar{
       width: 910px !important;
       margin-left: 1%;
@@ -2259,7 +2031,7 @@ ul li.slideUnder a {
     .scsLogo{
       margin-right: 1%;
     }
-  }
+  }*/
   /**/
 }
 
@@ -2275,18 +2047,18 @@ ul li.slideUnder a {
   }
 
   .logos{
-    width: 120px;
-    margin-left: 1%;
+    width: 115px;
+    margin-left: 0;
   }
 
   .top-bar {
-    width: 890px !important;
-    margin: 2% 0 0 1%;
+    width: 910px !important;
+    margin: 2% 0 0 0;
   }
 
   .scsLogo{
-    margin-top: 1.8%;
-    margin-right: 1%;
+    margin-top: 1.5%;
+    margin-right: 0;
     width: 7.5%;
   }
 
@@ -2406,50 +2178,28 @@ ul li.slideUnder a {
    width: 16%;
   }
 
-  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1{
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
    font-size: 3.5em;
   }
 
-  .footer #footContact{
-   margin-left: 28%;
-   text-align: center;
-   position: absolute;
-   display: inline-block;
-   left: 0;
-   right: 0;
-   width: 35%;
-  }
-
   .footer #footContact .icons{
-   margin: 6% 8% 0 0;
-   float: left;
-   width: 14% !important;
+    margin-top: 2%;
+    margin-left: 32%;
+    margin-right: 4%;
+    width: 4.5%;
   }
 
-  .footer #footContact h1{
-   font-size: 4em;
-   margin-bottom: 2%;
-   color: #FFF;
+  .map{
+    width: 80%;
+    float: right;
   }
 
-  .footer #footContact .graphicEle{
-    width: 50%;
-    margin-left: 36%;
-    text-align: center;
-  }
-
-  .footer #footAddress{
-    position: absolute;
-    margin-top: 20%;
-    padding-left: 23%;
-    float: left;
-    width: 100%;
-    text-align: center;
-    z-index: 3;
+  .footer #footAddress h2, .footer #footAddress p{
+    font-size: 1.1em;
   }
 
   /*MOZILLA-FIREFOX STYLES*/
-  @-moz-document url-prefix() {
+  /*@-moz-document url-prefix() {
     .logos{
       margin-left: 1%;
       width: 115px;
@@ -2465,7 +2215,7 @@ ul li.slideUnder a {
       margin-top: 1.5%;
       margin-right: 1%;
     }
-  }
+  }*/
   /**/
 }
 
@@ -2616,46 +2366,24 @@ ul li.slideUnder a {
    width: 16%;
   }
 
-  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1{
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
    font-size: 3.5em;
   }
 
-  .footer #footContact{
-   margin-left: 28%;
-   text-align: center;
-   position: absolute;
-   display: inline-block;
-   left: 0;
-   right: 0;
-   width: 35%;
-  }
-
   .footer #footContact .icons{
-   margin: 6% 8% 0 0;
-   float: left;
-   width: 14% !important;
+    margin-top: 2%;
+    margin-left: 31%;
+    margin-right: 4%;
+    width: 4.5%;
   }
 
-  .footer #footContact h1{
-   font-size: 4em;
-   margin-bottom: 2%;
-   color: #FFF;
+  .map{
+    width: 80%;
+    float: right;
   }
 
-  .footer #footContact .graphicEle{
-    width: 50%;
-    margin-left: 36%;
-    text-align: center;
-  }
-
-  .footer #footAddress{
-    position: absolute;
-    margin-top: 20%;
-    padding-left: 23%;
-    float: left;
-    width: 100%;
-    text-align: center;
-    z-index: 3;
+  .footer #footAddress h2, .footer #footAddress p{
+    font-size: 1.1em;
   }
 
   /*MOZILLA-FIREFOX STYLES*/
@@ -2691,12 +2419,12 @@ ul li.slideUnder a {
   }
 
   .logos{
-    width: 120px;
+    width: 115px;
     margin-left: 1%;
   }
 
   .top-bar {
-    width: 820px !important;
+    width: 850px !important;
     margin: 2% 0 0 1%;
   }
 
@@ -2855,50 +2583,28 @@ ul li.slideUnder a {
    width: 16%;
   }
 
-  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1{
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
    font-size: 3em;
   }
 
-  .footer #footContact{
-   margin-left: 28%;
-   text-align: center;
-   position: absolute;
-   display: inline-block;
-   left: 0;
-   right: 0;
-   width: 35%;
-  }
-
   .footer #footContact .icons{
-   margin: 6% 8% 0 0;
-   float: left;
-   width: 14% !important;
+    margin-top: 2%;
+    margin-left: 32%;
+    margin-right: 4%;
+    width: 4.5%;
   }
 
-  .footer #footContact h1{
-   font-size: 4em;
-   margin-bottom: 2%;
-   color: #FFF;
+  .map{
+    width: 80%;
+    float: right;
   }
 
-  .footer #footContact .graphicEle{
-    width: 50%;
-    margin-left: 36%;
-    text-align: center;
-  }
-
-  .footer #footAddress{
-    position: absolute;
-    margin-top: 20%;
-    padding-left: 23%;
-    float: left;
-    width: 100%;
-    text-align: center;
-    z-index: 3;
+  .footer #footAddress h2, .footer #footAddress p{
+    font-size: 1em;
   }
 
   /*MOZILLA-FIREFOX STYLES*/
-  @-moz-document url-prefix() {
+  /*@-moz-document url-prefix() {
     .logos{
       margin-left: 1%;
       width: 115px;
@@ -2918,7 +2624,7 @@ ul li.slideUnder a {
       margin-top: 1.8%;
       margin-right: 1%;
     }
-  }
+  }*/
   /**/
 }
 
@@ -2952,7 +2658,7 @@ ul li.slideUnder a {
   }
 
   .scsLogo{
-    margin-top: 1.8%;
+    margin-top: 1.3%;
     margin-right: 1%;
     width: 7.5%;
   }
@@ -3126,63 +2832,40 @@ ul li.slideUnder a {
    width: 16%;
   }
 
-  #resource-twit #article1 #headContainer h1{
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
    font-size: 3em;
+  }
+
+  #resource-twit #article1 > div:nth-child(2){
+    margin-top: 1% !important;
+  }
+
+  #resource-twit #article1 div:nth-child(2) a h2{
+    font-size: 1.3em;
   }
 
   #resource-twit #article2 #headContainer2 h1{
     width: 150px;
-   font-size: 3em;
-  }
-
-  .footer #footContact{
-   margin-left: 28%;
-   text-align: center;
-   position: absolute;
-   display: inline-block;
-   left: 0;
-   right: 0;
-   width: 35%;
   }
 
   .footer #footContact .icons{
-   margin: 6% 8% 0 0;
-   float: left;
-   width: 14% !important;
+    margin-top: 2%;
+    margin-left: 31%;
+    margin-right: 4%;
+    width: 4.5%;
   }
 
-  .footer #footContact h1{
-   font-size: 4em;
-   margin-bottom: 2%;
-   color: #FFF;
+  .map{
+    width: 80%;
+    float: right;
   }
 
-  .footer #footContact .graphicEle{
-    width: 50%;
-    margin-left: 36%;
-    text-align: center;
-  }
-
-  .footer #footAddress{
-    position: absolute;
-    margin-top: 20%;
-    padding-left: 17%;
-    float: left;
-    width: 100%;
-    text-align: center;
-    z-index: 3;
-  }
-
-  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
-    width: 35%
-  }
-
-  .footer #footAddress div:nth-child(2){
-    width: 10%
+  .footer #footAddress h2, .footer #footAddress p{
+    font-size: 1em;
   }
 
   /*MOZILLA-FIREFOX STYLES*/
-  @-moz-document url-prefix() {
+  /*@-moz-document url-prefix() {
     .logos{
       margin-left: 1%;
     }
@@ -3200,7 +2883,7 @@ ul li.slideUnder a {
       margin-top: 1.8%;
       margin-right: 1%;
     }
-  }
+  }*/
   /**/
 }
 
@@ -3417,59 +3100,36 @@ ul li.slideUnder a {
    width: 16%;
   }
 
-  #resource-twit #article1 #headContainer h1{
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
    font-size: 3em;
+  }
+
+  #resource-twit #article1 > div:nth-child(2){
+    margin-top: 1% !important;
+  }
+
+  #resource-twit #article1 div:nth-child(2) a h2{
+    font-size: 1.3em;
   }
 
   #resource-twit #article2 #headContainer2 h1{
     width: 150px;
-   font-size: 3em;
-  }
-
-  .footer #footContact{
-   margin-left: 25.5%;
-   text-align: center;
-   position: absolute;
-   display: inline-block;
-   left: 0;
-   right: 0;
-   width: 38%;
   }
 
   .footer #footContact .icons{
-   margin: 6% 10% 0 0;
-   float: left;
-   width: 15% !important;
+    margin-top: 2%;
+    margin-left: 31%;
+    margin-right: 4%;
+    width: 4.5%;
   }
 
-  .footer #footContact h1{
-   font-size: 4em;
-   margin-bottom: 2%;
-   color: #FFF;
+  .map{
+    width: 80%;
+    float: right;
   }
 
-  .footer #footContact .graphicEle{
-    width: 50%;
-    margin-left: 36%;
-    text-align: center;
-  }
-
-  .footer #footAddress{
-    position: absolute;
-    margin-top: 23%;
-    padding-left: 10%;
-    float: left;
-    width: 100%;
-    text-align: center;
-    z-index: 3;
-  }
-
-  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
-    width: 40%
-  }
-
-  .footer #footAddress div:nth-child(2){
-    width: 10%
+  .footer #footAddress h2, .footer #footAddress p{
+    font-size: 1em;
   }
 }
 
@@ -3486,12 +3146,12 @@ ul li.slideUnder a {
 
   .logos{
     width: 90px;
-    margin-left: 1%;
+    margin-left: 0;
   }
 
   .top-bar {
-    width: 700px !important;
-    margin: 1.5% 0 0 .5%;
+    width: 720px !important;
+    margin: 1.5% 0 0 0;
   }
 
   .top-bar-section ul li{
@@ -3504,7 +3164,7 @@ ul li.slideUnder a {
 
   .scsLogo{
     margin-top: 1.8%;
-    margin-right: 1%;
+    margin-right: 0;
     width: 7.5%;
   }
 
@@ -3692,12 +3352,7 @@ ul li.slideUnder a {
    width: 16%;
   }
 
-  #resource-twit #article1 #headContainer h1{
-   font-size: 3em;
-  }
-
-  #resource-twit #article2 #headContainer2 h1{
-    width: 150px;
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
    font-size: 3em;
   }
 
@@ -3705,54 +3360,36 @@ ul li.slideUnder a {
     width: 35%;
   }
 
-  .footer #footContact{
-   margin-left: 24%;
-   text-align: center;
-   position: absolute;
-   display: inline-block;
-   left: 0;
-   right: 0;
-   width: 40%;
+  #resource-twit #article1 > div:nth-child(2){
+    margin-top: 1% !important;
+  }
+
+  #resource-twit #article1 div:nth-child(2) a h2{
+    font-size: 1.3em;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 150px;
   }
 
   .footer #footContact .icons{
-   margin: 6% 10% 0 0;
-   float: left;
-   width: 15% !important;
+    margin-top: 2%;
+    margin-left: 31%;
+    margin-right: 4%;
+    width: 4.5%;
   }
 
-  .footer #footContact h1{
-   font-size: 4em;
-   margin-bottom: 2%;
-   color: #FFF;
+  .map{
+    width: 80%;
+    float: right;
   }
 
-  .footer #footContact .graphicEle{
-    width: 50%;
-    margin-left: 38%;
-    text-align: center;
-  }
-
-  .footer #footAddress{
-    position: absolute;
-    margin-top: 23%;
-    padding-left: 10%;
-    float: left;
-    width: 100%;
-    text-align: center;
-    z-index: 3;
-  }
-
-  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
-    width: 40%
-  }
-
-  .footer #footAddress div:nth-child(2){
-    width: 10%
+  .footer #footAddress h2, .footer #footAddress p{
+    font-size: 1em;
   }
 
   /*MOZILLA-FIREFOX STYLES*/
-  @-moz-document url-prefix() {
+  /*@-moz-document url-prefix() {
     .logos{
       margin-left: 1%;
     }
@@ -3765,7 +3402,7 @@ ul li.slideUnder a {
       margin-top: 1.8%;
       margin-right: 1%;
     }
-  }
+  }*/
   /**/
 }
 
@@ -3990,12 +3627,7 @@ ul li.slideUnder a {
    width: 16%;
   }
 
-  #resource-twit #article1 #headContainer h1{
-   font-size: 3em;
-  }
-
-  #resource-twit #article2 #headContainer2 h1{
-    width: 150px;
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
    font-size: 3em;
   }
 
@@ -4003,50 +3635,32 @@ ul li.slideUnder a {
     width: 35%;
   }
 
-  .footer #footContact{
-   margin-left: 24%;
-   text-align: center;
-   position: absolute;
-   display: inline-block;
-   left: 0;
-   right: 0;
-   width: 40%;
+  #resource-twit #article1 > div:nth-child(2){
+    margin-top: 1% !important;
+  }
+
+  #resource-twit #article1 div:nth-child(2) a h2{
+    font-size: 1.3em;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 150px;
   }
 
   .footer #footContact .icons{
-   margin: 6% 10% 0 0;
-   float: left;
-   width: 15% !important;
+    margin-top: 2%;
+    margin-left: 31%;
+    margin-right: 4%;
+    width: 4.5%;
   }
 
-  .footer #footContact h1{
-   font-size: 4em;
-   margin-bottom: 2%;
-   color: #FFF;
+  .map{
+    width: 80%;
+    float: right;
   }
 
-  .footer #footContact .graphicEle{
-    width: 50%;
-    margin-left: 38%;
-    text-align: center;
-  }
-
-  .footer #footAddress{
-    position: absolute;
-    margin-top: 23%;
-    padding-left: 10%;
-    float: left;
-    width: 100%;
-    text-align: center;
-    z-index: 3;
-  }
-
-  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
-    width: 40%
-  }
-
-  .footer #footAddress div:nth-child(2){
-    width: 10%
+  .footer #footAddress h2, .footer #footAddress p{
+    font-size: 1em;
   }
 }
 
@@ -4271,67 +3885,44 @@ ul li.slideUnder a {
    width: 16%;
   }
 
-  #resource-twit #article1 #headContainer h1{
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
    font-size: 2.5em;
-  }
-
-  #resource-twit #article2 #headContainer2 h1{
-    width: 150px;
-    font-size: 2.5em;
   }
 
   #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
     width: 35%;
   }
 
-  #resource-twit #article1 div:nth-child(2) a h2{
-   margin-bottom: 5%;
+  #resource-twit #article1 > div:nth-child(2){
+    margin-top: 1% !important;
   }
 
-  .footer #footContact{
-   margin-left: 18%;
-   text-align: center;
-   position: absolute;
-   display: inline-block;
-   left: 0;
-   right: 0;
-   width: 50%;
+  #resource-twit #article1 div:nth-child(2) a h2{
+    font-size: 1.3em;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 150px;
   }
 
   .footer #footContact .icons{
-   margin: 6% 13% 0 0;
-   float: left;
-   width: 14% !important;
+    margin-top: 2%;
+    margin-left: 32%;
+    margin-right: 4%;
+    width: 4.5%;
   }
 
-  .footer #footContact h1{
-   font-size: 4em;
-   margin-bottom: 2%;
-   color: #FFF;
+  .footer #footContact .graphicEle img{
+    width: 10.5%;
   }
 
-  .footer #footContact .graphicEle{
-    width: 50%;
-    margin-left: 38%;
-    text-align: center;
+  .map{
+    width: 80%;
+    float: right;
   }
 
-  .footer #footAddress{
-    position: absolute;
-    margin-top: 23%;
-    padding-left: 10%;
-    float: left;
-    width: 100%;
-    text-align: center;
-    z-index: 3;
-  }
-
-  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
-    width: 40%
-  }
-
-  .footer #footAddress div:nth-child(2){
-    width: 10%
+  .footer #footAddress h2, .footer #footAddress p{
+    font-size: .9em;
   }
 
   /*MOZILLA-FIREFOX STYLES*/
@@ -4572,67 +4163,45 @@ ul li.slideUnder a {
    width: 16%;
   }
 
-  #resource-twit #article1 #headContainer h1{
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
    font-size: 2.2em;
-  }
-
-  #resource-twit #article2 #headContainer2 h1{
-    width: 150px;
-    font-size: 2.2em;
   }
 
   #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
     width: 35%;
   }
 
-  #resource-twit #article1 div:nth-child(2) a h2{
-   margin-bottom: 5%;
+  #resource-twit #article1 > div:nth-child(2){
+    margin-top: 1% !important;
   }
 
-  .footer #footContact{
-   margin-left: 17.5%;
-   text-align: center;
-   position: absolute;
-   display: inline-block;
-   left: 0;
-   right: 0;
-   width: 50%;
+  #resource-twit #article1 div:nth-child(2) a h2{
+    font-size: 1.3em;
+    margin-bottom: 5%;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 150px;
   }
 
   .footer #footContact .icons{
-   margin: 6% 13% 0 0;
-   float: left;
-   width: 14% !important;
+    margin-top: 2%;
+    margin-left: 32%;
+    margin-right: 4%;
+    width: 4%;
   }
 
-  .footer #footContact h1{
-   font-size: 4em;
-   margin-bottom: 2%;
-   color: #FFF;
+  .footer #footContact .graphicEle img{
+    width: 9%;
   }
 
-  .footer #footContact .graphicEle{
-    width: 50%;
-    margin-left: 39%;
-    text-align: center;
+  .map{
+    width: 90%;
+    float: right;
   }
 
-  .footer #footAddress{
-    position: absolute;
-    margin-top: 23%;
-    padding-left: 10%;
-    float: left;
-    width: 100%;
-    text-align: center;
-    z-index: 3;
-  }
-
-  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
-    width: 40%
-  }
-
-  .footer #footAddress div:nth-child(2){
-    width: 10%
+  .footer #footAddress h2, .footer #footAddress p{
+    font-size: .8em;
   }
 
   /*MOZILLA-FIREFOX STYLES*/
@@ -4879,67 +4448,45 @@ ul li.slideUnder a {
    width: 16%;
   }
 
-  #resource-twit #article1 #headContainer h1{
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
    font-size: 2.2em;
-  }
-
-  #resource-twit #article2 #headContainer2 h1{
-    width: 150px;
-    font-size: 2.2em;
   }
 
   #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
     width: 40%;
   }
 
-  #resource-twit #article1 div:nth-child(2) a h2{
-   margin-bottom: 5%;
+  #resource-twit #article1 > div:nth-child(2){
+    margin-top: 1% !important;
   }
 
-  .footer #footContact{
-   margin-left: 17.5%;
-   text-align: center;
-   position: absolute;
-   display: inline-block;
-   left: 0;
-   right: 0;
-   width: 50%;
+  #resource-twit #article1 div:nth-child(2) a h2{
+    font-size: 1.3em;
+    margin-bottom: 5%;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 150px;
   }
 
   .footer #footContact .icons{
-   margin: 6% 13% 0 0;
-   float: left;
-   width: 14% !important;
+    margin-top: 2%;
+    margin-left: 32%;
+    margin-right: 4%;
+    width: 4%;
   }
 
-  .footer #footContact h1{
-   font-size: 4em;
-   margin-bottom: 2%;
-   color: #FFF;
+  .footer #footContact .graphicEle img{
+    width: 9%;
   }
 
-  .footer #footContact .graphicEle{
-    width: 50%;
-    margin-left: 39%;
-    text-align: center;
+  .map{
+    width: 90%;
+    float: right;
   }
 
-  .footer #footAddress{
-    position: absolute;
-    margin-top: 35%;
-    padding-left: 10%;
-    float: left;
-    width: 100%;
-    text-align: center;
-    z-index: 3;
-  }
-
-  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
-    width: 40%
-  }
-
-  .footer #footAddress div:nth-child(2){
-    width: 10%
+  .footer #footAddress h2, .footer #footAddress p{
+    font-size: .8em;
   }
 
   /*MOZILLA-FIREFOX STYLES*/
@@ -5194,67 +4741,45 @@ ul li.slideUnder a {
    width: 16%;
   }
 
-  #resource-twit #article1 #headContainer h1{
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
    font-size: 2.2em;
+  }
+
+  #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
+    width: 35%;
+  }
+
+  #resource-twit #article1 > div:nth-child(2){
+    margin-top: 1% !important;
+  }
+
+  #resource-twit #article1 div:nth-child(2) a h2{
+    font-size: 1.3em;
+    margin-bottom: 5%;
   }
 
   #resource-twit #article2 #headContainer2 h1{
     width: 150px;
-    font-size: 2.2em;
-  }
-
-  #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
-    width: 40%;
-  }
-
-  #resource-twit #article1 div:nth-child(2) a h2{
-   margin-bottom: 5%;
-  }
-
-  .footer #footContact{
-   margin-left: 14%;
-   text-align: center;
-   position: absolute;
-   display: inline-block;
-   left: 0;
-   right: 0;
-   width: 55%;
   }
 
   .footer #footContact .icons{
-   margin: 6% 13% 0 0;
-   float: left;
-   width: 14% !important;
+    margin-top: 2%;
+    margin-left: 32%;
+    margin-right: 4%;
+    width: 4%;
   }
 
-  .footer #footContact h1{
-   font-size: 4em;
-   margin-bottom: 2%;
-   color: #FFF;
+  .footer #footContact .graphicEle img{
+    width: 9%;
   }
 
-  .footer #footContact .graphicEle{
-    width: 50%;
-    margin-left: 39%;
-    text-align: center;
+  .map{
+    width: 90%;
+    float: right;
   }
 
-  .footer #footAddress{
-    position: absolute;
-    margin-top: 35%;
-    padding-left: 3%;
-    float: left;
-    width: 100%;
-    text-align: center;
-    z-index: 3;
-  }
-
-  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
-    width: 45%
-  }
-
-  .footer #footAddress div:nth-child(2){
-    width: 10%
+  .footer #footAddress h2, .footer #footAddress p{
+    font-size: .8em;
   }
 
   /*MOZILLA-FIREFOX STYLES*/
@@ -5510,67 +5035,45 @@ ul li.slideUnder a {
    width: 16%;
   }
 
-  #resource-twit #article1 #headContainer h1{
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
    font-size: 2.2em;
+  }
+
+  #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
+    width: 35%;
+  }
+
+  #resource-twit #article1 > div:nth-child(2){
+    margin-top: 1% !important;
+  }
+
+  #resource-twit #article1 div:nth-child(2) a h2{
+    font-size: 1.3em;
+    margin-bottom: 5%;
   }
 
   #resource-twit #article2 #headContainer2 h1{
     width: 150px;
-    font-size: 2.2em;
-  }
-
-  #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
-    width: 40%;
-  }
-
-  #resource-twit #article1 div:nth-child(2) a h2{
-   margin-bottom: 5%;
-  }
-
-  .footer #footContact{
-   margin-left: 11%;
-   text-align: center;
-   position: absolute;
-   display: inline-block;
-   left: 0;
-   right: 0;
-   width: 60%;
   }
 
   .footer #footContact .icons{
-   margin: 6% 13% 0 0;
-   float: left;
-   width: 14% !important;
+    margin-top: 2%;
+    margin-left: 32%;
+    margin-right: 4%;
+    width: 4%;
   }
 
-  .footer #footContact h1{
-   font-size: 4em;
-   margin-bottom: 2%;
-   color: #FFF;
+  .footer #footContact .graphicEle img{
+    width: 9%;
   }
 
-  .footer #footContact .graphicEle{
-    width: 50%;
-    margin-left: 39%;
-    text-align: center;
+  .map{
+    width: 90%;
+    float: right;
   }
 
-  .footer #footAddress{
-    position: absolute;
-    margin-top: 35%;
-    padding-left: 3%;
-    float: left;
-    width: 100%;
-    text-align: center;
-    z-index: 3;
-  }
-
-  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
-    width: 45%
-  }
-
-  .footer #footAddress div:nth-child(2){
-    width: 10%
+  .footer #footAddress h2, .footer #footAddress p{
+    font-size: .8em;
   }
 
   /*MOZILLA-FIREFOX STYLES*/
@@ -5834,67 +5337,45 @@ ul li.slideUnder a {
    width: 16%;
   }
 
-  #resource-twit #article1 #headContainer h1{
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
    font-size: 2.2em;
-  }
-
-  #resource-twit #article2 #headContainer2 h1{
-    width: 150px;
-    font-size: 2.2em;
   }
 
   #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
     width: 36%;
   }
 
-  #resource-twit #article1 div:nth-child(2) a h2{
-   margin-bottom: 5%;
+  #resource-twit #article1 > div:nth-child(2){
+    margin-top: 1% !important;
   }
 
-  .footer #footContact{
-   margin-left: 11%;
-   text-align: center;
-   position: absolute;
-   display: inline-block;
-   left: 0;
-   right: 0;
-   width: 60%;
+  #resource-twit #article1 div:nth-child(2) a h2{
+    font-size: 1.3em;
+    margin-bottom: 5%;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 150px;
   }
 
   .footer #footContact .icons{
-   margin: 6% 13% 0 0;
-   float: left;
-   width: 14% !important;
+    margin-top: 2%;
+    margin-left: 32%;
+    margin-right: 4%;
+    width: 4%;
   }
 
-  .footer #footContact h1{
-   font-size: 4em;
-   margin-bottom: 2%;
-   color: #FFF;
+  .footer #footContact .graphicEle img{
+    width: 9%;
   }
 
-  .footer #footContact .graphicEle{
-    width: 50%;
-    margin-left: 39%;
-    text-align: center;
+  .map{
+    width: 90%;
+    float: right;
   }
 
-  .footer #footAddress{
-    position: absolute;
-    margin-top: 35%;
-    padding-left: 3%;
-    float: left;
-    width: 100%;
-    text-align: center;
-    z-index: 3;
-  }
-
-  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
-    width: 45%
-  }
-
-  .footer #footAddress div:nth-child(2){
-    width: 10%
+  .footer #footAddress h2, .footer #footAddress p{
+    font-size: .8em;
   }
 }
 
@@ -6235,82 +5716,64 @@ ul li.slideUnder a {
   }
 
   #resource-twit #article1 #headContainer .icons{
-   margin: 4.5% auto 0 0;
-   width: 13%;
+   margin: 4% auto 0 3%;
+   width: 10%;
   }
 
   #resource-twit #article2 #headContainer2 .icons{
-   margin: 6.7% auto 0 0;
+   margin: 3% auto 0 13%;
    width: 11%;
   }
 
-  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1{
-   font-size: 4em;
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
+   font-size: 3em;
   }
 
-  #resource-twit #article2 #headContainer2 h1{
-    width: 150px;
+  #resource-twit #article1 #headContainer h1{
+   width: 70%;
   }
 
   #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
     width: 25%;
   }
 
-  #resource-twit #article1 div:nth-child(2) a h2{
-   margin-bottom: 5%;
+  #resource-twit #article1 > div:nth-child(2){
+    margin-top: 1% !important;
   }
 
-  .footer #footContact{
-   margin-left: 11%;
-   text-align: center;
-   position: absolute;
-   display: inline-block;
-   left: 0;
-   right: 0;
-   width: 60%;
+  #resource-twit #article1 div:nth-child(2) a h2{
+    font-size: 1.3em;
+    margin-bottom: 5%;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 150px;
   }
 
   .footer #footContact .icons{
-   margin: 6% 13% 0 0;
-   float: left;
-   width: 14% !important;
+    margin-top: 2.8%;
+    margin-left: 25%;
+    margin-right: 4%;
+    width: 7%;
   }
 
-  .footer #footContact h1{
-   font-size: 4em;
-   margin-bottom: 2%;
+  .footer #footContact .graphicEle img{
+    width: 17%;
   }
 
-  .footer #footContact .graphicEle{
-    width: 50%;
-    margin-left: 39%;
-    text-align: center;
-  }
-
-  .footer #footAddress{
-    position: absolute;
-    margin-top: 35%;
-    padding-left: 3%;
-    float: left;
+  .mapWrap{
     width: 100%;
+    margin: 0 auto 3%;
+  }
+
+  .map{
+    width: 100%;
+    float: none;
+  }
+
+  .footer #footAddress h2, .footer #footAddress p{
     text-align: center;
-    z-index: 3;
-  }
-
-  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
-    width: 45%
-  }
-
-  .footer #footAddress div:nth-child(2){
-    width: 10%
-  }
-
-  .footer #footAddress div:nth-child(1) h2, .footer #footAddress div:nth-child(1) p, .footer #footAddress div:nth-child(3) p{
-    font-size: 1.1em;
-  }
-
-  .footer #footAddress div:nth-child(2){
-    text-align: center;
+    font-size: 1.5em;
   }
 }
 
@@ -6633,59 +6096,6 @@ ul li.slideUnder a {
   #resource-twit #article1 div:nth-child(2) a h2{
    margin-bottom: 5%;
   }
-
-  .footer #footContact{
-   margin-left: 11%;
-   text-align: center;
-   position: absolute;
-   display: inline-block;
-   left: 0;
-   right: 0;
-   width: 65%;
-  }
-
-  .footer #footContact .icons{
-   margin: 6% 13% 0 0;
-   float: left;
-   width: 14% !important;
-  }
-
-  .footer #footContact h1{
-   font-size: 4em;
-   margin-bottom: 2%;
-  }
-
-  .footer #footContact .graphicEle{
-    width: 50%;
-    margin-left: 39%;
-    text-align: center;
-  }
-
-  .footer #footAddress{
-    position: absolute;
-    margin-top: 35%;
-    padding-left: 3%;
-    float: left;
-    width: 100%;
-    text-align: center;
-    z-index: 3;
-  }
-
-  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
-    width: 45%
-  }
-
-  .footer #footAddress div:nth-child(2){
-    width: 10%
-  }
-
-  .footer #footAddress div:nth-child(1) h2, .footer #footAddress div:nth-child(1) p, .footer #footAddress div:nth-child(3) p{
-    font-size: 1.1em;
-  }
-
-  .footer #footAddress div:nth-child(2){
-    text-align: center;
-  }
 }
 
 
@@ -7006,59 +6416,6 @@ ul li.slideUnder a {
 
   #resource-twit #article1 div:nth-child(2) a h2{
    margin-bottom: 5%;
-  }
-
-  .footer #footContact{
-   margin-left: 16%;
-   text-align: center;
-   position: absolute;
-   display: inline-block;
-   left: 0;
-   right: 0;
-   width: 70%;
-  }
-
-  .footer #footContact .icons{
-   margin: 6% 5% 0 0;
-   float: left;
-   width: 14% !important;
-  }
-
-  .footer #footContact h1{
-   font-size: 4em;
-   margin-bottom: 2%;
-  }
-
-  .footer #footContact .graphicEle{
-    width: 50%;
-    margin-left: 25%;
-    text-align: center;
-  }
-
-  .footer #footAddress{
-    position: absolute;
-    margin-top: 35%;
-    padding-left: 3%;
-    float: left;
-    width: 100%;
-    text-align: center;
-    z-index: 3;
-  }
-
-  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
-    width: 45%
-  }
-
-  .footer #footAddress div:nth-child(2){
-    width: 10%
-  }
-
-  .footer #footAddress div:nth-child(1) h2, .footer #footAddress div:nth-child(1) p, .footer #footAddress div:nth-child(3) p{
-    font-size: 1em;
-  }
-
-  .footer #footAddress div:nth-child(2){
-    text-align: center;
   }
 }
 
@@ -7383,58 +6740,6 @@ ul li.slideUnder a {
   #resource-twit #article1 div:nth-child(2) a h2{
    margin-bottom: 5%;
   }
-
-  .footer #footContact{
-   margin-left: 16%;
-   text-align: center;
-   position: absolute;
-   display: inline-block;
-   left: 0;
-   right: 0;
-   width: 70%;
-  }
-
-  .footer #footContact .icons{
-   margin: 6% 5% 0 0;
-   float: left;
-   width: 14% !important;
-  }
-
-  .footer #footContact h1{
-   font-size: 3.5em;
-   margin-bottom: 2%;
-  }
-
-  .footer #footContact .graphicEle{
-    width: 25%;
-    margin-left: 35%;
-    text-align: center;
-  }
-
-  .footer #footAddress{
-    position: absolute;
-    margin-top: 35%;
-    padding-left: 0;
-    width: 100%;
-    text-align: center;
-    z-index: 3;
-  }
-
-  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
-    width: 45%
-  }
-
-  .footer #footAddress div:nth-child(2){
-    width: 10%
-  }
-
-  .footer #footAddress div:nth-child(1) h2, .footer #footAddress div:nth-child(1) p, .footer #footAddress div:nth-child(3) p{
-    font-size: .9em;
-  }
-
-  .footer #footAddress div:nth-child(2){
-    text-align: center;
-  }
 }
 
 
@@ -7757,57 +7062,6 @@ ul li.slideUnder a {
 
   #resource-twit #article1 div:nth-child(2) a h2{
    margin-bottom: 5%;
-  }
-
-  .footer #footContact{
-   margin-left: 16%;
-   text-align: center;
-   position: absolute;
-   display: inline-block;
-   left: 0;
-   right: 0;
-   width: 70%;
-  }
-
-  .footer #footContact .icons{
-   margin: 6% 5% 0 0;
-   float: left;
-   width: 14% !important;
-  }
-
-  .footer #footContact h1{
-   font-size: 3.5em;
-   margin-bottom: 2%;
-  }
-
-  .footer #footContact .graphicEle{
-    width: 25%;
-    margin-left: 35%;
-    text-align: center;
-  }
-
-  .footer #footAddress{
-    position: absolute;
-    margin-top: 35%;
-    left: 0;
-    right: 0;
-    padding-left: 25%;
-    width: 100%;
-    text-align: center;
-    z-index: 3;
-  }
-
-  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
-    width: 100%;
-  }
-
-  .footer #footAddress div:nth-child(2){
-    display: none;
-  }
-
-  .footer #footAddress div:nth-child(1) h2, .footer #footAddress div:nth-child(1) p, .footer #footAddress div:nth-child(3) p{
-    font-size: 1.3em;
-    text-align: left;
   }
 }
 
@@ -8144,57 +7398,6 @@ ul li.slideUnder a {
 
   #resource-twit #article1 div:nth-child(2) a h2{
    margin-bottom: 5%;
-  }
-
-  .footer #footContact{
-   margin-left: 11%;
-   text-align: center;
-   position: absolute;
-   display: inline-block;
-   left: 0;
-   right: 0;
-   width: 80%;
-  }
-
-  .footer #footContact .icons{
-   margin: 7% 10% 0 0;
-   float: left;
-   width: 12% !important;
-  }
-
-  .footer #footContact h1{
-   font-size: 3.3em;
-   margin-bottom: 2%;
-  }
-
-  .footer #footContact .graphicEle{
-    width: 25%;
-    margin-left: 35%;
-    text-align: center;
-  }
-
-  .footer #footAddress{
-    position: absolute;
-    margin-top: 40%;
-    left: 0;
-    right: 0;
-    padding-left: 25%;
-    width: 100%;
-    text-align: center;
-    z-index: 3;
-  }
-
-  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
-    width: 100%;
-  }
-
-  .footer #footAddress div:nth-child(2){
-    display: none;
-  }
-
-  .footer #footAddress div:nth-child(1) h2, .footer #footAddress div:nth-child(1) p, .footer #footAddress div:nth-child(3) p{
-    font-size: 1.3em;
-    text-align: left;
   }
 }
 
@@ -8550,60 +7753,5 @@ ul li.slideUnder a {
 
   #resource-twit #article1 div:nth-child(2) a h2{
    margin-bottom: 5%;
-  }
-
-  .footer{
-   background: url(../img/map.jpg) no-repeat fixed 100% 50% / cover;
-  }
-
-  .footer #footContact{
-   margin-left: 5%;
-   text-align: center;
-   position: absolute;
-   display: inline-block;
-   left: 0;
-   right: 0;
-   width: 90%;
-  }
-
-  .footer #footContact .icons{
-   margin: 7% 0 0 0;
-   float: left;
-   width: 12% !important;
-  }
-
-  .footer #footContact h1{
-   font-size: 2.5em;
-   margin-bottom: 2%;
-  }
-
-  .footer #footContact .graphicEle{
-    width: 25%;
-    margin-left: 35%;
-    text-align: center;
-  }
-
-  .footer #footAddress{
-    position: absolute;
-    margin-top: 40%;
-    left: 0;
-    right: 0;
-    padding-left: 25%;
-    width: 100%;
-    text-align: center;
-    z-index: 3;
-  }
-
-  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
-    width: 100%;
-  }
-
-  .footer #footAddress div:nth-child(2){
-    display: none;
-  }
-
-  .footer #footAddress div:nth-child(1) h2, .footer #footAddress div:nth-child(1) p, .footer #footAddress div:nth-child(3) p{
-    font-size: 1.3em;
-    text-align: left;
   }
 }
