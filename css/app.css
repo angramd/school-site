@@ -72,7 +72,7 @@ a.viewcalendar{
 }
 
 #mission span a:hover, a h2:hover, a h3:hover, .eventArticle .readmore a:hover, .newsArticle .readmore a:hover, div.moreann:hover, #moreannMobile a:hover,
-a.viewcalendar:hover, .moreRes:hover, .footer #footAddress p a:hover{
+a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:hover{
   color: #FF033E !important;
 }
 
@@ -154,7 +154,7 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress p a:hover{
 .top-bar {
   width: 940px !important;
   padding-top: 1.7%;
-  margin: 1% 0 0 20%;
+  margin: 1% 0 0 16%;
   float: left;
 }
 
@@ -676,6 +676,9 @@ ul li.slideUnder a {
 	background: url(../img/ce_img1.jpg) no-repeat fixed 0 0 / cover;
 	padding-top: 10%;
   position: relative;
+  -webkit-box-shadow: inset 0 0 14px 0 rgba(0, 0, 0, 1);
+  -moz-box-shadow: inset 0 0 14px 0 rgba(0, 0, 0, 1);
+  box-shadow: inset 0 0 14px 0 rgba(0, 0, 0, 1);
 }
 
 #global > div{
@@ -817,10 +820,18 @@ ul li.slideUnder a {
 
 /*FOOTER*/
 .footer{
+  height: 750px;
   background: #01304f;
-  padding-top: 1%;
-  padding-bottom: 2%;
   border-top: solid 3px #CCC;
+}
+
+.map{
+  width: 100% !important;
+  height: 45% !important;
+  background: url(../img/ce_map.jpg) no-repeat fixed 50% 100% / cover;
+  -webkit-box-shadow: inset 0 0 14px 0 rgba(0, 0, 0, 1);
+  -moz-box-shadow: inset 0 0 14px 0 rgba(0, 0, 0, 1);
+  box-shadow: inset 0 0 14px 0 rgba(0, 0, 0, 1);
 }
 
 .footer #footContact{
@@ -852,44 +863,58 @@ ul li.slideUnder a {
   margin-bottom: 2%;
 }
 
-.mapWrap{
-  margin-top: .5%;
-}
-
-.map{
-  width: 60%;
-  float: right;
-}
-
-.map img{
-  width: 100%;
-}
-
 .footer #footAddress{
-  text-align: left;
+  position: absolute;
+  margin-top: 10%;
+  padding-left: 23%;
+  float: left;
+  width: 100%;
+  text-align: center;
+  z-index: 3;
 }
 
-.footer #footAddress h2, .footer #footAddress p{
-  font-size: 1.3em;
+.footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+  width: 30%
 }
 
-.footer #footAddress h2{
+.footer #footAddress div:nth-child(2){
+  width: 10%
+}
+
+.footer #footAddress div:nth-child(1) h2, .footer #footAddress div:nth-child(1) p{
+  text-align: right;
+}
+
+.footer #footAddress div:nth-child(1) h2{
   font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
   text-transform: uppercase;
   color: #FFF;
-  text-align: left;
 }
 
-.footer #footAddress p{
+.footer #footAddress div:nth-child(1) p, .footer #footAddress div:nth-child(1) p a{
   font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.2em;
   color: #FFF;
 }
 
-.footer #footAddress p a{
-  color: #FFF;
+.footer #footAddress div:nth-child(1) p a{
+  font-size: 1.1em;
 }
 
-.footer #footAddress p span{
+.footer #footAddress div:nth-child(2){
+  text-align: center;
+}
+
+.footer #footAddress div:nth-child(3) p{
+  text-align: left;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.2em;
+  color: #FFF;
+  margin-bottom: 0;
+}
+
+.footer #footAddress div:nth-child(3) p span{
   font-weight: 700;
   color: #FFF;
 }
@@ -1031,11 +1056,6 @@ ul li.slideUnder a {
     margin-top: 1.5%;
     margin-left: 36.5%;
   }
-
-  .map{
-    width: 70%;
-    float: right;
-  }
 }
 
 @media only screen and (min-width: 1530px) and (max-width: 1584px) {
@@ -1075,11 +1095,6 @@ ul li.slideUnder a {
     margin-top: 1.5%;
     margin-left: 34.5%;
     width: 3.5%;
-  }
-
-  .map{
-    width: 70%;
-    float: right;
   }
 
   /*MOZILLA-FIREFOX STYLES*/
@@ -1200,13 +1215,8 @@ ul li.slideUnder a {
     width: 3.5%;
   }
 
-  .map{
-    width: 70%;
-    float: right;
-  }
-
-  .footer #footAddress h2, .footer #footAddress p{
-    font-size: 1.1em;
+  .footer #footAddress{
+    margin-top: 12%;
   }
 
   /*MOZILLA-FIREFOX STYLES*/
@@ -1343,13 +1353,8 @@ ul li.slideUnder a {
     width: 4%;
   }
 
-  .map{
-    width: 80%;
-    float: right;
-  }
-
-  .footer #footAddress h2, .footer #footAddress p{
-    font-size: 1.1em;
+  .footer #footAddress{
+    margin-top: 12%;
   }
 
   /*MOZILLA-FIREFOX STYLES*/
@@ -1496,13 +1501,8 @@ ul li.slideUnder a {
     width: 4%;
   }
 
-  .map{
-    width: 80%;
-    float: right;
-  }
-
-  .footer #footAddress h2, .footer #footAddress p{
-    font-size: 1.1em;
+  .footer #footAddress{
+    margin-top: 12%;
   }
 
   /*MOZILLA-FIREFOX STYLES*/
@@ -1660,13 +1660,8 @@ ul li.slideUnder a {
     width: 4%;
   }
 
-  .map{
-    width: 80%;
-    float: right;
-  }
-
-  .footer #footAddress h2, .footer #footAddress p{
-    font-size: 1.1em;
+  .footer #footAddress{
+    margin-top: 15%;
   }
 
   /*MOZILLA-FIREFOX STYLES*/
@@ -1833,13 +1828,8 @@ ul li.slideUnder a {
     width: 4%;
   }
 
-  .map{
-    width: 80%;
-    float: right;
-  }
-
-  .footer #footAddress h2, .footer #footAddress p{
-    font-size: 1.1em;
+  .footer #footAddress{
+    margin-top: 15%;
   }
 
   /*MOZILLA-FIREFOX STYLES*/
@@ -2007,13 +1997,8 @@ ul li.slideUnder a {
     width: 4.5%;
   }
 
-  .map{
-    width: 80%;
-    float: right;
-  }
-
-  .footer #footAddress h2, .footer #footAddress p{
-    font-size: 1.1em;
+  .footer #footAddress{
+    margin-top: 15%;
   }
 
   /*MOZILLA-FIREFOX STYLES*/
@@ -2189,13 +2174,8 @@ ul li.slideUnder a {
     width: 4.5%;
   }
 
-  .map{
-    width: 80%;
-    float: right;
-  }
-
-  .footer #footAddress h2, .footer #footAddress p{
-    font-size: 1.1em;
+  .footer #footAddress{
+    margin-top: 15%;
   }
 
   /*MOZILLA-FIREFOX STYLES*/
@@ -2377,13 +2357,8 @@ ul li.slideUnder a {
     width: 4.5%;
   }
 
-  .map{
-    width: 80%;
-    float: right;
-  }
-
-  .footer #footAddress h2, .footer #footAddress p{
-    font-size: 1.1em;
+  .footer #footAddress{
+    margin-top: 15%;
   }
 
   /*MOZILLA-FIREFOX STYLES*/
@@ -2594,13 +2569,14 @@ ul li.slideUnder a {
     width: 4.5%;
   }
 
-  .map{
-    width: 80%;
-    float: right;
-  }
-
-  .footer #footAddress h2, .footer #footAddress p{
-    font-size: 1em;
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 15%;
+    padding-left: 23%;
+    float: left;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
   }
 
   /*MOZILLA-FIREFOX STYLES*/
@@ -2849,19 +2825,28 @@ ul li.slideUnder a {
   }
 
   .footer #footContact .icons{
-    margin-top: 2%;
-    margin-left: 31%;
+    margin-top: 1.5%;
+    margin-left: 33%;
     margin-right: 4%;
     width: 4.5%;
   }
 
-  .map{
-    width: 80%;
-    float: right;
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 15%;
+    padding-left: 17%;
+    float: left;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
   }
 
-  .footer #footAddress h2, .footer #footAddress p{
-    font-size: 1em;
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 35%
+  }
+
+  .footer #footAddress div:nth-child(2){
+    width: 10%
   }
 
   /*MOZILLA-FIREFOX STYLES*/
@@ -3123,13 +3108,22 @@ ul li.slideUnder a {
     width: 4.5%;
   }
 
-  .map{
-    width: 80%;
-    float: right;
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 15%;
+    padding-left: 10%;
+    float: left;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
   }
 
-  .footer #footAddress h2, .footer #footAddress p{
-    font-size: 1em;
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 40%
+  }
+
+  .footer #footAddress div:nth-child(2){
+    width: 10%
   }
 }
 
@@ -3379,13 +3373,22 @@ ul li.slideUnder a {
     width: 4.5%;
   }
 
-  .map{
-    width: 80%;
-    float: right;
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 15%;
+    padding-left: 10%;
+    float: left;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
   }
 
-  .footer #footAddress h2, .footer #footAddress p{
-    font-size: 1em;
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 40%
+  }
+
+  .footer #footAddress div:nth-child(2){
+    width: 10%
   }
 
   /*MOZILLA-FIREFOX STYLES*/
@@ -3654,13 +3657,22 @@ ul li.slideUnder a {
     width: 4.5%;
   }
 
-  .map{
-    width: 80%;
-    float: right;
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 15%;
+    padding-left: 10%;
+    float: left;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
   }
 
-  .footer #footAddress h2, .footer #footAddress p{
-    font-size: 1em;
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 40%
+  }
+
+  .footer #footAddress div:nth-child(2){
+    width: 10%
   }
 }
 
@@ -3677,12 +3689,13 @@ ul li.slideUnder a {
 
   .logos{
     width: 70px;
-    margin-left: 1%;
+    margin-left: .5%;
   }
 
   .top-bar {
     width: 640px !important;
-    margin: .5% 0 0 .1%;
+    margin: .5% 0 0 1.2%;
+    padding-left: 0;
   }
 
   .top-bar-section ul li{
@@ -3694,8 +3707,8 @@ ul li.slideUnder a {
   }
 
   .scsLogo{
-    margin-top: .7%;
-    margin-right: 1%;
+    margin-top: .4%;
+    margin-right: .5%;
     width: 8%;
   }
 
@@ -3916,17 +3929,26 @@ ul li.slideUnder a {
     width: 10.5%;
   }
 
-  .map{
-    width: 80%;
-    float: right;
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 15%;
+    padding-left: 10%;
+    float: left;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
   }
 
-  .footer #footAddress h2, .footer #footAddress p{
-    font-size: .9em;
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 40%
+  }
+
+  .footer #footAddress div:nth-child(2){
+    width: 10%
   }
 
   /*MOZILLA-FIREFOX STYLES*/
-  @-moz-document url-prefix() {
+  /*@-moz-document url-prefix() {
     .logos{
       margin-left: .5%;
     }
@@ -3939,7 +3961,7 @@ ul li.slideUnder a {
       margin-top: .4%;
       margin-right: .5%;
     }
-  }
+  }*/
   /**/
 }
 
@@ -3956,12 +3978,14 @@ ul li.slideUnder a {
 
   .logos {
     width: 70px;
+    margin-left: .5%;
   }
 
   .top-bar {
-    width: 600px !important;
+    width: 605px !important;
     margin: 1% 0 0 0;
     padding-top: 1.7%;
+    padding-left: 0;
   }
 
   .top-bar ul li a {
@@ -3973,7 +3997,8 @@ ul li.slideUnder a {
   }
 
   .scsLogo{
-    margin-top: 2.5%;
+    margin-top: 1.8%;
+    margin-right: .5%;
     width: 6%;
   }
 
@@ -4195,17 +4220,26 @@ ul li.slideUnder a {
     width: 9%;
   }
 
-  .map{
-    width: 90%;
-    float: right;
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 15%;
+    padding-left: 10%;
+    float: left;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
   }
 
-  .footer #footAddress h2, .footer #footAddress p{
-    font-size: .8em;
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 40%
+  }
+
+  .footer #footAddress div:nth-child(2){
+    width: 10%
   }
 
   /*MOZILLA-FIREFOX STYLES*/
-  @-moz-document url-prefix() {
+  /*@-moz-document url-prefix() {
     .logos{
       margin-left: .5%;
     }
@@ -4219,7 +4253,7 @@ ul li.slideUnder a {
       margin-top: 1.8%;
       margin-right: .5%;
     }
-  }
+  }*/
   /**/
 }
 
@@ -4236,12 +4270,13 @@ ul li.slideUnder a {
 
   .logos{
     width: 70px;
-    margin-left: 1%;
+    margin-left: .5%;
   }
 
   .top-bar {
     width: 575px !important;
     margin: .3% 0 0 .1%;
+    padding-left: 0;
   }
 
   .top-bar-section ul li{
@@ -4254,7 +4289,7 @@ ul li.slideUnder a {
 
   .scsLogo{
     margin-top: .7%;
-    margin-right: 1%;
+    margin-right: .5%;
     width: 8%;
   }
 
@@ -4480,17 +4515,26 @@ ul li.slideUnder a {
     width: 9%;
   }
 
-  .map{
-    width: 90%;
-    float: right;
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 15%;
+    padding-left: 10%;
+    float: left;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
   }
 
-  .footer #footAddress h2, .footer #footAddress p{
-    font-size: .8em;
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 40%
+  }
+
+  .footer #footAddress div:nth-child(2){
+    width: 10%
   }
 
   /*MOZILLA-FIREFOX STYLES*/
-  @-moz-document url-prefix() {
+  /*@-moz-document url-prefix() {
     .logos{
       margin-left: .5%;
     }
@@ -4503,7 +4547,7 @@ ul li.slideUnder a {
       margin-top: .7%;
       margin-right: .5%;
     }
-  }
+  }*/
   /**/
 }
 
@@ -4519,13 +4563,14 @@ ul li.slideUnder a {
   }
 
   .logos{
-    width: 60px;
+    width: 57px;
     margin-left: 0;
   }
 
   .top-bar {
     width: 570px !important;
     margin: -.5% 0 0 0;
+    padding-left: 0;
   }
 
   .top-bar-section ul li{
@@ -4537,7 +4582,7 @@ ul li.slideUnder a {
   }
 
   .scsLogo{
-    margin-top: 1.5%;
+    margin-top: 1.8%;
     margin-right: 0;
     width: 6%;
   }
@@ -4773,17 +4818,26 @@ ul li.slideUnder a {
     width: 9%;
   }
 
-  .map{
-    width: 90%;
-    float: right;
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 15%;
+    padding-left: 3%;
+    float: left;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
   }
 
-  .footer #footAddress h2, .footer #footAddress p{
-    font-size: .8em;
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 45%
+  }
+
+  .footer #footAddress div:nth-child(2){
+    width: 10%
   }
 
   /*MOZILLA-FIREFOX STYLES*/
-  @-moz-document url-prefix() {
+  /*@-moz-document url-prefix() {
     .logos{
       margin-left: .3%;
       width: 57px;
@@ -4797,7 +4851,7 @@ ul li.slideUnder a {
       margin-top: 1.8%;
       margin-right: .3%;
     }
-  }
+  }*/
   /**/
 }
 
@@ -4813,13 +4867,14 @@ ul li.slideUnder a {
   }
 
   .logos{
-    width: 60px;
-    margin-left: .2%;
+    margin-left: .1%;
+    width: 57px;
   }
 
   .top-bar {
     width: 540px !important;
     margin: -.5% 0 0 0;
+    padding-left: 0;
   }
 
   .top-bar-section ul li{
@@ -4831,8 +4886,8 @@ ul li.slideUnder a {
   }
 
   .scsLogo{
-    margin-top: 1.5%;
-    margin-right: .2%;
+    margin-top: 1.8%;
+    margin-right: .1%;
     width: 6%;
   }
 
@@ -5067,17 +5122,26 @@ ul li.slideUnder a {
     width: 9%;
   }
 
-  .map{
-    width: 90%;
-    float: right;
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 17%;
+    padding-left: 3%;
+    float: left;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
   }
 
-  .footer #footAddress h2, .footer #footAddress p{
-    font-size: .8em;
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 45%
+  }
+
+  .footer #footAddress div:nth-child(2){
+    width: 10%
   }
 
   /*MOZILLA-FIREFOX STYLES*/
-  @-moz-document url-prefix() {
+  /*@-moz-document url-prefix() {
     .logos{
       margin-left: .1%;
       width: 57px;
@@ -5091,7 +5155,7 @@ ul li.slideUnder a {
       margin-top: 1.8%;
       margin-right: .1%;
     }
-  }
+  }*/
   /**/
 }
 
@@ -5369,13 +5433,22 @@ ul li.slideUnder a {
     width: 9%;
   }
 
-  .map{
-    width: 90%;
-    float: right;
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 17%;
+    padding-left: 3%;
+    float: left;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
   }
 
-  .footer #footAddress h2, .footer #footAddress p{
-    font-size: .8em;
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 45%
+  }
+
+  .footer #footAddress div:nth-child(2){
+    width: 10%
   }
 }
 
@@ -5761,19 +5834,30 @@ ul li.slideUnder a {
     width: 17%;
   }
 
-  .mapWrap{
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 23%;
+    padding-left: 3%;
+    float: left;
     width: 100%;
-    margin: 0 auto 3%;
-  }
-
-  .map{
-    width: 100%;
-    float: none;
-  }
-
-  .footer #footAddress h2, .footer #footAddress p{
     text-align: center;
-    font-size: 1.5em;
+    z-index: 3;
+  }
+
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 45%
+  }
+
+  .footer #footAddress div:nth-child(2){
+    width: 10%
+  }
+
+  .footer #footAddress div:nth-child(1) h2, .footer #footAddress div:nth-child(1) p, .footer #footAddress div:nth-child(3) p{
+    font-size: 1.1em;
+  }
+
+  .footer #footAddress div:nth-child(2){
+    text-align: center;
   }
 }
 
@@ -6081,12 +6165,12 @@ ul li.slideUnder a {
    width: 11%;
   }
 
-  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1{
-   font-size: 4em;
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
+   font-size: 3em;
   }
 
-  #resource-twit #article2 #headContainer2 h1{
-    width: 150px;
+  #resource-twit #article1 #headContainer h1{
+   width: 70%;
   }
 
   #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
@@ -6094,7 +6178,48 @@ ul li.slideUnder a {
   }
 
   #resource-twit #article1 div:nth-child(2) a h2{
-   margin-bottom: 5%;
+    margin-bottom: 5%;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 70%;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 2.8%;
+    margin-left: 25%;
+    margin-right: 4%;
+    width: 7%;
+  }
+
+  .footer #footContact .graphicEle img{
+    width: 17%;
+  }
+
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 23%;
+    padding-left: 3%;
+    float: left;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+  }
+
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 45%
+  }
+
+  .footer #footAddress div:nth-child(2){
+    width: 10%
+  }
+
+  .footer #footAddress div:nth-child(1) h2, .footer #footAddress div:nth-child(1) p, .footer #footAddress div:nth-child(3) p{
+    font-size: 1.1em;
+  }
+
+  .footer #footAddress div:nth-child(2){
+    text-align: center;
   }
 }
 
@@ -6392,22 +6517,24 @@ ul li.slideUnder a {
    width: 67%;
   }
 
+  #resource-twit #article1 #headContainer .icons, #resource-twit #article2 #headContainer2 .icons{
+   width: 14%;
+  }
+
   #resource-twit #article1 #headContainer .icons{
    margin: 4.5% auto 0 0;
-   width: 13%;
   }
 
   #resource-twit #article2 #headContainer2 .icons{
-   margin: 6.7% auto 0 0;
-   width: 11%;
+   margin: 5% auto 0 0;
   }
 
-  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1{
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
    font-size: 4em;
   }
 
-  #resource-twit #article2 #headContainer2 h1{
-    width: 150px;
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1{
+   width: 150px;
   }
 
   #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
@@ -6415,7 +6542,44 @@ ul li.slideUnder a {
   }
 
   #resource-twit #article1 div:nth-child(2) a h2{
-   margin-bottom: 5%;
+    margin-bottom: 5%;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 4%;
+    margin-left: 18%;
+    margin-right: 5%;
+    width: 9.5%;
+  }
+
+  .footer #footContact .graphicEle img{
+    width: 17%;
+  }
+
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 30%;
+    padding-left: 3%;
+    float: left;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+  }
+
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 45%
+  }
+
+  .footer #footAddress div:nth-child(2){
+    width: 10%
+  }
+
+  .footer #footAddress div:nth-child(1) h2, .footer #footAddress div:nth-child(1) p, .footer #footAddress div:nth-child(3) p{
+    font-size: 1em;
+  }
+
+  .footer #footAddress div:nth-child(2){
+    text-align: center;
   }
 }
 
@@ -6715,22 +6879,24 @@ ul li.slideUnder a {
    width: 67%;
   }
 
+  #resource-twit #article1 #headContainer .icons, #resource-twit #article2 #headContainer2 .icons{
+   width: 14%;
+  }
+
   #resource-twit #article1 #headContainer .icons{
    margin: 4.5% auto 0 0;
-   width: 13%;
   }
 
   #resource-twit #article2 #headContainer2 .icons{
-   margin: 6.7% auto 0 0;
-   width: 11%;
+   margin: 5% auto 0 0;
   }
 
-  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1{
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
    font-size: 3.5em;
   }
 
-  #resource-twit #article2 #headContainer2 h1{
-    width: 150px;
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1{
+   width: 150px;
   }
 
   #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
@@ -6738,7 +6904,43 @@ ul li.slideUnder a {
   }
 
   #resource-twit #article1 div:nth-child(2) a h2{
-   margin-bottom: 5%;
+    margin-bottom: 5%;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 3.8%;
+    margin-left: 18%;
+    margin-right: 5%;
+    width: 9.5%;
+  }
+
+  .footer #footContact .graphicEle img{
+    width: 17%;
+  }
+
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 30%;
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+  }
+
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 45%
+  }
+
+  .footer #footAddress div:nth-child(2){
+    width: 10%
+  }
+
+  .footer #footAddress div:nth-child(1) h2, .footer #footAddress div:nth-child(1) p, .footer #footAddress div:nth-child(3) p{
+    font-size: .9em;
+  }
+
+  .footer #footAddress div:nth-child(2){
+    text-align: center;
   }
 }
 
@@ -7039,21 +7241,21 @@ ul li.slideUnder a {
   }
 
   #resource-twit #article1 #headContainer .icons{
-   margin: 4.5% auto 0 0;
-   width: 13%;
+   margin: 4.5% auto 0 -13%;
+   width: 17%;
   }
 
   #resource-twit #article2 #headContainer2 .icons{
-   margin: 6.7% auto 0 0;
-   width: 11%;
+   margin: 5% auto 0 0;
+   width: 14%;
   }
 
-  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1{
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
    font-size: 3.5em;
   }
 
-  #resource-twit #article2 #headContainer2 h1{
-    width: 150px;
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1{
+   width: 150px;
   }
 
   #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
@@ -7061,7 +7263,41 @@ ul li.slideUnder a {
   }
 
   #resource-twit #article1 div:nth-child(2) a h2{
-   margin-bottom: 5%;
+    margin-bottom: 5%;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 4.5%;
+    margin-left: 14%;
+    margin-right: 5%;
+    width: 10.5%;
+  }
+
+  .footer #footContact .graphicEle img{
+    width: 17%;
+  }
+
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 27%;
+    left: 0;
+    right: 0;
+    padding-left: 0;
+    width: 100%;
+    z-index: 3;
+  }
+
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 100%;
+  }
+
+  .footer #footAddress div:nth-child(2){
+    display: none;
+  }
+
+  .footer #footAddress div:nth-child(1) h2, .footer #footAddress div:nth-child(1) p, .footer #footAddress div:nth-child(3) p{
+    font-size: 1.1em;
+    text-align: center;
   }
 }
 
@@ -7366,22 +7602,21 @@ ul li.slideUnder a {
   }
 
   #resource-twit #article1 #headContainer .icons{
-   margin: 4% 2% 0 0;
-   padding-left: 6%;
-   width: 15%;
+   margin: 4.5% auto 0 -13%;
+   width: 17%;
   }
 
   #resource-twit #article2 #headContainer2 .icons{
-   margin: 7.5% auto 0 0;
-   width: 11%;
+   margin: 5% auto 0 0;
+   width: 14%;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
+   font-size: 3.5em;
   }
 
   #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1{
-   font-size: 3.3em;
-  }
-
-  #resource-twit #article2 #headContainer2 h1{
-    width: 150px;
+   width: 150px;
   }
 
   #resource-twit #article1 #headContainer .graphicEle img{
@@ -7398,6 +7633,40 @@ ul li.slideUnder a {
 
   #resource-twit #article1 div:nth-child(2) a h2{
    margin-bottom: 5%;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 4.5%;
+    margin-left: 14%;
+    margin-right: 5%;
+    width: 10.5%;
+  }
+
+  .footer #footContact .graphicEle img{
+    width: 17%;
+  }
+
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 30%;
+    left: 0;
+    right: 0;
+    padding-left: 0;
+    width: 100%;
+    z-index: 3;
+  }
+
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 100%;
+  }
+
+  .footer #footAddress div:nth-child(2){
+    display: none;
+  }
+
+  .footer #footAddress div:nth-child(1) h2, .footer #footAddress div:nth-child(1) p, .footer #footAddress div:nth-child(3) p{
+    font-size: 1.1em;
+    text-align: center;
   }
 }
 
@@ -7500,7 +7769,7 @@ ul li.slideUnder a {
   }
 
   #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
-    margin-top: 35%;
+    margin-top: 23%;
     margin-bottom: 6%;
     font-size: 3.5em;
   }
@@ -7721,23 +7990,23 @@ ul li.slideUnder a {
   }
 
   #resource-twit #article1 #headContainer .icons{
-   margin: 4% 2% 0 0;
+   margin: 4% 2% 0 -13%;
    padding-left: 6%;
-   width: 15%;
+   width: 17%;
   }
 
   #resource-twit #article2 #headContainer2 .icons{
-   margin: 7.5% auto 0 0;
-   width: 11%;
+   margin: 5% auto 0 0;
+   width: 14%;
   }
 
-  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1{
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
    font-size: 2.5em;
   }
 
-  #resource-twit #article2 #headContainer2 h1{
-    width: 150px;
-  }
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1{
+  width: 150px;
+ }
 
   #resource-twit #article1 #headContainer .graphicEle img{
     width: 25%;
@@ -7753,5 +8022,39 @@ ul li.slideUnder a {
 
   #resource-twit #article1 div:nth-child(2) a h2{
    margin-bottom: 5%;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 4.5%;
+    margin-left: 14%;
+    margin-right: 5%;
+    width: 10.5%;
+  }
+
+  .footer #footContact .graphicEle img{
+    width: 17%;
+  }
+
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 30%;
+    left: 0;
+    right: 0;
+    padding-left: 0;
+    width: 100%;
+    z-index: 3;
+  }
+
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 100%;
+  }
+
+  .footer #footAddress div:nth-child(2){
+    display: none;
+  }
+
+  .footer #footAddress div:nth-child(1) h2, .footer #footAddress div:nth-child(1) p, .footer #footAddress div:nth-child(3) p{
+    font-size: 1.1em;
+    text-align: center;
   }
 }
