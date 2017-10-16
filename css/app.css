@@ -163,6 +163,7 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
 }
 
 .top-bar-section ul li{
+  position: relative;
   margin-right: 1%;
 }
 
@@ -205,13 +206,13 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
   background: #FF033E;
 }
 
-#header1 ul li.slideUnder a {
+#header1 ul li.slideUnder a, .slideUnderDrop a{
   display: inline-block;
   position: relative;
   height: 1px !important;
 }
 
-#header1 .slideUnder:after {
+#header1 .slideUnder:after, .slideUnderDrop:after {
   content: '';
   display: block;
   margin: auto;
@@ -226,35 +227,9 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
   background: #FF033E;
 }
 
-ul li.currentLink a:after {
-  content: '';
-  display: block;
-  margin: auto;
-  height: 1px;
-  width: 0px;
-  background: #FFFFFF;
-  transition: width .5s ease, background-color .5s ease;
-}
-
-ul li.slideUnder a {
-  display: inline-block;
-  position: relative;
-  height: 1px !important;
-}
-
-.slideUnder:after {
-  content: '';
-  display: block;
-  margin: auto;
-  height: 1px;
-  width: 0px;
-  background: transparent;
-  transition: width .5s ease, background-color .5s ease;
-}
-
-.slideUnder:hover:after {
+.slideUnderDrop:hover:after {
   width: 80%;
-  background: #FF033E;
+  background: #0a0699;
 }
 
 .underLine:after {
@@ -278,6 +253,32 @@ ul li.slideUnder a {
   cursor: pointer;
   width: 100%;
 }
+
+#header1 ul li:hover ul{
+  display: block;
+}
+
+#header1 ul li ul{
+  display: none;
+  position: absolute;
+  left: -33%;
+  margin-top: 2%;
+  background: #0a0699;
+  border: #FF033E solid 6px;
+}
+
+#header1 ul li ul li{
+  width: 100%;
+  padding-bottom: 6%;
+}
+
+#header1 ul li ul li:hover{
+  background-color: #FF033E;
+}
+
+
+
+
 
 /*MOZILLA-FIREFOX STYLES*/
 @-moz-document url-prefix() {

@@ -9,7 +9,7 @@ $(document).ready(function(){
   var linkFaculty = $("#linkFaculty");
   var linkAbout = $("#linkAbout");
   var linkContactFa = $("#linkContactFa");
-  var faculty = $("#faculty");
+  var faculty = $("#facultyHome");
   var footerFa = $("#footerFa");
 
   /*MOVE SCROLL BAR TO TOP OF PAGE WHEN PAGE RELOADS*/
