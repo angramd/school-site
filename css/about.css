@@ -1,0 +1,743 @@
+
+
+
+/*ABOUT*/
+/*HOME*/
+#aboutHome {
+  height: 600px;
+  background: #FFF;
+}
+
+#aboutHome #homeWrap {
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  float: left;
+  padding-top: 6%;
+}
+
+#aboutHome #homeWrap #welcome div:nth-child(1) .panel {
+  position: relative;
+  width: 100%;
+  padding: 0 !important;
+}
+
+#aboutHome #homeWrap #welcome div.columns {
+  padding: 0 !important;
+}
+
+#aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+  width: 100%;
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  padding: 0 !important;
+  font-size: 5.5em;
+  color: #0a0699;
+  margin-top: 10%;
+  margin-bottom: 1%;
+}
+
+#aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+  margin: 0 auto 2%;
+}
+/*END HOME*/
+
+
+
+/*CSS TARGETING MOZILLA FIREFOX BROWSER*/
+@-moz-document url-prefix() {
+  #aboutHome{
+    height: 600px;
+  }
+}
+/**/
+
+
+
+/*MISSION*/
+#missionAb .columns{
+  padding: 0;
+}
+
+#missionAb > div{
+  background: #0a0699;
+  padding: 5% 0;
+}
+
+#missionAb > div > div > div:nth-child(1) h1{
+  font-family: 'Lora', serif;
+  font-weight: 300;
+  font-size: 4em;
+  color: #FFF;
+  margin: 0 auto;
+}
+
+#missionAb > div > div > div:nth-child(2){
+  padding-top: 1%;
+}
+
+#missionAb > div > div > div:nth-child(2) p{
+  color: #FFF;
+  font-size: 1.5em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  padding: 1% 25% 3%;
+  margin-bottom: 0;
+}
+/*END MISSION*/
+
+
+
+/*VISION/BELIEFS*/
+.squareWrap{
+  background: #0a0699;
+}
+
+.squareWrap div.row{
+  max-width: 100% !important;
+}
+
+.squareWrap div.row div.columns{
+  padding: 0;
+}
+
+.squareWrap #article1{
+  background: #CCC;
+  padding-bottom: 40vh;
+}
+
+.squareWrap #article1 #headContainer{
+ margin-left: 18%;
+ padding: 2% 2% 2% 0;
+}
+
+.squareWrap #article1 #headContainer .icons{
+ margin: 4.5% auto 0 0;
+ float: left;
+ width: 11.5%;
+}
+
+.squareWrap #article1 #headContainer h1, .squareWrap #article2 #headContainer2 h1{
+ font-size: 4em;
+ float: left;
+}
+
+.squareWrap #article1 #headContainer h1{
+ color: #0a0699;
+}
+
+.squareWrap #article1 #headContainer .graphicEle, .squareWrap #article2 #headContainer2 .graphicEle{
+  width: 100%;
+  text-align: center;
+}
+
+.squareWrap #article1 #headContainer .graphicEle img, .squareWrap #article2 #headContainer2 .graphicEle img{
+  margin-left: 25%;
+}
+
+.squareWrap #article1 .article1Container .imgSlide > div:nth-child(1), .squareWrap #article1 .article1Container .imgSlide > div:nth-child(2),
+.squareWrap #article1 .article1Container .imgSlide > div:nth-child(3), .squareWrap #article1 .article1Container .imgSlide > div:nth-child(4),
+.squareWrap #article1 > div:nth-child(4){
+  padding-left: 2% !important;
+  padding-top: 3% !important;
+}
+
+.squareWrap #article1 div:nth-child(2) div h3, .squareWrap #article1 div:nth-child(3) div h3, .squareWrap #article2 div:nth-child(2) div h3,
+.squareWrap #article2 div:nth-child(3) div h3{
+ font-family: 'Lora', serif;
+ color: #333;
+ font-weight: bold;
+ text-align: left;
+}
+
+.squareWrap #article1 div:nth-child(2) div h3, .squareWrap #article1 div:nth-child(3) div h3{
+ color: #333;
+}
+
+.squareWrap #article1 div:nth-child(2) div p, .squareWrap #article1 div:nth-child(3) div p, .squareWrap #article1 div:nth-child(4) div p{
+ color: #333;
+ font-size: 1.2em;
+ font-family: 'Open Sans Condensed', sans-serif;
+ width: 95%;
+ padding-right: 1.5%;
+ text-align: left;
+ margin-bottom: 1%;
+}
+
+.squareWrap #article1 div:nth-child(2) div .readmore a, .squareWrap #article1 div:nth-child(3) div .readmore a, .squareWrap #article1 div:nth-child(4) div .readmore a{
+ color: #333;
+ font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.squareWrap #article1 > div:nth-child(3) > div:nth-child(2), .squareWrap #article2 > div:nth-child(3) > div:nth-child(2){
+  margin-bottom: 3%;
+}
+
+.squareWrap #article2{
+  background: #FFF;
+  padding-bottom: 40vh;
+}
+
+.squareWrap #article2 #headContainer2{
+ margin: 0 auto;
+ padding: 2% 2%;
+}
+
+.squareWrap #article2 #headContainer2 .icons{
+ margin: 5% auto 0 12%;
+}
+
+.squareWrap #article2 #headContainer2 h1{
+ color: #FFF;
+}
+
+.squareWrap #article2 > div:nth-child(2), .squareWrap #article2 > div:nth-child(3), .squareWrap #article2 > div:nth-child(4){
+  padding-left: 2% !important;
+  padding-top: 3% !important;
+}
+
+.squareWrap #article2 div:nth-child(2) div h3, .squareWrap #article2 div:nth-child(3) div h3{
+ color: #FFF;
+}
+
+.squareWrap #article2 div:nth-child(2) div p, .squareWrap #article2 div:nth-child(3) div p, .squareWrap #article2 div:nth-child(4) div p{
+ color: #FFF;
+ font-size: 1.2em;
+ font-family: 'Open Sans Condensed', sans-serif;
+ width: 95%;
+ padding-right: 1.5%;
+ text-align: left;
+ margin-bottom: 1%;
+}
+/*END ANNOUNCEMENTS/EVENTS*/
+
+
+
+@media only screen and (min-width: 1861px) and (max-width: 1990px){
+
+}
+
+
+
+@media only screen and (max-width: 1860px) {
+
+}
+
+
+
+@media only screen and (min-width: 1712px) and (max-width: 1860px){
+
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 1711px) {
+
+}
+
+
+
+@media only screen and (min-width: 1531px) and (max-width: 1711px) {
+
+}
+
+@media only screen and (min-width: 1530px) and (max-width: 1584px) {
+
+}
+
+@media only screen and (min-width: 1429px) and (max-width: 1529px){
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 16%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 30%;
+  }
+}
+
+
+
+@media only screen and (min-width: 1357px) and (max-width: 1428px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 16%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 30%;
+  }
+}
+
+
+
+@media only screen and (min-width: 1277px) and (max-width: 1356px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 16%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 40%;
+  }
+}
+
+
+
+@media only screen and (min-width: 1227px) and (max-width: 1276px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 16%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 40%;
+  }
+}
+
+
+
+@media only screen and (min-width: 1218px) and (max-width: 1226px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 16%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 40%;
+  }
+}
+
+
+
+@media only screen and (min-width: 1170px) and (max-width: 1217px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 16%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 40%;
+  }
+}
+
+
+
+@media only screen and (min-width: 1147px) and (max-width: 1169px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 16%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 40%;
+  }
+}
+
+
+
+@media only screen and (min-width: 1134px) and (max-width: 1146px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 16%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 40%;
+  }
+}
+
+
+
+@media only screen and (min-width: 1098px) and (max-width: 1133px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 16%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 40%;
+  }
+}
+
+
+
+@media only screen and (min-width: 1013px) and (max-width: 1097px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 18%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 40%;
+  }
+}
+
+
+
+@media only screen and (min-width: 974px) and (max-width: 1012px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 18%;
+    margin-bottom: 4%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 4%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    margin-bottom: 4%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 40%;
+  }
+}
+
+
+
+@media only screen and (min-width: 904px) and (max-width: 973px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 18%;
+    margin-bottom: 4%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 4%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    margin-bottom: 4%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 40%;
+  }
+}
+
+
+
+@media only screen and (min-width: 883px) and (max-width: 903px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 18%;
+    margin-bottom: 4%;
+    font-size: 7em;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 4%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 2em;
+    margin-bottom: 4%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 50%;
+  }
+}
+
+
+
+@media only screen and (min-width: 809px) and (max-width: 882px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 18%;
+    margin-bottom: 4%;
+    font-size: 7em;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 4%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 2em;
+    margin-bottom: 4%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 50%;
+  }
+}
+
+
+
+@media only screen and (min-width: 777px) and (max-width: 808px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 18%;
+    margin-bottom: 4%;
+    font-size: 7em;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 4%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 2em;
+    margin-bottom: 4%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 50%;
+  }
+}
+
+
+
+@media only screen and (min-width: 741px) and (max-width: 776px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 22%;
+    margin-bottom: 4%;
+    font-size: 6em;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 4%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 2em;
+    margin-bottom: 4%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 50%;
+  }
+}
+
+
+
+@media only screen and (min-width: 686px) and (max-width: 740px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 22%;
+    margin-bottom: 4%;
+    font-size: 6em;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 4%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 2em;
+    margin-bottom: 4%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 50%;
+  }
+}
+
+
+
+@media only screen and (min-width: 657px) and (max-width: 685px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 4%;
+    font-size: 5em;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 4%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 1.7em;
+    margin-bottom: 4%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 50%;
+  }
+}
+
+
+
+@media only screen and (min-width: 642px) and (max-width: 656px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 4%;
+    font-size: 5em;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 4%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 1.7em;
+    margin-bottom: 6%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 70%;
+  }
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 641px) {
+
+}
+
+
+
+@media only screen and (min-width: 635px) and (max-width: 641px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 6%;
+    font-size: 5em;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 6%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 1.7em;
+    margin-bottom: 6%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 70%;
+  }
+}
+
+
+
+@media only screen and (min-width: 588px) and (max-width: 634px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 6%;
+    font-size: 5em;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 6%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 1.7em;
+    margin-bottom: 6%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 70%;
+  }
+}
+
+
+
+@media only screen and (min-width: 555px) and (max-width: 587px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 6%;
+    font-size: 5em;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 6%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 1.5em;
+    margin-bottom: 6%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 70%;
+  }
+}
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 554px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 6%;
+    font-size: 5em;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 6%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 1.5em;
+    line-height: 30px;
+    margin-bottom: 6%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 75%;
+  }
+}
+
+
+
+@media only screen and (min-width: 442px) and (max-width: 479px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 6%;
+    font-size: 4.5em;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 6%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 1em;
+    line-height: 30px;
+    margin-bottom: 6%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 75%;
+  }
+}
+
+
+
+@media only screen and (min-width: 390px) and (max-width: 441px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 6%;
+    font-size: 4.5em;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 6%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 1.5em;
+    margin-bottom: 15%;
+    line-height: 30px;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 100%;
+  }
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 389px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 35%;
+    margin-bottom: 6%;
+    font-size: 3.5em;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle{
+    margin-bottom: 6%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle img{
+    width: 30%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 1.5em;
+    margin-bottom: 15%;
+    line-height: 30px;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 100%;
+  }
+}
+/*END ABOUT*/
