@@ -19,8 +19,8 @@ $(document).ready(function(){
   var article1 = $("#news-events #article1");
   var article2 = $("#news-events #article2");
   var imgSlide = $(".imgSlide");
-  var annBTN = $("#moreArtBTN div div.moreann");
-  var annBTN2 = $("#moreannMobile");
+  var annBTN = $("#moreArtBTN div button:nth-child(1)");
+  var annBTN2 = $(".maBTN");
   var globalSec = $("#global");
   var globalIcon = $("#global div .icons");
   var globalHead = $("#global div h1");

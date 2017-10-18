@@ -40,26 +40,6 @@
 #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
   margin: 0 auto 2%;
 }
-
-#facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
-  font-size: 2.5em;
-  font-family: "Lato", sans-serif;
-  color: #FFF;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 9px;
-  margin-bottom: 2%;
-}
-
-#facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
-  margin: 0 auto;
-  width: 25%;
-  text-align: center;
-}
-
-#facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools a img{
-  width: 45%;
-}
 /*END HOME*/
 
 
@@ -96,7 +76,7 @@
   color: #FFF;
 }
 
-#faculty > div > div .panel .graphicEle, #office > div > div .panel .graphicEle, #teachers > div > div .panel .graphicEle, #staff > div > div .panel h1{
+#faculty > div > div .panel .graphicEle, #office > div > div .panel .graphicEle, #teachers > div > div .panel .graphicEle, #staff > div > div .panel .graphicEle{
   margin: 0 auto 2.5%;
 }
 

@@ -36,7 +36,11 @@
   color: #FFF;
 }
 
-div.moreann, .moreRes{
+#moreArtBTN > div{
+  margin-top: 10% !important;
+}
+
+ .moreann a, .moreRes{
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: bold;
   font-size: 1.5em;
@@ -47,7 +51,7 @@ div.moreann, .moreRes{
   bottom: 10%;
 }
 
-#moreannMobile{
+#moreannMobile, .maBTN{
   display: none;
 }
 
@@ -71,7 +75,7 @@ a.viewcalendar{
   text-align: center;
 }
 
-#mission span a:hover, a h2:hover, a h3:hover, .eventArticle .readmore a:hover, .newsArticle .readmore a:hover, div.moreann:hover, #moreannMobile a:hover,
+#mission span a:hover, a h2:hover, a h3:hover, .eventArticle .readmore a:hover, .newsArticle .readmore a:hover, .moreann a:hover, #moreannMobile a:hover,
 a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:hover{
   color: #FF033E !important;
 }
@@ -667,6 +671,14 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
  text-align: left;
  margin-bottom: 1%;
 }
+
+#moreArtBTN > div{
+  text-align: center;
+}
+
+#moreArtBTN > div > div{
+  text-align: center;
+}
 /*END ANNOUNCEMENTS/EVENTS*/
 
 
@@ -951,6 +963,31 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
   #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons, #resource-twit #article1 #headContainer .icons, #resource-twit #article2 #headContainer2 .icons{
    margin-top: 5%;
    width: 12.5%;
+  }
+
+  #moreArtBTN + div{
+    margin-top: 22%;
+  }
+
+  #moreArtBTN div button:nth-child(1), .moreann{
+    display: block !important;
+  }
+
+  #moreArtBTN div button:nth-child(1){
+    margin: 0 auto;
+  }
+
+  .moreann{
+    margin: 8% auto 0;
+    text-align: center;
+  }
+
+  .moreann a, a.viewcalendar{
+    font-size: 1.3em;
+  }
+
+  #moreannMobile, .maBTN{
+    display: none !important;
   }
 
   #resource-twit #article1 #headContainer .icons{
@@ -1469,7 +1506,7 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
    width: 85%;
   }
 
-  div.moreann, a.viewcalendar{
+  .moreann a, a.viewcalendar, button{
     font-size: 1.3em;
   }
 
@@ -1624,7 +1661,7 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
    width: 85%;
   }
 
-  div.moreann, a.viewcalendar{
+  .moreann a, a.viewcalendar{
     font-size: 1.1em;
   }
 
@@ -1792,7 +1829,7 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
    width: 85%;
   }
 
-  div.moreann, a.viewcalendar{
+  .moreann a, a.viewcalendar{
     font-size: 1.1em;
   }
 
@@ -1960,7 +1997,7 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
    width: 85%;
   }
 
-  div.moreann, a.viewcalendar{
+  .moreann a, a.viewcalendar{
     font-size: 1.1em;
   }
 
@@ -2137,7 +2174,7 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
    width: 85%;
   }
 
-  div.moreann, a.viewcalendar{
+  .moreann a, a.viewcalendar{
     font-size: 1.1em;
   }
 
@@ -2320,7 +2357,7 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
    width: 85%;
   }
 
-  div.moreann, a.viewcalendar{
+  .moreann a, a.viewcalendar{
     font-size: 1.1em;
   }
 
@@ -2528,7 +2565,7 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
     width: 100%;
   }
 
-  div.moreann, a.viewcalendar{
+  .moreann a, a.viewcalendar{
     font-size: 1.1em;
   }
 
@@ -2765,11 +2802,11 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
     margin-top: 8%
   }
 
-  div.moreann, a.viewcalendar{
+  .moreann a, a.viewcalendar{
     font-size: 1.1em;
   }
 
-  div.moreann{
+  .moreann a{
     margin: 8% auto 0;
   }
 
@@ -3042,11 +3079,11 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
     margin-top: 8%
   }
 
-  div.moreann, a.viewcalendar{
+  .moreann a, a.viewcalendar{
     font-size: 1.3em;
   }
 
-  div.moreann{
+  .moreann a{
     margin: 8% auto 0;
   }
 
@@ -3299,11 +3336,11 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
     margin-top: 8%
   }
 
-  div.moreann, a.viewcalendar{
+  .moreann a, a.viewcalendar{
     font-size: 1.3em;
   }
 
-  div.moreann{
+  .moreann a{
     margin: 8% auto 0;
   }
 
@@ -3583,11 +3620,11 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
     margin-top: 8%
   }
 
-  div.moreann, a.viewcalendar{
+  .moreann a, a.viewcalendar{
     font-size: 1.3em;
   }
 
-  div.moreann{
+  .moreann a{
     margin: 8% auto 0;
   }
 
@@ -3851,11 +3888,11 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
     margin-top: 8%
   }
 
-  div.moreann, a.viewcalendar{
+  .moreann a, a.viewcalendar{
     font-size: 1.3em;
   }
 
-  div.moreann{
+  .moreann a{
     margin: 8% auto 0;
   }
 
@@ -4141,11 +4178,11 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
     margin-top: 8%
   }
 
-  div.moreann, a.viewcalendar{
+  .moreann a, a.viewcalendar{
     font-size: 1.3em;
   }
 
-  div.moreann{
+  .moreann a{
     margin: 8% auto 0;
   }
 
@@ -4436,11 +4473,11 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
     margin-top: 8%
   }
 
-  div.moreann, a.viewcalendar{
+  .moreann a, a.viewcalendar{
     font-size: 1.3em;
   }
 
-  div.moreann{
+  .moreann a{
     margin: 8% auto 0;
   }
 
@@ -4739,11 +4776,11 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
     margin-top: 8%
   }
 
-  div.moreann, a.viewcalendar{
+  .moreann a, a.viewcalendar{
     font-size: 1.3em;
   }
 
-  div.moreann{
+  .moreann a{
     margin: 8% auto 0;
   }
 
@@ -5043,11 +5080,11 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
     margin-top: 8%
   }
 
-  div.moreann, a.viewcalendar{
+  .moreann a, a.viewcalendar{
     font-size: 1.3em;
   }
 
-  div.moreann{
+  .moreann a{
     margin: 8% auto 0;
   }
 
@@ -5348,20 +5385,6 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
     margin-top: 8%
   }
 
-  div.moreann, a.viewcalendar{
-    font-size: 1.3em;
-  }
-
-  div.moreann{
-    display: block;
-    margin: 8% auto 0;
-    text-align: center;
-  }
-
-  #moreannMobile{
-    display: none;
-  }
-
   .readmore a{
     font-size: 1em;
   }
@@ -5462,13 +5485,21 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
     box-shadow: -10px 10px 19px -2px rgba(0, 0, 0, .3);
   }
 
-  #moreannMobile{
+  #moreannMobile, .maBTN{
     display: block;
-    margin: 8% auto 0;
+    margin: 5% auto 0;
     text-align: center;
   }
 
-  div.moreann{
+  #moreannMobile, .maBTN a{
+    color: #FFF;
+  }
+
+  #moreannMobile{
+    margin-top: 5%;
+  }
+
+  #moreArtBTN div > button, .moreann{
     display: none;
   }
 

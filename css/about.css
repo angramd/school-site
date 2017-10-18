@@ -55,21 +55,25 @@
 
 
 /*MISSION*/
+#missionAb > div > div > div:nth-child(1) h1, .squareWrap #article1 #headContainer h1, .squareWrap #article2 #headContainer2 h1, #globalLeaders > div > div h1{
+  font-size: 3.7em;
+  font-family: 'Lora', serif;
+  font-weight: 300;
+  margin: 0 auto;
+  text-align: center;
+}
+
 #missionAb .columns{
   padding: 0;
 }
 
 #missionAb > div{
   background: #0a0699;
-  padding: 5% 0;
+  padding: 2% 0;
 }
 
-#missionAb > div > div > div:nth-child(1) h1{
-  font-family: 'Lora', serif;
-  font-weight: 300;
-  font-size: 4em;
+#missionAb > div > div > div:nth-child(1) h1, #globalLeaders > div > div h1{
   color: #FFF;
-  margin: 0 auto;
 }
 
 #missionAb > div > div > div:nth-child(2){
@@ -91,125 +95,101 @@
 /*VISION/BELIEFS*/
 .squareWrap{
   background: #0a0699;
+  height: 900px;
 }
 
 .squareWrap div.row{
   max-width: 100% !important;
+  height: 100% !important;
+}
+
+.squareWrap > div > div{
+  height: 100% !important;
 }
 
 .squareWrap div.row div.columns{
   padding: 0;
 }
 
+.squareWrap #article1, .squareWrap #article2{
+  height: 100%;
+}
+
 .squareWrap #article1{
   background: #CCC;
-  padding-bottom: 40vh;
+  height: 100% !important;
 }
 
-.squareWrap #article1 #headContainer{
- margin-left: 18%;
- padding: 2% 2% 2% 0;
-}
-
-.squareWrap #article1 #headContainer .icons{
- margin: 4.5% auto 0 0;
- float: left;
- width: 11.5%;
+.squareWrap #article1 #headContainer, .squareWrap #article2 #headContainer2{
+ padding-top: 2%;
 }
 
 .squareWrap #article1 #headContainer h1, .squareWrap #article2 #headContainer2 h1{
- font-size: 4em;
- float: left;
-}
-
-.squareWrap #article1 #headContainer h1{
  color: #0a0699;
 }
 
-.squareWrap #article1 #headContainer .graphicEle, .squareWrap #article2 #headContainer2 .graphicEle{
-  width: 100%;
-  text-align: center;
+.squareWrap #article1 .article1Container, .squareWrap #article2 .article1Container {
+  height: 700px;
+  margin-top: 5%;
+  padding: 0 2% 2% 4% !important;
 }
 
-.squareWrap #article1 #headContainer .graphicEle img, .squareWrap #article2 #headContainer2 .graphicEle img{
-  margin-left: 25%;
-}
-
-.squareWrap #article1 .article1Container .imgSlide > div:nth-child(1), .squareWrap #article1 .article1Container .imgSlide > div:nth-child(2),
-.squareWrap #article1 .article1Container .imgSlide > div:nth-child(3), .squareWrap #article1 .article1Container .imgSlide > div:nth-child(4),
-.squareWrap #article1 > div:nth-child(4){
-  padding-left: 2% !important;
-  padding-top: 3% !important;
-}
-
-.squareWrap #article1 div:nth-child(2) div h3, .squareWrap #article1 div:nth-child(3) div h3, .squareWrap #article2 div:nth-child(2) div h3,
-.squareWrap #article2 div:nth-child(3) div h3{
+.squareWrap #article1 .article1Container h3, .squareWrap #article2 .article1Container h3{
  font-family: 'Lora', serif;
  color: #333;
  font-weight: bold;
+ font-size: 1.6875rem;
  text-align: left;
 }
 
-.squareWrap #article1 div:nth-child(2) div h3, .squareWrap #article1 div:nth-child(3) div h3{
- color: #333;
+.squareWrap #article1 .article1Container p, .squareWrap #article2 .article1Container p{
+  margin-bottom: 1%;
 }
 
-.squareWrap #article1 div:nth-child(2) div p, .squareWrap #article1 div:nth-child(3) div p, .squareWrap #article1 div:nth-child(4) div p{
- color: #333;
- font-size: 1.2em;
- font-family: 'Open Sans Condensed', sans-serif;
- width: 95%;
- padding-right: 1.5%;
- text-align: left;
+.squareWrap #article1 .article1Container p, .squareWrap #article1 .article1Container ul li, .squareWrap #article2 .article1Container p{
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  text-align: left;
+  font-size: 1em;
+}
+
+.squareWrap #article1 .article1Container p{
+ font-weight: bold;
  margin-bottom: 1%;
 }
 
-.squareWrap #article1 div:nth-child(2) div .readmore a, .squareWrap #article1 div:nth-child(3) div .readmore a, .squareWrap #article1 div:nth-child(4) div .readmore a{
- color: #333;
- font-family: 'Open Sans Condensed', sans-serif;
-}
-
-.squareWrap #article1 > div:nth-child(3) > div:nth-child(2), .squareWrap #article2 > div:nth-child(3) > div:nth-child(2){
+.squareWrap #article1 .article1Container, .squareWrap #article2 .article1Container{
   margin-bottom: 3%;
 }
 
 .squareWrap #article2{
   background: #FFF;
-  padding-bottom: 40vh;
-}
-
-.squareWrap #article2 #headContainer2{
- margin: 0 auto;
- padding: 2% 2%;
-}
-
-.squareWrap #article2 #headContainer2 .icons{
- margin: 5% auto 0 12%;
-}
-
-.squareWrap #article2 #headContainer2 h1{
- color: #FFF;
-}
-
-.squareWrap #article2 > div:nth-child(2), .squareWrap #article2 > div:nth-child(3), .squareWrap #article2 > div:nth-child(4){
-  padding-left: 2% !important;
-  padding-top: 3% !important;
-}
-
-.squareWrap #article2 div:nth-child(2) div h3, .squareWrap #article2 div:nth-child(3) div h3{
- color: #FFF;
-}
-
-.squareWrap #article2 div:nth-child(2) div p, .squareWrap #article2 div:nth-child(3) div p, .squareWrap #article2 div:nth-child(4) div p{
- color: #FFF;
- font-size: 1.2em;
- font-family: 'Open Sans Condensed', sans-serif;
- width: 95%;
- padding-right: 1.5%;
- text-align: left;
- margin-bottom: 1%;
 }
 /*END ANNOUNCEMENTS/EVENTS*/
+
+
+
+/*GLOBAL LEADERS*/
+#globalLeaders{
+  height: 700px;
+  background-color: #0a0699;
+  padding: 1% 0;
+}
+
+#globalLeaders > div > div .graphicEle{
+  margin-bottom: 2.5%;
+}
+
+#globalLeaders > div > div .panel{
+  padding: 0 2% 2%;
+}
+
+#globalLeaders > div > div .panel div p{
+  font-size: 1.8em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-bottom: 6em;
+}
+/**/
 
 
 
