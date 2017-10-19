@@ -21,6 +21,8 @@ $(document).ready(function(){
   var imgSlide = $(".imgSlide");
   var annBTN = $("#moreArtBTN div button:nth-child(1)");
   var annBTN2 = $(".maBTN");
+  var calBTN = $("#moreCalBTN div button:nth-child(1)");
+  var calBTN2 = $(".caBTN");
   var globalSec = $("#global");
   var globalIcon = $("#global div .icons");
   var globalHead = $("#global div h1");
@@ -142,8 +144,7 @@ $(document).ready(function(){
       annBTN.css("display", "none");
       annBTN2.css("display", "block");
 
-      annBTN2.html('<a href="#news-events" class="moreannMobile">More Announcements</a>').appendTo(annBTN2);
-      //$("a.moreannMobile").css("cursor", "pointer");
+      //annBTN2.html('<a href="#news-events" class="moreannMobile">More Announcements</a>').appendTo(annBTN2);
 
       annBTN2.click(function()
       {
@@ -152,6 +153,21 @@ $(document).ready(function(){
         $(".article1Container > div:first").stop().fadeOut(200,
         function(){
           $(".article1Container > div:first").next().stop().fadeIn(1500).end().appendTo(".article1Container");
+        });
+      });
+
+      calBTN.css("display", "none");
+      calBTN2.css("display", "block");
+
+      //calBTN2.html('<a href="#article2" class="morecalMobile">More Events</a>').appendTo(calBTN2);
+
+      calBTN2.click(function()
+      {
+        jQuery('html,body').stop().animate({scrollTop: article2.offset().top}, 2000);
+
+        $(".article2Container > div:first").stop().fadeOut(200,
+        function(){
+          $(".article2Container > div:first").next().stop().fadeIn(1500).end().appendTo(".article2Container");
         });
       });
     }
@@ -565,11 +581,17 @@ $(document).ready(function(){
 
 
 
-  annBTN.click(function()
-	{
+  annBTN.click(function(){
     $(".article1Container > div:first").stop().fadeOut(200,
     function(){
       $(".article1Container > div:first").next().stop().fadeIn(200).end().appendTo(".article1Container");
+    });
+	});
+
+  calBTN.click(function(){
+    $(".article2Container > div:first").stop().fadeOut(200,
+    function(){
+      $(".article2Container > div:first").next().stop().fadeIn(200).end().appendTo(".article2Container");
     });
 	});
 });

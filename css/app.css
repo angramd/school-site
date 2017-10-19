@@ -17,11 +17,11 @@
   text-align: center;
 }
 
-.imgSlide{
+.imgSlide, .imgSlide2{
   display: none;
 }
 
-.imgCurrSlide{
+.imgCurrSlide, .imgCurrSlide2{
   display: block;
 }
 
@@ -29,54 +29,35 @@
   width: 40%;
 }
 
-.readmore a{
+.readmore a, .moreann a, .moreRes, .viewcalendar a{
   font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.readmore a{
   font-weight: bold;
   font-size: 1.3em;
   color: #FFF;
 }
 
-#moreArtBTN > div{
-  margin-top: 10% !important;
-}
-
- .moreann a, .moreRes{
-  font-family: 'Open Sans Condensed', sans-serif;
+.moreann a, .moreRes, .viewcalendar a{
   font-weight: bold;
   font-size: 1.5em;
-  color: #333;
-  margin: 25% auto 0;
   text-align: center;
+}
+
+.moreann a, .moreRes{
   cursor: pointer;
   bottom: 10%;
-}
-
-#moreannMobile, .maBTN{
-  display: none;
-}
-
-#moreannMobile a{
-  cursor: pointer;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: bold;
-  font-size: 1.5em;
   color: #333;
-  margin: 5% auto 0;
-  text-align: center;
-  bottom: 10%;
 }
 
-a.viewcalendar{
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: bold;
-  font-size: 1.5em;
-  color: #FFF;
+.viewcalendar a{
   margin: 0 auto;
-  text-align: center;
+  color: #FFF;
 }
 
 #mission span a:hover, a h2:hover, a h3:hover, .eventArticle .readmore a:hover, .newsArticle .readmore a:hover, .moreann a:hover, #moreannMobile a:hover,
-a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:hover{
+.viewcalendar a:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:hover{
   color: #FF033E !important;
 }
 
@@ -279,8 +260,6 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
 #header1 ul li ul li:hover{
   background-color: #FF033E;
 }
-
-
 
 
 
@@ -600,7 +579,8 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
 
 #news-events #article1 .article1Container .imgSlide > div:nth-child(1), #news-events #article1 .article1Container .imgSlide > div:nth-child(2),
 #news-events #article1 .article1Container .imgSlide > div:nth-child(3), #news-events #article1 .article1Container .imgSlide > div:nth-child(4),
-#news-events #article1 > div:nth-child(4){
+#news-events #article1 > div:nth-child(4), .article2Container .imgSlide2 > div:nth-child(1), .article2Container .imgSlide2 > div:nth-child(2),
+.article2Container .imgSlide2 > div:nth-child(3){
   padding-left: 2% !important;
   padding-top: 3% !important;
 }
@@ -653,7 +633,7 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
  color: #FFF;
 }
 
-#news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3), #news-events #article2 > div:nth-child(4){
+#news-events #article2 > div:nth-child(2){
   padding-left: 2% !important;
   padding-top: 3% !important;
 }
@@ -673,11 +653,35 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
 }
 
 #moreArtBTN > div{
+  margin-top: 10% !important;
   text-align: center;
 }
 
-#moreArtBTN > div > div{
+#moreCalBTN > div{
+  margin-top: 6% !important;
   text-align: center;
+}
+
+#moreArtBTN > div > div, #moreCalBTN > div > div{
+  text-align: center;
+}
+
+#moreCalBTN div button:nth-child(1){
+  margin: 0 auto;
+  /*background-color: #CCC;*/
+}
+
+#moreannMobile, .maBTN, #morecalMobile, .caBTN{
+  display: none;
+}
+
+.moreann, .viewcalendar{
+  margin: 2% auto 0;
+  text-align: center;
+}
+
+.moreann a, .viewcalendar a{
+  font-size: 1.3em;
 }
 /*END ANNOUNCEMENTS/EVENTS*/
 
@@ -827,6 +831,10 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
  float: left;
  color: #FFF;
 }
+
+.moreRes{
+  margin: 25% auto 0;
+}
 /*END RESOURCES/TWITTER*/
 
 
@@ -935,6 +943,45 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
 
 
 
+@media only screen and (min-width: 642px){
+  #moreArtBTN div button:nth-child(1), .moreann, #moreCalBTN div button:nth-child(1), .viewcalendar{
+    display: block !important;
+  }
+
+  #moreArtBTN > div{
+    margin-top: 10% !important;
+    text-align: center;
+  }
+
+  #moreCalBTN > div{
+    margin-top: 6% !important;
+    text-align: center;
+  }
+
+  #moreArtBTN > div > div, #moreCalBTN > div > div{
+    text-align: center;
+  }
+
+  #moreArtBTN div button:nth-child(1), #moreCalBTN div button:nth-child(1){
+    margin: 0 auto;
+  }
+
+  #moreannMobile, .maBTN, #morecalMobile, .caBTN{
+    display: none !important;
+  }
+
+  .moreann, .viewcalendar{
+    margin: 2% auto 0;
+    text-align: center;
+  }
+
+  .moreann a, .viewcalendar a{
+    font-size: 1.3em;
+  }
+}
+
+
+
 @media only screen and (min-width: 1861px) and (max-width: 1990px){
   #news-events #article1, #news-events #article2{
     padding-top: 2%;
@@ -963,31 +1010,6 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
   #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons, #resource-twit #article1 #headContainer .icons, #resource-twit #article2 #headContainer2 .icons{
    margin-top: 5%;
    width: 12.5%;
-  }
-
-  #moreArtBTN + div{
-    margin-top: 22%;
-  }
-
-  #moreArtBTN div button:nth-child(1), .moreann{
-    display: block !important;
-  }
-
-  #moreArtBTN div button:nth-child(1){
-    margin: 0 auto;
-  }
-
-  .moreann{
-    margin: 8% auto 0;
-    text-align: center;
-  }
-
-  .moreann a, a.viewcalendar{
-    font-size: 1.3em;
-  }
-
-  #moreannMobile, .maBTN{
-    display: none !important;
   }
 
   #resource-twit #article1 #headContainer .icons{
@@ -1506,7 +1528,7 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
    width: 85%;
   }
 
-  .moreann a, a.viewcalendar, button{
+  .moreann a, .viewcalendar a, button{
     font-size: 1.3em;
   }
 
@@ -1661,7 +1683,7 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
    width: 85%;
   }
 
-  .moreann a, a.viewcalendar{
+  .moreann a, .viewcalendar a{
     font-size: 1.1em;
   }
 
@@ -1829,7 +1851,7 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
    width: 85%;
   }
 
-  .moreann a, a.viewcalendar{
+  .moreann a, .viewcalendar a{
     font-size: 1.1em;
   }
 
@@ -1997,7 +2019,7 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
    width: 85%;
   }
 
-  .moreann a, a.viewcalendar{
+  .moreann a, .viewcalendar a{
     font-size: 1.1em;
   }
 
@@ -2174,7 +2196,7 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
    width: 85%;
   }
 
-  .moreann a, a.viewcalendar{
+  .moreann a, .viewcalendar a{
     font-size: 1.1em;
   }
 
@@ -2357,7 +2379,7 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
    width: 85%;
   }
 
-  .moreann a, a.viewcalendar{
+  .moreann a, .viewcalendar a{
     font-size: 1.1em;
   }
 
@@ -2565,7 +2587,7 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
     width: 100%;
   }
 
-  .moreann a, a.viewcalendar{
+  .moreann a, .viewcalendar a{
     font-size: 1.1em;
   }
 
@@ -2802,7 +2824,7 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
     margin-top: 8%
   }
 
-  .moreann a, a.viewcalendar{
+  .moreann a, .viewcalendar a{
     font-size: 1.1em;
   }
 
@@ -3079,7 +3101,7 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
     margin-top: 8%
   }
 
-  .moreann a, a.viewcalendar{
+  .moreann a, .viewcalendar a{
     font-size: 1.3em;
   }
 
@@ -3336,7 +3358,7 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
     margin-top: 8%
   }
 
-  .moreann a, a.viewcalendar{
+  .moreann a, .viewcalendar a{
     font-size: 1.3em;
   }
 
@@ -3620,7 +3642,7 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
     margin-top: 8%
   }
 
-  .moreann a, a.viewcalendar{
+  .moreann a, .viewcalendar a{
     font-size: 1.3em;
   }
 
@@ -3888,7 +3910,7 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
     margin-top: 8%
   }
 
-  .moreann a, a.viewcalendar{
+  .moreann a, .viewcalendar a{
     font-size: 1.3em;
   }
 
@@ -4178,7 +4200,7 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
     margin-top: 8%
   }
 
-  .moreann a, a.viewcalendar{
+  .moreann a, .viewcalendar a{
     font-size: 1.3em;
   }
 
@@ -4473,7 +4495,7 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
     margin-top: 8%
   }
 
-  .moreann a, a.viewcalendar{
+  .moreann a, .viewcalendar a{
     font-size: 1.3em;
   }
 
@@ -4776,7 +4798,7 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
     margin-top: 8%
   }
 
-  .moreann a, a.viewcalendar{
+  .moreann a, .viewcalendar a{
     font-size: 1.3em;
   }
 
@@ -5080,7 +5102,7 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
     margin-top: 8%
   }
 
-  .moreann a, a.viewcalendar{
+  .moreann a, .viewcalendar a{
     font-size: 1.3em;
   }
 
@@ -5485,23 +5507,46 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
     box-shadow: -10px 10px 19px -2px rgba(0, 0, 0, .3);
   }
 
-  #moreannMobile, .maBTN{
+  #moreannMobile, .maBTN, #morecalMobile, .caBTN{
     display: block;
     margin: 5% auto 0;
     text-align: center;
   }
 
-  #moreannMobile, .maBTN a{
+  #moreannMobile, .maBTN a, #morecalMobile, .caBTN a{
     color: #FFF;
   }
 
-  #moreannMobile{
+  #moreannMobile, #morecalMobile{
     margin-top: 5%;
   }
 
-  #moreArtBTN div > button, .moreann{
+  #moreannMobile a, #morecalMobile a{
+    cursor: pointer;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 5% auto 0;
+    text-align: center;
+    bottom: 10%;
+  }
+
+  #moreannMobile a{
+    color: #333;
+  }
+
+  #morecalMobile a{
+    color: #FFF;
+  }
+
+  #moreArtBTN div > button, .moreann, #moreCalBTN div > button, .viewcalendar{
     display: none;
   }
+
+
+
+
+
 
   #news-events #article1{
     padding-bottom: 2%;
@@ -5512,7 +5557,7 @@ a.viewcalendar:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:
     margin-top: 8%
   }
 
-  #moreannMobile a, a.viewcalendar{
+  #moreannMobile a, .viewcalendar a{
     font-size: 1.5em;
   }
 
