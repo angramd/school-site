@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
   var topBar = $(".top-bar");
   var linkHome = $("#linkHome");
   var linkQuick = $("#linkQuick");
@@ -30,8 +29,10 @@ $(document).ready(function(){
   var resource_twit = $("#resource-twit");
   var footer = $("#footerMain");
 
-  /*MOVE SCROLL BAR TO TOP OF PAGE WHEN PAGE RELOADS*/
-	$(window).scrollTop(0);
+
+
+  /*MOVE SCROLLBAR TO TOP OF PAGE WHEN PAGE RELOADS*/
+  $("html, body").stop().animate({ scrollTop: homePage.offset().top }, 5);
 
 
 
@@ -514,6 +515,19 @@ $(document).ready(function(){
       downArr.css("opacity", "0");
     }
 	});
+
+  //$("#header1 ul li ul").css({"opacity": "0", "margin-top": "-6%"});
+
+  linkFaculty.mouseenter(function(){
+    $("#header1 ul li ul").css("display", "block").stop().animate({"opacity": "1", "margin-top": "2%"}, 200);
+  });
+
+  linkFaculty.mouseleave(function(){
+    $("#header1 ul li ul").stop().animate({"opacity": "0", "margin-top": "-6%"}, 200,
+    function(){
+      $("#header1 ul li ul").css("display", "none");
+    });
+  });
 
 	linkContact.click(function()
 	{

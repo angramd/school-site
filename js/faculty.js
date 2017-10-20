@@ -12,9 +12,6 @@ $(document).ready(function(){
   var faculty = $("#facultyHome");
   var footerFa = $("#footerFa");
 
-  /*MOVE SCROLL BAR TO TOP OF PAGE WHEN PAGE RELOADS*/
-	$(window).scrollTop(0);
-
 
 
   /*ANCHOR LINK SCROLLING*/
@@ -64,6 +61,17 @@ $(document).ready(function(){
 		linkContactFa.removeClass("currentLink underLine");
 	});
 
+  linkFaculty.mouseenter(function(){
+    $("#header1 ul li ul").css("display", "block").stop().animate({"opacity": "1", "margin-top": "2%"}, 200);
+  });
+
+  linkFaculty.mouseleave(function(){
+    $("#header1 ul li ul").stop().animate({"opacity": "0", "margin-top": "-6%"}, 200,
+    function(){
+      $("#header1 ul li ul").css("display", "none");
+    });
+  });
+
 	linkContactFa.click(function()
 	{
     linkContactFa.addClass("currentLink underLine");
@@ -86,4 +94,13 @@ $(document).ready(function(){
     //   topBar.css({"width": "1250px !important", "margin-left": "4%"});
     // }
 	}
+
+
+
+  /*MOVE SCROLL BAR TO TOP OF PAGE WHEN PAGE RELOADS*/
+  if ($("html, body").scrollTop() > 0)
+  {
+    $("html, body").stop().animate({ scrollTop: faculty.offset().top }, 5);
+    return false;
+  }
 });

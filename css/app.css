@@ -37,6 +37,7 @@
   font-weight: bold;
   font-size: 1.3em;
   color: #FFF;
+  transition: color .3s ease-out;
 }
 
 .moreann a, .moreRes, .viewcalendar a{
@@ -49,14 +50,16 @@
   cursor: pointer;
   bottom: 10%;
   color: #333;
+  transition: color .3s ease-out;
 }
 
 .viewcalendar a{
   margin: 0 auto;
   color: #FFF;
+  transition: color .3s ease-out;
 }
 
-#mission span a:hover, a h2:hover, a h3:hover, .eventArticle .readmore a:hover, .newsArticle .readmore a:hover, .moreann a:hover, #moreannMobile a:hover,
+#mission span a:hover, h2 a:hover, a h3:hover, .eventArticle .readmore a:hover, .newsArticle .readmore a:hover, .moreann a:hover, #moreannMobile a:hover,
 .viewcalendar a:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:hover{
   color: #FF033E !important;
 }
@@ -69,6 +72,7 @@
 .eventDate h3{
   color: #0a0699 !important;
   text-align: center !important;
+  transition: color .3s ease-out;
 }
 
 .eventImg{
@@ -239,15 +243,12 @@
   width: 100%;
 }
 
-#header1 ul li:hover ul{
-  display: block;
-}
-
 #header1 ul li ul{
+  opacity: 0;
   display: none;
   position: absolute;
   left: -33%;
-  margin-top: 2%;
+  margin-top: -6%;
   background: #0a0699;
   border: #FF033E solid 6px;
 }
@@ -499,10 +500,11 @@
   margin: 0 auto;
 }
 
-#quickLink > div > div div:nth-child(2) div a h2{
+#quickLink > div > div div:nth-child(2) div h2 a{
   font-family: 'Open Sans Condensed', sans-serif !important;
-  font-size: 1.8em !important;
+  font-size: .8em !important;
   color: #333;
+  transition: color .3s ease-out;
 }
 
 #quickLink > div > div > div > div:nth-child(3){
@@ -801,11 +803,12 @@
   margin: 12% auto 0;
 }
 
-#resource-twit #article1 div:nth-child(2) a h2{
- font-size: 1.8em;
+#resource-twit #article1 div:nth-child(2) h2 a{
+ font-size: .8em;
  margin-bottom: 6%;
  color: #333;
  font-family: 'Open Sans Condensed', sans-serif;
+ transition: color .3s ease-out;
 }
 
 #resource-twit #article1 > div:nth-child(3){
@@ -917,6 +920,7 @@
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.2em;
   color: #FFF;
+  transition: color .3s ease-out;
 }
 
 .footer #footAddress div:nth-child(1) p a{
@@ -2146,8 +2150,8 @@
     padding-top: 2%;
   }
 
-  #quickLink > div > div div:nth-child(2) div a h2{
-    font-size: 1.3em !important;
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
     text-align: center;
   }
 
@@ -2329,8 +2333,8 @@
     padding-top: 2%;
   }
 
-  #quickLink > div > div div:nth-child(2) div a h2{
-    font-size: 1.3em !important;
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
     text-align: center;
   }
 
@@ -2512,8 +2516,8 @@
     padding-top: 2%;
   }
 
-  #quickLink > div > div div:nth-child(2) div a h2{
-    font-size: 1.3em !important;
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
     text-align: center;
   }
 
@@ -2738,8 +2742,8 @@
     padding-top: 2%;
   }
 
-  #quickLink > div > div div:nth-child(2) div a h2{
-    font-size: 1.3em !important;
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
     text-align: center;
   }
 
@@ -2876,8 +2880,8 @@
     margin-top: 1% !important;
   }
 
-  #resource-twit #article1 div:nth-child(2) a h2{
-    font-size: 1.3em;
+  #resource-twit #article1 div:nth-child(2) h2 a{
+    font-size: .6em;
   }
 
   #resource-twit #article2 #headContainer2 h1{
@@ -3015,8 +3019,8 @@
     padding-top: 2%;
   }
 
-  #quickLink > div > div div:nth-child(2) div a h2{
-    font-size: 1.3em !important;
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
     text-align: center;
   }
 
@@ -3153,8 +3157,8 @@
     margin-top: 1% !important;
   }
 
-  #resource-twit #article1 div:nth-child(2) a h2{
-    font-size: 1.3em;
+  #resource-twit #article1 div:nth-child(2) h2 a{
+    font-size: .6em;
   }
 
   #resource-twit #article2 #headContainer2 h1{
@@ -3271,8 +3275,8 @@
     padding-top: 2.8%;
   }
 
-  #quickLink > div > div div:nth-child(2) div a h2{
-    font-size: 1.3em !important;
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
     text-align: center;
     margin-bottom: 2%;
   }
@@ -3418,8 +3422,8 @@
     margin-top: 1% !important;
   }
 
-  #resource-twit #article1 div:nth-child(2) a h2{
-    font-size: 1.3em;
+  #resource-twit #article1 div:nth-child(2) h2 a{
+    font-size: .6em;
   }
 
   #resource-twit #article2 #headContainer2 h1{
@@ -3555,8 +3559,8 @@
     padding-top: 2.8%;
   }
 
-  #quickLink > div > div div:nth-child(2) div a h2{
-    font-size: 1.3em !important;
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
     text-align: center;
     margin-bottom: 2%;
   }
@@ -3702,8 +3706,8 @@
     margin-top: 1% !important;
   }
 
-  #resource-twit #article1 div:nth-child(2) a h2{
-    font-size: 1.3em;
+  #resource-twit #article1 div:nth-child(2) h2 a{
+    font-size: .6em;
   }
 
   #resource-twit #article2 #headContainer2 h1{
@@ -3823,8 +3827,8 @@
     padding-top: 2.8%;
   }
 
-  #quickLink > div > div div:nth-child(2) div a h2{
-    font-size: 1.3em !important;
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
     text-align: center;
     margin-bottom: 2%;
   }
@@ -3970,8 +3974,8 @@
     margin-top: 1% !important;
   }
 
-  #resource-twit #article1 div:nth-child(2) a h2{
-    font-size: 1.3em;
+  #resource-twit #article1 div:nth-child(2) h2 a{
+    font-size: .6em;
   }
 
   #resource-twit #article2 #headContainer2 h1{
@@ -4113,8 +4117,8 @@
     padding-top: 3.3%;
   }
 
-  #quickLink > div > div div:nth-child(2) div a h2{
-    font-size: 1.3em !important;
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
     text-align: center;
     margin-bottom: 2%;
   }
@@ -4260,8 +4264,8 @@
     margin-top: 1% !important;
   }
 
-  #resource-twit #article1 div:nth-child(2) a h2{
-    font-size: 1.3em;
+  #resource-twit #article1 div:nth-child(2) h2 a{
+    font-size: .6em;
     margin-bottom: 5%;
   }
 
@@ -4404,8 +4408,8 @@
     padding-top: 3.3%;
   }
 
-  #quickLink > div > div div:nth-child(2) div a h2{
-    font-size: 1.3em !important;
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
     text-align: center;
     margin-bottom: 2%;
   }
@@ -4555,8 +4559,8 @@
     margin-top: 1% !important;
   }
 
-  #resource-twit #article1 div:nth-child(2) a h2{
-    font-size: 1.3em;
+  #resource-twit #article1 div:nth-child(2) h2 a{
+    font-size: .6em;
     margin-bottom: 5%;
   }
 
@@ -4707,8 +4711,8 @@
     margin-bottom: 3%;
   }
 
-  #quickLink > div > div div:nth-child(2) div a h2{
-    font-size: 1.3em !important;
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
     text-align: center;
     margin-bottom: 2%;
   }
@@ -4858,8 +4862,8 @@
     margin-top: 1% !important;
   }
 
-  #resource-twit #article1 div:nth-child(2) a h2{
-    font-size: 1.3em;
+  #resource-twit #article1 div:nth-child(2) h2 a{
+    font-size: .6em;
     margin-bottom: 5%;
   }
 
@@ -5011,8 +5015,8 @@
     margin-bottom: 3%;
   }
 
-  #quickLink > div > div div:nth-child(2) div a h2{
-    font-size: 1.3em !important;
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
     text-align: center;
     margin-bottom: 2%;
   }
@@ -5162,8 +5166,8 @@
     margin-top: 1% !important;
   }
 
-  #resource-twit #article1 div:nth-child(2) a h2{
-    font-size: 1.3em;
+  #resource-twit #article1 div:nth-child(2) h2 a{
+    font-size: .6em;
     margin-bottom: 5%;
   }
 
@@ -5316,8 +5320,8 @@
     margin-bottom: 3%;
   }
 
-  #quickLink > div > div div:nth-child(2) div a h2{
-    font-size: 1.3em !important;
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
     text-align: center;
     margin-bottom: 2%;
   }
@@ -5459,8 +5463,8 @@
     margin-top: 1% !important;
   }
 
-  #resource-twit #article1 div:nth-child(2) a h2{
-    font-size: 1.3em;
+  #resource-twit #article1 div:nth-child(2) h2 a{
+    font-size: .6em;
     margin-bottom: 5%;
   }
 
@@ -5728,8 +5732,8 @@
     margin-bottom: 3%;
   }
 
-  #quickLink > div > div div:nth-child(2) div a h2{
-    font-size: 1.3em !important;
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
     text-align: center;
     margin-bottom: 2%;
   }
@@ -5891,8 +5895,8 @@
     margin-top: 1% !important;
   }
 
-  #resource-twit #article1 div:nth-child(2) a h2{
-    font-size: 1.3em;
+  #resource-twit #article1 div:nth-child(2) h2 a{
+    font-size: .6em;
     margin-bottom: 5%;
   }
 
@@ -6095,8 +6099,8 @@
     margin-bottom: 3%;
   }
 
-  #quickLink > div > div div:nth-child(2) div a h2{
-    font-size: 1.3em !important;
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
     text-align: center;
     margin-bottom: 2%;
   }
@@ -6254,7 +6258,7 @@
     width: 25%;
   }
 
-  #resource-twit #article1 div:nth-child(2) a h2{
+  #resource-twit #article1 div:nth-child(2) h2 a{
     margin-bottom: 5%;
   }
 
@@ -6457,8 +6461,8 @@
     margin-bottom: 3%;
   }
 
-  #quickLink > div > div div:nth-child(2) div a h2{
-    font-size: 1.3em !important;
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
     text-align: center;
     margin-bottom: 2%;
   }
@@ -6618,7 +6622,7 @@
     width: 25%;
   }
 
-  #resource-twit #article1 div:nth-child(2) a h2{
+  #resource-twit #article1 div:nth-child(2) h2 a{
     margin-bottom: 5%;
   }
 
@@ -6819,8 +6823,8 @@
     margin-bottom: 3%;
   }
 
-  #quickLink > div > div div:nth-child(2) div a h2{
-    font-size: 1.3em !important;
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
     text-align: center;
     margin-bottom: 2%;
   }
@@ -6980,7 +6984,7 @@
     width: 25%;
   }
 
-  #resource-twit #article1 div:nth-child(2) a h2{
+  #resource-twit #article1 div:nth-child(2) h2 a{
     margin-bottom: 5%;
   }
 
@@ -7180,8 +7184,8 @@
     margin-bottom: 3%;
   }
 
-  #quickLink > div > div div:nth-child(2) div a h2{
-    font-size: 1.3em !important;
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
     text-align: center;
     margin-bottom: 2%;
   }
@@ -7339,7 +7343,7 @@
     width: 25%;
   }
 
-  #resource-twit #article1 div:nth-child(2) a h2{
+  #resource-twit #article1 div:nth-child(2) h2 a{
     margin-bottom: 5%;
   }
 
@@ -7537,8 +7541,8 @@
     margin-bottom: 3%;
   }
 
-  #quickLink > div > div div:nth-child(2) div a h2{
-    font-size: 1.3em !important;
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
     text-align: center;
     margin-bottom: 5%;
   }
@@ -7708,7 +7712,7 @@
    margin-top: 5%;
   }
 
-  #resource-twit #article1 div:nth-child(2) a h2{
+  #resource-twit #article1 div:nth-child(2) h2 a{
    margin-bottom: 5%;
   }
 
@@ -7925,8 +7929,8 @@
     width: 30%;
   }
 
-  #quickLink > div > div div:nth-child(2) div a h2{
-    font-size: 1.3em !important;
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
     text-align: center;
     margin-bottom: 9%;
   }
@@ -8097,7 +8101,7 @@
    margin-top: 5%;
   }
 
-  #resource-twit #article1 div:nth-child(2) a h2{
+  #resource-twit #article1 div:nth-child(2) h2 a{
    margin-bottom: 5%;
   }
 

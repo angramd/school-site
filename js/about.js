@@ -12,8 +12,10 @@ $(document).ready(function(){
   var about = $("#aboutHome");
   var footerAb = $("#footerAb");
 
+
+
   /*MOVE SCROLL BAR TO TOP OF PAGE WHEN PAGE RELOADS*/
-	$(window).scrollTop(0);
+  $("html, body").stop().animate({ scrollTop: about.offset().top }, 5);
 
 
 
@@ -63,6 +65,17 @@ $(document).ready(function(){
 		linkAbout.removeClass("slideUnder");
 		linkContactAb.removeClass("currentLink underLine");
 	});
+
+  linkFaculty.mouseenter(function(){
+    $("#header1 ul li ul").css("display", "block").stop().animate({"opacity": "1", "margin-top": "2%"}, 200);
+  });
+
+  linkFaculty.mouseleave(function(){
+    $("#header1 ul li ul").stop().animate({"opacity": "0", "margin-top": "-6%"}, 200,
+    function(){
+      $("#header1 ul li ul").css("display", "none");
+    });
+  });
 
 	linkContactFa.click(function()
 	{
