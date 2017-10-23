@@ -179,8 +179,15 @@
 
 
 
-@media only screen and (min-width: 320px) and (max-width: 1711px) {
+@media only screen and (min-width: 1356px) and (max-width: 1711px) {
+  #faculty > div > div .panel{
+    padding-left: 0;
+    padding-right: 0;
+  }
 
+  #faculty > div > div .panel div:nth-child(4) div p, #faculty > div > div .panel div:nth-child(4) div h3{
+    font-size: 1.5em;
+  }
 }
 
 
@@ -212,6 +219,19 @@
 
   #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
     width: 30%;
+  }
+}
+
+
+
+@media only screen and (min-width: 1098px) and (max-width: 1357px) {
+  #faculty > div > div .panel{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #faculty > div > div .panel div:nth-child(4) div p, #faculty > div > div .panel div:nth-child(4) div h3{
+    font-size: 1.4em;
   }
 }
 
@@ -301,6 +321,23 @@
 
 
 
+@media only screen and (min-width: 904px) and (max-width: 1098px) {
+  #faculty > div > div .panel{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #faculty > div > div .panel > :last-child{
+    padding-left: 0;
+  }
+
+  #faculty > div > div .panel div:nth-child(4) div p, #faculty > div > div .panel div:nth-child(4) div h3{
+    font-size: 1.3em;
+  }
+}
+
+
+
 @media only screen and (min-width: 1013px) and (max-width: 1097px) {
   #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
     margin-top: 18%;
@@ -350,6 +387,23 @@
 
   #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
     width: 40%;
+  }
+}
+
+
+
+@media only screen and (min-width: 642px) and (max-width: 903px) {
+  #faculty > div > div .panel{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #faculty > div > div .panel > :last-child{
+    padding-left: 0;
+  }
+
+  #faculty > div > div .panel div:nth-child(4) div p, #faculty > div > div .panel div:nth-child(4) div h3{
+    font-size: 1.1em;
   }
 }
 
@@ -516,8 +570,27 @@
 
 
 
-@media only screen and (min-width: 320px) and (max-width: 641px) {
+@media only screen and (max-width: 641px) {
+  #facultyHome{
+    height: 450px;
+  }
 
+  .panel > div:nth-child(4){
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .panel div:nth-child(4) div{
+    margin-top: 5%;
+  }
+
+  .panel div:nth-child(4) div p, .panel div h3{
+    text-align: center !important;
+  }
+
+  .panel > :last-child{
+    padding-left: 0 !important;
+  }
 }
 
 

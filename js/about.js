@@ -14,11 +14,6 @@ $(document).ready(function(){
 
 
 
-  /*MOVE SCROLL BAR TO TOP OF PAGE WHEN PAGE RELOADS*/
-  $("html, body").stop().animate({ scrollTop: about.offset().top }, 5);
-
-
-
   /*ANCHOR LINK SCROLLING*/
 	jQuery(function()
 	{
@@ -77,7 +72,7 @@ $(document).ready(function(){
     });
   });
 
-	linkContactFa.click(function()
+	linkContactAb.click(function()
 	{
     linkContactAb.addClass("currentLink underLine");
 		linkContactAb.removeClass("slideUnder");
@@ -99,4 +94,13 @@ $(document).ready(function(){
     //   topBar.css({"width": "1250px !important", "margin-left": "4%"});
     // }
 	}
+
+
+
+  /*MOVE SCROLL BAR TO TOP OF PAGE WHEN PAGE RELOADS*/
+  if ($("html, body").scrollTop() > 0)
+  {
+    $("html, body").stop().animate({ scrollTop: about.offset().top }, 5);
+    return false;
+  }
 });
