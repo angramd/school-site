@@ -4,22 +4,15 @@
 /*ABOUT*/
 /*HOME*/
 #aboutHome {
-  height: 600px;
   background: #FFF;
 }
 
 #aboutHome #homeWrap {
-  height: 100%;
-  min-width: 100%;
-  min-height: 100%;
-  float: left;
   padding-top: 6%;
 }
 
 #aboutHome #homeWrap #welcome div:nth-child(1) .panel {
   position: relative;
-  width: 100%;
-  padding: 0 !important;
 }
 
 #aboutHome #homeWrap #welcome div.columns {
@@ -27,7 +20,6 @@
 }
 
 #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
-  width: 100%;
   font-family: 'Lora', serif;
   font-weight: 700;
   padding: 0 !important;

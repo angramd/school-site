@@ -4,22 +4,15 @@
 /*FACULTY*/
 /*HOME*/
 #facultyHome {
-  height: 600px;
   background: #FFF;
 }
 
 #facultyHome #homeWrap {
-  height: 100%;
-  min-width: 100%;
-  min-height: 100%;
-  float: left;
   padding-top: 6%;
 }
 
 #facultyHome #homeWrap #welcome div:nth-child(1) .panel {
   position: relative;
-  width: 100%;
-  padding: 0 !important;
 }
 
 #facultyHome #homeWrap #welcome div.columns {
@@ -27,7 +20,6 @@
 }
 
 #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
-  width: 100%;
   font-family: 'Lora', serif;
   font-weight: 700;
   padding: 0 !important;
@@ -54,17 +46,16 @@
 
 
 
-#faculty, #office, #teachers, #first, #second, #third, #fourth, #fifth, #specialists, #staff{
-  padding-bottom: 1%;
-}
-
 #faculty, #teachers, #second, #fourth, #specialists{
   background: #0a0699;
 }
 
-#faculty > div > div .panel, #office > div > div .panel, #teachers > div > div .panel, #first > div > div .panel, #second > div > div .panel, #third > div > div .panel,
-#fourth > div > div .panel, #fifth > div > div .panel, #specialists > div > div .panel, #staff > div > div .panel{
-  padding: 2% 5% 0;
+#faculty > div > div .panel > :last-child, #office > div > div .panel > :last-child, #fourth > div > div .panel > :last-child, #teachers > div > div .panel > div:nth-child(4),
+#teachers > div > div .panel > div:nth-child(5), #staff > div > div .panel > div:nth-child(3), #staff > div > div .panel > div:nth-child(4),
+#first > div > div .panel > div:nth-child(2), #first > div > div .panel > div:nth-child(3), #second > div > div .panel > div:nth-child(2), #second > div > div .panel > div:nth-child(3),
+#third > div > div .panel > div:nth-child(2), #third > div > div .panel > div:nth-child(3), #fifth > div > div .panel > div:nth-child(2), #fifth > div > div .panel > div:nth-child(3),
+#specialists > div > div .panel > div:nth-child(2), #specialists > div > div .panel > div:nth-child(3){
+  padding-left: 10%;
 }
 
 #faculty > div > div .panel h1, #office > div > div .panel h1, #teachers > div > div .panel h1, #staff > div > div .panel h1{
@@ -119,8 +110,6 @@
 #fifth > div > div .panel > :last-child, #specialists > div > div .panel > div:nth-child(2), #specialists > div > div .panel > :last-child, #staff > div > div .panel > div:nth-child(3),
 #staff > div > div .panel > :last-child{
   margin: 0 auto;
-  padding: 0 0 1% 9%;
-  width: 90%;
 }
 
 #office, #first, #third, #fifth, #staff{
@@ -138,10 +127,9 @@
   color: #0a0699;
 }
 
-#teachers > div > div .panel > div:nth-child(4), #first > div > div .panel > div:nth-child(4), #second > div > div .panel > div:nth-child(4), #third > div > div .panel > div:nth-child(4),
-#fourth > div > div .panel > div:nth-child(4), #fifth > div > div .panel > div:nth-child(4), #specialists > div > div .panel > div:nth-child(4),
-#staff > div > div .panel > div:nth-child(3){
-  margin-bottom: 12%;
+#teachers > div > div .panel > div:nth-child(4), #first > div > div .panel > div:nth-child(2), #second > div > div .panel > div:nth-child(2), #third > div > div .panel > div:nth-child(2),
+#fifth > div > div .panel > div:nth-child(2), #specialists > div > div .panel > div:nth-child(2), #staff > div > div .panel > div:nth-child(3){
+  margin-bottom: 16%;
 }
 
 #teachers > div > div .panel div p:last-child, #first > div > div .panel div p:last-child, #second > div > div .panel div p:last-child, #third > div > div .panel div p:last-child,
@@ -152,12 +140,6 @@
 #fifth > div > div .panel > div:nth-child(3) > div:nth-child(1) > div:nth-child(3) p{
   font-size: 2em;
 }
-
-#first > div > div .panel > div:nth-child(2), #second > div > div .panel > div:nth-child(2), #third > div > div .panel > div:nth-child(2), #fourth > div > div .panel > div:nth-child(2),
-#fifth > div > div .panel > div:nth-child(2), #specialists > div > div .panel > div:nth-child(2){
-  padding-bottom: 12%;
-}
-/*END FACULTY*/
 
 
 
@@ -180,13 +162,8 @@
 
 
 @media only screen and (min-width: 1356px) and (max-width: 1711px) {
-  #faculty > div > div .panel{
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  #faculty > div > div .panel div:nth-child(4) div p, #faculty > div > div .panel div:nth-child(4) div h3{
-    font-size: 1.5em;
+  div > div .panel div p, .panel div h3{
+    font-size: 1.5em !important;
   }
 }
 
@@ -196,177 +173,95 @@
 
 }
 
-@media only screen and (min-width: 1530px) and (max-width: 1584px) {
 
-}
 
 @media only screen and (min-width: 1429px) and (max-width: 1529px){
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
-    margin-top: 16%;
-  }
 
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
-    width: 30%;
-  }
 }
 
 
 
 @media only screen and (min-width: 1357px) and (max-width: 1428px) {
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
-    margin-top: 16%;
-  }
 
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
-    width: 30%;
-  }
 }
 
 
 
 @media only screen and (min-width: 1098px) and (max-width: 1357px) {
-  #faculty > div > div .panel{
-    padding-left: 0;
-    padding-right: 0;
+  div > div .panel div p, div > div .panel div h3{
+    font-size: 1.4em !important;
   }
 
-  #faculty > div > div .panel div:nth-child(4) div p, #faculty > div > div .panel div:nth-child(4) div h3{
-    font-size: 1.4em;
+  #teachers > div > div .panel > div:nth-child(4), #first > div > div .panel > div:nth-child(2), #second > div > div .panel > div:nth-child(2), #third > div > div .panel > div:nth-child(2),
+  #fifth > div > div .panel > div:nth-child(2), #specialists > div > div .panel > div:nth-child(2), #staff > div > div .panel > div:nth-child(3){
+    margin-bottom: 20%;
   }
 }
 
 
 
 @media only screen and (min-width: 1277px) and (max-width: 1356px) {
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
-    margin-top: 16%;
-  }
 
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
-    width: 40%;
-  }
 }
 
 
 
 @media only screen and (min-width: 1227px) and (max-width: 1276px) {
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
-    margin-top: 16%;
-  }
 
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
-    width: 40%;
-  }
 }
 
 
 
 @media only screen and (min-width: 1218px) and (max-width: 1226px) {
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
-    margin-top: 16%;
-  }
 
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
-    width: 40%;
-  }
 }
 
 
 
 @media only screen and (min-width: 1170px) and (max-width: 1217px) {
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
-    margin-top: 16%;
-  }
 
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
-    width: 40%;
-  }
 }
 
 
 
 @media only screen and (min-width: 1147px) and (max-width: 1169px) {
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
-    margin-top: 16%;
-  }
 
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
-    width: 40%;
-  }
 }
 
 
 
 @media only screen and (min-width: 1134px) and (max-width: 1146px) {
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
-    margin-top: 16%;
-  }
 
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
-    width: 40%;
-  }
 }
 
 
 
 @media only screen and (min-width: 1098px) and (max-width: 1133px) {
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
-    margin-top: 16%;
-  }
 
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
-    width: 40%;
-  }
 }
 
 
 
 @media only screen and (min-width: 904px) and (max-width: 1098px) {
-  #faculty > div > div .panel{
-    padding-left: 0;
-    padding-right: 0;
+  div > div .panel div{
+    margin-bottom: 5%;
   }
 
-  #faculty > div > div .panel > :last-child{
-    padding-left: 0;
-  }
-
-  #faculty > div > div .panel div:nth-child(4) div p, #faculty > div > div .panel div:nth-child(4) div h3{
-    font-size: 1.3em;
+  div > div .panel div p, div > div .panel div h3{
+    font-size: 1.3em !important;
   }
 }
 
 
 
 @media only screen and (min-width: 1013px) and (max-width: 1097px) {
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
-    margin-top: 18%;
-  }
 
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
-    width: 40%;
-  }
 }
 
 
 
 @media only screen and (min-width: 974px) and (max-width: 1012px) {
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
-    margin-top: 18%;
-    margin-bottom: 4%;
-  }
 
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
-    margin-bottom: 4%;
-  }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
-    margin-bottom: 4%;
-  }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
-    width: 40%;
-  }
 }
 
 
@@ -376,34 +271,38 @@
     margin-top: 18%;
     margin-bottom: 4%;
   }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
-    margin-bottom: 4%;
-  }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
-    margin-bottom: 4%;
-  }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
-    width: 40%;
-  }
 }
 
 
 
 @media only screen and (min-width: 642px) and (max-width: 903px) {
-  #faculty > div > div .panel{
-    padding-left: 0;
-    padding-right: 0;
+  .columns{
+    padding: 0 !important;
   }
 
-  #faculty > div > div .panel > :last-child{
+  .graphicEle img{
+    width: 21%;
+  }
+
+  div > div .panel{
+    padding-left: 10%;
+  }
+
+  div > div .panel div p, div > div .panel div h3{
+    font-size: 1.1em !important;
+  }
+
+  #faculty > div > div .panel > :last-child, #office > div > div .panel > :last-child, #teachers > div > div .panel > div:nth-child(4), #teachers > div > div .panel > div:nth-child(5),
+  #first > div > div .panel > div:nth-child(2), #first > div > div .panel > div:nth-child(3), #second > div > div .panel > div:nth-child(2),
+  #second > div > div .panel > div:nth-child(3), #third > div > div .panel > div:nth-child(2), #third > div > div .panel > div:nth-child(3), #fourth > div > div .panel > :last-child,
+  #fifth > div > div .panel > div:nth-child(2), #fifth > div > div .panel > div:nth-child(3), #specialists > div > div .panel > div:nth-child(2),
+  #specialists > div > div .panel > div:nth-child(3), #staff > div > div .panel > div:nth-child(3), #staff > div > div .panel > div:nth-child(4){
     padding-left: 0;
   }
 
-  #faculty > div > div .panel div:nth-child(4) div p, #faculty > div > div .panel div:nth-child(4) div h3{
-    font-size: 1.1em;
+  #teachers > div > div .panel > div:nth-child(4), #first > div > div .panel > div:nth-child(2), #second > div > div .panel > div:nth-child(2), #third > div > div .panel > div:nth-child(2),
+  #fifth > div > div .panel > div:nth-child(2), #specialists > div > div .panel > div:nth-child(2), #staff > div > div .panel > div:nth-child(3){
+    margin-bottom: 25%;
   }
 }
 
@@ -413,20 +312,10 @@
   #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
     margin-top: 18%;
     margin-bottom: 4%;
-    font-size: 7em;
   }
 
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
-    margin-bottom: 4%;
-  }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
-    font-size: 2em;
-    margin-bottom: 4%;
-  }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
-    width: 50%;
+  .graphicEle img{
+    width: 16%;
   }
 }
 
@@ -436,20 +325,10 @@
   #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
     margin-top: 18%;
     margin-bottom: 4%;
-    font-size: 7em;
   }
 
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
-    margin-bottom: 4%;
-  }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
-    font-size: 2em;
-    margin-bottom: 4%;
-  }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
-    width: 50%;
+  .graphicEle img{
+    width: 16%;
   }
 }
 
@@ -459,20 +338,10 @@
   #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
     margin-top: 18%;
     margin-bottom: 4%;
-    font-size: 7em;
   }
 
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
-    margin-bottom: 4%;
-  }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
-    font-size: 2em;
-    margin-bottom: 4%;
-  }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
-    width: 50%;
+  .graphicEle img{
+    width: 16%;
   }
 }
 
@@ -482,43 +351,33 @@
   #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
     margin-top: 22%;
     margin-bottom: 4%;
-    font-size: 6em;
+    font-size: 5em;
   }
 
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
-    margin-bottom: 4%;
-  }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
-    font-size: 2em;
-    margin-bottom: 4%;
-  }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
-    width: 50%;
+  .graphicEle img{
+    width: 16%;
   }
 }
 
 
 
 @media only screen and (min-width: 686px) and (max-width: 740px) {
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+  #facultyHome #homeWrap #welcome > div:nth-child(1) .panel .row .intro h1 {
     margin-top: 22%;
     margin-bottom: 4%;
-    font-size: 6em;
+    font-size: 4.5em;
   }
 
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
-    margin-bottom: 4%;
+  .graphicEle img{
+    width: 21%;
   }
 
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
-    font-size: 2em;
-    margin-bottom: 4%;
+  div > div > .panel > h1{
+    font-size: 2.7em !important;
   }
 
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
-    width: 50%;
+  div > div .panel > h2{
+    font-size: 2em !important;
   }
 }
 
@@ -528,20 +387,19 @@
   #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
     margin-top: 26%;
     margin-bottom: 4%;
-    font-size: 5em;
+    font-size: 4.5em;
   }
 
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
-    margin-bottom: 4%;
+  .graphicEle img{
+    width: 21%;
   }
 
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
-    font-size: 1.7em;
-    margin-bottom: 4%;
+  div > div > .panel > h1{
+    font-size: 3em !important;
   }
 
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
-    width: 50%;
+  div > div .panel > h2{
+    font-size: 2.5em !important;
   }
 }
 
@@ -551,45 +409,62 @@
   #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
     margin-top: 26%;
     margin-bottom: 4%;
-    font-size: 5em;
+    font-size: 4em;
   }
 
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
-    margin-bottom: 4%;
+  .graphicEle img{
+    width: 21%;
   }
 
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
-    font-size: 1.7em;
-    margin-bottom: 6%;
+  div > div > .panel > h1{
+    font-size: 2.7em !important;
   }
 
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
-    width: 70%;
+  div > div .panel > h2{
+    font-size: 2em !important;
   }
 }
 
 
 
 @media only screen and (max-width: 641px) {
-  #facultyHome{
-    height: 450px;
+  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    font-size: 4em !important;
   }
 
-  .panel > div:nth-child(4){
-    margin: 0 auto;
+  .graphicEle img{
+    width: 21%;
+  }
+
+  div > div > .panel > h1{
+    font-size: 2.7em !important;
+  }
+
+  div > div .panel > h2{
+    font-size: 2em !important;
+  }
+
+  div > div .panel > div div{
+    margin-bottom: 5%;
+  }
+
+  div > div .panel > div p, div > div .panel div h3{
+    margin: 5% auto 0;
     padding: 0;
-  }
-
-  .panel div:nth-child(4) div{
-    margin-top: 5%;
-  }
-
-  .panel div:nth-child(4) div p, .panel div h3{
     text-align: center !important;
   }
 
-  .panel > :last-child{
+  div > div .panel > :last-child{
     padding-left: 0 !important;
+    text-align: center !important;
+  }
+
+  #faculty > div > div .panel > :last-child, #office > div > div .panel > :last-child, #fourth > div > div .panel > :last-child, #teachers > div > div .panel > div:nth-child(4),
+  #teachers > div > div .panel > div:nth-child(5), #staff > div > div .panel > div:nth-child(3), #staff > div > div .panel > div:nth-child(4),
+  #first > div > div .panel > div:nth-child(2), #first > div > div .panel > div:nth-child(3), #second > div > div .panel > div:nth-child(2), #second > div > div .panel > div:nth-child(3),
+  #third > div > div .panel > div:nth-child(2), #third > div > div .panel > div:nth-child(3), #fifth > div > div .panel > div:nth-child(2), #fifth > div > div .panel > div:nth-child(3),
+  #specialists > div > div .panel > div:nth-child(2), #specialists > div > div .panel > div:nth-child(3){
+    padding-left: 0;
   }
 }
 
@@ -599,20 +474,7 @@
   #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
     margin-top: 26%;
     margin-bottom: 6%;
-    font-size: 5em;
-  }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
-    margin-bottom: 6%;
-  }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
-    font-size: 1.7em;
-    margin-bottom: 6%;
-  }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
-    width: 70%;
+    font-size: 4em;
   }
 }
 
@@ -624,19 +486,6 @@
     margin-bottom: 6%;
     font-size: 5em;
   }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
-    margin-bottom: 6%;
-  }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
-    font-size: 1.7em;
-    margin-bottom: 6%;
-  }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
-    width: 70%;
-  }
 }
 
 
@@ -647,19 +496,6 @@
     margin-bottom: 6%;
     font-size: 5em;
   }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
-    margin-bottom: 6%;
-  }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
-    font-size: 1.5em;
-    margin-bottom: 6%;
-  }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
-    width: 70%;
-  }
 }
 
 
@@ -669,20 +505,6 @@
     margin-top: 26%;
     margin-bottom: 6%;
     font-size: 5em;
-  }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
-    margin-bottom: 6%;
-  }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
-    font-size: 1.5em;
-    line-height: 30px;
-    margin-bottom: 6%;
-  }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
-    width: 75%;
   }
 }
 
@@ -698,16 +520,6 @@
   #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
     margin-bottom: 6%;
   }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
-    font-size: 1em;
-    line-height: 30px;
-    margin-bottom: 6%;
-  }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
-    width: 75%;
-  }
 }
 
 
@@ -717,20 +529,6 @@
     margin-top: 26%;
     margin-bottom: 6%;
     font-size: 4.5em;
-  }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
-    margin-bottom: 6%;
-  }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
-    font-size: 1.5em;
-    margin-bottom: 15%;
-    line-height: 30px;
-  }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
-    width: 100%;
   }
 }
 
@@ -743,22 +541,8 @@
     font-size: 3.5em;
   }
 
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle{
-    margin-bottom: 6%;
-  }
-
   #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle img{
     width: 30%;
-  }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
-    font-size: 1.5em;
-    margin-bottom: 15%;
-    line-height: 30px;
-  }
-
-  #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
-    width: 100%;
   }
 }
 /*END FACULTY*/

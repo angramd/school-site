@@ -62,7 +62,7 @@
 }
 
 #socialWrap .phone a:hover, #mission span a:hover, h2 a:hover, a h3:hover, .eventArticle .readmore a:hover, .newsArticle .readmore a:hover, .moreann a:hover, #moreannMobile a:hover,
-.viewcalendar a:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:hover, .footer #footAddress div:nth-child(3) p a:hover{
+.viewcalendar a:hover, #morecalMobile a:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:hover, .footer #footAddress div:nth-child(3) p a:hover{
   color: #FF033E !important;
 }
 
@@ -707,6 +707,7 @@
 #global > div{
   position: absolute;
   z-index: 1;
+  width: 100%;
 }
 
 #global .columns{
@@ -5135,6 +5136,7 @@
 
   #global div h1{
     font-size: 3em;
+    text-align: center;
   }
 
   #global .graphicEle img{
@@ -7097,7 +7099,7 @@
     float: right;
     background: #0a0699;
     padding: 0;
-    margin-top: 3.2%;
+    margin-top: 3%;
     margin-left: 15% !important;
     border-left: #FF033E solid 6px;
     border-right: #FF033E solid 6px;
@@ -7454,7 +7456,7 @@
     float: right;
     background: #0a0699;
     padding: 0;
-    margin-top: 3.3%;
+    margin-top: 3%;
     margin-left: 15% !important;
     border-left: #FF033E solid 6px;
     border-right: #FF033E solid 6px;
