@@ -92,9 +92,6 @@
   top: 0;
   float: left;
   width: 100%;
-}
-
-#header1 {
   z-index: 998;
   background: #0a0699;
   border-bottom: #FF033E solid 6px;
@@ -368,6 +365,34 @@
 
 
 
+.scrollBTN{
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 1100;
+    background-color: #E90101;
+    width: 50px;
+    line-height: 48px;
+    float: right;
+    top: 55% !important;
+    right: 5%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 0 .3% !important;
+}
+
+.scrollBTN:hover {
+	background-color: #888888;
+}
+
+.scrollBTN img{
+  width: 18px;
+}
+
+
+
 /*DOWN ARROW*/
 #downArr {
 	position: absolute;
@@ -454,7 +479,7 @@
   color: #FFF;
   font-size: 1.5em;
   font-family: 'Open Sans Condensed', sans-serif;
-  text-align: center;
+  text-align: left;
   padding: 1% 25% 3%;
   margin-bottom: 0;
 }

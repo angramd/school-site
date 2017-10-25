@@ -11,6 +11,7 @@ $(document).ready(function(){
   var dropdown = $("#header1 ul li ul");
   var downArr = $("#downArr");
   var homePage = $("#home");
+  var scrollBTN = $(".scrollBTN");
   var mission = $("#mission");
   var quickLink = $("#quickLink");
   var quickLinkDiv = $("#quickLink > div > div");
@@ -464,6 +465,29 @@ $(document).ready(function(){
       downArr.css("opacity", "0");
     }
 	});
+
+
+
+  $(window).scroll(function(){
+    if ($(window).scrollTop() >= 50)
+    {
+      scrollBTN.css("visibility", "visible");
+      scrollBTN.stop().animate({"opacity": "1"}, 50);
+      scrollBTN.click(function()
+    	{
+        $("html, body").stop().animate({ scrollTop: homePage.offset().top }, 1000);
+        return false;
+    	});
+    }
+
+    if ($(window).scrollTop() <= 50)
+    {
+      scrollBTN.stop().animate({"opacity": "0"}, 50);
+      scrollBTN.css("visibility", "hidden");
+    }
+  });
+
+
 
   linkQuick.click(function()
 	{

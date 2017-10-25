@@ -10,6 +10,7 @@ $(document).ready(function(){
   var linkAbout = $("#linkAbout");
   var linkContactFa = $("#linkContactFa");
   var faculty = $("#facultyHome");
+  var scrollBTN = $(".scrollBTN");
   var footerFa = $("#footerFa");
 
 
@@ -78,6 +79,27 @@ $(document).ready(function(){
 		}
 	});
 	/**/
+
+
+
+  $(window).scroll(function(){
+    if ($(window).scrollTop() >= 50)
+    {
+      scrollBTN.css("visibility", "visible");
+      scrollBTN.stop().animate({"opacity": "1"}, 50);
+      scrollBTN.click(function()
+    	{
+        $("html, body").stop().animate({ scrollTop: faculty.offset().top }, 1000);
+        return false;
+    	});
+    }
+
+    if ($(window).scrollTop() <= 50)
+    {
+      scrollBTN.stop().animate({"opacity": "0"}, 50);
+      scrollBTN.css("visibility", "hidden");
+    }
+  });
 
 
 

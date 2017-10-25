@@ -143,24 +143,6 @@
 
 
 
-@media only screen and (min-width: 1861px) and (max-width: 1990px){
-
-}
-
-
-
-@media only screen and (max-width: 1860px) {
-
-}
-
-
-
-@media only screen and (min-width: 1712px) and (max-width: 1860px){
-
-}
-
-
-
 @media only screen and (min-width: 1356px) and (max-width: 1711px) {
   div > div .panel div p, .panel div h3{
     font-size: 1.5em !important;
@@ -169,25 +151,7 @@
 
 
 
-@media only screen and (min-width: 1531px) and (max-width: 1711px) {
-
-}
-
-
-
-@media only screen and (min-width: 1429px) and (max-width: 1529px){
-
-}
-
-
-
-@media only screen and (min-width: 1357px) and (max-width: 1428px) {
-
-}
-
-
-
-@media only screen and (min-width: 1098px) and (max-width: 1357px) {
+@media only screen and (min-width: 1098px) and (max-width: 1355px) {
   div > div .panel div p, div > div .panel div h3{
     font-size: 1.4em !important;
   }
@@ -200,48 +164,6 @@
 
 
 
-@media only screen and (min-width: 1277px) and (max-width: 1356px) {
-
-}
-
-
-
-@media only screen and (min-width: 1227px) and (max-width: 1276px) {
-
-}
-
-
-
-@media only screen and (min-width: 1218px) and (max-width: 1226px) {
-
-}
-
-
-
-@media only screen and (min-width: 1170px) and (max-width: 1217px) {
-
-}
-
-
-
-@media only screen and (min-width: 1147px) and (max-width: 1169px) {
-
-}
-
-
-
-@media only screen and (min-width: 1134px) and (max-width: 1146px) {
-
-}
-
-
-
-@media only screen and (min-width: 1098px) and (max-width: 1133px) {
-
-}
-
-
-
 @media only screen and (min-width: 904px) and (max-width: 1098px) {
   div > div .panel div{
     margin-bottom: 5%;
@@ -250,18 +172,6 @@
   div > div .panel div p, div > div .panel div h3{
     font-size: 1.3em !important;
   }
-}
-
-
-
-@media only screen and (min-width: 1013px) and (max-width: 1097px) {
-
-}
-
-
-
-@media only screen and (min-width: 974px) and (max-width: 1012px) {
-
 }
 
 
@@ -441,7 +351,7 @@
   }
 
   div > div .panel > h2{
-    font-size: 2em !important;
+    font-size: 1.6em !important;
   }
 
   div > div .panel > div div{
@@ -452,6 +362,7 @@
     margin: 5% auto 0;
     padding: 0;
     text-align: center !important;
+    font-size: 1.5em !important;
   }
 
   div > div .panel > :last-child{
