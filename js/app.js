@@ -20,10 +20,8 @@ $(document).ready(function(){
   var article1 = $("#news-events #article1");
   var article2 = $("#news-events #article2");
   var imgSlide = $(".imgSlide");
-  var annBTN = $("#moreArtBTN div button:nth-child(1)");
-  var annBTN2 = $(".maBTN");
-  var calBTN = $("#moreCalBTN div button:nth-child(1)");
-  var calBTN2 = $(".caBTN");
+  var annBTN = $(".moreann");
+  var calBTN = $(".viewcalendar");
   var globalSec = $("#global");
   var globalIcon = $("#global div .icons");
   var globalHead = $("#global div h1");
@@ -185,12 +183,7 @@ $(document).ready(function(){
         });
       });
 
-      annBTN.css("display", "none");
-      annBTN2.css("display", "block");
-
-      //annBTN2.html('<a href="#news-events" class="moreannMobile">More Announcements</a>').appendTo(annBTN2);
-
-      annBTN2.click(function()
+      annBTN.click(function()
       {
         jQuery('html,body').stop().animate({scrollTop: newsEvents.offset().top}, 2000);
 
@@ -200,12 +193,7 @@ $(document).ready(function(){
         });
       });
 
-      calBTN.css("display", "none");
-      calBTN2.css("display", "block");
-
-      //calBTN2.html('<a href="#article2" class="morecalMobile">More Events</a>').appendTo(calBTN2);
-
-      calBTN2.click(function()
+      calBTN.click(function()
       {
         jQuery('html,body').stop().animate({scrollTop: article2.offset().top}, 2000);
 

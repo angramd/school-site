@@ -56,7 +56,7 @@
   color: #FFF;
 }
 
-#socialWrap .phone a, #mission span a, h2 a, a h3, .eventArticle .readmore a, .newsArticle .readmore a, .moreann a, #moreannMobile a,
+#socialWrap .phone a, #mission span a, h2 a, a h3, .eventArticle .readmore a, .newsArticle .readmore a, .moreann a,
 .viewcalendar a, .moreRes, .footer #footAddress div:nth-child(1) p a, .footer #footAddress div:nth-child(3) p a{
   -webkit-transition: color .3s ease-out;
   -moz-transition: color .3s ease-out;
@@ -64,8 +64,8 @@
   transition: color .3s ease-out;
 }
 
-#socialWrap .phone a:hover, #mission span a:hover, h2 a:hover, a h3:hover, .eventArticle .readmore a:hover, .newsArticle .readmore a:hover, .moreann a:hover, #moreannMobile a:hover,
-.viewcalendar a:hover, #morecalMobile a:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:hover, .footer #footAddress div:nth-child(3) p a:hover{
+#socialWrap .phone a:hover, #mission span a:hover, h2 a:hover, a h3:hover, .eventArticle .readmore a:hover, .newsArticle .readmore a:hover, .moreann a:hover,
+.viewcalendar a:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:hover, .footer #footAddress div:nth-child(3) p a:hover{
   color: #FF033E !important;
 }
 
@@ -378,23 +378,23 @@
 .scrollWrap{
   opacity: 0;
   visibility: hidden;
-  width: 140px;
   position: fixed;
   z-index: 1100;
   float: right;
   top: 55% !important;
-  right: 3%;
+  right: 2%;
   text-align: center;
+  padding: 0;
 }
 
 .scrollBTN{
-  width: 37%;
+  width: 48px;
   background-color: #E90101;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
-  padding: 3% .3% 2% !important;
+  padding: 4% .3% 3% !important;
   font-size: .7em !important;
   /*-webkit-box-shadow: 0 15px 19px 2px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0 15px 19px 2px rgba(0, 0, 0, 0.7);
@@ -728,10 +728,6 @@
   /*background-color: #CCC;*/
 }
 
-#moreannMobile, .maBTN, #morecalMobile, .caBTN{
-  display: none;
-}
-
 .moreann, .viewcalendar{
   margin: 2% auto 0;
   text-align: center;
@@ -1056,10 +1052,6 @@
 
   #moreArtBTN div button:nth-child(1), #moreCalBTN div button:nth-child(1){
     margin: 0 auto;
-  }
-
-  #moreannMobile, .maBTN, #morecalMobile, .caBTN{
-    display: none !important;
   }
 
   .moreann, .viewcalendar{
@@ -5617,40 +5609,13 @@
     margin-top: -67px !important;
   }
 
-  #moreannMobile, .maBTN, #morecalMobile, .caBTN{
-    display: block;
-    margin: 5% auto 0;
-    text-align: center;
-  }
-
-  #moreannMobile, .maBTN a, #morecalMobile, .caBTN a{
-    color: #FFF;
-  }
-
-  #moreannMobile, #morecalMobile{
-    margin-top: 5%;
-  }
-
-  #moreannMobile a, #morecalMobile a{
+  .moreann a, .viewcalendar a{
     cursor: pointer;
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: bold;
     font-size: 1.5em;
-    margin: 5% auto 0;
+    margin: 0 auto;
     text-align: center;
-    bottom: 10%;
-  }
-
-  #moreannMobile a{
-    color: #333;
-  }
-
-  #morecalMobile a{
-    color: #FFF;
-  }
-
-  #moreArtBTN div > button, .moreann, #moreCalBTN div > button, .viewcalendar{
-    display: none;
   }
 
   #news-events #article1{
@@ -5662,7 +5627,7 @@
     margin-top: 8%
   }
 
-  #moreannMobile a, .viewcalendar a{
+  .viewcalendar a{
     font-size: 1.5em;
   }
 
