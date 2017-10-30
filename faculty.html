@@ -12,9 +12,104 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/vendor/modernizr.js"></script>
+
+
+    <!-- MAP API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYw3zLd_cuWW5VllI6f5nVEn2Fdbwwp6c" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        function showError(error)
+        {
+            switch(error.code)
+            {
+                case error.PERMISSION_DENIED:
+                x.innerHTML="User denied the request for Geolocation."
+                break;
+                case error.POSITION_UNAVAILABLE:
+                x.innerHTML="Location information is unavailable."
+                break;
+                case error.TIMEOUT:
+                x.innerHTML="The request to get user location timed out."
+                break;
+                case error.UNKNOWN_ERROR:
+                x.innerHTML="An unknown error occurred."
+                break;
+            }
+        }
+
+        function showPosition(position)
+        {
+            lat=position.coords.latitude;
+            lon=position.coords.longitude;
+        }
+
+        function getCurrentLocation()
+        {
+              if (navigator.geolocation)
+              {
+                    navigator.geolocation.getCurrentPosition(showPosition,showError);
+              }
+
+              else
+              {
+                        x.innerHTML="Geolocation is not supported by this browser.";
+              }
+         }
+      </script>
+
+      <script type="text/javascript">
+  		function initialize()
+  		{
+  			var infowindow;
+  			var iw;
+  			var infowin;
+
+  			var map = new google.maps.Map(document.getElementById('map_canvas'),
+  			{
+  				center: new google.maps.LatLng(35.1462439, -89.769000),
+  				zoom: 19,
+  				mapTypeId: google.maps.MapTypeId.HYBRID,
+  				panControl: true,
+  				zoomControl: true,
+  				mapTypeControl: true,
+  				mapTypeControlOptions:
+  				{
+  					position: google.maps.ControlPosition.TOP_RIGHT
+  				},
+  				scaleControl: true,
+  				streetViewControl: true,
+  				overviewMapControl: true,
+  				rotateControl: true
+  			});
+
+  			var latNlong = new google.maps.LatLng(35.1462439, -89.769000);
+
+  			var marker = new google.maps.Marker(
+  			{
+  				position: latNlong,
+  				map: map,
+  				title:'Cordova Elementary School in Cordova, TN.',
+  				icon: 'img/cordovaE_marker.png'
+  			});
+
+  			var contentString = 'Cordova Elementary School in Cordova, TN.';
+  			var infowindow = new google.maps.InfoWindow(
+  			{
+  				content: contentString
+  			});
+
+  			google.maps.event.addListener(marker, 'click', function()
+  			{
+  				infowindow.open(map,marker);
+  			});
+  		}
+
+  		google.maps.event.addDomListener(window, 'load', initialize);
+  	</script>
+    <!-- END MAP -->
   </head>
 
-  <body>
+  <body onload="initialize()">
     <!-- HEADER 1 -->
     <header id="header1">
         <!-- SOCIAL MEDIA AND PHONE NUMBER -->
@@ -666,7 +761,8 @@
 
     <!-- FOOTER -->
     <footer id="footerFa" class="footer row large-12">
-      <div class="map" alt="Google map of Cordova Elementary in Cordova, Tennessee"></div>
+      <!--MAP-->
+      <div id="map_canvas" class="map" alt="Google map of Cordova Elementary in Cordova, Tennessee"></div>
       <div id="footContact" class="large-12 columns">
         <div class="icons"><img src="img/contactIcon.png" alt="Icon of phone receiver"></div>
         <h1 class="">Contact</h1>
