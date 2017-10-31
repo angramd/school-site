@@ -13,10 +13,20 @@
 
 #facultyHome #homeWrap #welcome div:nth-child(1) .panel {
   position: relative;
+  padding: 0;
+  margin-bottom: 0 !important;
 }
 
 #facultyHome #homeWrap #welcome div.columns {
   padding: 0 !important;
+}
+
+#facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro{
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  margin-top: 11.1%;
 }
 
 #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
@@ -24,13 +34,27 @@
   font-weight: 700;
   padding: 0 !important;
   font-size: 5.5em;
-  color: #0a0699;
-  margin-top: 10%;
-  margin-bottom: 1%;
+  color: #FFF;
 }
 
 #facultyHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
   margin: 0 auto 2%;
+}
+
+#facultyHome  #homeWrap #welcome .bckWrap{
+  min-width: 2000px !important;
+  min-height: 490px !important;
+  width: 100% !important;
+  height: 100% !important;
+  position: relative;
+}
+
+#facultyHome  #homeWrap #welcome .bckWrap .bck{
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/facultyHeadImg.jpg) no-repeat 0 30px / cover;
 }
 /*END HOME*/
 
