@@ -1,0 +1,8221 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  max-width: 100%;
+}
+
+.icons{
+  width: 10%;
+}
+
+.graphicEle{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.imgSlide, .imgSlide2{
+  display: none;
+}
+
+.imgCurrSlide, .imgCurrSlide2{
+  display: block;
+}
+
+.newsImg{
+  width: 40%;
+}
+
+.readmore a, .moreann a, .moreRes, .viewcalendar a{
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.readmore a{
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #FFF;
+}
+
+.moreann a, .moreRes, .viewcalendar a{
+  font-weight: bold;
+  font-size: 2em !important;
+  text-align: center;
+}
+
+.moreann a, .moreRes{
+  cursor: pointer;
+  bottom: 10%;
+  color: #333;
+}
+
+.viewcalendar a{
+  margin: 0 auto;
+  color: #FFF;
+}
+
+#socialWrap .phone a, #mission span a, h2 a, a h3, .eventArticle .readmore a, .newsArticle .readmore a, .moreann a,
+.viewcalendar a, .moreRes, .footer #footAddress div:nth-child(1) p a, .footer #footAddress div:nth-child(3) p a{
+  -webkit-transition: color .3s ease-out;
+  -moz-transition: color .3s ease-out;
+  -o-transition: color .3s ease-out;
+  transition: color .3s ease-out;
+}
+
+#socialWrap .phone a:hover, #mission span a:hover, h2 a:hover, a h3:hover, .eventArticle .readmore a:hover, .newsArticle .readmore a:hover, .moreann a:hover,
+.viewcalendar a:hover, .moreRes:hover, .footer #footAddress div:nth-child(1) p a:hover, .footer #footAddress div:nth-child(3) p a:hover{
+  color: #FF033E !important;
+}
+
+.eventDate{
+  background: #FFF;
+  width: 20%;
+}
+
+.eventDate h3{
+  color: #0a0699 !important;
+  text-align: center !important;
+}
+
+.eventImg{
+  width: 40%;
+}
+
+.moreRes .columns{
+  float: none !important;
+}
+
+.overlay{
+  position: absolute;
+  z-index: 0 !important;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .3;
+  top: 0;
+}
+
+
+
+/*HEADER*/
+#header1 {
+  position: fixed;
+  top: 0;
+  float: left;
+  width: 100%;
+  z-index: 998;
+  background: #0a0699;
+  border-bottom: #FF033E solid 6px;
+  -webkit-box-shadow: 0 15px 19px 2px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 15px 19px 2px rgba(0, 0, 0, 0.7);
+  -o-box-shadow: 0 15px 19px 2px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 5px 7px 2px rgba(0, 0, 0, 0.3);
+}
+
+#header1 #socialNumber{
+  background: #222;
+  padding: .5% 0 1.7%;
+  color: #FFF;
+  border-bottom: #FF033E solid 1px;
+}
+
+#socialWrap{
+  float: right;
+  margin-right: 2%;
+  width: 10%;
+}
+
+#socialWrap .phone{
+  float: left;
+  margin-right: 5%;
+}
+
+#socialWrap .phone a{
+  color: #FFF;
+}
+
+#social.icons{
+  float: left;
+  cursor: pointer;
+}
+
+#social.icons, #social.icons img{
+  width: 30%;
+}
+
+#social.icons img:nth-child(1){
+  margin-right: 5%;
+}
+
+.logos {
+  float: left;
+  width: 135px;
+  margin-left: 3%;
+  padding: .2% 0;
+}
+
+.top-bar {
+  width: 940px !important;
+  padding-top: 1.7%;
+  margin: 1% 0 0 16%;
+  float: left;
+}
+
+.top-bar.columns{
+  padding-right: 0;
+}
+
+.top-bar-section ul li{
+  position: relative;
+  margin-right: 1%;
+}
+
+.top-bar-section ul li:last-child{
+  margin-right: 0;
+}
+
+#header1 .top-bar-section ul li:hover:not(.has-form) > a {
+  color: #FFF;
+  transition: color .3s ease 0s;
+}
+
+#header1 ul li.currentLink a {
+  color: #FFF !important; /*176FC7*/
+  display: inline-block;
+  position: relative;
+  height: 1px;
+}
+
+#header1 ul li.currentLink a:hover {
+  color: #FFF !important;
+}
+
+#header1 ul li.currentLink a:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 1px;
+  width: 0px;
+  background: #FF033E;
+  -webkit-transition: width .5s ease, background-color .5s ease;
+  -moz-transition: width .5s ease, background-color .5s ease;
+  -o-transition: width .5s ease, background-color .5s ease;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+#header1 ul li.currentLink:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 1px;
+  width: 80%;
+  background: #FF033E;
+}
+
+#header1 ul li.slideUnder a, .slideUnderDrop a{
+  display: inline-block;
+  position: relative;
+  height: 1px !important;
+}
+
+#header1 .slideUnder:after, .slideUnderDrop:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 1px;
+  width: 0px;
+  background: transparent;
+  -webkit-transition: width .5s ease, background-color .5s ease;
+  -moz-transition: width .5s ease, background-color .5s ease;
+  -o-transition: width .5s ease, background-color .5s ease;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+#header1 .slideUnder:hover:after {
+  width: 80%;
+  background: #FF033E;
+}
+
+.slideUnderDrop:hover:after {
+  width: 80%;
+  background: #0a0699;
+}
+
+.underLine:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 1px;
+  width: 80%;
+  background: #0a0699;
+}
+
+.scsLogo{
+  cursor: pointer;
+  width: 5.5%;
+  margin-top: .7%;
+  margin-right: 3%;
+  float: right;
+}
+
+.scsLogo a img{
+  cursor: pointer;
+  width: 100%;
+}
+
+#header1 ul li ul{
+  opacity: 0;
+  display: none;
+  position: absolute;
+  left: -33%;
+  margin-top: -6%;
+  background: #0a0699;
+  border: #FF033E solid 6px;
+}
+
+#header1 ul li ul li{
+  width: 100%;
+  padding-bottom: 6%;
+}
+
+#header1 ul li ul li:hover{
+  background-color: #FF033E;
+}
+
+
+
+/*MOZILLA-FIREFOX STYLES*/
+@-moz-document url-prefix() {
+  .top-bar{
+    margin: 1% 0 0 18%;
+  }
+}
+/**/
+/*END HEADER*/
+
+
+
+/*HOME*/
+#home {
+  height: 950px;
+}
+
+#home #homeWrap {
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  float: left;
+  padding-top: 6%;
+}
+
+#home #homeWrap #welcome div:nth-child(1) .panel {
+  position: relative;
+  width: 100%;
+  padding: 0 !important;
+}
+
+#home #homeWrap #welcome div.columns {
+  padding: 0 !important;
+}
+
+#home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+  width: 100%;
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  padding: 0 !important;
+  font-size: 7em;
+  color: #FFF;
+  margin-top: 8%;
+  margin-bottom: 1%;
+}
+
+#home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+  margin: 0 auto 2%;
+}
+
+#home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+  font-size: 2.5em;
+  font-family: "Lato", sans-serif;
+  color: #FFF;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 9px;
+  margin-bottom: 2%;
+}
+
+#home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+  margin: 0 auto;
+  width: 25%;
+  text-align: center;
+}
+
+#home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools a img{
+  width: 45%;
+}
+
+#bck {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  min-width: 2050px !important;
+  min-height: 1150px !important;
+  width: 100% !important;
+  height: 100% !important;
+  opacity: .7;
+}
+
+#bck #bckRotate{
+  margin: 0;
+}
+
+#bck #bckRotate li{
+  position: absolute;
+  z-index: 1;
+  width: 100% !important;
+  height: 100%!important;
+}
+
+#bck #bckRotate li img{
+  width: 100%;
+  height: 100%;
+}
+/*END HOME*/
+
+
+
+.scrollWrap{
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 1100;
+  float: right;
+  top: 55% !important;
+  right: 2%;
+  text-align: center;
+  padding: 0;
+}
+
+.scrollBTN{
+  width: 48px;
+  background-color: #E90101;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 4% .3% 3% !important;
+  font-size: .7em !important;
+  /*-webkit-box-shadow: 0 15px 19px 2px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 15px 19px 2px rgba(0, 0, 0, 0.7);
+  -o-box-shadow: 0 15px 19px 2px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 5px 7px 2px rgba(0, 0, 0, 0.3);*/
+}
+
+.scrollBTN:hover{
+	background-color: #888888;
+}
+
+.scrollBTN p{
+  color: #FFF;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin: 0 auto;
+  padding: 0 !important;
+}
+
+.scrollBTN img{
+  width: 18px;
+}
+
+
+
+/*DOWN ARROW*/
+#downArr {
+	position: absolute;
+	left: 0;
+	right: 0;
+  opacity: 0;
+  width: 300px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#downArr p{
+  color: #FFF;
+  font-size: 1.5em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin: 0 auto;
+}
+
+#downArr a img {
+  width: 15%;
+}
+/*END DOWN ARROW*/
+
+
+
+/*CSS TARGETING MOZILLA FIREFOX BROWSER*/
+@-moz-document url-prefix() {
+  #home{
+    height: 980px;
+  }
+
+  #mission{
+    margin-top: 10%;
+  }
+
+  .top-bar {
+    width: 1150px;
+  }
+}
+/**/
+
+
+
+/*MISSION*/
+#mission{
+  height: 600px;
+  margin-top: 5%;
+  padding-top: 8%;
+}
+
+#mission .columns{
+  padding: 0;
+}
+
+#mission > div{
+  background: #0a0699;
+  padding: 5% 0;
+}
+
+#mission > div > div > div:nth-child(1) .icons{
+  margin-left: 30%;
+  padding-top: .7%;
+  float: left;
+  text-align: center;
+}
+
+#mission > div > div > div:nth-child(1) .icons img{
+  width: 25%;
+}
+
+#mission > div > div > div:nth-child(1) h1{
+  font-family: 'Lora', serif;
+  font-weight: 300;
+  font-size: 4em;
+  color: #FFF;
+  text-align: left;
+}
+
+#mission > div > div > div:nth-child(2){
+  padding-top: 2%;
+}
+
+#mission > div > div > div:nth-child(2) p{
+  color: #FFF;
+  font-size: 1.5em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: left;
+  padding: 1% 25% 3%;
+  margin-bottom: 0;
+}
+
+#mission > div > div > div:nth-child(2) .readmore a{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1em;
+}
+/*END MISSION*/
+
+
+
+/*QUICK LINKS*/
+#quickLink > div {
+  text-align: center;
+  position: relative;
+  height: 100%;
+}
+
+#quickLink > div > div{
+  background: #FFF;
+  border-bottom: solid 5px #FF033E;
+  padding: 4% 0 2%;
+  height: 100%;
+}
+
+#quickLink > div > div .icons{
+  margin-left: 30%;
+  padding-top: 1%;
+  float: left;
+  text-align: center;
+}
+
+#quickLink > div > div .icons img{
+  width: 30%;
+}
+
+#quickLink > div > div h1{
+  font-family: 'Lora', serif;
+  font-weight: 300;
+  font-size: 4em;
+  color: #0a0699;
+  text-align: left;
+}
+
+#quickLink > div > div div:nth-child(2){
+  margin-bottom: 0;
+  margin: 0 auto;
+}
+
+#quickLink > div > div div:nth-child(2) div h2 p{
+  padding: 0;
+  font-size: .8em !important;
+  margin-bottom: 0;
+}
+
+#quickLink > div > div div:nth-child(2) div h2 a{
+  font-family: 'Open Sans Condensed', sans-serif !important;
+  font-size: .8em !important;
+  color: #333;
+}
+
+#quickLink > div > div > div > div:nth-child(3){
+  margin-bottom: 3%;
+}
+
+#quickLink > div > div > div > div:nth-child(3) img{
+  margin-left: 0;
+}
+
+/*MOZILLA-FIREFOX STYLES*/
+@-moz-document url-prefix() {
+  #quickLink > div > div{
+    padding-bottom: 10vh;
+  }
+}
+/**/
+/*END QUICK LINKS*/
+
+
+
+/*ANNOUNCEMENTS/EVENTS*/
+#news-events{
+  background: #0a0699;
+}
+
+#news-events #article1, #news-events #article2{
+  padding-top: 10% !important;
+  padding-bottom: 5%;
+}
+
+#news-events div.row{
+  max-width: 100% !important;
+}
+
+#news-events div.row div.columns{
+  padding: 0;
+}
+
+#news-events #article1{
+  background: #CCC;
+  padding-bottom: 40vh;
+  height: 100%;
+}
+
+#news-events #article1 #headContainer{
+ margin-left: 18%;
+ padding: 2% 2% 2% 0;
+}
+
+#news-events #article1 #headContainer .icons{
+ margin: 4.5% auto 0 0;
+ float: left;
+ width: 11.5%;
+}
+
+#news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+ font-size: 4em;
+ float: left;
+}
+
+#news-events #article1 #headContainer h1{
+ color: #0a0699;
+}
+
+#news-events #article1 #headContainer .graphicEle, #news-events #article2 #headContainer2 .graphicEle{
+  width: 100%;
+  text-align: center;
+}
+
+#news-events #article1 #headContainer .graphicEle img, #news-events #article2 #headContainer2 .graphicEle img{
+  margin-left: 25%;
+}
+
+#news-events #article1 .article1Container .imgSlide > div:nth-child(1), #news-events #article1 .article1Container .imgSlide > div:nth-child(2),
+#news-events #article1 .article1Container .imgSlide > div:nth-child(3), #news-events #article1 .article1Container .imgSlide > div:nth-child(4),
+#news-events #article1 > div:nth-child(4), .article2Container .imgSlide2 > div:nth-child(1), .article2Container .imgSlide2 > div:nth-child(2),
+.article2Container .imgSlide2 > div:nth-child(3){
+  padding-left: 2% !important;
+  padding-top: 3% !important;
+}
+
+#news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3,
+#news-events #article2 div:nth-child(3) div h3{
+ font-family: 'Lora', serif;
+ color: #333;
+ font-weight: bold;
+ text-align: left;
+}
+
+#news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3{
+ color: #333;
+}
+
+#news-events #article1 div:nth-child(2) div p, #news-events #article1 div:nth-child(3) div p, #news-events #article1 div:nth-child(4) div p{
+ color: #333;
+ font-size: 1.2em;
+ font-family: 'Open Sans Condensed', sans-serif;
+ width: 95%;
+ padding-right: 1.5%;
+ text-align: left;
+ margin-bottom: 1%;
+}
+
+#news-events #article1 div:nth-child(2) div .readmore a, #news-events #article1 div:nth-child(3) div .readmore a, #news-events #article1 div:nth-child(4) div .readmore a{
+ color: #333;
+ font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#news-events #article1 > div:nth-child(3) > div:nth-child(2), #news-events #article2 > div:nth-child(3) > div:nth-child(2){
+  margin-bottom: 3%;
+}
+
+#news-events #article2{
+  padding-bottom: 2%;
+}
+
+#news-events #article2 #headContainer2{
+ margin: 0 auto;
+ padding: 2% 2%;
+}
+
+#news-events #article2 #headContainer2 .icons{
+ margin: 5% auto 0 12%;
+}
+
+#news-events #article2 #headContainer2 h1{
+ color: #FFF;
+}
+
+#news-events #article2 > div:nth-child(2){
+  padding-left: 2% !important;
+  padding-top: 3% !important;
+}
+
+#news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+ color: #FFF;
+}
+
+#news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p, #news-events #article2 div:nth-child(4) div p{
+ color: #FFF;
+ font-size: 1.2em;
+ font-family: 'Open Sans Condensed', sans-serif;
+ width: 95%;
+ padding-right: 1.5%;
+ text-align: left;
+ margin-bottom: 1%;
+}
+
+#moreArtBTN > div{
+  margin-top: 10% !important;
+  text-align: center;
+}
+
+#moreCalBTN > div{
+  margin-top: 6% !important;
+  text-align: center;
+}
+
+#moreArtBTN > div > div, #moreCalBTN > div > div{
+  text-align: center;
+}
+
+#moreCalBTN div button:nth-child(1){
+  margin: 0 auto;
+  /*background-color: #CCC;*/
+}
+
+.moreann, .viewcalendar{
+  margin: 2% auto 0;
+  text-align: center;
+}
+
+.moreann a, .viewcalendar a{
+  font-size: 1.3em;
+}
+/*END ANNOUNCEMENTS/EVENTS*/
+
+
+
+/*GLOBAL*/
+#global{
+	height: 600px;
+	background: url(../img/ce_img1.jpg) no-repeat fixed 0 0 / cover;
+	padding-top: 10%;
+  position: relative;
+  -webkit-box-shadow: inset 0 0 14px 0 rgba(0, 0, 0, 1);
+  -moz-box-shadow: inset 0 0 14px 0 rgba(0, 0, 0, 1);
+  box-shadow: inset 0 0 14px 0 rgba(0, 0, 0, 1);
+}
+
+#global > div{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+#global .columns{
+  padding: 0;
+}
+
+#global .icons{
+  opacity: 0;
+  position: absolute;
+  margin-left: 31%;
+  margin-top: .5%;
+  width: 11%;
+}
+
+#global .icons img{
+  width: 30%;
+}
+
+#global div h1{
+  opacity: 0;
+  margin: 0 auto;
+  color: #FFF;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+#global .graphicEle{
+  opacity: 0;
+  margin: 0 auto;
+}
+
+#global .graphicEle img{
+  width: 5%;
+}
+
+#global div div img{
+  width: 100%;
+}
+/*END GLOBAL*/
+
+
+
+/*RESOURCES/TWITTER*/
+#resource-twit{
+  height: 600px;
+}
+
+#resource-twit #article1, #resource-twit #article2{
+  height: 600px;
+}
+
+#resource-twit div.row{
+  max-width: 100% !important;
+}
+
+#resource-twit div.row div.columns{
+  padding: 0;
+}
+
+#resource-twit #article1{
+  background: #FFF;
+  padding-bottom: 2%;
+}
+
+#resource-twit #headContainer{
+ margin: 0 auto;
+ padding: 2% 2%;
+ width: 100%;
+}
+
+#resource-twit #headContainer .icons{
+  margin: 1.8% 0 0 26%;
+  float: left;
+  width: 6%;
+}
+
+#resource-twit #headContainer h1{
+ font-size: 4em;
+ float: left;
+ color: #0a0699;
+}
+
+#resource-twit #article1 > div:nth-child(2), #resource-twit #article1 > div:nth-child(3){
+  padding-top: 3% !important;
+}
+
+#resource-twit #article1 > div:nth-child(2){
+  margin: 12% auto 0;
+}
+
+#resource-twit #article1 div:nth-child(2) h2 a{
+ font-size: .8em;
+ margin-bottom: 6%;
+ color: #333;
+ font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#resource-twit #article1 > div:nth-child(3){
+  text-align: center;
+}
+
+#resource-twit #article2{
+  background: #0a0699;
+  padding-bottom: 2%;
+}
+
+#resource-twit #headContainer2{
+ margin: 0 auto;
+ padding: 2% 2%;
+}
+
+#resource-twit #headContainer2 .icons{
+ margin: 5% auto 0 4%;
+}
+
+#resource-twit #headContainer2 h1{
+ font-size: 4em;
+ float: left;
+ color: #FFF;
+}
+
+#resource-twit #headContainer2 .graphicEle{
+  margin-bottom: 6%;
+}
+
+.twitterFeed{
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.twitterFeed::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+.twitterFeed::-webkit-scrollbar{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.twitterFeed::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+									   color-stop(0.44, rgb(255,0,61)),
+									   color-stop(0.72, rgb(255,0,61)),
+									   color-stop(0.86, rgb(173,4, 52)));
+}
+
+.moreRes{
+  margin: 25% auto 0;
+}
+/*END RESOURCES/TWITTER*/
+
+
+
+/*FOOTER*/
+.footer{
+  height: 750px;
+  background: #01304f;
+  border-top: solid 3px #CCC;
+}
+
+.map{
+  width: 100% !important;
+  height: 45% !important;
+  -webkit-box-shadow: inset 0 0 14px 0 rgba(0, 0, 0, 1);
+  -moz-box-shadow: inset 0 0 14px 0 rgba(0, 0, 0, 1);
+  box-shadow: inset 0 0 14px 0 rgba(0, 0, 0, 1);
+}
+
+.footer #footContact{
+  margin: 0 auto;
+  padding: 0 2%;
+  width: 100%;
+}
+
+.footer #footContact .icons{
+  margin: 1% 3% 0 37.5%;
+  width: 3%;
+  float: left;
+}
+
+.footer #footContact .icons img{
+  width: 98%;
+}
+
+.footer #footContact h1{
+ font-size: 4em;
+ margin-bottom: 1%;
+ text-align: left;
+ color: #FFF;
+}
+
+.footer #footContact .graphicEle{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.footer #footAddress{
+  position: absolute;
+  margin-top: 10%;
+  padding-left: 23%;
+  float: left;
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+}
+
+.footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+  width: 30%
+}
+
+.footer #footAddress div:nth-child(2){
+  width: 10%
+}
+
+.footer #footAddress div:nth-child(1) h2, .footer #footAddress div:nth-child(1) p{
+  text-align: right;
+}
+
+.footer #footAddress div:nth-child(1) h2{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.footer #footAddress div:nth-child(1) p, .footer #footAddress div:nth-child(1) p a{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.2em;
+  color: #FFF;
+}
+
+.footer #footAddress div:nth-child(1) p a{
+  font-size: 1.1em;
+}
+
+.footer #footAddress div:nth-child(2){
+  text-align: center;
+}
+
+.footer #footAddress div:nth-child(3) p{
+  text-align: left;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.2em;
+  color: #FFF;
+  margin-bottom: 0;
+}
+
+
+
+.footer #footAddress div:nth-child(3) p:nth-child(1){
+  font-weight: 700 !important;
+}
+
+
+
+
+.footer #footAddress div:nth-child(3) p span{
+  font-weight: 700;
+  color: #FFF;
+}
+
+.footer #footAddress div:nth-child(3) p a{
+  color: #FFF;
+}
+/*END FOOTER*/
+
+
+
+@media only screen and (min-width: 642px){
+  #moreArtBTN div button:nth-child(1), .moreann, #moreCalBTN div button:nth-child(1), .viewcalendar{
+    display: block !important;
+  }
+
+  #moreArtBTN > div{
+    margin-top: 10% !important;
+    text-align: center;
+  }
+
+  #moreCalBTN > div{
+    margin-top: 6% !important;
+    text-align: center;
+  }
+
+  #moreArtBTN > div > div, #moreCalBTN > div > div{
+    text-align: center;
+  }
+
+  #moreArtBTN div button:nth-child(1), #moreCalBTN div button:nth-child(1){
+    margin: 0 auto;
+  }
+
+  .moreann, .viewcalendar{
+    margin: 2% auto 0;
+    text-align: center;
+  }
+
+  .moreann a, .viewcalendar a{
+    font-size: 1.3em;
+  }
+}
+
+
+
+@media only screen and (min-width: 1861px) and (max-width: 1990px){
+  #news-events #article1, #news-events #article2{
+    padding-top: 2%;
+  }
+
+  #global .icons{
+    margin-left: 30%;
+  }
+
+  #global .icons img{
+    width: 31%;
+  }
+}
+
+
+
+@media only screen and (max-width: 1860px) {
+  #mission > div{
+    padding-bottom: 8%;
+  }
+
+  #news-events #article1, #news-events #article2{
+    padding-top: 6%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons, #resource-twit #article1 #headContainer .icons, #resource-twit #article2 #headContainer2 .icons{
+   margin-top: 5%;
+   width: 12.5%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin-top: 2%;
+   width: 6.8%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin-top: 5.2%;
+   width: 12.5%;
+  }
+}
+
+
+
+@media only screen and (min-width: 1712px) and (max-width: 1860px){
+  #global .icons{
+    margin-left: 29%;
+  }
+
+  #global .icons img{
+    width: 32%;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 1.5%;
+  }
+}
+
+
+
+@media only screen and (max-width: 1711px) {
+  #news-events #article1, #news-events #article2{
+    padding-top: 15% !important;
+  }
+}
+
+
+
+@media only screen and (min-width: 1531px) and (max-width: 1711px) {
+  #header1 #socialNumber{
+    padding: .5% 0 2%;
+  }
+
+  #socialWrap{
+    width: 12%;
+  }
+
+  #mission{
+    padding-top: 10%;
+  }
+
+  #mission > div{
+    padding-bottom: 12%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 13%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img, #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 55%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 17%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 5%;
+   width: 14%;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.5em;
+  }
+
+  #global .icons{
+    margin-left: 26%;
+    margin-top: .8%;
+  }
+
+  #global .icons img{
+    width: 33%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin-top: 2.6%;
+   width: 7.5%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin-top: 5.8%;
+   width: 13.5%;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 1.5%;
+    margin-left: 36.5%;
+  }
+}
+
+@media only screen and (min-width: 1530px) and (max-width: 1584px) {
+  #header1 #socialNumber{
+    padding: .5% 0 2.5%;
+  }
+
+  #socialWrap{
+    width: 12%;
+  }
+
+  .top-bar{
+    width: 950px !important;
+    margin-left: 10%;
+    padding-top: 2%;
+  }
+
+  .scsLogo{
+    margin-top: 1.3%;
+    width: 6.5%;
+  }
+
+  #global .icons{
+    margin-left: 26%;
+    margin-top: 1%;
+  }
+
+  #global .icons img{
+    width: 33%;
+  }
+
+  #global .graphicEle img{
+    width: 6%;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 1.5%;
+    margin-left: 34.5%;
+    width: 3.5%;
+  }
+
+  /*MOZILLA-FIREFOX STYLES*/
+  @-moz-document url-prefix() {
+    .top-bar{
+      width: 950px !important;
+    }
+  }
+  /**/
+}
+
+@media only screen and (min-width: 1429px) and (max-width: 1529px){
+  #header1 #socialNumber{
+    padding: .5% 0 2%;
+  }
+
+  #socialWrap{
+    width: 12%;
+  }
+
+  .top-bar {
+    margin: 1% 0 0 10%;
+  }
+
+  .scsLogo{
+    margin-top: 1.3%;
+    width: 6.5%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 16%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 30%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+
+  #mission{
+    padding-top: 10%;
+  }
+
+  #mission > div{
+    padding-bottom: 12%;
+  }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 12%;
+    margin-left: 30%;
+  }
+
+  #mission > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 14%;
+    margin-left: 28%;
+    padding-top: 2%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 10%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img, #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 55%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 17%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 6%;
+   width: 14%;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.5em;
+  }
+
+  #global .icons{
+    margin-left: 26%;
+    margin-top: 1%;
+  }
+
+  #global .icons img{
+    width: 33%;
+  }
+
+  #global .graphicEle img{
+    width: 6%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin-top: 2.6%;
+   width: 7.5%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin-top: 5.8%;
+   width: 14.5%;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 1.5%;
+    margin-left: 34.5%;
+    width: 3.5%;
+  }
+
+  .footer #footAddress{
+    margin-top: 12%;
+  }
+
+  /*MOZILLA-FIREFOX STYLES*/
+  @-moz-document url-prefix() {
+    .top-bar{
+      width: 950px !important;
+    }
+  }
+  /**/
+}
+
+
+
+@media only screen and (min-width: 1357px) and (max-width: 1428px) {
+  #header1 #socialNumber{
+    padding: .5% 0 2%;
+  }
+
+  #socialWrap{
+    width: 14%;
+  }
+
+  .top-bar {
+    margin: 1.7% 0 0 6%;
+  }
+
+  .scsLogo{
+    margin-top: 1.9%;
+    width: 6.5%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 16%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 30%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+
+  #mission{
+    padding-top: 12%;
+  }
+
+  #mission > div{
+    padding-bottom: 12%;
+  }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 12%;
+    margin-left: 30%;
+  }
+
+  #mission > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 14%;
+    margin-left: 28%;
+    padding-top: 2%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 8%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 85%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 72%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 17%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 7%;
+   width: 15%;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.2em;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: 1em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  #global .icons{
+    margin-left: 24%;
+    margin-top: 1.2%;
+  }
+
+  #global .icons img{
+    width: 34%;
+  }
+
+  #global .graphicEle img{
+    width: 7%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin-top: 2.8%;
+   width: 8%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin-top: 6.5%;
+   width: 15.2%;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 1.5%;
+    margin-left: 34%;
+    width: 4%;
+  }
+
+  .footer #footAddress{
+    margin-top: 12%;
+  }
+
+  /*MOZILLA-FIREFOX STYLES*/
+  /*@-moz-document url-prefix() {
+    .top-bar{
+      width: 950px !important;
+    }
+  }*/
+  /**/
+}
+
+
+
+@media only screen and (min-width: 1277px) and (max-width: 1356px) {
+  #header1 #socialNumber{
+    padding: .5% 0 2.5%;
+  }
+
+  #socialWrap{
+    width: 14%;
+  }
+
+  .top-bar {
+    margin: 1.7% 0 0 3%;
+    width: 930px !important;
+  }
+
+  .scsLogo{
+    margin-top: 2%;
+    width: 6.5%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 16%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 40%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+
+  #mission{
+    padding-top: 12%;
+  }
+
+  #mission > div{
+    padding-bottom: 12%;
+  }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 12%;
+    margin-left: 30%;
+    padding-top: 1.3%;
+  }
+
+  #mission > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 14%;
+    margin-left: 28%;
+    padding-top: 2%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 8%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 80%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 67%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 3.5em;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 17%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 7%;
+   width: 15%;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.2em;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: 1em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  .moreann a, .viewcalendar a, button{
+    font-size: 1.3em;
+  }
+
+  #global .icons{
+    margin-left: 22%;
+    margin-top: 1.2%;
+  }
+
+  #global .icons img{
+    width: 34%;
+  }
+
+  #global .graphicEle img{
+    width: 7%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin-top: 2.8%;
+   width: 8%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin-top: 6.5%;
+   width: 15.2%;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 1.5%;
+    margin-left: 34%;
+    width: 4%;
+  }
+
+  .footer #footAddress{
+    margin-top: 12%;
+  }
+
+  /*MOZILLA-FIREFOX STYLES*/
+  /*@-moz-document url-prefix() {
+    .top-bar{
+      width: 930px !important;
+      margin: 1.7% 0 0 3%;
+    }
+  }*/
+  /**/
+}
+
+
+
+@media only screen and (min-width: 1227px) and (max-width: 1276px) {
+  #header1 #socialNumber{
+    padding: .5% 0 2.5%;
+  }
+
+  #socialWrap{
+    width: 14%;
+  }
+
+  .logos{
+    width: 120px;
+    margin-left: 1%;
+  }
+
+  .top-bar {
+    width: 920px !important;
+    margin: 1% 0 0 2%;
+  }
+
+  .scsLogo{
+    margin-top: 1.5%;
+    width: 7.5%;
+    margin-right: 1%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 16%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 40%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+
+  #mission{
+    padding-top: 12%;
+  }
+
+  #mission > div{
+    padding-bottom: 12%;
+  }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 12%;
+    margin-left: 30%;
+    padding-top: 1.3%;
+  }
+
+  #mission > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 14%;
+    margin-left: 28%;
+    padding-top: 2%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 8%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 80%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 67%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 3.5em;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 17%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 7%;
+   width: 15%;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.2em;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: 1em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  .moreann a, .viewcalendar a{
+    font-size: 1.1em;
+  }
+
+  #global .icons{
+    margin-left: 19%;
+    margin-top: 1.5%;
+  }
+
+  #global .icons img{
+    width: 36%;
+  }
+
+  #global .graphicEle img{
+    width: 7%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin-top: 2.7%;
+   width: 8%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin-top: 6.7%;
+   width: 15.2%;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
+   font-size: 3.5em;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 1.5%;
+    margin-left: 34%;
+    width: 4%;
+  }
+
+  .footer #footAddress{
+    margin-top: 15%;
+  }
+
+  /*MOZILLA-FIREFOX STYLES*/
+  /*@-moz-document url-prefix() {
+    .top-bar{
+      width: 920px !important;
+      margin-left: 1%;
+      padding-left: 0;
+    }
+
+    .logos{
+      margin-left: 1%;
+    }
+
+    .scsLogo{
+      margin-right: 1%;
+    }
+  }*/
+  /**/
+}
+
+
+
+@media only screen and (min-width: 1218px) and (max-width: 1226px) {
+  #header1 #socialNumber{
+    padding: .5% 0 2.5%;
+  }
+
+  #socialWrap{
+    width: 15%;
+  }
+
+  .logos{
+    width: 120px;
+    margin-left: 1%;
+  }
+
+  .top-bar {
+    width: 920px !important;
+    margin: 2% 0 0 2%;
+  }
+
+  .scsLogo{
+    margin-top: 1.5%;
+    margin-right: 1%;
+    width: 7.5%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 16%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 40%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+
+  #mission{
+    padding-top: 14%;
+  }
+
+  #mission > div{
+    padding-bottom: 12%;
+  }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 13%;
+    margin-left: 30%;
+    padding-top: 1.3%;
+  }
+
+  #mission > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 15%;
+    margin-left: 28%;
+    padding-top: 2%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 8%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 80%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 67%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 3.5em;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 17%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 7%;
+   width: 15%;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.2em;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: 1em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  .moreann a, .viewcalendar a{
+    font-size: 1.1em;
+  }
+
+  #global .icons{
+    margin-left: 19%;
+    margin-top: 1.5%;
+  }
+
+  #global .icons img{
+    width: 36%;
+  }
+
+  #global .graphicEle img{
+    width: 8%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin-top: 3.5%;
+   width: 8%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin-top: 7.5%;
+   width: 15.2%;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
+   font-size: 3.5em;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 1.5%;
+    margin-left: 34%;
+    width: 4%;
+  }
+
+  .footer #footAddress{
+    margin-top: 15%;
+  }
+
+  /*MOZILLA-FIREFOX STYLES*/
+  /*@-moz-document url-prefix() {
+    .top-bar{
+      width: 920px !important;
+      margin-left: 2%;
+      padding-left: 0;
+    }
+
+    .logos{
+      margin-left: 1%;
+    }
+
+    .scsLogo{
+      margin-right: 1%;
+    }
+  }*/
+  /**/
+}
+
+
+
+@media only screen and (min-width: 1170px) and (max-width: 1217px) {
+  #header1 #socialNumber{
+    padding: .5% 0 2.5%;
+  }
+
+  #socialWrap{
+    width: 15%;
+  }
+
+  .logos{
+    width: 120px;
+    margin-left: 1%;
+  }
+
+  .top-bar {
+    width: 910px !important;
+    margin: 2% 0 0 1%;
+  }
+
+  .scsLogo{
+    margin-top: 1.8%;
+    margin-right: 1%;
+    width: 7.5%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 16%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 40%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+
+  #mission{
+    padding-top: 14%;
+  }
+
+  #mission > div{
+    padding-bottom: 12%;
+  }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 13%;
+    margin-left: 30%;
+    padding-top: 1.3%;
+  }
+
+  #mission > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 15%;
+    margin-left: 28%;
+    padding-top: 2%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 8%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 80%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 67%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 3.5em;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 17%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 7%;
+   width: 15%;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.2em;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: 1em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  .moreann a, .viewcalendar a{
+    font-size: 1.1em;
+  }
+
+  #global .icons{
+    margin-left: 17%;
+    margin-top: 1.6%;
+  }
+
+  #global .icons img{
+    width: 38%;
+  }
+
+  #global .graphicEle img{
+    width: 8%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin-top: 3.5%;
+   width: 8%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin-top: 7.5%;
+   width: 15.2%;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
+   font-size: 3.5em;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 2%;
+    margin-left: 32%;
+    margin-right: 4%;
+    width: 4.5%;
+  }
+
+  .footer #footAddress{
+    margin-top: 15%;
+  }
+
+  /*MOZILLA-FIREFOX STYLES*/
+  /*@-moz-document url-prefix() {
+    .top-bar{
+      width: 910px !important;
+      margin-left: 1%;
+      padding-left: 0;
+    }
+
+    .logos{
+      margin-left: 1%;
+    }
+
+    .scsLogo{
+      margin-right: 1%;
+    }
+  }*/
+  /**/
+}
+
+
+
+@media only screen and (min-width: 1147px) and (max-width: 1169px) {
+  #header1 #socialNumber{
+    padding: .5% 0 2.5%;
+  }
+
+  #socialWrap{
+    width: 15%;
+  }
+
+  .logos{
+    width: 115px;
+    margin-left: 0;
+  }
+
+  .top-bar {
+    width: 910px !important;
+    margin: 2% 0 0 0;
+  }
+
+  .scsLogo{
+    margin-top: 1.5%;
+    margin-right: 0;
+    width: 7.5%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 16%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 40%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+
+  #mission{
+    padding-top: 14%;
+  }
+
+  #mission > div{
+    padding-bottom: 12%;
+  }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 16%;
+    margin-left: 23.5%;
+  }
+
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle, #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 20%;
+    margin-left: 15%;
+    padding-top: 2%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
+    text-align: center;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 5%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 80%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 67%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 3.5em;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 15%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 7%;
+   width: 15%;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.2em;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: 1em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  .moreann a, .viewcalendar a{
+    font-size: 1.1em;
+  }
+
+  #global .icons{
+    margin-left: 17%;
+    margin-top: 1.6%;
+  }
+
+  #global .icons img{
+    width: 38%;
+  }
+
+  #global .graphicEle img{
+    width: 8%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin-top: 3.5%;
+   width: 9%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin-top: 7.5%;
+   width: 16%;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
+   font-size: 3.5em;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 2%;
+    margin-left: 32%;
+    margin-right: 4%;
+    width: 4.5%;
+  }
+
+  .footer #footAddress{
+    margin-top: 15%;
+  }
+
+  /*MOZILLA-FIREFOX STYLES*/
+  /*@-moz-document url-prefix() {
+    .logos{
+      margin-left: 1%;
+      width: 115px;
+    }
+
+    .top-bar{
+      width: 890px !important;
+      margin-left: 1%;
+      padding-left: 0;
+    }
+
+    .scsLogo{
+      margin-top: 1.5%;
+      margin-right: 1%;
+    }
+  }*/
+  /**/
+}
+
+
+
+@media only screen and (min-width: 1134px) and (max-width: 1146px) {
+  #header1 #socialNumber{
+    padding: .5% 0 2.5%;
+  }
+
+  #socialWrap{
+    width: 17%;
+  }
+
+  .logos{
+    width: 120px;
+    margin-left: 1%;
+  }
+
+  .top-bar {
+    width: 870px !important;
+    margin: 2% 0 0 2%;
+  }
+
+  .top-bar ul li a {
+    font-size: .8em !important;
+  }
+
+  .scsLogo{
+    margin-top: 1.8%;
+    margin-right: 1%;
+    width: 7.5%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 16%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 40%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+
+  #mission{
+    padding-top: 14%;
+  }
+
+  #mission > div{
+    padding-bottom: 12%;
+  }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 16%;
+    margin-left: 23.5%;
+  }
+
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle, #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 20%;
+    margin-left: 21%;
+    padding-top: 2%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
+    text-align: center;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 5%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 80%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 67%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 3.5em;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 15%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 7%;
+   width: 15%;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.2em;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: 1em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  .moreann a, .viewcalendar a{
+    font-size: 1.1em;
+  }
+
+  #global .icons{
+    margin-left: 17%;
+    margin-top: 1.6%;
+  }
+
+  #global .icons img{
+    width: 38%;
+  }
+
+  #global .graphicEle img{
+    width: 8%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin-top: 3.5%;
+   width: 9%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin-top: 7.5%;
+   width: 16%;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
+   font-size: 3.5em;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 2%;
+    margin-left: 31%;
+    margin-right: 4%;
+    width: 4.5%;
+  }
+
+  .footer #footAddress{
+    margin-top: 15%;
+  }
+
+  /*MOZILLA-FIREFOX STYLES*/
+  @-moz-document url-prefix() {
+    .logos{
+      margin-left: 1%;
+      width: 115px;
+    }
+
+    .top-bar{
+      width: 870px !important;
+      margin-left: 1%;
+      padding-left: 0;
+    }
+
+    .scsLogo{
+      margin-top: 1.5%;
+      margin-right: 1%;
+    }
+  }
+  /**/
+}
+
+
+
+@media only screen and (min-width: 1098px) and (max-width: 1133px) {
+  #header1 #socialNumber{
+    padding: .5% 0 2.5%;
+  }
+
+  #socialWrap{
+    width: 17%;
+  }
+
+  .logos{
+    width: 115px;
+    margin-left: 1%;
+  }
+
+  .top-bar {
+    width: 850px !important;
+    margin: 2% 0 0 1%;
+  }
+
+  .top-bar ul li a {
+    font-size: .8em !important;
+  }
+
+  .scsLogo{
+    margin-top: 1.8%;
+    margin-right: 1%;
+    width: 7.5%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 16%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 40%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+
+  #mission{
+    padding-top: 15%;
+  }
+
+  #mission > div{
+    padding-bottom: 12%;
+  }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 16%;
+    margin-left: 23.5%;
+  }
+
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle, #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 20%;
+    margin-left: 21%;
+    padding-top: 2%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
+    text-align: center;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 7%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 80%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 67%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 3em;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 15%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 7%;
+   width: 15%;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div{
+   padding-right: 1%;
+  }
+
+  .newsImg img{
+    width: 50%;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.2em;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: 1em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p{
+   width: 100%;
+   padding-right: 0;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.columns,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.columns{
+    float: none;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.medium-6,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.medium-6{
+    width: 100%;
+  }
+
+  .moreann a, .viewcalendar a{
+    font-size: 1.1em;
+  }
+
+  .readmore a{
+    font-size: 1.1em;
+  }
+
+  #global .icons{
+    margin-left: 17%;
+    margin-top: 1.6%;
+  }
+
+  #global .icons img{
+    width: 38%;
+  }
+
+  #global .graphicEle img{
+    width: 8%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin-top: 2.7%;
+   width: 9%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin-top: 6.7%;
+   width: 16%;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
+   font-size: 3em;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 2%;
+    margin-left: 32%;
+    margin-right: 4%;
+    width: 4.5%;
+  }
+
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 15%;
+    padding-left: 23%;
+    float: left;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+  }
+
+  /*MOZILLA-FIREFOX STYLES*/
+  /*@-moz-document url-prefix() {
+    .logos{
+      margin-left: 1%;
+      width: 115px;
+    }
+
+    .top-bar{
+      width: 850px !important;
+      margin-left: 1%;
+      padding-left: 0;
+    }
+
+    .top-bar ul li a {
+      font-size: .8em !important;
+    }
+
+    .scsLogo{
+      margin-top: 1.8%;
+      margin-right: 1%;
+    }
+  }*/
+  /**/
+}
+
+
+
+@media only screen and (min-width: 1013px) and (max-width: 1097px) {
+  #header1 #socialNumber{
+    padding: .5% 0 2.5%;
+  }
+
+  #socialWrap{
+    width: 17%;
+  }
+
+  .logos{
+    width: 100px;
+    margin-left: 1%;
+  }
+
+  .top-bar {
+    width: 790px !important;
+    margin: 2% 0 0 1%;
+  }
+
+  .top-bar-section ul li{
+    margin-right: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .8em !important;
+  }
+
+  .scsLogo{
+    margin-top: 1.3%;
+    margin-right: 1%;
+    width: 7.5%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 18%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 40%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+
+  #mission{
+    padding-top: 15%;
+  }
+
+  #mission > div{
+    padding-bottom: 12%;
+  }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 16%;
+    margin-left: 23.5%;
+  }
+
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle, #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 20%;
+    margin-left: 21%;
+    padding-top: 2%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
+    text-align: center;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 7%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 80%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 67%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 3em;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 150px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 15%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 12.5%;
+   width: 16%;
+   float: left;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div{
+   padding-right: 1%;
+  }
+
+  .newsImg img{
+    width: 50%;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.1em;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: .9em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p{
+   width: 100%;
+   padding-right: 0;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.columns,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.columns{
+    float: none;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.medium-6,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.medium-6{
+    width: 100%;
+  }
+
+  #news-events #article2 div:nth-child(3) div:nth-child(3) div{
+    text-align: center;
+    margin-top: 8%
+  }
+
+  .moreann a, .viewcalendar a{
+    font-size: 1.1em;
+  }
+
+  .moreann a{
+    margin: 8% auto 0;
+  }
+
+  .readmore a{
+    font-size: 1em;
+  }
+
+  #global .icons{
+    margin-left: 15%;
+    margin-top: 1.9%;
+  }
+
+  #global .icons img{
+    width: 39%;
+  }
+
+  #global .graphicEle img{
+    width: 8%;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   padding: 2% 0 0 0 !important;
+   float: none;
+  }
+
+  #resource-twit #article1 #headContainer{
+   width: 60%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin: 4.5% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin: 6.7% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
+   font-size: 3em;
+  }
+
+  #resource-twit #article1 > div:nth-child(2){
+    margin-top: 1% !important;
+  }
+
+  #resource-twit #article1 div:nth-child(2) h2 a{
+    font-size: .6em;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 150px;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 1.5%;
+    margin-left: 33%;
+    margin-right: 4%;
+    width: 4.5%;
+  }
+
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 15%;
+    padding-left: 17%;
+    float: left;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+  }
+
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 35%
+  }
+
+  .footer #footAddress div:nth-child(2){
+    width: 10%
+  }
+
+  /*MOZILLA-FIREFOX STYLES*/
+  /*@-moz-document url-prefix() {
+    .logos{
+      margin-left: 1%;
+    }
+
+    .top-bar{
+      margin-left: 1%;
+      padding-left: 0;
+    }
+
+    .top-bar ul li a {
+      font-size: .8em !important;
+    }
+
+    .scsLogo{
+      margin-top: 1.8%;
+      margin-right: 1%;
+    }
+  }*/
+  /**/
+}
+
+
+
+@media only screen and (min-width: 974px) and (max-width: 1012px) {
+  #header1 #socialNumber{
+    padding: .5% 0 2.5%;
+  }
+
+  #socialWrap{
+    width: 19%;
+  }
+
+  .logos{
+    width: 100px;
+    margin-left: 1%;
+  }
+
+  .top-bar {
+    width: 750px !important;
+    margin: 1.5% 0 0 1%;
+  }
+
+  .top-bar-section ul li{
+    margin-right: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .75em !important;
+  }
+
+  .scsLogo{
+    margin-top: 1.8%;
+    margin-right: 1%;
+    width: 7.5%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 18%;
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 40%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+
+  #mission{
+    padding-top: 15%;
+  }
+
+  #mission > div{
+    padding-bottom: 12%;
+  }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 16%;
+    margin-left: 23.5%;
+  }
+
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle, #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 20%;
+    margin-left: 21%;
+    padding-top: 2%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
+    text-align: center;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 7%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 80%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 60%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 3em;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 150px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 15%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 12.5%;
+   width: 16%;
+   float: left;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div{
+   padding-right: 1%;
+  }
+
+  .newsImg img{
+    width: 50%;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1em;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: .9em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p{
+   width: 100%;
+   padding-right: 0;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.columns,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.columns{
+    float: none;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.medium-6,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.medium-6{
+    width: 100%;
+  }
+
+  #news-events #article2 div:nth-child(3) div:nth-child(3) div{
+    text-align: center;
+    margin-top: 8%
+  }
+
+  .moreann a, .viewcalendar a{
+    font-size: 1.3em;
+  }
+
+  .moreann a{
+    margin: 8% auto 0;
+  }
+
+  .readmore a{
+    font-size: 1em;
+  }
+
+  #global .icons{
+    margin-left: 13%;
+    margin-top: 2%;
+  }
+
+  #global .icons img{
+    width: 42%;
+  }
+
+  #global .graphicEle img{
+    width: 8%;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   padding: 2% 0 0 0 !important;
+   float: none;
+  }
+
+  #resource-twit #article1 #headContainer{
+   width: 60%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin: 4.5% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin: 6.7% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
+   font-size: 3em;
+  }
+
+  #resource-twit #article1 > div:nth-child(2){
+    margin-top: 1% !important;
+  }
+
+  #resource-twit #article1 div:nth-child(2) h2 a{
+    font-size: .6em;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 150px;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 2%;
+    margin-left: 31%;
+    margin-right: 4%;
+    width: 4.5%;
+  }
+
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 15%;
+    padding-left: 10%;
+    float: left;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+  }
+
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 40%
+  }
+
+  .footer #footAddress div:nth-child(2){
+    width: 10%
+  }
+}
+
+
+
+@media only screen and (min-width: 904px) and (max-width: 973px) {
+  #header1 #socialNumber{
+    padding: .5% 0 3%;
+  }
+
+  #socialWrap{
+    width: 21%;
+  }
+
+  .logos{
+    width: 90px;
+    margin-left: 0;
+  }
+
+  .top-bar {
+    width: 720px !important;
+    margin: 1.5% 0 0 0;
+  }
+
+  .top-bar-section ul li{
+    margin-right: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .7em !important;
+  }
+
+  .scsLogo{
+    margin-top: 1.8%;
+    margin-right: 0;
+    width: 7.5%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 18%;
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 40%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+
+  #mission{
+    padding-top: 15%;
+  }
+
+  #mission > div{
+    padding-bottom: 14%;
+  }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 16%;
+    margin-left: 22%;
+    padding-top: 2%;
+  }
+
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle, #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 20%;
+    margin-left: 21%;
+    padding-top: 2.8%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 7%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 80%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 60%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 2.7em;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 140px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 15%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 12.5%;
+   width: 16%;
+   float: left;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div{
+   padding-right: 1%;
+  }
+
+  .newsImg img{
+    width: 50%;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1em;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: .9em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p{
+   width: 100%;
+   padding-right: 0;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.columns,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.columns{
+    float: none;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.medium-6,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.medium-6{
+    width: 100%;
+  }
+
+  #news-events #article2 div:nth-child(3) div:nth-child(3) div{
+    text-align: center;
+    margin-top: 8%
+  }
+
+  .moreann a, .viewcalendar a{
+    font-size: 1.3em;
+  }
+
+  .moreann a{
+    margin: 8% auto 0;
+  }
+
+  .readmore a{
+    font-size: 1em;
+  }
+
+  #global .icons{
+    margin-left: 13%;
+    margin-top: 2%;
+  }
+
+  #global div h1{
+    font-size: 3.5em;
+  }
+
+  #global .icons img{
+    width: 45%;
+  }
+
+  #global .graphicEle img{
+    width: 8%;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   padding: 2% 0 0 0 !important;
+   float: none;
+  }
+
+  #resource-twit #article1 #headContainer{
+   width: 60%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin: 4.5% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin: 6.7% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
+   font-size: 3em;
+  }
+
+  #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
+    width: 35%;
+  }
+
+  #resource-twit #article1 > div:nth-child(2){
+    margin-top: 1% !important;
+  }
+
+  #resource-twit #article1 div:nth-child(2) h2 a{
+    font-size: .6em;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 150px;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 2%;
+    margin-left: 31%;
+    margin-right: 4%;
+    width: 4.5%;
+  }
+
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 15%;
+    padding-left: 10%;
+    float: left;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+  }
+
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 40%
+  }
+
+  .footer #footAddress div:nth-child(2){
+    width: 10%
+  }
+
+  /*MOZILLA-FIREFOX STYLES*/
+  /*@-moz-document url-prefix() {
+    .logos{
+      margin-left: 1%;
+    }
+
+    .top-bar{
+      padding-left: 0;
+    }
+
+    .scsLogo{
+      margin-top: 1.8%;
+      margin-right: 1%;
+    }
+  }*/
+  /**/
+}
+
+
+
+@media only screen and (min-width: 883px) and (max-width: 903px) {
+  #header1 #socialNumber{
+    padding: .5% 0 3%;
+  }
+
+  #socialWrap{
+    width: 21%;
+  }
+
+  .logos{
+    width: 90px;
+    margin-left: 1%;
+  }
+
+  .top-bar {
+    width: 650px !important;
+    margin: 1.5% 0 0 .5%;
+  }
+
+  .top-bar-section ul li{
+    margin-right: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .6em !important;
+  }
+
+  .scsLogo{
+    margin-top: 1.8%;
+    margin-right: 1%;
+    width: 7.5%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 18%;
+    margin-bottom: 4%;
+    font-size: 7em;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 2em;
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 50%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+
+  #mission{
+    padding-top: 15%;
+  }
+
+  #mission > div{
+    padding-bottom: 15%;
+  }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 17%;
+    margin-left: 19%;
+    padding-top: 2%;
+  }
+
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle, #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 21%;
+    margin-left: 19%;
+    padding-top: 2.8%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 7%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 80%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 60%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 2.7em;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 140px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 15%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 12.5%;
+   width: 16%;
+   float: left;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div{
+   padding-right: 1%;
+  }
+
+  .newsImg img{
+    width: 50%;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1em;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: .9em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p{
+   width: 100%;
+   padding-right: 0;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.columns,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.columns{
+    float: none;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.medium-6,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.medium-6{
+    width: 100%;
+  }
+
+  #news-events #article2 div:nth-child(3) div:nth-child(3) div{
+    text-align: center;
+    margin-top: 8%
+  }
+
+  .moreann a, .viewcalendar a{
+    font-size: 1.3em;
+  }
+
+  .moreann a{
+    margin: 8% auto 0;
+  }
+
+  .readmore a{
+    font-size: 1em;
+  }
+
+  #global .icons{
+    margin-left: 13%;
+    margin-top: 2%;
+  }
+
+  #global .icons img{
+    width: 45%;
+  }
+
+  #global div h1{
+    font-size: 3.5em;
+  }
+
+  #global .graphicEle img{
+    width: 8%;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   padding: 2% 0 0 0 !important;
+   float: none;
+  }
+
+  #resource-twit #article1 #headContainer{
+   width: 60%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin: 4.5% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin: 6.7% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
+   font-size: 3em;
+  }
+
+  #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
+    width: 35%;
+  }
+
+  #resource-twit #article1 > div:nth-child(2){
+    margin-top: 1% !important;
+  }
+
+  #resource-twit #article1 div:nth-child(2) h2 a{
+    font-size: .6em;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 150px;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 2%;
+    margin-left: 31%;
+    margin-right: 4%;
+    width: 4.5%;
+  }
+
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 15%;
+    padding-left: 10%;
+    float: left;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+  }
+
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 40%
+  }
+
+  .footer #footAddress div:nth-child(2){
+    width: 10%
+  }
+}
+
+
+
+@media only screen and (min-width: 809px) and (max-width: 882px) {
+  #header1 #socialNumber{
+    padding: .5% 0 3%;
+  }
+
+  #socialWrap{
+    width: 24%;
+  }
+
+  .logos{
+    width: 70px;
+    margin-left: .5%;
+  }
+
+  .top-bar {
+    width: 640px !important;
+    margin: .5% 0 0 1.2%;
+    padding-left: 0;
+  }
+
+  .top-bar-section ul li{
+    margin-right: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .6em !important;
+  }
+
+  .scsLogo{
+    margin-top: .4%;
+    margin-right: .5%;
+    width: 8%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 18%;
+    margin-bottom: 4%;
+    font-size: 7em;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 2em;
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 50%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+
+  #mission{
+    padding-top: 14%;
+  }
+
+  #mission > div{
+    padding-bottom: 18%;
+  }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 17%;
+    margin-left: 19%;
+    padding-top: 2%;
+  }
+
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle, #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 21%;
+    margin-left: 19%;
+    padding-top: 2.8%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 75%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 55%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 2.7em;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 130px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 15%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 12.5%;
+   width: 16%;
+   float: left;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div{
+   padding-right: 1%;
+  }
+
+  .newsImg img{
+    width: 60%;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1em;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: .9em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p{
+   width: 100%;
+   padding-right: 0;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.columns,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.columns{
+    float: none;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.medium-6,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.medium-6{
+    width: 100%;
+  }
+
+  #news-events #article2 div:nth-child(3) div:nth-child(3) div{
+    text-align: center;
+    margin-top: 8%
+  }
+
+  .moreann a, .viewcalendar a{
+    font-size: 1.3em;
+  }
+
+  .moreann a{
+    margin: 8% auto 0;
+  }
+
+  .readmore a{
+    font-size: 1em;
+  }
+
+  #global .icons{
+    margin-left: 11%;
+    margin-top: 2%;
+  }
+
+  #global .icons img{
+    width: 48%;
+  }
+
+  #global div h1{
+    font-size: 3.5em;
+  }
+
+  #global .graphicEle img{
+    width: 8%;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   padding: 2% 0 0 0 !important;
+   float: none;
+  }
+
+  #resource-twit #article1 #headContainer{
+   width: 60%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin: 4.5% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin: 6.7% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
+   font-size: 2.5em;
+  }
+
+  #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
+    width: 35%;
+  }
+
+  #resource-twit #article1 > div:nth-child(2){
+    margin-top: 1% !important;
+  }
+
+  #resource-twit #article1 div:nth-child(2) h2 a{
+    font-size: .6em;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 150px;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 2%;
+    margin-left: 32%;
+    margin-right: 4%;
+    width: 4.5%;
+  }
+
+  .footer #footContact .graphicEle img{
+    width: 10.5%;
+  }
+
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 15%;
+    padding-left: 10%;
+    float: left;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+  }
+
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 40%
+  }
+
+  .footer #footAddress div:nth-child(2){
+    width: 10%
+  }
+
+  /*MOZILLA-FIREFOX STYLES*/
+  /*@-moz-document url-prefix() {
+    .logos{
+      margin-left: .5%;
+    }
+
+    .top-bar{
+      padding-left: 0;
+    }
+
+    .scsLogo{
+      margin-top: .4%;
+      margin-right: .5%;
+    }
+  }*/
+  /**/
+}
+
+
+
+@media only screen and (min-width: 777px) and (max-width: 808px) {
+  #header1 #socialNumber{
+    padding: .5% 0 3%;
+  }
+
+  #socialWrap{
+    width: 24%;
+  }
+
+  .logos {
+    width: 70px;
+    margin-left: .5%;
+  }
+
+  .top-bar {
+    width: 605px !important;
+    margin: 1% 0 0 0;
+    padding-top: 1.7%;
+    padding-left: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .55em !important;
+  }
+
+  .top-bar ul li {
+    margin-right: 0 !important;
+  }
+
+  .scsLogo{
+    margin-top: 1.8%;
+    margin-right: .5%;
+    width: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 18%;
+    margin-bottom: 4%;
+    font-size: 7em;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 2em;
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 50%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+
+  #mission{
+    padding-top: 14%;
+  }
+
+  #mission > div{
+    padding-bottom: 18%;
+  }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 18%;
+    margin-left: 19%;
+    padding-top: 2.8%;
+  }
+
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle, #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 22%;
+    margin-left: 19%;
+    padding-top: 3.3%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 75%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 55%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 2.4em;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 120px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 15%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 12.5%;
+   width: 16%;
+   float: left;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div{
+   padding-right: 1%;
+  }
+
+  .newsImg img{
+    width: 60%;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1em;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: .9em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p{
+   width: 100%;
+   padding-right: 0;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.columns,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.columns{
+    float: none;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.medium-6,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.medium-6{
+    width: 100%;
+  }
+
+  #news-events #article2 div:nth-child(3) div:nth-child(3) div{
+    text-align: center;
+    margin-top: 8%
+  }
+
+  .moreann a, .viewcalendar a{
+    font-size: 1.3em;
+  }
+
+  .moreann a{
+    margin: 8% auto 0;
+  }
+
+  .readmore a{
+    font-size: 1em;
+  }
+
+  #global .icons{
+    margin-left: 11%;
+    margin-top: 2%;
+  }
+
+  #global .icons img{
+    width: 48%;
+  }
+
+  #global div h1{
+    font-size: 3.3em;
+  }
+
+  #global .graphicEle img{
+    width: 8%;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   padding: 2% 0 0 0 !important;
+   float: none;
+  }
+
+  #resource-twit #article1 #headContainer{
+   width: 60%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin: 4.5% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin: 6.7% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
+   font-size: 2.2em;
+  }
+
+  #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
+    width: 35%;
+  }
+
+  #resource-twit #article1 > div:nth-child(2){
+    margin-top: 1% !important;
+  }
+
+  #resource-twit #article1 div:nth-child(2) h2 a{
+    font-size: .6em;
+    margin-bottom: 5%;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 150px;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 2%;
+    margin-left: 32%;
+    margin-right: 4%;
+    width: 4%;
+  }
+
+  .footer #footContact .graphicEle img{
+    width: 9%;
+  }
+
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 15%;
+    padding-left: 10%;
+    float: left;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+  }
+
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 40%
+  }
+
+  .footer #footAddress div:nth-child(2){
+    width: 10%
+  }
+
+  /*MOZILLA-FIREFOX STYLES*/
+  /*@-moz-document url-prefix() {
+    .logos{
+      margin-left: .5%;
+    }
+
+    .top-bar{
+      width: 605px !important;
+      padding-left: 0;
+    }
+
+    .scsLogo{
+      margin-top: 1.8%;
+      margin-right: .5%;
+    }
+  }*/
+  /**/
+}
+
+
+
+@media only screen and (min-width: 741px) and (max-width: 776px) {
+  #header1 #socialNumber{
+    padding: .5% 0 4%;
+  }
+
+  #socialWrap{
+    width: 24%;
+  }
+
+  .logos{
+    width: 70px;
+    margin-left: .5%;
+  }
+
+  .top-bar {
+    width: 575px !important;
+    margin: .3% 0 0 .1%;
+    padding-left: 0;
+  }
+
+  .top-bar-section ul li{
+    margin-right: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .5em !important;
+  }
+
+  .scsLogo{
+    margin-top: .7%;
+    margin-right: .5%;
+    width: 8%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 22%;
+    margin-bottom: 4%;
+    font-size: 6em;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 2em;
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 50%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+
+  #mission{
+    padding-top: 15%;
+  }
+
+  #mission > div{
+    padding-bottom: 18%;
+  }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 18%;
+    margin-left: 19%;
+    padding-top: 2.8%;
+  }
+
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle, #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 22%;
+    margin-left: 19%;
+    padding-top: 3.3%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img, #news-events #article2 #headContainer2 .graphicEle img{
+    width: 50%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 75%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 55%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 2.4em;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 120px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 15%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 12.5%;
+   width: 16%;
+   float: left;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div{
+   padding-right: 1%;
+  }
+
+  .newsImg img{
+    width: 60%;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1em;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: .9em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p{
+   width: 100%;
+   padding-right: 0;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.columns,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.columns{
+    float: none;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.medium-6,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.medium-6{
+    width: 100%;
+  }
+
+  #news-events #article2 div:nth-child(3) div:nth-child(3) div{
+    text-align: center;
+    margin-top: 8%
+  }
+
+  .moreann a, .viewcalendar a{
+    font-size: 1.3em;
+  }
+
+  .moreann a{
+    margin: 8% auto 0;
+  }
+
+  .readmore a{
+    font-size: 1em;
+  }
+
+  #global .icons{
+    margin-left: 11%;
+    margin-top: 2%;
+  }
+
+  #global .icons img{
+    width: 48%;
+  }
+
+  #global div h1{
+    font-size: 3.3em;
+  }
+
+  #global .graphicEle img{
+    width: 8%;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   padding: 2% 0 0 0 !important;
+   float: none;
+  }
+
+  #resource-twit #article1 #headContainer{
+   width: 60%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin: 4.5% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin: 6.7% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
+   font-size: 2.2em;
+  }
+
+  #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
+    width: 40%;
+  }
+
+  #resource-twit #article1 > div:nth-child(2){
+    margin-top: 1% !important;
+  }
+
+  #resource-twit #article1 div:nth-child(2) h2 a{
+    font-size: .6em;
+    margin-bottom: 5%;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 150px;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 2%;
+    margin-left: 32%;
+    margin-right: 4%;
+    width: 4%;
+  }
+
+  .footer #footContact .graphicEle img{
+    width: 9%;
+  }
+
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 15%;
+    padding-left: 10%;
+    float: left;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+  }
+
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 40%
+  }
+
+  .footer #footAddress div:nth-child(2){
+    width: 10%
+  }
+
+  /*MOZILLA-FIREFOX STYLES*/
+  /*@-moz-document url-prefix() {
+    .logos{
+      margin-left: .5%;
+    }
+
+    .top-bar{
+      padding-left: 0;
+    }
+
+    .scsLogo{
+      margin-top: .7%;
+      margin-right: .5%;
+    }
+  }*/
+  /**/
+}
+
+
+
+@media only screen and (min-width: 686px) and (max-width: 740px) {
+  #header1 #socialNumber{
+    padding: .5% 0 4%;
+  }
+
+  #socialWrap{
+    width: 27%;
+  }
+
+  .logos{
+    width: 57px;
+    margin-left: 0;
+  }
+
+  .top-bar {
+    width: 570px !important;
+    margin: -.5% 0 0 0;
+    padding-left: 0;
+  }
+
+  .top-bar-section ul li{
+    margin-right: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .5em !important;
+  }
+
+  .scsLogo{
+    margin-top: 1.8%;
+    margin-right: 0;
+    width: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 22%;
+    margin-bottom: 4%;
+    font-size: 6em;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 2em;
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 50%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+
+  #mission{
+    padding-top: 13%;
+  }
+
+  #mission > div{
+    padding-bottom: 20%;
+  }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 20%;
+    margin-left: 19%;
+    padding-top: 2.8%;
+  }
+
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle{
+    margin-bottom: 5%;
+  }
+
+  #mission > div > div > div:nth-child(2) p{
+    font-size: 1.4em;
+    line-height: 45px;
+  }
+
+  #quickLink > div > div .icons{
+    width: 24%;
+    margin-left: 19%;
+    padding-top: 3.3%;
+  }
+
+  #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img, #news-events #article2 #headContainer2 .graphicEle img{
+    width: 50%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 75%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 55%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 2em;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 110px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 15%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 12.5%;
+   width: 16%;
+   float: left;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div{
+   padding-right: 1%;
+  }
+
+  .newsImg img{
+    width: 60%;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1em;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: .9em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p{
+   width: 100%;
+   padding-right: 0;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.columns,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.columns{
+    float: none;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.medium-6,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.medium-6{
+    width: 100%;
+  }
+
+  #news-events #article2 div:nth-child(3) div:nth-child(3) div{
+    text-align: center;
+    margin-top: 8%
+  }
+
+  .moreann a, .viewcalendar a{
+    font-size: 1.3em;
+  }
+
+  .moreann a{
+    margin: 8% auto 0;
+  }
+
+  .readmore a{
+    font-size: 1em;
+  }
+
+  #global .icons{
+    margin-left: 11%;
+    margin-top: 2%;
+  }
+
+  #global .icons img{
+    width: 48%;
+  }
+
+  #global div h1{
+    font-size: 3em;
+  }
+
+  #global .graphicEle img{
+    width: 10%;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   padding: 2% 0 0 0 !important;
+   float: none;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   width: 60%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin: 4.5% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin: 6.7% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
+   font-size: 2.2em;
+  }
+
+  #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
+    width: 35%;
+  }
+
+  #resource-twit #article1 > div:nth-child(2){
+    margin-top: 1% !important;
+  }
+
+  #resource-twit #article1 div:nth-child(2) h2 a{
+    font-size: .6em;
+    margin-bottom: 5%;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 150px;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 2%;
+    margin-left: 32%;
+    margin-right: 4%;
+    width: 4%;
+  }
+
+  .footer #footContact .graphicEle img{
+    width: 9%;
+  }
+
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 15%;
+    padding-left: 3%;
+    float: left;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+  }
+
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 45%
+  }
+
+  .footer #footAddress div:nth-child(2){
+    width: 10%
+  }
+
+  /*MOZILLA-FIREFOX STYLES*/
+  /*@-moz-document url-prefix() {
+    .logos{
+      margin-left: .3%;
+      width: 57px;
+    }
+
+    .top-bar{
+      padding-left: 0;
+    }
+
+    .scsLogo{
+      margin-top: 1.8%;
+      margin-right: .3%;
+    }
+  }*/
+  /**/
+}
+
+
+
+@media only screen and (min-width: 657px) and (max-width: 685px) {
+  #header1 #socialNumber{
+    padding: .5% 0 4%;
+  }
+
+  #socialWrap{
+    width: 27%;
+  }
+
+  .logos{
+    margin-left: .1%;
+    width: 57px;
+  }
+
+  .top-bar {
+    width: 540px !important;
+    margin: -.5% 0 0 0;
+    padding-left: 0;
+  }
+
+  .top-bar-section ul li{
+    margin-right: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .45em !important;
+  }
+
+  .scsLogo{
+    margin-top: 1.8%;
+    margin-right: .1%;
+    width: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 4%;
+    font-size: 5em;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 1.7em;
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 50%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+
+  #mission{
+    padding-top: 13%;
+  }
+
+  #mission > div{
+    padding-bottom: 20%;
+  }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 21%;
+    margin-left: 10%;
+    padding-top: 2.8%;
+  }
+
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle{
+    margin-bottom: 5%;
+  }
+
+  #mission > div > div > div:nth-child(2) p{
+    font-size: 1.4em;
+    line-height: 45px;
+  }
+
+  #quickLink > div > div .icons{
+    width: 25%;
+    margin-left: 10%;
+    padding-top: 3.3%;
+  }
+
+  #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img, #news-events #article2 #headContainer2 .graphicEle img{
+    width: 45%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 75%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 55%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 2em;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 100px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 15%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 12.5%;
+   width: 16%;
+   float: left;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div{
+   padding-right: 1%;
+  }
+
+  .newsImg img{
+    width: 60%;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: .9em;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: .9em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p{
+   width: 100%;
+   padding-right: 0;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.columns,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.columns{
+    float: none;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.medium-6,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.medium-6{
+    width: 100%;
+  }
+
+  #news-events #article2 div:nth-child(3) div:nth-child(3) div{
+    text-align: center;
+    margin-top: 8%
+  }
+
+  .moreann a, .viewcalendar a{
+    font-size: 1.3em;
+  }
+
+  .moreann a{
+    margin: 8% auto 0;
+  }
+
+  .readmore a{
+    font-size: 1em;
+  }
+
+  #global .icons{
+    margin-left: 9%;
+    margin-top: 2%;
+  }
+
+  #global .icons img{
+    width: 48%;
+  }
+
+  #global div h1{
+    font-size: 3em;
+    text-align: center;
+  }
+
+  #global .graphicEle img{
+    width: 10%;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   padding: 2% 0 0 0 !important;
+   float: none;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   width: 60%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin: 4.5% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin: 6.7% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
+   font-size: 2.2em;
+  }
+
+  #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
+    width: 35%;
+  }
+
+  #resource-twit #article1 > div:nth-child(2){
+    margin-top: 1% !important;
+  }
+
+  #resource-twit #article1 div:nth-child(2) h2 a{
+    font-size: .6em;
+    margin-bottom: 5%;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 150px;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 2%;
+    margin-left: 32%;
+    margin-right: 4%;
+    width: 4%;
+  }
+
+  .footer #footContact .graphicEle img{
+    width: 9%;
+  }
+
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 17%;
+    padding-left: 3%;
+    float: left;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+  }
+
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 45%
+  }
+
+  .footer #footAddress div:nth-child(2){
+    width: 10%
+  }
+
+  /*MOZILLA-FIREFOX STYLES*/
+  /*@-moz-document url-prefix() {
+    .logos{
+      margin-left: .1%;
+      width: 57px;
+    }
+
+    .top-bar{
+      padding-left: 0;
+    }
+
+    .scsLogo{
+      margin-top: 1.8%;
+      margin-right: .1%;
+    }
+  }*/
+  /**/
+}
+
+
+
+@media only screen and (min-width: 642px) and (max-width: 656px) {
+  #header1 #socialNumber{
+    padding: .5% 0 4.5%;
+  }
+
+  #socialWrap{
+    width: 33%;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .logos{
+    width: 55px;
+    margin-left: 0;
+  }
+
+  .top-bar {
+    width: 530px !important;
+    margin: -.5% 0 0 0;
+  }
+
+  .top-bar-section ul li{
+    margin-right: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .4em !important;
+  }
+
+  .scsLogo{
+    margin-top: 1.5%;
+    margin-right: 0;
+    width: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 4%;
+    font-size: 5em;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 4%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 1.7em;
+    margin-bottom: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 70%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+
+  #mission{
+    padding-top: 13%;
+  }
+
+  #mission > div{
+    padding-bottom: 20%;
+  }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 22%;
+    margin-left: 10%;
+    padding-top: 3%;
+  }
+
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle{
+    margin-bottom: 5%;
+  }
+
+  #mission > div > div > div:nth-child(2) p{
+    font-size: 1.4em;
+    line-height: 45px;
+  }
+
+  #quickLink > div > div .icons{
+    width: 26%;
+    margin-left: 10%;
+    padding-top: 4%;
+  }
+
+  #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img, #news-events #article2 #headContainer2 .graphicEle img{
+    width: 45%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 75%;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: 55%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 2em;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 100px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 15%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 12.5%;
+   width: 16%;
+   float: left;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div{
+   padding-right: 1%;
+  }
+
+  .newsImg img{
+    width: 60%;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 8% !important;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: .9em;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: .9em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 85%;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p{
+   width: 100%;
+   padding-right: 0;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.columns,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.columns, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.columns{
+    float: none;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) > div > div.medium-6,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) > div > div.medium-6, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) > div > div.medium-6{
+    width: 100%;
+  }
+
+  #news-events #article2 div:nth-child(3) div:nth-child(3) div{
+    text-align: center;
+    margin-top: 8%
+  }
+
+  .readmore a{
+    font-size: 1em;
+  }
+
+  #global .icons{
+    margin-left: 9%;
+    margin-top: 2%;
+  }
+
+  #global .icons img{
+    width: 48%;
+  }
+
+  #global div h1{
+    font-size: 2.7em;
+  }
+
+  #global .graphicEle img{
+    width: 10%;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   padding: 2% 0 0 0 !important;
+   float: none;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   width: 60%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin: 4.5% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin: 6.7% auto 0 0;
+   width: 16%;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
+   font-size: 2.2em;
+  }
+
+  #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
+    width: 36%;
+  }
+
+  #resource-twit #article1 > div:nth-child(2){
+    margin-top: 1% !important;
+  }
+
+  #resource-twit #article1 div:nth-child(2) h2 a{
+    font-size: .6em;
+    margin-bottom: 5%;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 150px;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 2%;
+    margin-left: 32%;
+    margin-right: 4%;
+    width: 4%;
+  }
+
+  .footer #footContact .graphicEle img{
+    width: 9%;
+  }
+
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 17%;
+    padding-left: 3%;
+    float: left;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+  }
+
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 45%
+  }
+
+  .footer #footAddress div:nth-child(2){
+    width: 10%
+  }
+}
+
+
+
+@media only screen and (max-width: 641px) {
+  .top-bar-section{
+    -webkit-box-shadow: -10px 10px 19px -2px rgba(0, 0, 0, .3);
+    -moz-box-shadow: -10px 10px 19px -2px rgba(0, 0, 0, .3);
+    box-shadow: -10px 10px 19px -2px rgba(0, 0, 0, .3);
+  }
+
+  #header1 ul #linkFaculty ul, #header1 ul #linkAbout ul{
+    opacity: 0;
+    display: none;
+    position: absolute;
+    left: -138px !important;
+    background: #0a0699;
+    border: #FF033E solid 6px;
+  }
+
+  #header1 ul #linkFaculty ul{
+    margin-top: -315px !important;
+  }
+
+  #header1 ul #linkAbout ul{
+    margin-top: -67px !important;
+  }
+
+  .moreann a, .viewcalendar a{
+    cursor: pointer;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #news-events #article1{
+    padding-bottom: 2%;
+  }
+
+  #news-events #article2 div:nth-child(3) div:nth-child(3) div{
+    text-align: center;
+    margin-top: 8%
+  }
+
+  .viewcalendar a{
+    font-size: 1.5em;
+  }
+
+  #global > div{
+    left: 0;
+    right: 0;
+  }
+
+  #resource-twit #article1 > div:nth-child(2){
+    margin: 5% auto 0;
+  }
+}
+
+
+
+@media only screen and (min-width: 635px) and (max-width: 641px) {
+  #header1 #socialNumber{
+    padding: .5% 0 5%;
+  }
+
+  #socialWrap{
+    width: 33%;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .logos {
+    width: 60px;
+    margin-left: 1%;
+  }
+
+  .top-bar {
+    width: 50% !important;
+    margin: 1% 0 0 43%;
+    padding-top: .7%;
+    padding-left: 30%;
+    background: transparent !important;
+    position: absolute;
+    z-index: 1000 !important;
+  }
+
+  .top-bar.columns {
+    padding-left: 0;
+  }
+
+  .top-bar ul li {
+    margin-right: 0 !important;
+  }
+
+  .top-bar ul li a {
+    font-size: .7em !important;
+  }
+
+  .top-bar, .title-area, .title-area li a{
+    background: transparent !important;
+  }
+
+  .title-area{
+    background: transparent;
+    width: 110px;
+    margin-left: 55% !important;
+  }
+
+  .title-area li a{
+    color: #FFF !important;
+  }
+
+  .top-bar .toggle-topbar.menu-icon a span::after, .top-bar .toggle-topbar.menu-icon a span:hover:after, .top-bar.expanded .toggle-topbar a span::after{
+    box-shadow: 0 0 0 1px #FFF, 0 7px 0 1px #FFF, 0 14px 0 1px #FFF;
+  }
+
+  .top-bar-section{
+    float: right;
+    background: #0a0699;
+    padding: 0;
+    margin-top: 2.2%;
+    margin-left: 15% !important;
+    border-left: #FF033E solid 6px;
+    border-right: #FF033E solid 6px;
+    border-bottom: #FF033E solid 6px;
+  }
+
+  .top-bar-section ul li{
+    padding-bottom: 11%;
+  }
+
+  .top-bar-section ul li:hover{
+    background: #FF033E;
+    width: 100%;
+  }
+
+  .top-bar-section ul li a{
+    font-size: .8em !important;
+    padding: 12px;
+  }
+
+  #header1 .slideUnder:hover:after, #header1 ul li.currentLink:after{
+    width: 30%;
+  }
+
+  #header1 .slideUnder:hover:after{
+    background: #0a0699;
+  }
+
+  .scsLogo{
+    margin-top: 2%;
+    margin-right: 1%;
+    width: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 6%;
+    font-size: 5em;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 1.7em;
+    margin-bottom: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 70%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+
+  #mission{
+    padding-top: 13%;
+  }
+
+  #mission > div{
+    padding-bottom: 20%;
+  }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 22%;
+    margin-left: 10%;
+    padding-top: 3%;
+  }
+
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle{
+    margin-bottom: 5%;
+  }
+
+  #mission > div > div > div:nth-child(2) p{
+    font-size: 1.4em;
+    line-height: 45px;
+  }
+
+  #quickLink > div > div .icons{
+    width: 26%;
+    margin-left: 10%;
+    padding-top: 4%;
+  }
+
+  #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+
+  #news-events #article1 #headContainer, #news-events #article2 #headContainer2{
+   max-width: 94%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img, #news-events #article2 #headContainer2 .graphicEle img{
+    width: 15%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 0;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: -10%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 3em;
+   margin-top: 4.5%;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 100px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 10%;
+   width: 9%;
+   float: left;
+  }
+
+  .newsImg{
+    width: 90% !important;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 0 !important;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   text-align: center;
+   padding: 0 10% 0 2%;
+   width: 100%;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.4em;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: 1.2em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 100%;
+  }
+
+  .newsImg{
+    margin: 0 auto;
+    float: none;
+  }
+
+  .newsArticle, .eventArticle{
+    text-align: center;
+  }
+
+  .eventDate{
+    margin: 0 auto;
+  }
+
+  .readmore{
+    margin-bottom: 5%;
+  }
+
+  .readmore a{
+    font-size: 1.2em;
+  }
+
+  #news-events #article1 > div:nth-child(4), #news-events #article2 > div:nth-child(3){
+    float: none;
+    text-align: center;
+  }
+
+  #global .icons{
+    margin-left: 9%;
+    margin-top: 2%;
+  }
+
+  #global .icons img{
+    width: 48%;
+  }
+
+  #global div h1{
+    font-size: 2.7em;
+  }
+
+  #global .graphicEle img{
+    width: 10%;
+  }
+
+  #resource-twit{
+    height: 1190px;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   padding: 2% 0 0 0 !important;
+   float: none;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   width: 67%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin: 4% auto 0 3%;
+   width: 10%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin: 3% auto 0 13%;
+   width: 11%;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
+   font-size: 3em;
+  }
+
+  #resource-twit #article1 #headContainer h1{
+   width: 70%;
+  }
+
+  #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
+    width: 25%;
+  }
+
+  #resource-twit #article1 > div:nth-child(2){
+    margin-top: 1% !important;
+  }
+
+  #resource-twit #article1 div:nth-child(2) h2 a{
+    font-size: .6em;
+    margin-bottom: 5%;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 150px;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 2.8%;
+    margin-left: 25%;
+    margin-right: 4%;
+    width: 7%;
+  }
+
+  .footer #footContact .graphicEle img{
+    width: 17%;
+  }
+
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 23%;
+    padding-left: 3%;
+    float: left;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+  }
+
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 45%
+  }
+
+  .footer #footAddress div:nth-child(2){
+    width: 10%
+  }
+
+  .footer #footAddress div:nth-child(1) h2, .footer #footAddress div:nth-child(1) p, .footer #footAddress div:nth-child(3) p{
+    font-size: 1.1em;
+  }
+
+  .footer #footAddress div:nth-child(2){
+    text-align: center;
+  }
+}
+
+
+
+@media only screen and (min-width: 588px) and (max-width: 634px) {
+  #header1 #socialNumber{
+    padding: .5% 0 5%;
+  }
+
+  #socialWrap{
+    width: 33%;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .logos {
+    width: 60px;
+    margin-left: 1%;
+  }
+
+  .top-bar {
+    width: 55% !important;
+    margin: 1% 0 0 38%;
+    padding-top: .7%;
+    background: transparent !important;
+    position: absolute;
+    z-index: 1000 !important;
+  }
+
+  .top-bar.columns {
+    padding-left: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .45em !important;
+  }
+
+  .top-bar ul li {
+    margin-right: 0 !important;
+  }
+
+  .top-bar, .title-area, .title-area li a{
+    background: transparent !important;
+  }
+
+  .title-area{
+    background: transparent;
+    width: 110px;
+    margin-left: 55% !important;
+  }
+
+  .title-area li a{
+    color: #FFF !important;
+  }
+
+  .top-bar .toggle-topbar.menu-icon a span::after, .top-bar .toggle-topbar.menu-icon a span:hover:after, .top-bar.expanded .toggle-topbar a span::after{
+    box-shadow: 0 0 0 1px #FFF, 0 7px 0 1px #FFF, 0 14px 0 1px #FFF;
+  }
+
+  .top-bar-section{
+    float: right;
+    background: #0a0699;
+    padding: 0;
+    margin-top: 1.9%;
+    margin-left: 15% !important;
+    border-left: #FF033E solid 6px;
+    border-right: #FF033E solid 6px;
+    border-bottom: #FF033E solid 6px;
+  }
+
+  .top-bar-section ul li{
+    padding-bottom: 11%;
+  }
+
+  .top-bar-section ul li:hover{
+    background: #FF033E;
+    width: 100%;
+  }
+
+  .top-bar-section ul li a{
+    font-size: .8em !important;
+    padding: 12px;
+  }
+
+  #header1 .slideUnder:hover:after, #header1 ul li.currentLink:after{
+    width: 30%;
+  }
+
+  #header1 .slideUnder:hover:after{
+    background: #0a0699;
+  }
+
+  .scsLogo{
+    margin-top: 1%;
+    margin-right: 1%;
+    width: 9%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 6%;
+    font-size: 5em;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 1.7em;
+    margin-bottom: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 70%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+
+  #mission{
+    padding-top: 13%;
+  }
+
+  #mission > div{
+    padding-bottom: 33%;
+  }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 22%;
+    margin-left: 5%;
+    padding-top: 4%;
+  }
+
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle{
+    margin-bottom: 5%;
+  }
+
+  #mission > div > div > div:nth-child(2) p{
+    font-size: 1.4em;
+    line-height: 45px;
+    padding: 1% 2% 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 26%;
+    margin-left: 5%;
+    padding-top: 5%;
+  }
+
+  #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+
+  #news-events #article1 #headContainer, #news-events #article2 #headContainer2{
+   max-width: 94%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img, #news-events #article2 #headContainer2 .graphicEle img{
+    width: 15%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 0;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: -10%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 3em;
+   margin-top: 4.5%;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 100px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 10%;
+   width: 9%;
+   float: left;
+  }
+
+  .newsImg{
+    width: 90% !important;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 0 !important;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   text-align: center;
+   padding: 0 8% 0 3%;
+   width: 100%;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.4em;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: 1.2em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 100%;
+  }
+
+  .newsImg{
+    margin: 0 auto;
+    float: none;
+  }
+
+  .newsArticle, .eventArticle{
+    text-align: center;
+  }
+
+  .eventDate{
+    margin: 0 auto;
+  }
+
+  .readmore{
+    margin-bottom: 5%;
+  }
+
+  .readmore a{
+    font-size: 1.2em;
+  }
+
+  #news-events #article1 > div:nth-child(4), #news-events #article2 > div:nth-child(3){
+    float: none;
+    text-align: center;
+  }
+
+  #global .icons{
+    margin-left: 9%;
+    margin-top: 2%;
+  }
+
+  #global .icons img{
+    width: 48%;
+  }
+
+  #global div h1{
+    font-size: 2.7em;
+  }
+
+  #global .graphicEle img{
+    width: 10%;
+  }
+
+  #resource-twit{
+    height: 1190px;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   padding: 2% 0 0 0 !important;
+   float: none;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   width: 67%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin: 4.5% auto 0 0;
+   width: 13%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin: 6.7% auto 0 0;
+   width: 11%;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
+   font-size: 3em;
+  }
+
+  #resource-twit #article1 #headContainer h1{
+   width: 70%;
+  }
+
+  #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
+    width: 25%;
+  }
+
+  #resource-twit #article1 div:nth-child(2) h2 a{
+    margin-bottom: 5%;
+  }
+
+  #resource-twit #article2 #headContainer2 h1{
+    width: 70%;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 2.8%;
+    margin-left: 25%;
+    margin-right: 4%;
+    width: 7%;
+  }
+
+  .footer #footContact .graphicEle img{
+    width: 17%;
+  }
+
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 23%;
+    padding-left: 3%;
+    float: left;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+  }
+
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 45%
+  }
+
+  .footer #footAddress div:nth-child(2){
+    width: 10%
+  }
+
+  .footer #footAddress div:nth-child(1) h2, .footer #footAddress div:nth-child(1) p, .footer #footAddress div:nth-child(3) p{
+    font-size: 1.1em;
+  }
+
+  .footer #footAddress div:nth-child(2){
+    text-align: center;
+  }
+}
+
+
+
+@media only screen and (min-width: 555px) and (max-width: 587px) {
+  #header1 #socialNumber{
+    padding: .5% 0 5%;
+  }
+
+  #socialWrap{
+    width: 33%;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .logos {
+    width: 60px;
+    margin-left: 1%;
+  }
+
+  .top-bar {
+    width: 60% !important;
+    margin: 1.2% 0 0 30%;
+    padding-top: .7%;
+    background: transparent !important;
+    position: absolute;
+    z-index: 1000 !important;
+  }
+
+  .top-bar.columns {
+    padding-left: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .45em !important;
+  }
+
+  .top-bar ul li {
+    margin-right: 0 !important;
+  }
+
+  .top-bar, .title-area, .title-area li a{
+    background: transparent !important;
+  }
+
+  .title-area{
+    background: transparent;
+    width: 110px;
+    margin-left: 55% !important;
+  }
+
+  .title-area li a{
+    color: #FFF !important;
+  }
+
+  .top-bar .toggle-topbar.menu-icon a span::after, .top-bar .toggle-topbar.menu-icon a span:hover:after, .top-bar.expanded .toggle-topbar a span::after{
+    box-shadow: 0 0 0 1px #FFF, 0 7px 0 1px #FFF, 0 14px 0 1px #FFF;
+  }
+
+  .top-bar-section{
+    float: right;
+    background: #0a0699;
+    padding: 0;
+    margin-top: 1.8%;
+    margin-left: 15% !important;
+    border-left: #FF033E solid 6px;
+    border-right: #FF033E solid 6px;
+    border-bottom: #FF033E solid 6px;
+  }
+
+  .top-bar-section ul li{
+    padding-bottom: 11%;
+  }
+
+  .top-bar-section ul li:hover{
+    background: #FF033E;
+    width: 100%;
+  }
+
+  .top-bar-section ul li a{
+    font-size: .8em !important;
+    padding: 12px;
+  }
+
+  #header1 .slideUnder:hover:after, #header1 ul li.currentLink:after{
+    width: 30%;
+  }
+
+  #header1 .slideUnder:hover:after{
+    background: #0a0699;
+  }
+
+  .scsLogo{
+    margin-top: 1%;
+    margin-right: 1%;
+    width: 9%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 6%;
+    font-size: 5em;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 1.5em;
+    margin-bottom: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 70%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+
+  #mission{
+    padding-top: 13%;
+  }
+
+  #mission > div{
+    padding-bottom: 40%;
+  }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 24%;
+    margin-left: 5%;
+    padding-top: 4%;
+  }
+
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3.8em;
+  }
+
+  #mission > div > div > div .graphicEle{
+    margin-bottom: 5%;
+  }
+
+  #mission > div > div > div:nth-child(2) p{
+    font-size: 1.4em;
+    line-height: 45px;
+    padding: 1% 2% 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 28%;
+    margin-left: 5%;
+    padding-top: 5%;
+  }
+
+  #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+
+  #news-events #article1 #headContainer, #news-events #article2 #headContainer2{
+   max-width: 94%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img, #news-events #article2 #headContainer2 .graphicEle img{
+    width: 15%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 0;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: -10%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 3em;
+   margin-top: 4.5%;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 100px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 11%;
+   width: 9%;
+   float: left;
+  }
+
+  .newsImg{
+    width: 90% !important;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 0 !important;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   text-align: center;
+   padding: 0 5%;
+   width: 100%;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.4em;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: 1.2em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 100%;
+  }
+
+  .newsImg{
+    margin: 0 auto;
+    float: none;
+  }
+
+  .newsArticle, .eventArticle{
+    text-align: center;
+  }
+
+  .eventDate{
+    margin: 0 auto;
+  }
+
+  .readmore{
+    margin-bottom: 5%;
+  }
+
+  .readmore a{
+    font-size: 1.2em;
+  }
+
+  #news-events #article1 > div:nth-child(4), #news-events #article2 > div:nth-child(3){
+    float: none;
+    text-align: center;
+  }
+
+  #global .icons{
+    margin-left: 7%;
+    margin-top: 2%;
+  }
+
+  #global .icons img{
+    width: 48%;
+  }
+
+  #global div h1{
+    font-size: 2.7em;
+  }
+
+  #global .graphicEle img{
+    width: 10%;
+  }
+
+  #resource-twit{
+    height: 1190px;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   padding: 2% 0 0 0 !important;
+   float: none;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   width: 67%;
+  }
+
+  #resource-twit #article1 #headContainer .icons, #resource-twit #article2 #headContainer2 .icons{
+   width: 14%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin: 4.5% auto 0 0;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin: 5% auto 0 0;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
+   font-size: 4em;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1{
+   width: 150px;
+  }
+
+  #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
+    width: 25%;
+  }
+
+  #resource-twit #article1 div:nth-child(2) h2 a{
+    margin-bottom: 5%;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 4%;
+    margin-left: 18%;
+    margin-right: 5%;
+    width: 9.5%;
+  }
+
+  .footer #footContact .graphicEle img{
+    width: 17%;
+  }
+
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 30%;
+    padding-left: 3%;
+    float: left;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+  }
+
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 45%
+  }
+
+  .footer #footAddress div:nth-child(2){
+    width: 10%
+  }
+
+  .footer #footAddress div:nth-child(1) h2, .footer #footAddress div:nth-child(1) p, .footer #footAddress div:nth-child(3) p{
+    font-size: 1em;
+  }
+
+  .footer #footAddress div:nth-child(2){
+    text-align: center;
+  }
+}
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 554px) {
+  #header1 #socialNumber{
+    padding: .5% 0 5%;
+  }
+
+  #socialWrap{
+    width: 37%;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .logos {
+    width: 60px;
+    margin-left: 1%;
+  }
+
+  .top-bar {
+    width: 60% !important;
+    margin: .5% 0 0 35%;
+    padding-top: .7%;
+    background: transparent !important;
+    position: absolute;
+    z-index: 1000 !important;
+  }
+
+  .top-bar.columns {
+    padding-left: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .45em !important;
+  }
+
+  .top-bar ul li {
+    margin-right: 0 !important;
+  }
+
+  .top-bar, .title-area, .title-area li a{
+    background: transparent !important;
+  }
+
+  .title-area{
+    background: transparent;
+    width: 110px;
+    margin-left: 55% !important;
+  }
+
+  .title-area li a{
+    color: #FFF !important;
+  }
+
+  .top-bar .toggle-topbar.menu-icon a span::after, .top-bar .toggle-topbar.menu-icon a span:hover:after, .top-bar.expanded .toggle-topbar a span::after{
+    box-shadow: 0 0 0 1px #FFF, 0 7px 0 1px #FFF, 0 14px 0 1px #FFF;
+  }
+
+  .top-bar-section{
+    float: right;
+    background: #0a0699;
+    padding: 0;
+    margin-top: 3.3%;
+    margin-left: 15% !important;
+    border-left: #FF033E solid 6px;
+    border-right: #FF033E solid 6px;
+    border-bottom: #FF033E solid 6px;
+  }
+
+  .top-bar-section ul li{
+    padding-bottom: 11%;
+  }
+
+  .top-bar-section ul li:hover{
+    background: #FF033E;
+    width: 100%;
+  }
+
+  .top-bar-section ul li a{
+    font-size: .8em !important;
+    padding: 12px;
+  }
+
+  #header1 .slideUnder:hover:after, #header1 ul li.currentLink:after{
+    width: 30%;
+  }
+
+  #header1 .slideUnder:hover:after{
+    background: #0a0699;
+  }
+
+  .scsLogo{
+    margin-top: 1%;
+    margin-right: 1%;
+    width: 9%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 6%;
+    font-size: 5em;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 1.5em;
+    line-height: 30px;
+    margin-bottom: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 75%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+
+  #mission{
+    padding-top: 20%;
+    margin-top: 30% !important;
+  }
+
+  #mission > div{
+    padding-bottom: 45%;
+  }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 24%;
+    margin-left: 5%;
+    padding-top: 4%;
+  }
+
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3em;
+  }
+
+  #mission > div > div > div .graphicEle{
+    margin-bottom: 5%;
+  }
+
+  #mission > div > div > div:nth-child(2) p{
+    font-size: 1.4em;
+    line-height: 45px;
+    padding: 1% 2% 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 28%;
+    margin-left: 5%;
+    padding-top: 5%;
+  }
+
+  #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+
+  #news-events #article1 #headContainer, #news-events #article2 #headContainer2{
+   max-width: 94%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img, #news-events #article2 #headContainer2 .graphicEle img{
+    width: 15%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 0;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: -10%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 2.7em;
+   margin-top: 4.5%;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 100px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 11%;
+   width: 9%;
+   float: left;
+  }
+
+  .newsImg{
+    width: 90% !important;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 0 !important;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   text-align: center;
+   padding: 0 5%;
+   width: 100%;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.4em;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: 1.2em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 100%;
+  }
+
+  .newsImg{
+    margin: 0 auto;
+    float: none;
+  }
+
+  .newsArticle, .eventArticle{
+    text-align: center;
+  }
+
+  .eventDate{
+    margin: 0 auto;
+  }
+
+  .readmore{
+    margin-bottom: 5%;
+  }
+
+  .readmore a{
+    font-size: 1.2em;
+  }
+
+  #news-events #article1 > div:nth-child(4), #news-events #article2 > div:nth-child(3){
+    float: none;
+    text-align: center;
+  }
+
+  #global .icons{
+    margin-left: 7%;
+    margin-top: 2%;
+  }
+
+  #global .icons img{
+    width: 48%;
+  }
+
+  #global div h1{
+    font-size: 2.4em;
+  }
+
+  #global .graphicEle img{
+    width: 10%;
+  }
+
+  #resource-twit{
+    height: 1190px;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   padding: 2% 0 0 0 !important;
+   float: none;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   width: 67%;
+  }
+
+  #resource-twit #article1 #headContainer .icons, #resource-twit #article2 #headContainer2 .icons{
+   width: 14%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin: 4.5% auto 0 0;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin: 5% auto 0 0;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
+   font-size: 3.5em;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1{
+   width: 150px;
+  }
+
+  #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
+    width: 25%;
+  }
+
+  #resource-twit #article1 div:nth-child(2) h2 a{
+    margin-bottom: 5%;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 3.8%;
+    margin-left: 18%;
+    margin-right: 5%;
+    width: 9.5%;
+  }
+
+  .footer #footContact .graphicEle img{
+    width: 17%;
+  }
+
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 30%;
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+  }
+
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 45%
+  }
+
+  .footer #footAddress div:nth-child(2){
+    width: 10%
+  }
+
+  .footer #footAddress div:nth-child(1) h2, .footer #footAddress div:nth-child(1) p, .footer #footAddress div:nth-child(3) p{
+    font-size: .9em;
+  }
+
+  .footer #footAddress div:nth-child(2){
+    text-align: center;
+  }
+}
+
+
+
+@media only screen and (min-width: 442px) and (max-width: 479px) {
+  #header1 #socialNumber{
+    padding: .5% 0 7%;
+  }
+
+  #socialWrap{
+    width: 41%;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .logos {
+    width: 60px;
+    margin-left: 1%;
+  }
+
+  .top-bar {
+    width: 65% !important;
+    margin: 1% 0 0 30%;
+    padding-top: .7%;
+    background: transparent !important;
+    position: absolute;
+    z-index: 1000 !important;
+  }
+
+  .top-bar.columns {
+    padding-left: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .45em !important;
+  }
+
+  .top-bar ul li {
+    margin-right: 0 !important;
+  }
+
+  .top-bar, .title-area, .title-area li a{
+    background: transparent !important;
+  }
+
+  .title-area{
+    background: transparent;
+    width: 110px;
+    margin-left: 43% !important;
+  }
+
+  .title-area li a{
+    color: #FFF !important;
+  }
+
+  .top-bar .toggle-topbar.menu-icon a span::after, .top-bar .toggle-topbar.menu-icon a span:hover:after, .top-bar.expanded .toggle-topbar a span::after{
+    box-shadow: 0 0 0 1px #FFF, 0 7px 0 1px #FFF, 0 14px 0 1px #FFF;
+  }
+
+  .top-bar-section{
+    float: right;
+    background: #0a0699;
+    padding: 0;
+    margin-top: 3%;
+    margin-left: 15% !important;
+    border-left: #FF033E solid 6px;
+    border-right: #FF033E solid 6px;
+    border-bottom: #FF033E solid 6px;
+  }
+
+  .top-bar-section ul li{
+    padding-bottom: 11%;
+  }
+
+  .top-bar-section ul li:hover{
+    background: #FF033E;
+    width: 100%;
+  }
+
+  .top-bar-section ul li a{
+    font-size: .8em !important;
+    padding: 12px;
+  }
+
+  #header1 .slideUnder:hover:after, #header1 ul li.currentLink:after{
+    width: 30%;
+  }
+
+  #header1 .slideUnder:hover:after{
+    background: #0a0699;
+  }
+
+  .scsLogo{
+    margin-top: 2.5%;
+    margin-right: 1%;
+    width: 9%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 6%;
+    font-size: 4.5em;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 1em;
+    line-height: 30px;
+    margin-bottom: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 75%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+
+  #mission{
+    padding-top: 20%;
+    margin-top: 30% !important;
+  }
+
+  #mission > div{
+    padding-bottom: 45%;
+  }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 24%;
+    margin-left: 1%;
+    padding-top: 4%;
+  }
+
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 3em;
+  }
+
+  #mission > div > div > div .graphicEle{
+    margin-bottom: 5%;
+  }
+
+  #mission > div > div > div:nth-child(2) p{
+    font-size: 1.4em;
+    line-height: 45px;
+    padding: 1% 2% 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 28%;
+    margin-left: 1%;
+    padding-top: 5%;
+  }
+
+  #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+
+  #news-events #article1 #headContainer, #news-events #article2 #headContainer2{
+   max-width: 94%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img, #news-events #article2 #headContainer2 .graphicEle img{
+    width: 15%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 0;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: -10%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 2.5em;
+   margin-top: 4.5%;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 100px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 12%;
+   width: 9%;
+   float: left;
+  }
+
+  .newsImg{
+    width: 90% !important;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 0 !important;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   text-align: center;
+   padding: 0 5%;
+   width: 100%;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.4em;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: 1.2em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 100%;
+  }
+
+  .newsImg{
+    margin: 0 auto;
+    float: none;
+  }
+
+  .newsArticle, .eventArticle{
+    text-align: center;
+  }
+
+  .eventDate{
+    margin: 0 auto;
+  }
+
+  .readmore{
+    margin-bottom: 5%;
+  }
+
+  .readmore a{
+    font-size: 1.2em;
+  }
+
+  #news-events #article1 > div:nth-child(4), #news-events #article2 > div:nth-child(3){
+    float: none;
+    text-align: center;
+  }
+
+  #global .icons{
+    margin-left: 7%;
+    margin-top: 2%;
+  }
+
+  #global .icons img{
+    width: 50%;
+  }
+
+  #global div h1{
+    font-size: 2em;
+  }
+
+  #global .graphicEle img{
+    width: 10%;
+  }
+
+  #resource-twit{
+    height: 1190px;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   padding: 2% 0 0 0 !important;
+   float: none;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   width: 67%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin: 4.5% auto 0 -13%;
+   width: 17%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin: 5% auto 0 0;
+   width: 14%;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
+   font-size: 3.5em;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1{
+   width: 150px;
+  }
+
+  #resource-twit #article1 #headContainer .graphicEle img, #resource-twit #article2 #headContainer2 .graphicEle img{
+    width: 25%;
+  }
+
+  #resource-twit #article1 div:nth-child(2) h2 a{
+    margin-bottom: 5%;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 4.5%;
+    margin-left: 14%;
+    margin-right: 5%;
+    width: 10.5%;
+  }
+
+  .footer #footContact .graphicEle img{
+    width: 17%;
+  }
+
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 27%;
+    left: 0;
+    right: 0;
+    padding-left: 0;
+    width: 100%;
+    z-index: 3;
+  }
+
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 100%;
+  }
+
+  .footer #footAddress div:nth-child(2){
+    display: none;
+  }
+
+  .footer #footAddress div:nth-child(1) h2, .footer #footAddress div:nth-child(1) p, .footer #footAddress div:nth-child(3) p{
+    font-size: 1.1em;
+    text-align: center;
+  }
+}
+
+
+
+@media only screen and (min-width: 390px) and (max-width: 441px) {
+  #header1 #socialNumber{
+    padding: .5% 0 7%;
+  }
+
+  #socialWrap{
+    width: 46%;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .logos {
+    width: 60px;
+    margin-left: 1%;
+  }
+
+  .top-bar {
+    width: 75% !important;
+    margin: 1% 0 0 15%;
+    padding-top: .7%;
+    background: transparent !important;
+    position: absolute;
+    z-index: 1000 !important;
+  }
+
+  .top-bar.columns {
+    padding-left: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .45em !important;
+  }
+
+  .top-bar ul li {
+    margin-right: 0 !important;
+  }
+
+  .top-bar, .title-area, .title-area li a{
+    background: transparent !important;
+  }
+
+  .title-area{
+    background: transparent;
+    width: 110px;
+    margin-left: 50% !important;
+  }
+
+  .title-area li a{
+    color: #FFF !important;
+  }
+
+  .top-bar .toggle-topbar.menu-icon a span::after, .top-bar .toggle-topbar.menu-icon a span:hover:after, .top-bar.expanded .toggle-topbar a span::after{
+    box-shadow: 0 0 0 1px #FFF, 0 7px 0 1px #FFF, 0 14px 0 1px #FFF;
+  }
+
+  .top-bar-section{
+    float: right;
+    background: #0a0699;
+    padding: 0;
+    margin-top: 3%;
+    margin-left: 15% !important;
+    border-left: #FF033E solid 6px;
+    border-right: #FF033E solid 6px;
+    border-bottom: #FF033E solid 6px;
+  }
+
+  .top-bar-section ul li{
+    padding-bottom: 11%;
+  }
+
+  .top-bar-section ul li:hover{
+    background: #FF033E;
+    width: 100%;
+  }
+
+  .top-bar-section ul li a{
+    font-size: .8em !important;
+    padding: 12px;
+  }
+
+  #header1 .slideUnder:hover:after, #header1 ul li.currentLink:after{
+    width: 30%;
+  }
+
+  #header1 .slideUnder:hover:after{
+    background: #0a0699;
+  }
+
+  .scsLogo{
+    margin-top: 2.5%;
+    margin-right: 1%;
+    width: 9%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 6%;
+    font-size: 4.5em;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 1.5em;
+    margin-bottom: 15%;
+    line-height: 30px;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 100%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+
+  #mission{
+    padding-top: 20%;
+    margin-top: 30% !important;
+  }
+
+  #mission > div{
+    padding-bottom: 45%;
+  }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 24%;
+    margin-left: 0;
+    padding-top: 4%;
+  }
+
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 2.9em;
+  }
+
+  #mission > div > div > div .graphicEle{
+    margin-bottom: 5%;
+  }
+
+  #mission > div > div > div:nth-child(2) p{
+    font-size: 1.4em;
+    line-height: 45px;
+    padding: 1% 2% 3%;
+  }
+
+  #quickLink > div > div .icons{
+    width: 28%;
+    margin-left: 0;
+    padding-top: 5%;
+  }
+
+  #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  #news-events #article1 #headContainer, #news-events #article2 #headContainer2{
+   max-width: 94%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img, #news-events #article2 #headContainer2 .graphicEle img{
+    width: 15%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 0;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: -10%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 2.2em;
+   margin-top: 4.5%;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 100px;
+   padding: 5% 0 0 10%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 11%;
+   width: 9%;
+   float: left;
+  }
+
+  .newsImg{
+    width: 90% !important;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 0 !important;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   text-align: center;
+   padding: 0 5%;
+   width: 100%;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.4em;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: 1.2em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 100%;
+  }
+
+  .newsImg{
+    margin: 0 auto;
+    float: none;
+  }
+
+  .newsArticle, .eventArticle{
+    text-align: center;
+  }
+
+  .eventDate{
+    margin: 0 auto;
+  }
+
+  .readmore{
+    margin-bottom: 5%;
+  }
+
+  .readmore a{
+    font-size: 1.2em;
+  }
+
+  #news-events #article1 > div:nth-child(4), #news-events #article2 > div:nth-child(3){
+    float: none;
+    text-align: center;
+  }
+
+  #global .icons{
+    margin-left: 7%;
+    margin-top: 2%;
+  }
+
+  #global .icons img{
+    width: 50%;
+  }
+
+  #global div h1{
+    font-size: 2em;
+  }
+
+  #global .graphicEle img{
+    width: 10%;
+  }
+
+  #resource-twit{
+    height: 1190px;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   padding: 2% 0 0 0 !important;
+   float: none;
+  }
+
+  #resource-twit #article1 #headContainer{
+   width: 100%;
+  }
+
+  #resource-twit #article2 #headContainer2{
+   width: 67%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin: 4.5% auto 0 -13%;
+   width: 17%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin: 5% auto 0 0;
+   width: 14%;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
+   font-size: 3.5em;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1{
+   width: 150px;
+  }
+
+  #resource-twit #article1 #headContainer .graphicEle img{
+    width: 18%;
+  }
+
+  #resource-twit #article2 #headContainer2 .graphicEle img{
+    width: 25%;
+  }
+
+  #resource-twit #article1 div:nth-child(2){
+   margin-top: 5%;
+  }
+
+  #resource-twit #article1 div:nth-child(2) h2 a{
+   margin-bottom: 5%;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 4.5%;
+    margin-left: 14%;
+    margin-right: 5%;
+    width: 10.5%;
+  }
+
+  .footer #footContact .graphicEle img{
+    width: 17%;
+  }
+
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 30%;
+    left: 0;
+    right: 0;
+    padding-left: 0;
+    width: 100%;
+    z-index: 3;
+  }
+
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 100%;
+  }
+
+  .footer #footAddress div:nth-child(2){
+    display: none;
+  }
+
+  .footer #footAddress div:nth-child(1) h2, .footer #footAddress div:nth-child(1) p, .footer #footAddress div:nth-child(3) p{
+    font-size: 1.1em;
+    text-align: center;
+  }
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 389px) {
+  #header1 #socialNumber{
+    padding: .5% 0 8%;
+  }
+
+  #socialWrap{
+    width: 53.4%;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .logos {
+    width: 60px;
+    margin-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+
+  .top-bar {
+    width: 55% !important;
+    margin: 1% 0 0 45%;
+    padding-top: .7%;
+    background: transparent !important;
+    position: absolute;
+    z-index: 1000 !important;
+  }
+
+  .top-bar.columns {
+    padding-left: 0;
+  }
+
+  .top-bar ul li a {
+    font-size: .45em !important;
+  }
+
+  .top-bar ul li {
+    margin-right: 0 !important;
+  }
+
+  .top-bar, .title-area, .title-area li a{
+    background: transparent !important;
+  }
+
+  .title-area{
+    background: transparent;
+    width: 110px;
+    margin-left: 15% !important;
+  }
+
+  .title-area li a{
+    color: #FFF !important;
+  }
+
+  .top-bar .toggle-topbar.menu-icon a span::after, .top-bar .toggle-topbar.menu-icon a span:hover:after, .top-bar.expanded .toggle-topbar a span::after{
+    box-shadow: 0 0 0 1px #FFF, 0 7px 0 1px #FFF, 0 14px 0 1px #FFF;
+  }
+
+  .top-bar-section{
+    float: right;
+    background: #0a0699;
+    padding: 0;
+    margin-top: 5.5%;
+    margin-left: 15% !important;
+    border-left: #FF033E solid 6px;
+    border-right: #FF033E solid 6px;
+    border-bottom: #FF033E solid 6px;
+  }
+
+  .top-bar-section ul li{
+    padding-bottom: 11%;
+  }
+
+  .top-bar-section ul li:hover{
+    background: #FF033E;
+    width: 100%;
+  }
+
+  .top-bar-section ul li a{
+    font-size: .8em !important;
+    padding: 12px;
+  }
+
+  #header1 .slideUnder:hover:after, #header1 ul li.currentLink:after{
+    width: 30%;
+  }
+
+  #header1 .slideUnder:hover:after{
+    background: #0a0699;
+  }
+
+  .scsLogo{
+    margin-top: 4%;
+    margin-right: 1%;
+    width: 9%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 23%;
+    margin-bottom: 6%;
+    font-size: 3.5em;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle{
+    margin-bottom: 6%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle img{
+    width: 30%;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 1.5em;
+    margin-bottom: 15%;
+    line-height: 30px;
+  }
+
+  #home #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 100%;
+  }
+
+  #bck {
+    margin-left: -30% !important;
+  }
+
+  #mission{
+    padding-top: 25%;
+    margin-top: 30% !important;
+    height: 500px;
+  }
+
+  #mission > div{
+    padding-bottom: 45%;
+  }
+
+  #mission > div > div > div:nth-child(1) .icons{
+    width: 24%;
+    margin-left: 0;
+    padding-top: 4%;
+  }
+
+  #mission > div > div > div:nth-child(1) h1, #quickLink > div > div h1{
+    font-size: 2.3em;
+  }
+
+  #mission > div > div > div .graphicEle{
+    margin-bottom: 5%;
+  }
+
+  #mission > div > div > div .graphicEle img{
+    width: 25%;
+  }
+
+  #mission > div > div > div:nth-child(2) p{
+    font-size: 1.2em;
+    line-height: 45px;
+    padding: 1% 2% 3%;
+  }
+
+  #quickLink{
+    height: 500px;
+  }
+
+  #quickLink > div > div .icons{
+    width: 28%;
+    margin-left: 0;
+    padding-top: 5%;
+  }
+
+  #quickLink > div > div > div .graphicEle{
+    margin-bottom: 3%;
+  }
+
+  #quickLink > div > div > div .graphicEle img{
+    width: 30%;
+  }
+
+  #quickLink > div > div div:nth-child(2) div h2 a{
+    font-size: .6em !important;
+    text-align: center;
+    margin-bottom: 9%;
+  }
+
+  #news-events #article1 #headContainer, #news-events #article2 #headContainer2{
+   max-width: 94%;
+  }
+
+  #news-events #article1 #headContainer{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img, #news-events #article2 #headContainer2 .graphicEle img{
+    width: 25%;
+  }
+
+  #news-events #article1 #headContainer .graphicEle img{
+    margin-left: 0;
+  }
+
+  #news-events #article2 #headContainer2 .graphicEle img{
+    margin-left: -10%;
+  }
+
+  #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
+   font-size: 2em;
+   margin-top: 4.5%;
+  }
+
+  #news-events #article1 #headContainer h1.columns, #news-events #article2 #headContainer2 h1.columns{
+   width: 100px;
+   padding: 5% 0 0 5%;
+  }
+
+  #news-events #article2 #headContainer2{
+   margin-left: 6%;
+  }
+
+  #news-events #article1 #headContainer .icons, #news-events #article2 #headContainer2 .icons{
+   margin-top: 11%;
+   width: 9%;
+   float: left;
+  }
+
+  .newsImg{
+    width: 90% !important;
+  }
+
+  #news-events #article2 > div:nth-child(2), #news-events #article2 > div:nth-child(3){
+   padding-left: 0 !important;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   text-align: center;
+   padding: 0 5%;
+   width: 100%;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div h3,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div h3, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div h3,
+  #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
+   font-size: 1.4em;
+  }
+
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(1) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(2) div p,
+  #news-events #article1 .article1Container .imgSlide > div:nth-child(3) div p, #news-events #article1 .article1Container .imgSlide > div:nth-child(4) div p,
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   font-size: 1.2em;
+  }
+
+  #news-events #article2 div:nth-child(2) div p, #news-events #article2 div:nth-child(3) div p{
+   width: 100%;
+  }
+
+  .newsImg{
+    margin: 0 auto;
+    float: none;
+  }
+
+  .newsArticle, .eventArticle{
+    text-align: center;
+  }
+
+  .eventDate{
+    margin: 0 auto;
+  }
+
+  .readmore{
+    margin-bottom: 5%;
+  }
+
+  .readmore a{
+    font-size: 1.2em;
+  }
+
+  #news-events #article1 > div:nth-child(4), #news-events #article2 > div:nth-child(3){
+    float: none;
+    text-align: center;
+  }
+
+  #global .icons{
+    margin-left: 7%;
+    margin-top: 1%;
+  }
+
+  #global .icons img{
+    width: 57%;
+  }
+
+  #global div h1{
+    font-size: 1.5em;
+  }
+
+  #global .graphicEle img{
+    width: 20%;
+  }
+
+  #resource-twit{
+    height: 1190px;
+  }
+
+  #resource-twit #article1 #headContainer, #resource-twit #article2 #headContainer2{
+   padding: 2% 0 0 0 !important;
+   float: none;
+  }
+
+  #resource-twit #article1 #headContainer{
+   width: 100%;
+  }
+
+  #resource-twit #article2 #headContainer2{
+   width: 67%;
+  }
+
+  #resource-twit #article1 #headContainer .icons{
+   margin: 4% 2% 0 -13%;
+   padding-left: 6%;
+   width: 17%;
+  }
+
+  #resource-twit #article2 #headContainer2 .icons{
+   margin: 5% auto 0 0;
+   width: 14%;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1, .footer #footContact h1{
+   font-size: 2.5em;
+  }
+
+  #resource-twit #article1 #headContainer h1, #resource-twit #article2 #headContainer2 h1{
+  width: 150px;
+ }
+
+  #resource-twit #article1 #headContainer .graphicEle img{
+    width: 25%;
+  }
+
+  #resource-twit #article2 #headContainer2 .graphicEle img{
+    width: 30%;
+  }
+
+  #resource-twit #article1 div:nth-child(2){
+   margin-top: 5%;
+  }
+
+  #resource-twit #article1 div:nth-child(2) h2 a{
+   margin-bottom: 5%;
+  }
+
+  .footer #footContact .icons{
+    margin-top: 4.5%;
+    margin-left: 14%;
+    margin-right: 5%;
+    width: 10.5%;
+  }
+
+  .footer #footContact .graphicEle img{
+    width: 17%;
+  }
+
+  .footer #footAddress{
+    position: absolute;
+    margin-top: 30%;
+    left: 0;
+    right: 0;
+    padding-left: 0;
+    width: 100%;
+    z-index: 3;
+  }
+
+  .footer #footAddress div:nth-child(1), .footer #footAddress div:nth-child(3){
+    width: 100%;
+  }
+
+  .footer #footAddress div:nth-child(2){
+    display: none;
+  }
+
+  .footer #footAddress div:nth-child(1) h2, .footer #footAddress div:nth-child(1) p, .footer #footAddress div:nth-child(3) p{
+    font-size: 1.1em;
+    text-align: center;
+  }
+}

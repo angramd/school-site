@@ -49,11 +49,11 @@
   position: relative;
 }
 
-/*.bckWrap .overlay{
+.bckWrap .overlay{
   position: absolute;
   z-index: 2 !important;
   top: 0;
-}*/
+}
 
 #aboutHome #homeWrap #welcome .bckWrap .bck{
   position: absolute;

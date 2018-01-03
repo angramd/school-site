@@ -2,7 +2,8 @@ var gulp = require("gulp"),
     uglify = require("gulp-uglify"),
     concat = require("gulp-concat"),
     minifyCSS = require("gulp-minify-css"),
-    plumber = require("gulp-plumber");
+    plumber = require("gulp-plumber"),
+    sass = require("gulp-sass");
 
 
 //MINIFY AND CONCAT CSS FILES
@@ -12,7 +13,18 @@ gulp.task("minify_css", function() {
 	.pipe(plumber())
   .pipe(concat("index.css"))
 	.pipe(minifyCSS())
-	.pipe(gulp.dest("css"))
+	.pipe(gulp.dest("css"));
+});
+
+
+//SASS
+gulp.task("styles", function() {
+  return gulp.src("css/*.scss")
+	.pipe(sass({
+	  style: "expanded"
+	}))
+	.pipe(plumber())
+	.pipe(gulp.dest("css"));
 });
 
 
@@ -45,6 +57,7 @@ gulp.task("minifyAb_js", function() {
 //WATCH FOR CHANGES
 gulp.task("watch", function(){
   gulp.watch(["css/foundation.css", "css/app.css", "css/faculty.css", "css/about.css", "css/arrow.css"], ["minify_css"]);
+	gulp.watch("css/*.scss", ["styles"]);
   gulp.watch(["js/app.js"], ["minify_js"]);
   gulp.watch(["js/faculty.js"], ["minifyFa_js"]);
   gulp.watch(["js/about.js"], ["minifyAb_js"]);
@@ -52,4 +65,4 @@ gulp.task("watch", function(){
 
 
 //DEFAULT TASKS
-gulp.task("default", ["watch", "minify_css", "minify_js", "minifyFa_js", "minifyAb_js"]);
+gulp.task("default", ["watch", "minify_css", "styles", "minify_js", "minifyFa_js", "minifyAb_js"]);
