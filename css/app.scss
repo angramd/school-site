@@ -54,8 +54,8 @@ $scsFontWeight2: 300;
   color: $scsColor2;
   width: 100%;
   padding: 0 !important;
-  margin-top: 8%;
-  margin-bottom: 1%;
+  margin-top: -1.5% !important;
+  margin-bottom: .5%;
 }
 
 @mixin mainH2($scsFontSizeMainH2, $scsFontMainH2, $scsColor2, $scsFontWeight1){
@@ -65,13 +65,13 @@ $scsFontWeight2: 300;
   font-weight: $scsFontWeight1;
   text-transform: uppercase;
   letter-spacing: 9px;
-  margin-bottom: 2%;
+  margin-top: 20%;
 }
 
 @mixin homeBCK{
   position: fixed;
   z-index: -1;
-  top: 0;
+  top: 15%;
   min-width: 2050px !important;
   min-height: 1150px !important;
   width: 100% !important;
@@ -80,7 +80,7 @@ $scsFontWeight2: 300;
 }
 
 @mixin missionPara($scsColor2, $scsFontSizeMainMiss, $scsFontParaH2){
-  color: $scsColor2;
+  color: $scsColor4;
   font-size: $scsFontSizeMainMiss;
   font-family: $scsFontParaH2;
   text-align: left;
@@ -129,7 +129,7 @@ $scsFontWeight2: 300;
 }
 
 .newsImg{
-  width: 40%;
+  width: 90%;
 }
 
 .readmore a, .moreann a, .moreRes, .viewcalendar a{
@@ -212,12 +212,12 @@ $scsFontWeight2: 300;
       padding: .5% 0 1.7%;
       color: $scsColor2;
       border-bottom: $scsColor3 solid 1px;
+
   }
 }
 
 #socialWrap{
-  float: right;
-  margin-right: 2%;
+  margin: 0 auto;
   width: 10%;
 }
 
@@ -237,6 +237,7 @@ $scsFontWeight2: 300;
 }
 
 #social.icons{
+  display: none;
   float: left;
   cursor: pointer;
 }
@@ -255,18 +256,54 @@ $scsFontWeight2: 300;
   float: left;
   width: 135px;
   margin-left: 3%;
-  padding: .2% 0;
+  margin-right: 20%;
+  padding: .8% 0;
+}
+
+.schoolName{
+  float: left;
+  padding-top: 0 !important;
+}
+
+.schoolName{
+  h1{
+    @include mainH1($scsFontH1, $scsFontWeight1, $scsFontSizeMainH1, $scsColor2);
+  }
+
+  .graphicEle{
+    margin: 0 auto 2%;
+  }
+}
+
+.scsLogo{
+  cursor: pointer;
+  width: 5.5%;
+  margin-top: 1%;
+  margin-right: 3%;
+  float: right;
+}
+
+.scsLogo{
+  a{
+    img{
+      cursor: pointer;
+      width: 100%;
+    }
+  }
 }
 
 .top-bar {
-  width: 940px !important;
-  padding-top: 1.7%;
-  margin: 1% 0 0 16%;
+  width: 100%;
   float: left;
+  background: $scsColor3;
 }
 
 .top-bar.columns{
   padding-right: 0;
+}
+
+.top-bar-section{
+  margin-left: 20%;
 }
 
 .top-bar-section{
@@ -349,7 +386,7 @@ $scsFontWeight2: 300;
       margin: auto;
       height: 1px;
       width: 80%;
-      background: $scsColor3;
+      background: $scsColor2;
     }
   }
 }
@@ -376,13 +413,13 @@ $scsFontWeight2: 300;
 #header1{
   .slideUnder:hover:after {
     width: 80%;
-    background: $scsColor3;
+    background: $scsColor2;
   }
 }
 
 .slideUnderDrop:hover:after {
   width: 80%;
-  background: $scsColor1;
+  background: $scsColor2;
 }
 
 .underLine:after {
@@ -391,24 +428,7 @@ $scsFontWeight2: 300;
   margin: auto;
   height: 1px;
   width: 80%;
-  background: $scsColor1;
-}
-
-.scsLogo{
-  cursor: pointer;
-  width: 5.5%;
-  margin-top: .7%;
-  margin-right: 3%;
-  float: right;
-}
-
-.scsLogo{
-  a{
-    img{
-      cursor: pointer;
-      width: 100%;
-    }
-  }
+  background: $scsColor2;
 }
 
 #header1{
@@ -467,7 +487,7 @@ $scsFontWeight2: 300;
 
 /*HOME*/
 #home{
-  height: 950px;
+  height: 700px;
 }
 
 #home{
@@ -499,42 +519,6 @@ $scsFontWeight2: 300;
     #welcome{
       div.columns{
         padding: 0 !important;
-      }
-    }
-  }
-}
-
-#home{
-  #homeWrap{
-    #welcome{
-      div:nth-child(1){
-        .panel{
-          .row{
-            .intro{
-              h1{
-                @include mainH1($scsFontH1, $scsFontWeight1, $scsFontSizeMainH1, $scsColor2);
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-#home{
-  #homeWrap{
-    #welcome{
-      div:nth-child(1){
-        .panel{
-          .row{
-            .intro{
-              .graphicEle{
-                margin: 0 auto 2%;
-              }
-            }
-          }
-        }
       }
     }
   }
@@ -732,7 +716,7 @@ $scsFontWeight2: 300;
 #mission{
   height: 600px;
   margin-top: 5%;
-  padding-top: 8%;
+  padding-top: 11%;
 }
 
 #mission{
@@ -743,7 +727,7 @@ $scsFontWeight2: 300;
 
 #mission{
   > div{
-    background: $scsColor1;
+    background: $scsColor2;
     padding: 5% 0;
   }
 }
@@ -785,7 +769,7 @@ $scsFontWeight2: 300;
           font-family: $scsFontH1;
           font-weight: $scsFontWeight2;
           font-size: $scsFontSizeH1;
-          color: $scsColor2;
+          color: $scsColor1;
           text-align: left;
         }
       }
@@ -845,7 +829,7 @@ $scsFontWeight2: 300;
 #quickLink{
   > div{
     > div{
-      background: $scsColor2;
+      background: $scsColor1;
       border-bottom: solid 5px $scsColor3;
       padding: 4% 0 2%;
       height: 100%;
@@ -885,7 +869,7 @@ $scsFontWeight2: 300;
         font-family: $scsFontH1;
         font-weight: $scsFontWeight2;
         font-size: $scsFontSizeH1;
-        color: $scsColor1;
+        color: $scsColor2;
         text-align: left;
       }
     }
@@ -930,7 +914,7 @@ $scsFontWeight2: 300;
             a{
               font-family: $scsFontParaH2 !important;
               font-size: $scsFontSizeH2 !important;
-              color: $scsColor4;
+              color: $scsColor2;
             }
           }
         }
@@ -983,10 +967,11 @@ $scsFontWeight2: 300;
 /*ANNOUNCEMENTS/EVENTS*/
 #news-events{
   background: $scsColor1;
+  padding-bottom: 3%;
 }
 
 #news-events #article1, #news-events #article2{
-  padding-top: 10% !important;
+  padding-top: 13% !important;
   padding-bottom: 5%;
 }
 
@@ -1006,8 +991,8 @@ $scsFontWeight2: 300;
 
 #news-events{
   #article1{
-    background: $scsColor6;
-    padding-bottom: 40vh;
+    background: $scsColor2;
+    padding-bottom: 3%;
     height: 100%;
   }
 }
@@ -1015,8 +1000,19 @@ $scsFontWeight2: 300;
 #news-events{
   #article1{
     #headContainer{
-      margin-left: 18%;
-      padding: 2% 2% 2% 0;
+      padding: 2% 2% 2% 2%;
+      width: 40%;
+      margin: 0 auto;
+    }
+  }
+}
+
+#news-events{
+  #article2{
+    #headContainer2{
+      padding: 2% 2% 2% 2%;
+      width: 40%;
+      margin: 0 auto;
     }
   }
 }
@@ -1025,9 +1021,21 @@ $scsFontWeight2: 300;
   #article1{
     #headContainer{
       .icons{
-        margin: 4.5% auto 0 0;
+        margin: 2.9% 5% 0 5%;
         float: left;
-        width: 11.5%;
+        width: 7.5% !important;
+      }
+    }
+  }
+}
+
+#news-events{
+  #article2{
+    #headContainer2{
+      .icons{
+        margin: 2.9% 5% 0 20%;
+        float: left;
+        width: 7.5% !important;
       }
     }
   }
@@ -1035,7 +1043,7 @@ $scsFontWeight2: 300;
 
 #news-events #article1 #headContainer h1, #news-events #article2 #headContainer2 h1{
  font-size: $scsFontSizeH1;
- float: left;
+ text-align: left;
 }
 
 #news-events{
@@ -1049,20 +1057,15 @@ $scsFontWeight2: 300;
 }
 
 #news-events #article1 #headContainer .graphicEle, #news-events #article2 #headContainer2 .graphicEle{
-  width: 100%;
-  text-align: center;
+  width: 20%;
 }
 
-#news-events #article1 #headContainer .graphicEle img, #news-events #article2 #headContainer2 .graphicEle img{
-  margin-left: 25%;
+#news-events #article1 .article1Container, #news-events #article2 .article2Container{
+  margin-left: 3% !important;
 }
 
-#news-events #article1 .article1Container .imgSlide > div:nth-child(1), #news-events #article1 .article1Container .imgSlide > div:nth-child(2),
-#news-events #article1 .article1Container .imgSlide > div:nth-child(3), #news-events #article1 .article1Container .imgSlide > div:nth-child(4),
-#news-events #article1 > div:nth-child(4), .article2Container .imgSlide2 > div:nth-child(1), .article2Container .imgSlide2 > div:nth-child(2),
-.article2Container .imgSlide2 > div:nth-child(3){
-  padding-left: 2% !important;
-  padding-top: 3% !important;
+#news-events #article1 .article1Container .imgSlide > div:nth-child(1), #news-events #article2 .article2Container .imgSlide2 > div:nth-child(1){
+  margin-bottom: 3% !important;
 }
 
 #news-events #article1 div:nth-child(2) div h3, #news-events #article1 div:nth-child(3) div h3, #news-events #article2 div:nth-child(2) div h3,
@@ -1090,30 +1093,30 @@ $scsFontWeight2: 300;
   margin-bottom: 3%;
 }
 
-#news-events{
-  #article2{
-    padding-bottom: 2%;
-  }
-}
+// #news-events{
+//   #article2{
+//     padding-bottom: 3%;
+//   }
+// }
 
-#news-events{
-  #article2{
-    #headContainer2{
-     margin: 0 auto;
-     padding: 2% 2%;
-    }
-  }
-}
-
-#news-events{
-  #article2{
-    #headContainer2{
-      .icons{
-       margin: 5% auto 0 12%;
-      }
-    }
-  }
-}
+// #news-events{
+//   #article2{
+//     #headContainer2{
+//      margin: 0 auto;
+//      padding: 2% 2%;
+//     }
+//   }
+// }
+//
+// #news-events{
+//   #article2{
+//     #headContainer2{
+//       .icons{
+//        margin: 5% auto 0 12%;
+//       }
+//     }
+//   }
+// }
 
 #news-events{
   #article2{
@@ -1125,14 +1128,14 @@ $scsFontWeight2: 300;
   }
 }
 
-#news-events{
-  #article2{
-    > div:nth-child(2){
-      padding-left: 2% !important;
-      padding-top: 3% !important;
-    }
-  }
-}
+// #news-events{
+//   #article2{
+//     > div:nth-child(2){
+//       padding-left: 2% !important;
+//       padding-top: 3% !important;
+//     }
+//   }
+// }
 
 #news-events #article2 div:nth-child(2) div h3, #news-events #article2 div:nth-child(3) div h3{
  color: $scsColor2;
@@ -1150,14 +1153,7 @@ $scsFontWeight2: 300;
 
 #moreArtBTN{
   > div{
-    margin-top: 10% !important;
-    text-align: center;
-  }
-}
-
-#moreCalBTN{
-  > div{
-    margin-top: 6% !important;
+    margin-top: 3% !important;
     text-align: center;
   }
 }
@@ -1623,13 +1619,8 @@ $scsFontWeight2: 300;
     display: block !important;
   }
 
-  #moreArtBTN > div{
-    margin-top: 10% !important;
-    text-align: center;
-  }
-
-  #moreCalBTN > div{
-    margin-top: 6% !important;
+  #moreArtBTN > div, #moreCalBTN > div{
+    margin-top: 3% !important;
     text-align: center;
   }
 

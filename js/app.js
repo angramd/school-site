@@ -616,8 +616,8 @@ $(document).ready(function(){
 
 
   /*DOWN ARROW*/
-	downArr.css("margin", "-8% auto 0");
-  downArr.animate({"opacity": "1", "margin-top": "-5%"}, 1500,
+	downArr.css("margin", "3% auto 0");
+  downArr.animate({"opacity": "1", "margin-top": "6%"}, 1500,
 	function()
 	{
 		downArr.addClass("animated css3-notification");
