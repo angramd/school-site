@@ -10,15 +10,14 @@ $(document).ready(function(){
   var linkContact = $("#linkContact");
   var dropdownFa = $("#header1 ul #linkFaculty ul");
   var dropdownAb = $("#header1 ul #linkAbout ul");
-  var downArr = $("#downArr");
   var homePage = $("#home");
   var scrollWrap = $(".scrollWrap");
   var mission = $("#mission");
   var quickLink = $("#quickLink");
   var quickLinkDiv = $("#quickLink > div > div");
-  var newsEvents = $("#news-events");
-  var article1 = $("#news-events #article1");
-  var article2 = $("#news-events #article2");
+  var newsEvents = $(".news-events");
+  var article1 = $(".news-events #article1");
+  var article2 = $(".news-events #article2");
   var imgSlide = $(".imgSlide");
   var annBTN = $(".moreann");
   var calBTN = $(".viewcalendar");
@@ -80,6 +79,12 @@ $(document).ready(function(){
 	{
 		if(homePage.offset().top < $(window).scrollTop() + $(window).outerHeight())
 		{
+
+      if(homePage.css("opacity", "1")){
+        linkHome.addClass("currentLink underLine");
+        linkQuick.removeClass("currentLink underLine");
+      }
+
 			linkHome.addClass("currentLink underLine");
       linkQuick.removeClass("currentLink underLine");
       linkNews.removeClass("currentLink underLine");
@@ -89,7 +94,8 @@ $(document).ready(function(){
       linkAbout.removeClass("currentLink underLine");
 			linkContact.removeClass("currentLink underLine");
       homePage.stop().animate({"opacity": "1"}, 200);
-  		downArr.stop().animate({"opacity": "1"}, 200);
+
+
 		}
 
     if(mission.offset().top < $(window).scrollTop() + $(window).outerHeight())
@@ -105,7 +111,6 @@ $(document).ready(function(){
 
       if(homePage.css("opacity", "0")){
         homePage.css("opacity", "0");
-        downArr.css("opacity", "0");
       }
 		}
 
@@ -122,16 +127,15 @@ $(document).ready(function(){
 
       if(homePage.css("opacity", "0")){
         homePage.css("opacity", "0");
-        downArr.css("opacity", "0");
       }
 		}
 
     if(article2.offset().top < $(window).scrollTop() + $(window).outerHeight() && $(window).width() > 641)
     {
       linkCalendar.addClass("currentLink underLine");
-      linkNews.addClass("currentLink underLine");
       linkHome.removeClass("currentLink underLine");
       linkQuick.removeClass("currentLink underLine");
+      linkNews.removeClass("currentLink underLine");
       linkResources.removeClass("currentLink underLine");
       linkFaculty.removeClass("currentLink underLine");
       linkAbout.removeClass("currentLink underLine");
@@ -139,7 +143,6 @@ $(document).ready(function(){
 
       if(homePage.css("opacity", "0")){
         homePage.css("opacity", "0");
-        downArr.css("opacity", "0");
       }
     }
 
@@ -156,7 +159,6 @@ $(document).ready(function(){
 
       if(homePage.css("opacity", "0")){
         homePage.css("opacity", "0");
-        downArr.css("opacity", "0");
       }
     }
 
@@ -206,10 +208,10 @@ $(document).ready(function(){
 
     if(globalSec.offset().top < $(window).scrollTop() + $(window).outerHeight())
 		{
-      linkResources.addClass("currentLink underLine");
+      linkCalendar.addClass("currentLink underLine");
 			linkHome.removeClass("currentLink underLine");
       linkNews.removeClass("currentLink underLine");
-      linkCalendar.removeClass("currentLink underLine");
+      linkResources.removeClass("currentLink underLine");
       linkQuick.removeClass("currentLink underLine");
       linkFaculty.removeClass("currentLink underLine");
       linkAbout.removeClass("currentLink underLine");
@@ -217,7 +219,6 @@ $(document).ready(function(){
 
       if(homePage.css("opacity", "0")){
         homePage.css("opacity", "0");
-        downArr.css("opacity", "0");
       }
 
       if ($(window).width() >= 1861) {
@@ -424,10 +425,26 @@ $(document).ready(function(){
       }
 		}
 
+    if(resource_twit.offset().top < $(window).scrollTop() + $(window).outerHeight())
+		{
+      linkResources.addClass("currentLink underLine");
+      linkHome.removeClass("currentLink underLine");
+      linkQuick.removeClass("currentLink underLine");
+      linkNews.removeClass("currentLink underLine");
+      linkCalendar.removeClass("currentLink underLine");
+      linkFaculty.removeClass("currentLink underLine");
+      linkAbout.removeClass("currentLink underLine");
+      linkContact.removeClass("currentLink underLine");
+
+      if(homePage.css("opacity", "0")){
+        homePage.css("opacity", "0");
+      }
+		}
+
 		if(footer.offset().top < $(window).scrollTop() + $(window).outerHeight())
 		{
-			linkContact.addClass('currentLink');
-      linkHome.removeClass('currentLink');
+			linkContact.addClass("currentLink underLine");
+      linkHome.removeClass("currentLink underLine");
       linkQuick.removeClass("currentLink underLine");
       linkNews.removeClass("currentLink underLine");
       linkCalendar.removeClass("currentLink underLine");
@@ -437,7 +454,6 @@ $(document).ready(function(){
 
       if(homePage.css("opacity", "0")){
         homePage.css("opacity", "0");
-        downArr.css("opacity", "0");
       }
 		}
 	});
@@ -457,24 +473,6 @@ $(document).ready(function(){
     linkAbout.removeClass("currentLink underLine");
 		linkContact.removeClass("currentLink underLine");
     homePage.css("opacity", "1");
-    downArr.css("opacity", "1");
-	});
-
-  downArr.click(function()
-	{
-    linkQuick.addClass("currentLink underLine");
-		linkQuick.removeClass("slideUnder");
-		linkHome.removeClass("currentLink underLine");
-    linkNews.removeClass("currentLink underLine");
-    linkResources.removeClass("currentLink underLine");
-    linkFaculty.removeClass("currentLink underLine");
-    linkAbout.removeClass("currentLink underLine");
-    linkContact.removeClass("currentLink underLine");
-
-    if(homePage.css("opacity", "0")){
-      homePage.css("opacity", "0");
-      downArr.css("opacity", "0");
-    }
 	});
 
 
@@ -513,7 +511,6 @@ $(document).ready(function(){
 
     if(homePage.css("opacity", "0")){
       homePage.css("opacity", "0");
-      downArr.css("opacity", "0");
     }
 	});
 
@@ -531,7 +528,6 @@ $(document).ready(function(){
 
     if(homePage.css("opacity", "0")){
       homePage.css("opacity", "0");
-      downArr.css("opacity", "0");
     }
 	});
 
@@ -549,7 +545,6 @@ $(document).ready(function(){
 
     if(homePage.css("opacity", "0")){
       homePage.css("opacity", "0");
-      downArr.css("opacity", "0");
     }
 	});
 
@@ -560,13 +555,13 @@ $(document).ready(function(){
 		linkHome.removeClass("currentLink underLine");
     linkQuick.removeClass("currentLink underLine");
     linkNews.removeClass("currentLink underLine");
+		linkCalendar.removeClass("currentLink underLine");
     linkFaculty.removeClass("currentLink underLine");
     linkAbout.removeClass("currentLink underLine");
     linkContact.removeClass("currentLink underLine");
 
     if(homePage.css("opacity", "0")){
       homePage.css("opacity", "0");
-      downArr.css("opacity", "0");
     }
 	});
 
@@ -583,7 +578,6 @@ $(document).ready(function(){
 
     if(homePage.css("opacity", "0")){
       homePage.css("opacity", "0");
-      downArr.css("opacity", "0");
     }
 	});
 
@@ -599,10 +593,6 @@ $(document).ready(function(){
     if ($(window).width() <= 1584 && $(window).width() >= 1530) {
       topBar.css({"width": "1200px !important", "margin-left": "8% !important"});
     }
-
-    // if ($(window).width() <= 1428 && $(window).width() >= 1357) {
-    //   topBar.css({"width": "1250px !important", "margin-left": "4%"});
-    // }
 	}
 
 
@@ -612,43 +602,6 @@ $(document).ready(function(){
 	setInterval(function(){
 		$("#bckRotate li:first").stop().fadeOut(1000).next().stop().fadeIn(1000).end().appendTo("#bckRotate");
 	}, 5000);
-
-
-
-  /*DOWN ARROW*/
-	downArr.css("margin", "3% auto 0");
-  downArr.animate({"opacity": "1", "margin-top": "6%"}, 1500,
-	function()
-	{
-		downArr.addClass("animated css3-notification");
-	});
-
-  downArr.mouseover(function()
-	{
-		downArr.removeClass("animated css3-notification");
-	});
-
-	downArr.mouseout(function()
-	{
-		downArr.addClass("animated css3-notification");
-	});
-  /**/
-
-
-
-  annBTN.click(function(){
-    $(".article1Container > div:first").stop().fadeOut(200,
-    function(){
-      $(".article1Container > div:first").next().stop().fadeIn(200).end().appendTo(".article1Container");
-    });
-	});
-
-  calBTN.click(function(){
-    $(".article2Container > div:first").stop().fadeOut(200,
-    function(){
-      $(".article2Container > div:first").next().stop().fadeIn(200).end().appendTo(".article2Container");
-    });
-	});
 
 
 
