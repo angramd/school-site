@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cordova Elementary in Cordova, Tennessee</title>
+    <title>Trezevant High School in Memphis, Tennessee</title>
     <link rel="icon" href="img/favicon.jpg" type="image/jpg">
     <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script src="js/vendor/modernizr.js"></script>
 
 
@@ -66,9 +67,9 @@
 
   			var map = new google.maps.Map(document.getElementById('map_canvas'),
   			{
-  				center: new google.maps.LatLng(35.1462439, -89.769000),
-  				zoom: 19,
-  				mapTypeId: google.maps.MapTypeId.HYBRID,
+  				center: new google.maps.LatLng(35.2189786, -89.9792518),
+  				zoom: 15,
+  				mapTypeId: google.maps.MapTypeId.MAP,
   				panControl: true,
   				zoomControl: true,
   				mapTypeControl: true,
@@ -82,17 +83,17 @@
   				rotateControl: true
   			});
 
-  			var latNlong = new google.maps.LatLng(35.1462439, -89.769000);
+  			var latNlong = new google.maps.LatLng(35.2165077, -89.9792518);
 
   			var marker = new google.maps.Marker(
   			{
   				position: latNlong,
   				map: map,
-  				title:'Cordova Elementary School in Cordova, TN.',
+  				title:'Trezevant High School in Cordova, TN.',
   				icon: 'img/cordovaE_marker.png'
   			});
 
-  			var contentString = 'Cordova Elementary School in Cordova, TN.';
+  			var contentString = 'Trezevant High School in Cordova, TN.';
   			var infowindow = new google.maps.InfoWindow(
   			{
   				content: contentString
@@ -115,19 +116,30 @@
         <!-- SOCIAL MEDIA AND PHONE NUMBER -->
         <div id="socialNumber">
           <div id="socialWrap">
-            <div class="phone" alt="Cordova Elementary's phone number"><a href="tel:+19014161700">(901) 416-1700</a></div>
+            <div class="phone" alt="Trezevant High's phone number"><a href="tel:+19014163760">(901) 416-3760</a></div>
             <div id="social" class="icons">
-              <a href="https://www.facebook.com/CordovaElementary?_rdr=p" target="_blank"><img src="img/facebookIcon.png" alt="Cordova Elementary's Facebook Page www.facebook.com/CordovaElementary"></a>
-              <a href="https://twitter.com/CordovaCubs" target="_blank"><img src="img/twittIcon.png" alt="Cordova Elementary's Twitter Page www.twitter.com/CordovaCubs"></a>
+              <a href="https://www.facebook.com/pages/Trezevant-High-School/607492009362530" target="_blank"><img src="img/facebookIcon.png" alt="Trezevant High's Facebook Page www.facebook.com/pages/Trezevant-High-School/607492009362530"></a>
+              <a href="https://twitter.com/trezevanthigh" target="_blank"><img src="img/twittIcon.png" alt="Trezevant High's Twitter Page twitter.com/trezevanthigh"></a>
             </div>
           </div>
         </div>
 
         <!-- LOGO -->
-      	<div class="logos large-3 medium-3 small-3 columns"><a href="index.html"><img src="img/logo2.png" title="Cordova Elementary School Home Page" alt="Cordova Elementary Logo" border="0"></a></div>
+      	<div class="logos large-3 medium-3 small-3 columns"><a href="index.html"><img src="img/logo2.png" title="Trezevant High School Home Page" alt="Trezevant High Logo" border="0"></a></div>
+
+        <!-- SCHOOL NAME -->
+        <div class="schoolName">
+          <h1>Trezevant High</h1>
+          <div class="graphicEle large-12">
+            <img src="img/graphic.png" alt="Small red, horizontal graphic" border="0">
+          </div>
+        </div>
+
+        <!-- SCS LOGO -->
+        <div class="scsLogo"><a href="http://www.scsk12.org/" target="_blank"><img src="img/SCSLogo.png" title="Shelby County Schools in Memphis, Tennessee" alt="Shelby County Schools Logo"></a></div>
 
           <!-- NAVIGATION 1 -->
-          <nav class="top-bar large-9 small-9 columns" data-topbar>
+          <nav class="top-bar large-9 small-9" data-topbar>
             <ul class="title-area">
               <li class="name"></li>
               <li class="toggle-topbar menu-icon"><a href="#">Menu<span><div class="fi-list"></div></span></a></li>
@@ -135,38 +147,45 @@
 
             <section class="top-bar-section">
             	<ul id="headMenu">
-              	<li id="linkHome" class="slideUnder" title="Cordova Elementary Home" alt="Cordova Elementary Home"><a href="index.html">Home</a></li>
-              	<li id="linkQuick" class="slideUnder" title="Quick Links for Cordova Elementary" alt="Quick Links for Cordova Elementary"><a href="index.html#mission">Quick Links</a></li>
-              	<li id="linkNews" class="slideUnder" title="Announcements for Cordova Elementary" alt="Announcements for Cordova Elementary"><a href="index.html#article1">Announcements</a></li>
-              	<li id="linkCalendar" class="slideUnder" title="Calendar for Cordova Elementary" alt="Calendar for Cordova Elementary"><a href="index.html#article2">Calendar</a></li>
-                <li id="linkResources" class="slideUnder" title="Cordova Elementary Resources" alt="Cordova Elementary Resources"><a href="index.html#global">Resources</a></li>
-                <li id="linkFaculty" class="slideUnder" title="Cordova Elementary Faculty and Staff" alt="Cordova Elementary Faculty and Staff"><a href="faculty.html">Faculty</a>
+              	<li id="linkHome" class="slideUnder" title="Trezevant High Home" alt="Trezevant High Home"><a href="index.html">Home</a></li>
+              	<li id="linkQuick" class="slideUnder" title="Quick Links for Trezevant High" alt="Quick Links for Trezevant High"><a href="index.html#quickLink">Quick Links</a></li>
+              	<li id="linkNews" class="slideUnder" title="Announcements for Trezevant High" alt="Announcements for Trezevant High"><a href="index.html#article1">Announcements</a></li>
+              	<li id="linkCalendar" class="slideUnder" title="Calendar for Trezevant High" alt="Calendar for Trezevant High"><a href="index.html#article2">Calendar</a></li>
+                <li id="linkResources" class="slideUnder" title="Trezevant High Resources" alt="Trezevant High Resources"><a href="index.html#resource-twit">Resources</a></li>
+              	<li id="linkFaculty" class="slideUnder" title="Trezevant High Faculty and Staff" alt="Trezevant High Faculty and Staff"><a href="faculty.html">Faculty</a>
                   <ul>
                     <li id="linkAdmin" class="slideUnderDrop"><a href="faculty.html">Administration</a></li>
                     <li id="linkOffice" class="slideUnderDrop"><a href="faculty.html#faculty">Office Staff</a></li>
-                    <li id="linkKind" class="slideUnderDrop"><a href="faculty.html#office">Kidergartin</a></li>
-                    <li id="linkFirst" class="slideUnderDrop"><a href="faculty.html#teachers">1st Grade</a></li>
-                    <li id="linkSecond" class="slideUnderDrop"><a href="faculty.html#first">2nd Grade</a></li>
-                    <li id="linkThird" class="slideUnderDrop"><a href="faculty.html#second">3rd Grade</a></li>
-                    <li id="linkFourth" class="slideUnderDrop"><a href="faculty.html#third">4th Grade</a></li>
-                    <li id="linkFifth" class="slideUnderDrop"><a href="faculty.html#fourth">5th Grade</a></li>
-                    <li id="linkSpecial" class="slideUnderDrop"><a href="faculty.html#fifth">Specialists</a></li>
+                    <li id="linkNineth" class="slideUnderDrop"><a href="faculty.html#faculty">9th Grade</a></li>
+                    <li id="linkTenth" class="slideUnderDrop"><a href="faculty.html#teachers">10th Grade</a></li>
+                    <li id="linkEleventh" class="slideUnderDrop"><a href="faculty.html#tenth">11th Grade</a></li>
+                    <li id="linkTwelveth" class="slideUnderDrop"><a href="faculty.html#eleventh">12th Grade</a></li>
+                    <li id="linkSpecial" class="slideUnderDrop"><a href="faculty.html#twelveth">Specialists</a></li>
                     <li id="linkStaff" class="slideUnderDrop"><a href="faculty.html#specialists">Staff</a></li>
                   </ul>
                 </li>
-                <li id="linkAbout" class="currentLink slideUnder" title="About Cordova Elementary" alt="About Cordova Elementary"><a href="#aboutHome">About</a>
+                <li id="linkAbout" class="currentLink slideUnder" title="About Trezevant High" alt="About Trezevant High"><a href="#aboutHome">About</a>
                   <ul>
-                    <li id="linkMission" class="slideUnderDrop"><a href="#aboutHome">Mission</a></li>
-                    <li id="linkVision" class="slideUnderDrop"><a href="#missionAb">Vision/Beliefs</a></li>
-                    <li id="linkLeader" class="slideUnderDrop"><a href="#globalLeaders">Leaders</a></li>
+                    <li id="linkCourses" class="slideUnderDrop" title="Trezevant High Courses" alt="Trezevant High Courses"><a href="#">Courses</a></li>
+                    <li id="linkPhoto" class="slideUnderDrop" title="Trezevant High Photo Gallery" alt="Trezevant High Photos"><a href="#">Photos</a></li>
                   </ul>
                 </li>
-             		<li id="linkContactAb" class="slideUnder" title="Contact Cordova Elementary" alt="Contact Cordova Elementary"><a href="#footerAb">Contact</a></li>
+                <li id="linkAthletics" class="slideUnder" title="Athletics Trezevant High" alt="Athletics Trezevant High"><a href="#">Athletics</a>
+                  <ul>
+                    <li id="linkBaseball" class="slideUnderDrop"><a href="faculty.html">Baseball</a></li>
+                    <li id="linkBasketball" class="slideUnderDrop"><a href="faculty.html#faculty">Basketball</a></li>
+                    <li id="linkBowling" class="slideUnderDrop"><a href="faculty.html#office">Bowling</a></li>
+                    <li id="linkCheer" class="slideUnderDrop"><a href="faculty.html#teachers">Cheer</a></li>
+                    <li id="linkFootball" class="slideUnderDrop"><a href="faculty.html#second">Football</a></li>
+                    <li id="linkSoftball" class="slideUnderDrop"><a href="faculty.html#third">Softball</a></li>
+                    <li id="linkTrack" class="slideUnderDrop"><a href="faculty.html#fourth">Track</a></li>
+                    <li id="linkVolleyball" class="slideUnderDrop"><a href="faculty.html#fifth">Volleyball</a></li>
+                  </ul>
+                </li>
+             		<li id="linkContactFa" class="slideUnder" title="Contact Trezevant High" alt="Contact Trezevant High"><a href="#footerAb">Contact</a></li>
               </ul>
             </section>
           </nav>
-
-          <div class="scsLogo"><a href="http://www.scsk12.org/" target="_blank"><img src="img/SCSLogo.png" title="Shelby County Schools in Memphis, Tennessee" alt="Shelby County Schools Logo"></a></div>
       </header>
 
 
@@ -181,7 +200,7 @@
                   <div class="intro">
                     <h1>About</h1>
                     <div class="graphicEle large-12 columns">
-                      <img src="img/graphicRed.png" alt="Small red, horizontal graphic" border="0">
+                      <img src="img/graphic.png" alt="Small red, horizontal graphic" border="0">
                     </div>
                   </div>
 
@@ -214,11 +233,11 @@
           <div class="large-12 large-centered small-12 columns">
             <h1>Our Mission</h1>
             <div class="graphicEle large-12 columns">
-              <img src="img/graphicRed.png" alt="Small red, horizontal graphic" border="0">
+              <img src="img/graphic.png" alt="Small red, horizontal graphic" border="0">
             </div>
           </div>
           <div class="large-12 large-centered small-12">
-            <p>The mission of Cordova Elementary School is to provide a safe and challenging environment that is committed to helping all of our students successfully achieve their maximum potential. Students will communicate with excellent reading and writing skills, apply mathematics in realistic situations, and explore scientific concepts. Our parents, teachers, and community members work together to set demanding academic standards and encourage creative artistic expression in every student.</p>
+            <p>Trezevant High School empowers our students with the knowledge, character, and experiences to achieve in college and beyond.</p>
           </div>
         </div>
       </div>
@@ -236,42 +255,12 @@
             <div id="headContainer" class="large-12 large-centered small-12">
               <h1>Vision</h1>
               <div class="graphicEle">
-                <img src="img/graphicRed.png" alt="Small red, horizontal graphic" border="0">
+                <img src="img/graphic.png" alt="Small red, horizontal graphic" border="0">
               </div>
             </div>
 
             <div class="article1Container large-12 small-12">
-              <h3>At Cordova Elementary Optional School, we are dedicated to exceptional teaching and learning where:</h3>
-              <p>Students:</p>
-              <ul>
-                <li>Are focused on learning;</li>
-                <li>Feel a sense of community where me turns to we, and students use positive peer interaction to encourage academic achievement;</li>
-                <li>Are global, independent and accountable learners, responsible for their own growth and achievement; and</li>
-                <li>Are actively engaged in scholarly activities, independent study and community involvement.</li>
-              </ul>
-
-              <p>Teachers:</p>
-              <ul>
-                <li>Work collaboratively to share and implement a variety of effective instructional strategies;</li>
-                <li>Utilize innovative technology to enhance learning;</li>
-                <li>Foster a cultivating environment in each classroom; and</li>
-                <li>Analyze student performance data frequently to meet the individual needs of each child.</li>
-              </ul>
-
-              <p>The School:</p>
-              <ul>
-                <li>Requires the highest form of professional talk among students, teachers, and parents;</li>
-                <li>Promotes and works toward the commonly-held vision of teaching and learning;</li>
-                <li>Creates schedules that maximize time for instruction and collaboration; and</li>
-                <li>Leads improvement through hands-on visibility and classroom engagement.</li>
-              </ul>
-
-              <p>Parents and Community:</p>
-              <ul>
-                <li>Are so involved in the school that they can describe student goals and needs;</li>
-                <li>Are actively involved in a variety of committees and services; and</li>
-                <li>Have regular meetings with school leadership and teachers to learn about how to support teaching and learning.</li>
-              </ul>
+              <p>Trezevant High School will have moved from the bottom 5% to the top 25% of schools in Shelby County and Tennessee BY 2020.</p>
             </div>
         </div>
 
@@ -279,24 +268,14 @@
         <!-- EVENTS -->
         <div id="article2" class="large-6 medium-6 small-12 columns">
           <div id="headContainer2" class="large-12 large-centered small-12">
-            <h1>Beliefs</h1>
+            <h1>Philosophy</h1>
             <div class="graphicEle">
-              <img src="img/graphicRed.png" alt="Small red, horizontal graphic" border="0">
+              <img src="img/graphic.png" alt="Small red, horizontal graphic" border="0">
             </div>
           </div>
 
           <div class="article1Container large-12 small-12">
-            <h3>The faculty and staff at Cordova Elementary School believe:</h3>
-            <p>All student success is achieved by the collaboration of parents, community and school.</p>
-            <p>Student achievement results shall be the focus for all policies and decision making.</p>
-            <p>All students learn best in a safe, stimulating, and nurturing environment.</p>
-            <p>All students should be held to high expectations and should perform at or above the state and local school standards.</p>
-            <p>All students should be given the opportunity to develop his or her strengths and talents to their highest potential.</p>
-            <p>All students should be given opportunities to enhance their learning experiences through the use of technology and the arts.</p>
-            <p>All students should be supported with diverse instructional practices that are research-based data- driven, challenging and promote academic achievement.</p>
-            <p>All students should receive a variety of continual assessments to evaluate their achievement levels and address their individual learning styles.</p>
-            <p>All students should engage in a variety of assessment measures to evaluate their achievement levels and guide classroom instruction.</p>
-            <p>All students are expected to apply learned skills to real-life situations.</p>
+            <p>Trezevant High School believes that with great teaching, high expectations and structured learning environment; all students will excel.</p>
           </div>
         </div>
       </div>
@@ -311,7 +290,7 @@
         <div class="large-12 small-12">
           <h1>Global Leadership Traits</h1>
           <div class="graphicEle large-12">
-            <img src="img/graphicRed.png" alt="Small red, horizontal graphic" border="0">
+            <img src="img/graphic.png" alt="Small red, horizontal graphic" border="0">
           </div>
 
           <div class="panel large-12 medium-12 small-12">
@@ -353,36 +332,42 @@
 
 
     <!-- FOOTER -->
-    <footer id="footerAb" class="footer row large-12">
+    <footer id="footerAb" class="footer row">
       <!--MAP-->
-      <div id="map_canvas" class="map" alt="Google map of Cordova Elementary in Cordova, Tennessee"></div>
+      <div id="map_canvas" class="map" alt="Google map of Trezevant High in Cordova, Tennessee"></div>
       <!-- END MAP -->
 
       <div id="footContact" class="large-12 columns">
         <div class="icons"><img src="img/contactIcon.png" alt="Icon of phone receiver"></div>
         <h1 class="">Contact</h1>
         <div class="graphicEle">
-          <img src="img/graphicRed.png" alt="Small red, horizontal graphic" border="0">
+          <img src="img/graphic.png" alt="Small red, horizontal graphic" border="0">
         </div>
       </div>
       <div id="footAddress" class="large-12 small-12 columns">
         <div class="large-3 medium-12 small-12 columns">
-          <h2>Cordova Elementary</h2>
-          <p>750 North Sanga<br />Cordova, TN 38018<br />
-          <a href="https://www.google.com/maps/place/Cordova+Elementary+School/@35.1462439,-89.7710587,16.54z/data=!4m5!3m4!1s0x0:0xf014b1462d7bcc7a!8m2!3d35.1462!4d-89.7691258" target="_blank" alt="Get Directions to Cordova Elementary">Get Directions/View Map</a><br />
-          <span>School Hours: </span>8:15 AM - 3:15 PM</p>
+          <h2>Trezevant High</h2>
+          <p>3350 N. Trezevant Street<br />Memphis, TN 38127<br />
+          <a href="https://www.google.com/maps/place/3350+N+Trezevant+St,+Memphis,+TN+38127/@35.2165077,-89.9792518,17z/data=!3m1!4b1!4m5!3m4!1s0x887f7f8a239178d5:0x6758a5bb1afcba50!8m2!3d35.2165077!4d-89.9770631" target="_blank" alt="Get Directions to Trezevant High">Get Directions/View Map</a><br />
+          <span>School Hours: </span>7:15 AM - 2:15 PM</p>
         </div>
         <div class="large-3 medium-12 columns">
           <img src="img/divider.png">
         </div>
         <div class="large-3 medium-12 small-12 columns end">
           <p>
-            <span>Kimbrelle B. Lewis, Principal</span><br />
-            <span>Email: </span><a href="mailto:lewiskb@scsk12.org">lewiskb@scsk12.org</a><br />
-            <span>Phone: </span><a href="tel:+19014161700">(901) 416-1700</a><br />
-            <span>Fax: </span>(901) 416-1701
+            <span>Corey Kelly, Principal</span><br />
+            <span>Email: </span><a href="mailto:lewiskb@scsk12.org">kellycl@scsk12.org</a><br />
+            <span>Phone: </span><a href="tel:+19014163760">(901) 416-3760</a><br />
+            <span>Fax: </span>(901) 416-3761
           </p>
         </div>
+      </div>
+      <div class="copyrightWrap">
+        <div class="copyright">
+          <div>Shelby County Schools offers educational and employment opportunities without regard to race, color, religion, sex, creed, age, disability, national origin, or genetic information.</div>
+        </div>
+        <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
       </div>
     </footer>
 

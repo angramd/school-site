@@ -7,9 +7,11 @@ $(document).ready(function(){
   var linkResources = $("#linkResources");
   var linkFaculty = $("#linkFaculty");
   var linkAbout = $("#linkAbout");
+  var linkAthletics = $("#linkAthletics");
   var linkContact = $("#linkContact");
   var dropdownFa = $("#header1 ul #linkFaculty ul");
   var dropdownAb = $("#header1 ul #linkAbout ul");
+  var dropdownAt = $("#header1 ul #linkAthletics ul");
   var homePage = $("#home");
   var scrollWrap = $(".scrollWrap");
   var mission = $("#mission");
@@ -72,6 +74,17 @@ $(document).ready(function(){
     });
   });
 
+  linkAthletics.mouseenter(function(){
+    dropdownAt.css("display", "block").stop().animate({"opacity": "1", "margin-top": "2%"}, 200);
+  });
+
+  linkAthletics.mouseleave(function(){
+    dropdownAt.stop().animate({"opacity": "0", "margin-top": "-6%"}, 200,
+    function(){
+      dropdownAt.css("display", "none");
+    });
+  });
+
 
 
   /*LINKS IN MENU BAR ARE ACTIVE WHEN SCROLLED TO THEIR ANCHOR*/
@@ -92,6 +105,7 @@ $(document).ready(function(){
       linkResources.removeClass("currentLink underLine");
       linkFaculty.removeClass("currentLink underLine");
       linkAbout.removeClass("currentLink underLine");
+      linkAthletics.removeClass("currentLink underLine");
 			linkContact.removeClass("currentLink underLine");
       homePage.stop().animate({"opacity": "1"}, 200);
 
@@ -107,6 +121,7 @@ $(document).ready(function(){
       linkResources.removeClass("currentLink underLine");
       linkFaculty.removeClass("currentLink underLine");
       linkAbout.removeClass("currentLink underLine");
+      linkAthletics.removeClass("currentLink underLine");
 			linkContact.removeClass("currentLink underLine");
 
       if(homePage.css("opacity", "0")){
@@ -123,6 +138,7 @@ $(document).ready(function(){
       linkResources.removeClass("currentLink underLine");
       linkFaculty.removeClass("currentLink underLine");
       linkAbout.removeClass("currentLink underLine");
+      linkAthletics.removeClass("currentLink underLine");
 			linkContact.removeClass("currentLink underLine");
 
       if(homePage.css("opacity", "0")){
@@ -139,6 +155,7 @@ $(document).ready(function(){
       linkResources.removeClass("currentLink underLine");
       linkFaculty.removeClass("currentLink underLine");
       linkAbout.removeClass("currentLink underLine");
+      linkAthletics.removeClass("currentLink underLine");
       linkContact.removeClass("currentLink underLine");
 
       if(homePage.css("opacity", "0")){
@@ -155,6 +172,7 @@ $(document).ready(function(){
       linkResources.removeClass("currentLink underLine");
       linkFaculty.removeClass("currentLink underLine");
       linkAbout.removeClass("currentLink underLine");
+      linkAthletics.removeClass("currentLink underLine");
       linkContact.removeClass("currentLink underLine");
 
       if(homePage.css("opacity", "0")){
@@ -185,23 +203,14 @@ $(document).ready(function(){
         });
       });
 
-      annBTN.click(function()
-      {
-        jQuery('html,body').stop().animate({scrollTop: newsEvents.offset().top}, 2000);
-
-        $(".article1Container > div:first").stop().fadeOut(200,
-        function(){
-          $(".article1Container > div:first").next().stop().fadeIn(1500).end().appendTo(".article1Container");
-        });
+      linkAthletics.mouseenter(function(){
+        dropdownAt.css("display", "block").stop().animate({"opacity": "1", "margin-top": "-6%"}, 200);
       });
 
-      calBTN.click(function()
-      {
-        jQuery('html,body').stop().animate({scrollTop: article2.offset().top}, 2000);
-
-        $(".article2Container > div:first").stop().fadeOut(200,
+      linkAthletics.mouseleave(function(){
+        dropdownAb.stop().animate({"opacity": "0", "margin-top": "-5%"}, 200,
         function(){
-          $(".article2Container > div:first").next().stop().fadeIn(1500).end().appendTo(".article2Container");
+          dropdownAt.css("display", "none");
         });
       });
     }
@@ -215,6 +224,7 @@ $(document).ready(function(){
       linkQuick.removeClass("currentLink underLine");
       linkFaculty.removeClass("currentLink underLine");
       linkAbout.removeClass("currentLink underLine");
+      linkAthletics.removeClass("currentLink underLine");
 			linkContact.removeClass("currentLink underLine");
 
       if(homePage.css("opacity", "0")){
@@ -222,7 +232,7 @@ $(document).ready(function(){
       }
 
       if ($(window).width() >= 1861) {
-        globalSec.stop().animate({"padding-top": "13%"}, 500);
+        globalSec.stop().animate({"padding-top": "9%"}, 500);
         globalIcon.stop().animate({"opacity": "1"}, 500);
         globalHead.stop().animate({"opacity": "1"}, 500);
         globalGraphic.stop().animate({"opacity": "1"}, 500);
@@ -434,6 +444,7 @@ $(document).ready(function(){
       linkCalendar.removeClass("currentLink underLine");
       linkFaculty.removeClass("currentLink underLine");
       linkAbout.removeClass("currentLink underLine");
+      linkAthletics.removeClass("currentLink underLine");
       linkContact.removeClass("currentLink underLine");
 
       if(homePage.css("opacity", "0")){
@@ -451,6 +462,7 @@ $(document).ready(function(){
       linkResources.removeClass("currentLink underLine");
       linkFaculty.removeClass("currentLink underLine");
       linkAbout.removeClass("currentLink underLine");
+      linkAthletics.removeClass("currentLink underLine");
 
       if(homePage.css("opacity", "0")){
         homePage.css("opacity", "0");
@@ -471,6 +483,7 @@ $(document).ready(function(){
     linkResources.removeClass("currentLink underLine");
     linkFaculty.removeClass("currentLink underLine");
     linkAbout.removeClass("currentLink underLine");
+    linkAthletics.removeClass("currentLink underLine");
 		linkContact.removeClass("currentLink underLine");
     homePage.css("opacity", "1");
 	});
@@ -507,6 +520,7 @@ $(document).ready(function(){
     linkResources.removeClass("currentLink underLine");
     linkFaculty.removeClass("currentLink underLine");
     linkAbout.removeClass("currentLink underLine");
+    linkAthletics.removeClass("currentLink underLine");
     linkContact.removeClass("currentLink underLine");
 
     if(homePage.css("opacity", "0")){
@@ -524,6 +538,7 @@ $(document).ready(function(){
     linkResources.removeClass("currentLink underLine");
     linkFaculty.removeClass("currentLink underLine");
     linkAbout.removeClass("currentLink underLine");
+    linkAthletics.removeClass("currentLink underLine");
 		linkContact.removeClass("currentLink underLine");
 
     if(homePage.css("opacity", "0")){
@@ -541,6 +556,7 @@ $(document).ready(function(){
     linkResources.removeClass("currentLink underLine");
     linkFaculty.removeClass("currentLink underLine");
     linkAbout.removeClass("currentLink underLine");
+    linkAthletics.removeClass("currentLink underLine");
 		linkContact.removeClass("currentLink underLine");
 
     if(homePage.css("opacity", "0")){
@@ -558,6 +574,7 @@ $(document).ready(function(){
 		linkCalendar.removeClass("currentLink underLine");
     linkFaculty.removeClass("currentLink underLine");
     linkAbout.removeClass("currentLink underLine");
+    linkAthletics.removeClass("currentLink underLine");
     linkContact.removeClass("currentLink underLine");
 
     if(homePage.css("opacity", "0")){
@@ -575,6 +592,7 @@ $(document).ready(function(){
     linkResources.removeClass("currentLink underLine");
     linkFaculty.removeClass("currentLink underLine");
     linkAbout.removeClass("currentLink underLine");
+    linkAthletics.removeClass("currentLink underLine");
 
     if(homePage.css("opacity", "0")){
       homePage.css("opacity", "0");

@@ -1,0 +1,568 @@
+
+
+
+/*ABOUT*/
+/*HOME*/
+#aboutHome {
+  background: #FFF;
+}
+
+#aboutHome #homeWrap {
+  padding-top: 6%;
+}
+
+#aboutHome #homeWrap #welcome div:nth-child(1) .panel {
+  position: relative;
+  padding: 0;
+  margin-bottom: 0 !important;
+}
+
+#aboutHome #homeWrap #welcome div.columns {
+  padding: 0 !important;
+}
+
+#aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro{
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  margin-top: 11.1%;
+}
+
+#aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  padding: 0 !important;
+  font-size: 5.5em;
+  color: #0a0699;
+}
+
+#aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+  margin: 0 auto 2%;
+}
+
+#aboutHome #homeWrap #welcome .bckWrap{
+  min-width: 2000px !important;
+  min-height: 490px !important;
+  width: 100% !important;
+  height: 100% !important;
+  position: relative;
+}
+
+.bckWrap .overlay{
+  position: absolute;
+  z-index: 2 !important;
+  top: 0;
+}
+
+#aboutHome #homeWrap #welcome .bckWrap .bck{
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/aboutHeadImg.jpg) no-repeat 0 25% / cover;
+}
+/*END HOME*/
+
+
+
+/*CSS TARGETING MOZILLA FIREFOX BROWSER*/
+@-moz-document url-prefix() {
+  #aboutHome{
+    height: 600px;
+  }
+}
+/**/
+
+
+
+/*MISSION*/
+#missionAb > div > div > div:nth-child(1) h1, .squareWrap #article1 #headContainer h1, .squareWrap #article2 #headContainer2 h1, #globalLeaders > div > div h1{
+  font-size: 3.7em;
+  font-family: 'Lora', serif;
+  font-weight: 300;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#missionAb .columns{
+  padding: 0;
+}
+
+#missionAb > div{
+  background: #0a0699;
+  padding: 2% 0;
+}
+
+#missionAb > div > div > div:nth-child(1) h1, #globalLeaders > div > div h1{
+  color: #FFF;
+}
+
+#missionAb > div > div > div:nth-child(2){
+  padding-top: 1%;
+}
+
+#missionAb > div > div > div:nth-child(2) p{
+  color: #FFF;
+  font-size: 1.5em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: left;
+  padding: 1% 25% 3%;
+  margin-bottom: 0;
+}
+/*END MISSION*/
+
+
+
+/*VISION/BELIEFS*/
+.squareWrap{
+  background: #0a0699;
+}
+
+.squareWrap div.row{
+  max-width: 100% !important;
+  height: 100% !important;
+}
+
+.squareWrap > div > div{
+  height: 100% !important;
+}
+
+.squareWrap div.row div.columns{
+  padding: 0;
+}
+
+.squareWrap #article1, .squareWrap #article2{
+  padding-bottom: 10vh;
+  height: 100%;
+}
+
+.squareWrap #article1{
+  background: #CCC;
+}
+
+.squareWrap #article1 #headContainer, .squareWrap #article2 #headContainer2{
+ padding-top: 2%;
+}
+
+.squareWrap #article1 #headContainer h1, .squareWrap #article2 #headContainer2 h1{
+ color: #0a0699;
+}
+
+.squareWrap #article1 .article1Container, .squareWrap #article2 .article1Container {
+  height: 700px;
+  margin-top: 5%;
+  padding: 0 2% 2% 4% !important;
+}
+
+.squareWrap #article1 .article1Container h3, .squareWrap #article2 .article1Container h3{
+ font-family: 'Lora', serif;
+ color: #333;
+ font-weight: bold;
+ font-size: 1.6875rem;
+ text-align: left;
+}
+
+.squareWrap #article1 .article1Container p, .squareWrap #article2 .article1Container p{
+  margin-bottom: 1%;
+}
+
+.squareWrap #article1 .article1Container p, .squareWrap #article1 .article1Container ul li, .squareWrap #article2 .article1Container p{
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  text-align: left;
+  font-size: 1em;
+}
+
+.squareWrap #article1 .article1Container p{
+ font-weight: bold;
+ margin-bottom: 1%;
+}
+
+.squareWrap #article1 .article1Container, .squareWrap #article2 .article1Container{
+  margin-bottom: 3%;
+}
+
+.squareWrap #article2{
+  background: #FFF;
+}
+/*END ANNOUNCEMENTS/EVENTS*/
+
+
+
+/*GLOBAL LEADERS*/
+#globalLeaders{
+  background-color: #0a0699;
+  padding: 1% 0;
+}
+
+#globalLeaders > div > div .graphicEle{
+  margin-bottom: 2.5%;
+}
+
+#globalLeaders > div > div .panel div p{
+  font-size: 1.8em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-bottom: 6em;
+}
+/**/
+
+
+
+@media only screen and (min-width: 1356px) and (max-width: 1711px) {
+  .squareWrap #article1 .article1Container h3, .squareWrap #article2 .article1Container h3{
+    font-size: 1.5em !important;
+  }
+
+  .squareWrap #article1 .article1Container p, .squareWrap #article1 .article1Container ul li, .squareWrap #article2 .article1Container p{
+    font-size: .9em;
+  }
+}
+
+
+
+@media only screen and (min-width: 1098px) and (max-width: 1355px) {
+  #missionAb > div > div > div:nth-child(1) h1, .squareWrap #article1 #headContainer h1, .squareWrap #article2 #headContainer2 h1, #globalLeaders > div > div h1{
+    font-size: 3em !important;
+  }
+
+  #missionAb > div > div > div:nth-child(2) p, .squareWrap #article1 .article1Container h3, .squareWrap #article2 .article1Container h3{
+    font-size: 1.2em !important;
+  }
+
+  .squareWrap #article1 .article1Container p, .squareWrap #article1 .article1Container ul li, .squareWrap #article2 .article1Container p{
+    font-size: .8em;
+  }
+}
+
+
+@media only screen and (min-width: 904px) and (max-width: 1098px) {
+  div > div .panel div{
+    margin-bottom: 5%;
+  }
+
+  #missionAb > div > div > div:nth-child(1) h1, .squareWrap #article1 #headContainer h1, .squareWrap #article2 #headContainer2 h1, #globalLeaders > div > div h1{
+    font-size: 3em !important;
+  }
+
+  #missionAb > div > div > div:nth-child(2) p, .squareWrap #article1 .article1Container h3, .squareWrap #article2 .article1Container h3{
+    font-size: 1.2em !important;
+  }
+
+  .squareWrap #article1 .article1Container p, .squareWrap #article1 .article1Container ul li, .squareWrap #article2 .article1Container p{
+    font-size: .8em;
+  }
+}
+
+
+
+@media only screen and (min-width: 904px) and (max-width: 973px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 18%;
+    margin-bottom: 4%;
+  }
+}
+
+
+
+@media only screen and (min-width: 642px) and (max-width: 903px) {
+  .columns{
+    padding: 0 !important;
+  }
+
+  .graphicEle img{
+    width: 21%;
+  }
+
+  #missionAb > div > div > div:nth-child(1) h1, .squareWrap #article1 #headContainer h1, .squareWrap #article2 #headContainer2 h1, #globalLeaders > div > div h1{
+    font-size: 2.5em !important;
+  }
+
+  #missionAb > div > div > div:nth-child(2) p, .squareWrap #article1 .article1Container h3, .squareWrap #article2 .article1Container h3{
+    font-size: .9em !important;
+  }
+
+  .squareWrap{
+    height: 860px;
+  }
+
+  .squareWrap #article1 .article1Container p, .squareWrap #article1 .article1Container ul li, .squareWrap #article2 .article1Container p{
+    font-size: .7em;
+  }
+
+  #globalLeaders > div > div .panel{
+    padding-left: 3%;
+  }
+
+  #globalLeaders > div > div .panel > :first-child{
+    margin-bottom: 45%;
+  }
+}
+
+
+
+@media only screen and (min-width: 883px) and (max-width: 903px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 18%;
+    margin-bottom: 4%;
+    font-size: 7em;
+  }
+
+  .graphicEle img{
+    width: 16%;
+  }
+}
+
+
+
+@media only screen and (min-width: 809px) and (max-width: 882px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 18%;
+    margin-bottom: 4%;
+  }
+
+  .graphicEle img{
+    width: 16%;
+  }
+}
+
+
+
+@media only screen and (min-width: 777px) and (max-width: 808px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 18%;
+    margin-bottom: 4%;
+  }
+
+  .graphicEle img{
+    width: 16%;
+  }
+}
+
+
+
+@media only screen and (min-width: 741px) and (max-width: 776px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 22%;
+    margin-bottom: 4%;
+    font-size: 5em;
+  }
+
+  .graphicEle img{
+    width: 16%;
+  }
+}
+
+
+
+@media only screen and (min-width: 686px) and (max-width: 740px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 22%;
+    margin-bottom: 4%;
+    font-size: 4.5em;
+  }
+
+  .graphicEle img{
+    width: 21%;
+  }
+
+  div > div > .panel > h1{
+    font-size: 2.7em !important;
+  }
+
+  div > div .panel > h2{
+    font-size: 2em !important;
+  }
+}
+
+
+
+@media only screen and (min-width: 657px) and (max-width: 685px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 4%;
+    font-size: 4.5em;
+  }
+
+  .graphicEle img{
+    width: 21%;
+  }
+
+  div > div > .panel > h1{
+    font-size: 3em !important;
+  }
+
+  div > div .panel > h2{
+    font-size: 2.5em !important;
+  }
+}
+
+
+
+@media only screen and (min-width: 642px) and (max-width: 656px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 4%;
+    font-size: 4em;
+  }
+
+  .graphicEle img{
+    width: 21%;
+  }
+}
+
+
+
+@media only screen and (max-width: 641px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    font-size: 4em !important;
+  }
+
+  .graphicEle img{
+    width: 15%;
+  }
+
+  #missionAb > div > div > div:nth-child(1) h1, .squareWrap #article1 #headContainer h1, .squareWrap #article2 #headContainer2 h1, #globalLeaders > div > div h1{
+    font-size: 2.5em !important;
+  }
+
+  #missionAb>div>div>div:nth-child(2) p{
+    font-size: 1.2em !important;
+    text-align: left;
+    padding: 0 6%;
+  }
+
+  .squareWrap #article1 .article1Container h3, .squareWrap #article2 .article1Container h3{
+    font-size: 1em !important;
+  }
+
+  .squareWrap #article1, .squareWrap #article2{
+    padding-bottom: 0vh !important;
+  }
+
+  .squareWrap #article1 .article1Container p, .squareWrap #article1 .article1Container ul li, .squareWrap #article2 .article1Container p{
+    font-size: .7em;
+  }
+
+  #globalLeaders{
+    padding-bottom: 4%;
+  }
+
+  #globalLeaders > div > div .panel div{
+    margin-bottom: 5%;
+  }
+
+  #globalLeaders > div > div .panel div.columns{
+    padding: 0;
+    margin: 0;
+  }
+
+  #globalLeaders > div > div .panel div p{
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 1.3em !important;
+  }
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 641px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 6%;
+    font-size: 4em;
+  }
+}
+
+
+
+@media only screen and (min-width: 635px) and (max-width: 641px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 6%;
+    font-size: 4em;
+  }
+}
+
+
+
+@media only screen and (min-width: 588px) and (max-width: 634px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 6%;
+    font-size: 5em;
+  }
+}
+
+
+
+@media only screen and (min-width: 555px) and (max-width: 587px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 6%;
+    font-size: 5em;
+  }
+}
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 554px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 6%;
+    font-size: 5em;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 6%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h2 {
+    font-size: 1.5em;
+    line-height: 30px;
+    margin-bottom: 6%;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .opSchools{
+    width: 75%;
+  }
+}
+
+
+
+@media only screen and (min-width: 442px) and (max-width: 479px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 6%;
+    font-size: 4.5em;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle {
+    margin-bottom: 6%;
+  }
+}
+
+
+
+@media only screen and (min-width: 390px) and (max-width: 441px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 26%;
+    margin-bottom: 6%;
+    font-size: 4.5em;
+  }
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 389px) {
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro h1 {
+    margin-top: 35%;
+    margin-bottom: 6%;
+    font-size: 3.5em;
+  }
+
+  #aboutHome #homeWrap #welcome div:nth-child(1) .panel .row .intro .graphicEle img{
+    width: 30%;
+  }
+}
+/*END ABOUT*/
